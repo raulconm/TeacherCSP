@@ -32,8 +32,8 @@
     :alt: teacher note
   
 
-Compute with Images
-====================
+Computación con imágenes
+========================
 
 ..	index::
 	single: images
@@ -44,61 +44,62 @@ Compute with Images
 ..	index::
 	single: pixels
 	
-Pictures on a computer are broken up into little bits called **pixels**, for *picture* (pix) *elements* (els).  These are laid out on a grid, from left to right (the horizontal or **x** dimension) and top to bottom (the vertical or **y** dimension).
+Las imágenes representadas en un ordenador se descomponen en pequeños elementos llamados **pixels** o **píxeles**, del inglés *picture* (pix) *elements* (els). Estos pixels se distribuyen en una matriz, de izquierda a derecha (dimensión horizontal o eje **x**) y de arriba a abajo (dimensión vertical o eje **y**).
 
 .. figure:: Figures/grid.png
     :align: center
     :alt: A grid with horizontal (x) and vertical (y) dimensions 
     :figclass: align-center
     
-    Figure 1: A grid with horizontal (x) and vertical (y) dimensions 
+    Imagen 1: Una matriz con sus dimensiones horizontal (x) y vertical (y) 
 
-Pixels are quite small.  Even this small picture below has 180 columns and 240 rows of pixels:
+Los pixels son realmente pequeños. La siguiente imagen, aún siendo tan pequeña, está formada por ciento ochenta columnas y doscientas cuarenta filas de pixels (180x240): 
 
 .. figure:: Figures/arch.jpg
     :align: center
     :alt: picture of an arch from Oxford, England
     :figclass: align-center
     
-    Figure 2: Picture of an arch from Oxford, England
+    Imagen 2: Imagen de un arco en Oxford, Inglaterra
     
 .. mchoicemf:: 1_5_1_Image_Q1
-   :answer_a: From left to right
-   :answer_b: From right to left
-   :answer_c: From top to bottom
-   :answer_d: From bottom to top
+   :answer_a: De izquierda a derecha
+   :answer_b: De derecha a izquierda
+   :answer_c: De arriba a abajo
+   :answer_d: De abajo a arriba
    :correct: c
-   :feedback_a: The x value increases from left to right
-   :feedback_b: The horizontal direction is the x direction
-   :feedback_c: The y value increases from top to bottom
-   :feedback_d: This is common on a Cartesian coordinate system, but it is not true here
+   :feedback_a: El valor que se incrementa de izquierda a derecha es el de x
+   :feedback_b: El valor que se representa horizontalmente es el de x
+   :feedback_c: El valor de y se incrementa de arriba a abajo
+   :feedback_d: Esto es lo habitual en un sistema de coordenadas cartesianas, pero no es cierto en este caso
    
-   Which way does y increase on an image?
+   ¿En qué dirección se incrementa el valor de y en una imagen? 
 
-Each pixel has a color associated with it: An amount of red, an amount of green, and an amount of blue.  The amount can be in the range of 0 to 255 where 0 is none of that color and 255 is the maximum amount of that color.  A pixel is displayed using light, not paint, so it may work a bit differently than you might expect if you only have experience making colors by mixing paint.  For example, you would mix blue and yellow paint to make green, but you mix red and green light to make yellow light.  See http://www.webexhibits.org/causesofcolor/1BE.html for a procedure to try this out for yourself.
+Cada pixel tiene asociado un color: una cantidad de color rojo, una cantidad de verde, y una cantidad de azul. Estas tres cantidades varían en un rango de 0 a 255, siendo 0 la ausencia de color y 255 la mayor cantidad de ese color. Los colores se muestran en pantalla por medio de luz, no de pintura, así que funciona de una manera diferente a la que podrías esperar si mezclas pinturas de colores. Por ejemplo, para obtener pintura de color verde mezclas pintura azul con pintura amarilla, pero para obtener luz amarilla debes mezclar luz roja con luz verde. Visita la página http://www.webexhibits.org/causesofcolor/1BE.html (en inglés) si quieres pobar esto por ti mismo.
 
-.. figure:: http://www.d.umn.edu/~mharvey/colorwheel.jpg
+.. figure:: Figures/rgb.jpg
     :width: 200px
     :align: center
     :alt: a color wheel for combining color lights
     :figclass: align-center
     
-    Figure 3: How lights combine to make colors
+    Imagen 3: combinación de luces para obtener los distintos colores
 
-All image manipulations in Photoshop and all filters in Instagram or Hipstamatic are created through manipulating those red, green, and blue color components in each pixel.
+Las manipulaciones de imágenes en Photoshop y los filtros en Instagram o Hipstamatic se basan en la alteración de los componentes rojo, verde y azul de cada pixel.
 
-Let's remove the red from this picture.  The program below does that.
+Vamos ahora a eliminar el color rojo de esta imagen. Eso es lo que hace el siguiente programa. 
 
 ..	index::
 	single: comment
 	pair: programming; comment
-
-**There are lot of lines in the program below. Don't worry if they don't all make sense to you right now.**  
-
-  - Especially when we write programs to manipulate images, you can ignore many of the lines.  Some read in a library to allow us to work with images, like ``from image import *``.  Others like ``win = ImageWin(img.getWidth(),img.getHeight())`` and ``img.draw(win)`` let us see the result.
-  - Words after the ``#`` are ignored by the computer.  They are **comments** to human readers to help them understand a program. 
   
-The lines that are important are under the comments (lines that start with a ``#``). Press the |audiobutton| button to hear an audio explanation of the important lines.  Press the |runbutton| button to run the program and show the changed image.  Please note that processing all those pixels can take a few minutes.  
+**Este programa tiene muchas líneas. De momento no te preocupes si no entiendes la mayoría de ellas.**
+
+  - Especialmente en los programas para manipular imágenes puedes ignorar la mayoría de las líneas. Algunas hacen referencia a librerías que nos permiten trabajar con imágenes, como ``from image import *``. Otras como ``win = ImageWin(img.getWidth(),img.getHeight())`` y ``img.draw(win)`` nos muestran simplemente el resultado.
+  - Ya sabes que el ordenador ignora cualquier texto que aparezca a continuación de ``#``. Son **comentarios** que los humanos escribimos para entender mejor el programa. 
+   
+  
+En el siguiente ejemplo, las líneas importantes son las que aparecen debajo de los comentarios. Pulsa |audiobutton| para escuchar la explicación de cada línea importante. Haz clic en |runbutton| para ejecutar el programa y ver la imagen modificada. Ten paciencia, procesar todos los pixels de la imagen puede llevar unos minutos.
 
 .. raw:: html
 
@@ -110,30 +111,29 @@ The lines that are important are under the comments (lines that start with a ``#
 
     from image import *
     
-    # CREATE AN IMAGE FROM A FILE
+    # CREA UNA IMAGEN CARGADA DESDE UN ARCHIVO
     img = Image("arch.jpg")
 
-    # LOOP THROUGH ALL THE PIXELS
+    # RECORRE CADA PIXEL DE LA IMAGEN
     pixels = img.getPixels()
     for p in pixels:
     
-        # CLEAR THE RED
+        # ELIMINA EL ROJO
         p.setRed(0)
         img.updatePixel(p)
            
-    # SHOW THE CHANGED IMAGE 
+    # MUESTRA LA IMAGEN UNA VEZ MODIFICADA 
     win = ImageWin(img.getWidth(),img.getHeight())
     img.draw(win)
     
 .. mchoicemf:: 1_5_2_Image_Black
-   :answer_a: You still see the picture, but it is all in shades of gray.  
-   :answer_b: The picture is all white.
-   :answer_c: The picture is all black.
+   :answer_a: Aún se vería la imagen, pero sólo como tonos de gris.  
+   :answer_b: La imagen se vería completamente blanca.
+   :answer_c: La imagen se vería completamente negra.
    :correct: c
-   :feedback_a: Not if you set all the color values to 0.
-   :feedback_b: Did you try it?  This would be true if you set all the values to 255 instead of 0.
-   :feedback_c: Black is the absence of light so setting all colors to 0 results in an all black image since there is no light.
+   :feedback_a: No sucedería eso si cambias por 0 cada componente rojo, verde y auzl.
+   :feedback_b: ¿Lo has probado? Esto ocurriría si se cambiaran los valores a 255, no a 0.
+   :feedback_c: El negro es la ausencia total de luz, así que cambiando todos los valores a 0 obtendríamos una imagen de color negro, al no haber nada de luz.
    
-   What do you think happens when you set all the colors to 0?  Try adding ``p.setBlue(0)`` and ``p.setGreen(0)`` to the program above after the ``p.setRed(0)`` and run it to check.
- 
+   ¿Qué crees que ocurriría si cambiaras todos los colores por 0? Intenta añadir las instrucciones ``p.setBlue(0)`` y ``p.setGreen(0)`` al programa después de la sentencia ``p.setRed(0)`` y ejecútalo de nuevo para ver qué sucede.
 

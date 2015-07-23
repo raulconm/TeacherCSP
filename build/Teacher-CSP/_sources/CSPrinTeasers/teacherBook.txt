@@ -32,17 +32,17 @@
     :alt: teacher note
 
 
-This Book is for Teachers
+Un libro para profesores
 ==========================
 
-This chapter introduces the approach used in this book and offers some quick "teasers" of things we'll be doing later.  **Don't worry if you don't understand all the code (programs - instructions that a computer can understand) that you see in this chapter**.  We'll go through things much more slowly in the next few chapters.  This book is intended for teachers who haven't programmed before.
+Este capítulo ofrece una introducción al método que va a utilizarse en el libro, y proporciona algunos "titulares rápidos" sobre las cosas que haremos más adelante. **No te preocupes si no comprendes todo el código (programas - las instrucciones que entiende un ordenador) que veas en este capítulo**. Trataremos todos los conceptos mucho más despacio en los capítulos siguientes. Este libro está orientado a profesores que nunca antes han programado. 
 
 ..	index::
 	single: Python
 	single: code
 	single: program
 
-This electronic book is different because it uses *examples plus practice*.  Most computer science books are about becoming professional software developers (people who write programs for a living).  Most computer science courses require you to write lots of code.  This book helps teachers learn how to *teach programming* without making you write lots of code.  It will use the programming language **Python** which is used by companies like Google and Pixar.  
+Este libro electrónico es diferente porque utiliza *ejemplos y práctica*. Muchos libros sobre ciencias de la computación tratan sobre cómo convertirse en desarrollador profesional de software (las personas que se ganan la vida escribiendo programas). La mayoría de los cursos sobre ciencias de la computación te piden que escribas un montón de código. Este libro ayuda a los profesores a aprender cómo *enseñar programación* sin tener que escribir mucho código. Se usará el lenguaje de programación **Python** que utilizan empresas como Google o Pixar.
 
 .. figure:: Figures/HappyTeacherInComputerClass.jpg
     :width: 400px
@@ -50,12 +50,11 @@ This electronic book is different because it uses *examples plus practice*.  Mos
     :alt: a teacher in a computer classroom
     :figclass: align-center
 
-    Figure 1: A teacher in a computer classroom
+    Imagen 1: Un profesor en una clase de ordenadores
 
-- Rather than have you write lots of code, we will ask you to *read* a lot of code *examples*, because that's what computer science teachers do most often.
-- We ask you to *use* what you are learning from the examples in some simple *practice* exercises.  These exercises are meant to be short and easy, to fit into a teacher's busy life.
-- As a teacher, you need to know what students most often *get wrong*, where you can find *resources* to help you teach, and *how* to teach different ideas.  The book is sprinkled with |teachernote| **Teacher Notes** that explain how to be an effective computer science teacher.
-- **You don't have to install anything**.  You will read, edit, and run programs all from within the pages of this ebook inside the browser.  
+- Más que escribir mucho código, te pediremos que *leas* un montón de *ejemplos* de código, porque eso es lo que más hacen los profesores de ciencias de la computación. 
+- Te pediremos que hagas algunos ejercicios *prácticos* sencillos para que *uses* lo que has aprendido en los ejemplos. Intentaremos que los ejercicios sean cortos y sencillos, para que sean compatibles con la atareada vida de un profesor. 
+- Como profesor, necesitas saber qué *errores* suelen cometer los estudiantes, dónde puedes encontrar *recursos* para enseñar, y *cómo* enseñar las distintas ideas. El libro contiene algunas |teachernote| **Notas del profesor** que explican cómo ser un profesor efectivo en ciencias de la computación.
+- **No tendrás que instalar nada**. Leerás, editarás y ejecutarás todos los programas desde las páginas de este libro electrónico, sin salir del navegador. 
 
-Click the arrow at the bottom right side of this window to go on to the next section in this chapter.  Click on the name of the book at the top left of the page to go to the table of contents.
-
+Haz clic en la flecha que hay en la esquina inferior izquierda de esta ventana para acceder a la siguiente sección de este capítulo. Haz clic en el nombre del libro, en la esquina superior izquierda de la página, para ir a la tabla de contenidos.

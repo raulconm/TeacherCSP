@@ -31,16 +31,16 @@
     :align: bottom
     :alt: teacher note
 
-Compute with Numbers
-=====================
+Computación con números
+=======================
 
-We won't be using lots of math in this eBook, so don't worry if math isn't your favorite thing.  You will run and modify programs that work with words, turtles (virtual ones), and images as well as numbers.  The only math that you need to know is addition, subtraction, multiplication, and division. 
+No utilizaremos muchas matemáticas en este eBook, así que no te preocupes si no son tu fuerte. Ejecutarás y modificarás programas que trabajan con palabras, tortugas (virtuales), e imágenes, además de con números. La únicas operaciones matemáticas que vas a necesitar son suma, resta, multiplicación, y división.
 
 ..	index::
 	single: variable
 	pair: programming; variable
 
-Computers were first used for calculations. You may be used to doing calculations with a calculator, but calculations are often easier if you can *name* the numbers you are working with.  When you name a number, or the result of a calculation, you are creating a **variable**.  A **variable** is a name associated with computer memory that can hold a value and that value can change or vary.  One example of a **variable** is the score in a game.  The score starts off at 0 and increases as you play the game.
+Los ordenadores se utilizaron inicialmente para calcular. Puede que estés acostumbrado a usar la calculadora, pero suele ser más sencillo calcular si *das un nombre* a los números con los que estás trabajando. Cuando le das un nombre a un número, o al resultado de una operación de cálculo, estás creando una **variable**. Una **variable** es un nombre que se da a la memoria del ordenador que puede almacenar un valor, y que puede cambiar. Un ejemplo de **variable** es el marcador de los puntos en un juego. El marcador comienza valiendo cero, y se incrementa según vamos jugando. 
 
 .. figure:: Figures/pongScore.png
     :width: 400px
@@ -48,53 +48,52 @@ Computers were first used for calculations. You may be used to doing calculation
     :alt: A game in Scratch with a score
     :figclass: align-center
     
-    Figure 2: A pong game in `Scratch <http://scratch.mit.edu>`_ with a score shown in the upper left.
+    Imagen 2: Juego de pong en `Scratch <http://scratch.mit.edu>`_ con un marcador en la parte superior izquierda.
 
-One thing that you might want to calculate is a **Body Mass Index**.    `Body Mass Index (BMI) <http://www.nhlbi.nih.gov/guidelines/obesity/BMI/bmicalc.htm>`_ is a measure of body fat that is useful in screening for health issues.  Generally speaking:
 
-- A BMI of 18.5 or less is considered *underweight*.
-- A BMI between 18.5 to 24.9 is considered *healthy*.
-- A BMI between 25-29.9 is considered *overweight*.
-- A BMI of 30 or over is considered *obese*.
+Un valor que puedes calcular es el **Indice de Masa Corporal**.    El `Indice de Masa Corporal (IMC) <http://es.calcuworld.com/deporte-y-ejercicio/calculadora-de-imc/>`_ mide la cantidad de grasa que hay en el cuerpo, y es útil para determinar problemas de salud. En términos generales: 
 
-To calculate a BMI, you need the height in inches and the weight in pounds.  You square the height (multiply the height in inches by itself), then divide the weight in pounds by the squared-height.  BMI is defined in terms of meters and kilograms, so to convert from pounds and inches multiply by 703.
+- Un IMC igual o inferior a 18.5 se considera *bajo peso*
+- Un IMC entre 18.5 y 24.9 se considera *saludable*
+- Un IMC entre 25-29.9 se considera *sobrepeso*
+- Un IMC igual o superior a 30 indica *obesidad* 
 
-In the box below is a computer program that calculates the BMI for someone 60 inches tall (5 feet) and 110 pounds.  
+Para poder calcular el IMC necesitas saber la altura en metros y el peso en kilos. Debes elevar la altura al cuadrado (multiplicándola por sí misma), y a continuación dividir el peso por esa altura al cuadrado. 
 
-Press the |runbutton| button below to make the computer execute these steps. The output from this program will be displayed to the right of the program.
+En el cuadro de abajo puedes ver un programa que calcula el IMC de una persona que mide 1,60 metros y pesa 50 kilos.
 
-Pres the |audiobutton| button below to bring up an "Audio Tour" that explains this program, line-by-line.
+Pulsa el botón |runbutton| para que el ordenador ejecute estos pasos. A la derecha verás el resultado de ejecutar el programa. 
 
-You can only use the *Save* and *Load* buttons if you are logged in. The *Save* button will save the current program and the *Load* button will load a saved program.
+Pulsa el botón |audiobutton| para abrir una ventana donde se explica qué hace el programa, línea por línea.
+
+Sólo podrás utilizar los botones *Guardar* y *Cargar* si has iniciado sesión. El botón *Guardar* permite conservar el programa actual, y el botón *Cargar* sirve para recuperar un programa que se ha guardado previamente.
 
 .. activecode:: BMI
     :tour_1: "Line-by-line Tour"; 1: BMI-line1; 2: BMI-line2; 3: BMI-line3; 4: BMI-line4; 5: BMI-line5; 6: BMI-line6; 7: BMI-line7; 
     :nocodelens:
     
-    height = 60    # in inches (60 inches is 5 feet)
-    weight = 110   # in pounds
-    heightSquared = height * height
-    BMI = weight / heightSquared
-    BMImetric = BMI * 703
-    print("BMI:")
-    print(BMImetric)
+    altura = 1.60    # en metros. La coma decimal debe expresarse como punto
+    peso = 50   # en kilos
+    alturaalcuadrado = altura * altura
+    IMC = peso / alturaalcuadrado
+    print("IMC: ")
+    print(IMC)
 
-Change the weight (in inches) and height (in pounds) in the program above, and press the *Run* button to calculate a new BMI.  
+Modifica en el programa los valores de altura y peso y haz clic en el botón *Run* para calcular un nuevo IMC. No olvides que la coma decimal debe expresarse como un punto.
 
-.. Note
-   Notice how naming the values (using variables) for height and weight makes it easier to figure out what values need to be changed.  
+.. Note::
+   Al dar un nombre a los valores (usando variables) de altura y peso es más fácil saber qué valor se cambia en cada momento.
 
 .. mchoicemf:: 1_2_1_BMI_Q1
-   :answer_a: 21.9
-   :answer_b: 21.924704834
-   :answer_c: 21
-   :answer_d: 22
+   :answer_a: 26,2
+   :answer_b: 26,2345679012
+   :answer_c: 26
+   :answer_d: 27
    :correct: b
-   :feedback_a: Close, but the computer will give you more digits than that.
-   :feedback_b: Yes!
-   :feedback_c: No, the result will be a number with a decimal point and numbers after the decimal point.
-   :feedback_d: No, the computer does not round the result.
+   :feedback_a: Has estado cerca, pero el ordenador te va a dar más decimales.
+   :feedback_b: ¡Bien hecho!
+   :feedback_c: No, el resultado va a contener una coma, y cifras decimales.
+   :feedback_d: No, el ordenador no redondea el resultado.
    
-   Imagine that you are 5 foot 7 inches and weighed 140 pounds.  What is your BMI?
-
+   Imagina que mides 1,80 metros y pesas 85 kilos. ¿Cuál sería tu IMC?
 

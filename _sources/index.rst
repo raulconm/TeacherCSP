@@ -7,6 +7,7 @@
     is included in the section entitled "GNU Free Documentation License".
 	
 =======================================
+Principios de Ciencias de la Computación: Fundamentos sobre Programación
 CS Principles: Big Ideas in Programming
 =======================================
 
@@ -21,14 +22,14 @@ CS Principles: Big Ideas in Programming
 .. Sources can also be included from subfolders of this directory.
    (e.g. "DataStructures/queues.rst").
 
-SECTION 1: COMPUTER ABILITIES
-:::::::::::::::::::::::::::::::
+SECCIÓN 1: LAS HABILIDADES DE LOS ORDENADORES
+:::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 3
    
-Chapter 1: What is this Book About?
-::::::::::::::::::::::::::::::::::::::::
+Capítulo 1: ¿De qué trata este libro?
+:::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -41,8 +42,8 @@ Chapter 1: What is this Book About?
    CSPrinTeasers/standards.rst
    CSPrinTeasers/ch1_summary.rst
    
-Chapter 2: What can Computers Do?
-::::::::::::::::::::::::::::::::::
+Capítulo 2: ¿Qué pueden hacer los ordenadores?
+::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -53,13 +54,13 @@ Chapter 2: What can Computers Do?
    CSPTuring/ch2_summary.rst
    CSPTuring/exam1a2.rst
 
-SECTION 2: NAMING
+SECCIÓN 2: NOMBRAR
 ::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
    
-Chapter 3: Names for Numbers
+Capítulo 3: Nombres para números
 ::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -78,8 +79,8 @@ Chapter 3: Names for Numbers
    CSPNameNumbers/ch3_summary.rst
    
    
-Chapter 4: Names for Strings
-::::::::::::::::::::::::::::::::::
+Capítulo 4: Nombres para cadenas de caracteres
+::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -90,7 +91,7 @@ Chapter 4: Names for Strings
    CSPNameStrings/ch4_summary.rst
    CSPNameStrings/exam3a4.rst
    
-Chapter 5: Names for Turtles
+Capítulo 5: Nombres para tortugas
 ::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -102,8 +103,8 @@ Chapter 5: Names for Turtles
    CSPNameTurtles/bodySyntonic.rst
    CSPNameTurtles/ch5_summary.rst
 
-Chapter 6: Computers can Name Anything
-:::::::::::::::::::::::::::::::::::::::
+Capítulo 6: Los ordenadores pueden nombrar cualquier cosa
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -119,14 +120,14 @@ Chapter 6: Computers can Name Anything
    CSPNameNames/ch6_summary.rst
    CSPNameNames/exam5a6.rst
    
-SECTION 3: REPEATING
+SECCIÓN 3: REPITIENDO
 :::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
    
-Chapter 7: Computers can Repeat Steps
-:::::::::::::::::::::::::::::::::::::::::
+Capítulo 7: Los ordenadores pueden repetir pasos
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -139,7 +140,7 @@ Chapter 7: Computers can Repeat Steps
    CSPRepeatNumbers/print.rst
    CSPRepeatNumbers/ch7_summary.rst
    
-Chapter 8: While and For Loops
+Capítulo 8: Los bucles While y For
 :::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -152,7 +153,7 @@ Chapter 8: While and For Loops
    CSPWhileAndForLoops/ch8_summary.rst
    CSPWhileAndForLoops/exam7a8.rst
    
-Chapter 9: Repeating Steps with Strings
+Capítulo 9: Repitiendo pasos con cadenas
 :::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -163,8 +164,8 @@ Chapter 9: Repeating Steps with Strings
    CSPRepeatStrings/mirror.rst
    CSPRepeatStrings/ch9_summary.rst
    
-Chapter 10: Repeating Steps with Turtles
-:::::::::::::::::::::::::::::::::::::::::
+Capítulo 10: Repitiendo pasos con tortugas
+::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -175,8 +176,8 @@ Chapter 10: Repeating Steps with Turtles
    CSPRepeatTurtles/stamp.rst
    CSPRepeatTurtles/ch10_summary.rst
    
-Chapter 11: Repeating Steps with Images
-:::::::::::::::::::::::::::::::::::::::::
+Capítulo 11: Repitiendo pasos con imágenes
+::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -190,14 +191,14 @@ Chapter 11: Repeating Steps with Images
    CSPRepeatImages/ch11_summary.rst
    CSPRepeatImages/exam9t11.rst
    
-SECTION 4: DECISIONS
+SECCIÓN 4: DECISIONES
 ::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 3
    
-Chapter 12: A Computer can Make Decisions
-::::::::::::::::::::::::::::::::::::::::::::
+Capítulo 12: Un ordenador puede tomar decisiones
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -212,8 +213,8 @@ Chapter 12: A Computer can Make Decisions
    CSPIntroDecisions/decTeacherNotes.rst
    CSPIntroDecisions/ch12_summary.rst
    
-Chapter 13: Using Decisions with Strings
-::::::::::::::::::::::::::::::::::::::::::::
+Capítulo 13: Utilizar las decisiones con cadenas
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -225,8 +226,8 @@ Chapter 13: Using Decisions with Strings
    CSPStringDecisions/ch13_summary.rst
    CSPStringDecisions/exam12a13.rst
    
-Chapter 14: Using Decisions with Turtles
-::::::::::::::::::::::::::::::::::::::::::::
+Capítulo 14: Utilizar las decisiones con tortugas
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -238,8 +239,8 @@ Chapter 14: Using Decisions with Turtles
    CSPTurtleDecisions/collisions.rst
    CSPTurtleDecisions/ch14_summary.rst
    
-Chapter 15: Using Decisions with Images
-::::::::::::::::::::::::::::::::::::::::::::
+Capítulo 15: Utilizar las decisiones con imágenes
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -251,13 +252,13 @@ Chapter 15: Using Decisions with Images
    CSPImageDecisions/ch15_summary.rst
    CSPImageDecisions/exam14a15.rst
    
-SECTION 5: DATA
+SECCIÓN 5: DATOS
 :::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 3
    
-Chapter 16:  Working with Collections
+Capítulo 16:  Working with Collections
 ::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -275,7 +276,7 @@ Chapter 16:  Working with Collections
    CSPIntroData/teacherRainfall.rst
    CSPIntroData/ch16_summary.rst
    
-Chapter 17: Getting pieces out of strings
+Capítulo 17: Getting pieces out of strings
 ::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -288,7 +289,7 @@ Chapter 17: Getting pieces out of strings
    CSPStringPieces/ch17_summary.rst
    CSPStringPieces/exam16a17.rst
    
-Chapter 18: Working with Data on the Web
+Capítulo 18: Working with Data on the Web
 ::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -302,7 +303,7 @@ Chapter 18: Working with Data on the Web
    CSPWebData/avgPoll.rst
    CSPWebData/ch18_summary.rst
    
-Chapter 19: Comparing Data Sets
+Capítulo 19: Comparing Data Sets
 ::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -315,7 +316,7 @@ Chapter 19: Comparing Data Sets
    CSPDataSets/ch19_summary.rst
    
    
-Chapter 20: Computer Abilities Summary
+Capítulo 20: Computer Abilities Summary
 ::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::

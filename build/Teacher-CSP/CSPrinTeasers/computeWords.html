@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Compute with Words &mdash; Runestone Interactive Overview</title>
+    <title>Computación con palabras &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../_static/shortanswer.css" type="text/css" />
     <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
     <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
@@ -86,8 +87,8 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
-    <link rel="next" title="Compute with Turtles" href="computeTurtles.html" />
-    <link rel="prev" title="Compute with Numbers" href="computeNumbers.html" />
+    <link rel="next" title="Computación con tortugas" href="computeTurtles.html" />
+    <link rel="prev" title="Computación con números" href="computeNumbers.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -101,7 +102,7 @@
   eBookConfig.loginRequired = true;
   eBookConfig.build_info = "unknown";
   eBookConfig.isLoggedIn = false;
-  eBookConfig.useRunestoneServices = false;
+  eBookConfig.useRunestoneServices = true;
   eBookConfig.python3 = false;
 </script>
 
@@ -273,7 +274,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Compute with Words</a></li>
+<li><a class="reference internal" href="#">Computación con palabras</a></li>
 </ul>
 </ul>
 </li>
@@ -281,13 +282,13 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Compute with Numbers" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Computación con números" data-toggle="tooltip">
     <a href="computeNumbers.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Compute with Turtles' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - Computación con tortugas' data-toggle="tooltip" >
     <a href="computeTurtles.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -318,10 +319,10 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="compute-with-words">
-<h1>Compute with Words<a class="headerlink" href="#compute-with-words" title="Permalink to this headline">¶</a></h1>
-<p id="index-0">The computer can also compute with words, or more accurately, with <strong>strings</strong> which are sequences of characters.  A <strong>string</strong> is anything we can type between a pair of double quotes (<code class="docutils literal"><span class="pre">&quot;Hi&quot;</span></code>) or a pair of single quotes (<code class="docutils literal"><span class="pre">'Hi'</span></code>).  We can &#8220;compute&#8221; with words using some of the same basic arithmetic operators &#8211; they just mean something different here.  Here we generate silly song lyrics by using <code class="docutils literal"><span class="pre">+</span></code> to combine (append) two strings and <code class="docutils literal"><span class="pre">*</span></code> to repeat strings.</p>
-<p>Underneath the program below, to the right of the <em>Run</em> button <a class="reference internal" href="../_images/run-button2.png"><img alt="run button" class="align-top" src="../_images/run-button2.png" style="height: 20px;" /></a>, you&#8217;ll see the button to open the audio tour for this program: <a class="reference internal" href="../_images/start-audio-tour4.png"><img alt="audio tour button" class="align-top" src="../_images/start-audio-tour4.png" style="height: 20px;" /></a>.  Click on that button and then click on &#8220;Line-by-line Tour&#8221; to hear the audio tour.  You can use the provided buttons to pause, play, jump ahead, or go back.</p>
+  <div class="section" id="computacion-con-palabras">
+<h1>Computación con palabras<a class="headerlink" href="#computacion-con-palabras" title="Permalink to this headline">¶</a></h1>
+<p id="index-0">Los ordenadores pueden también trabajar con palabras, o dicho de una forma más precisa, con <strong>cadenas</strong> formadas por una sucesión de caracteres. Se le llama <strong>cadena</strong> a cualquier cosa que se puede escribir entre comillas dobles (<code class="docutils literal"><span class="pre">&quot;Hola&quot;</span></code>) o sencillas (<code class="docutils literal"><span class="pre">'Hola'</span></code>). Se pueden &#8220;hacer cálculos&#8221; con palabras utilizando alguno de los operadores artiméticos básicos &#8211; aquí tienen una función diferente. Probemos a generar algunas letras tontas para una canción usando <code class="docutils literal"><span class="pre">+</span></code> para combinar (sumar) dos cadenas, y <code class="docutils literal"><span class="pre">*</span></code> para repetirlas.</p>
+<p>Debajo del siguiente programa, a la derecha del botón <em>Run</em> <a class="reference internal" href="../_images/run-button2.png"><img alt="run button" class="align-top" src="../_images/run-button2.png" style="height: 20px;" /></a>, verás un botón que abre la guía de sonido para este programa: <a class="reference internal" href="../_images/start-audio-tour4.png"><img alt="audio tour button" class="align-top" src="../_images/start-audio-tour4.png" style="height: 20px;" /></a>. Haz clic en ese botón y después pulsa sobre &#8220;Guiar línea por línea&#8221; para oir la guía de sonido. Puedes utilizar los botónes para detener, reproducir, saltar hacia adelante o hacia atrás.</p>
 
 <div id="cont"></div>
 <div id="String_Operators" lang="python" time="" class="ac_section alert alert-warning" >
@@ -332,22 +333,22 @@
 <button class="ac_opt btn btn-default" style="display: inline-block" id="String_Operators_loadb" onclick="requestCode('String_Operators');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('String_Operators','basic = *doubleq*Ma*doubleq**nline*print*open*basic*close**nline*basic3 = basic + basic + basic*nline*print*open*basic3*close**nline*next = *doubleq*Mow*doubleq**nline*next3 = next * 3*nline*print*open*next3*close**nline*together = *open*basic * 3*close* + *open*next * 2*close**nline*print*open*together*close**nline*print*open*together + *doubleq*Mmm*doubleq* + together*close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: str1-line1; 2: str1-line2; 3: str1-line3; 4: str1-line4; 5: str1-line5; 6: str1-line6; 7: str1-line7; 8: str1-line8; 9: str1-line9; 10: str1-line10;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('String_Operators','basico = *doubleq*Ma*doubleq**nline*print*open*basico*close**nline*basico3 = basico + basico + basico*nline*print*open*basico3*close**nline*siguiente = *doubleq*Mu*doubleq**nline*siguiente3 = siguiente * 3*nline*print*open*siguiente3*close**nline*juntos = *open*basico * 3*close* + *open*siguiente * 2*close**nline*print*open*juntos*close**nline*print*open*juntos + *doubleq*Mmm*doubleq* + juntos*close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: str1-line1; 2: str1-line2; 3: str1-line3; 4: str1-line4; 5: str1-line5; 6: str1-line6; 7: str1-line7; 8: str1-line8; 9: str1-line9; 10: str1-line10;*atype*')"/>
 
 </div>
 <br/>
 <div id="String_Operators_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="String_Operators_code" class="active_code" prefixcode="undefined" lang="python">
-basic = "Ma"
-print(basic)
-basic3 = basic + basic + basic
-print(basic3)
-next = "Mow"
-next3 = next * 3
-print(next3)
-together = (basic * 3) + (next * 2)
-print(together)
-print(together + "Mmm" + together)
+basico = "Ma"
+print(basico)
+basico3 = basico + basico + basico
+print(basico3)
+siguiente = "Mu"
+siguiente3 = siguiente * 3
+print(siguiente3)
+juntos = (basico * 3) + (siguiente * 2)
+print(juntos)
+print(juntos + "Mmm" + juntos)
 </textarea>
 </div>
 
@@ -413,7 +414,7 @@ else{
 
 </div>
 
-<p id="index-1">A string can also be asked to return a new string that is changed in some way from the original string.  In the example below, we&#8217;ll take a string in all-caps and turn it into a nicely capitalized sentence.  This example uses <strong>dot-notation</strong> (<code class="docutils literal"><span class="pre">sentence.lower()</span></code>) which is the way to tell a string how we want it to change.</p>
+<p id="index-1">También se puede generar una nueva cadena en la que cambiemos alguna cosa respecto de una cadena original. En el siguiente ejemplo, tomamos una cadena en mayúsuculas y la convertimos a minúsuculas. Este ejemplo utiliza una <strong>notación con punto</strong> (<code class="docutils literal"><span class="pre">sentence.lower()</span></code>), que es la forma de decirle a la cadena en qué queremos que cambie.</p>
 
 <div id="cont"></div>
 <div id="String_Methods" lang="python" time="" class="ac_section alert alert-warning" >
@@ -424,17 +425,17 @@ else{
 <button class="ac_opt btn btn-default" style="display: inline-block" id="String_Methods_loadb" onclick="requestCode('String_Methods');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('String_Methods','sentence = *doubleq*THIS IS A TEST*doubleq**nline*better = sentence.lower*open**close**nline*print*open*better*close**nline*betterStill = better.capitalize*open**close* + *doubleq*.*doubleq**nline*print*open*betterStill*close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: str2-line1; 2: str2-line2; 3: str2-line3; 4: str2-line4; 5: str2-line5;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('String_Methods','frase = *doubleq*ESTO ES UNA PRUEBA*doubleq**nline*mejor = frase.lower*open**close**nline*print*open*mejor*close**nline*mejortodavia = mejor.capitalize*open**close* + *doubleq*.*doubleq**nline*print*open*mejortodavia*close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: str2-line1; 2: str2-line2; 3: str2-line3; 4: str2-line4; 5: str2-line5;*atype*')"/>
 
 </div>
 <br/>
 <div id="String_Methods_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="String_Methods_code" class="active_code" prefixcode="undefined" lang="python">
-sentence = "THIS IS A TEST"
-better = sentence.lower()
-print(better)
-betterStill = better.capitalize() + "."
-print(betterStill)
+frase = "ESTO ES UNA PRUEBA"
+mejor = frase.lower()
+print(mejor)
+mejortodavia = mejor.capitalize() + "."
+print(mejortodavia)
 </textarea>
 </div>
 
@@ -502,33 +503,33 @@ else{
 
 
             <div id="1_3_1_String_Methods_Q1" class="alert alert-warning">
-            <p>csp-1-3-1: What would the following code print?</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">first</span> <span class="o">=</span> <span class="s">&quot;Hi&quot;</span>
-<span class="nb">next</span> <span class="o">=</span> <span class="s">&quot;There&quot;</span>
-<span class="k">print</span> <span class="p">((</span><span class="n">first</span> <span class="o">+</span> <span class="nb">next</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+            <p>csp-1-3-1: ¿Qué imprimirá este código?</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">primero</span> <span class="o">=</span> <span class="s">&quot;Buenos&quot;</span>
+<span class="n">segundo</span> <span class="o">=</span> <span class="s">&quot;días&quot;</span>
+<span class="k">print</span> <span class="p">((</span><span class="n">primero</span> <span class="o">+</span> <span class="n">segundo</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 <form name="1_3_1_String_Methods_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="1_3_1_String_Methods_Q1_opt_a" />
-            <label for= "1_3_1_String_Methods_Q1_opt_a">  a) Hi There</label><br />
+            <label for= "1_3_1_String_Methods_Q1_opt_a">  a) Buenos días</label><br />
             
             <input type="radio" name="group1" value="b" id="1_3_1_String_Methods_Q1_opt_b" />
-            <label for= "1_3_1_String_Methods_Q1_opt_b">  b) HiThere</label><br />
+            <label for= "1_3_1_String_Methods_Q1_opt_b">  b) Buenosdías</label><br />
             
             <input type="radio" name="group1" value="c" id="1_3_1_String_Methods_Q1_opt_c" />
-            <label for= "1_3_1_String_Methods_Q1_opt_c">  c) Hi There Hi There</label><br />
+            <label for= "1_3_1_String_Methods_Q1_opt_c">  c) Buenos días Buenos días</label><br />
             
             <input type="radio" name="group1" value="d" id="1_3_1_String_Methods_Q1_opt_d" />
-            <label for= "1_3_1_String_Methods_Q1_opt_d">  d) HiThereHiThere</label><br />
+            <label for= "1_3_1_String_Methods_Q1_opt_d">  d) BuenosdíasBuenosdías</label><br />
             
             <input type="radio" name="group1" value="e" id="1_3_1_String_Methods_Q1_opt_e" />
-            <label for= "1_3_1_String_Methods_Q1_opt_e">  e) HiThere2</label><br />
+            <label for= "1_3_1_String_Methods_Q1_opt_e">  e) Buenosdías2</label><br />
             
 
             <script>
             $(document).ready(function(){checkRadio('1_3_1_String_Methods_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('1_3_1_String_Methods_Q1','d',['When you add strings together you copy the second string right after the first, without any added space', 'Remember that * 2 repeats two copies of the same string', 'Adding strings together and repeating them doesn\u0027t add spaces between the strings', 'Strings are added together without adding any space and they are repeated without adding a space', 'The * 2 repeats the string two times'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('1_3_1_String_Methods_Q1','d',['Cuando sumas cadenas estás copiando la segunda justo a continuación de la primera, sin añadir espacios', 'Recuerda que * 2 repite dos veces la misma cadena', 'Sumar cadenas y repetirlas no añade espacios entre ellas', 'Las cadenas se suman sin que se añadan espacios, y se repiten sin agregar tampoco ningún espacio', '* 2 repite la cadena dos veces'])">Check Me</button>
             <button class='btn btn-default' id="1_3_1_String_Methods_Q1_bcomp" disabled name="compare" onclick="compareAnswers('1_3_1_String_Methods_Q1');">Compare Me</button>
             </form><br />
             <div id="1_3_1_String_Methods_Q1_feedback">
@@ -539,19 +540,19 @@ else{
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Compute with Numbers' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Computación con números' data-toggle="tooltip">
     <a href="computeNumbers.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="computeNumbers.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Compute with Turtles' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - Computación con tortugas' data-toggle="tooltip" >
     <a href="computeTurtles.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="computeTurtles.html" >Next Section - Compute with Turtles</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="computeTurtles.html" >Next Section - Computación con tortugas</a>
 
 <script type="text/javascript">
 

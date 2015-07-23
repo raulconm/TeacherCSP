@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Compute with Numbers &mdash; Runestone Interactive Overview</title>
+    <title>Computación con números &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../_static/shortanswer.css" type="text/css" />
     <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
     <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
@@ -86,8 +87,8 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
-    <link rel="next" title="Compute with Words" href="computeWords.html" />
-    <link rel="prev" title="This Book is for Teachers" href="teacherBook.html" />
+    <link rel="next" title="Computación con palabras" href="computeWords.html" />
+    <link rel="prev" title="Un libro para profesores" href="teacherBook.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -101,7 +102,7 @@
   eBookConfig.loginRequired = true;
   eBookConfig.build_info = "unknown";
   eBookConfig.isLoggedIn = false;
-  eBookConfig.useRunestoneServices = false;
+  eBookConfig.useRunestoneServices = true;
   eBookConfig.python3 = false;
 </script>
 
@@ -273,7 +274,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Compute with Numbers</a></li>
+<li><a class="reference internal" href="#">Computación con números</a></li>
 </ul>
 </ul>
 </li>
@@ -281,13 +282,13 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - This Book is for Teachers" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Un libro para profesores" data-toggle="tooltip">
     <a href="teacherBook.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Compute with Words' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - Computación con palabras' data-toggle="tooltip" >
     <a href="computeWords.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -318,26 +319,26 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="compute-with-numbers">
-<h1>Compute with Numbers<a class="headerlink" href="#compute-with-numbers" title="Permalink to this headline">¶</a></h1>
-<p>We won&#8217;t be using lots of math in this eBook, so don&#8217;t worry if math isn&#8217;t your favorite thing.  You will run and modify programs that work with words, turtles (virtual ones), and images as well as numbers.  The only math that you need to know is addition, subtraction, multiplication, and division.</p>
-<p id="index-0">Computers were first used for calculations. You may be used to doing calculations with a calculator, but calculations are often easier if you can <em>name</em> the numbers you are working with.  When you name a number, or the result of a calculation, you are creating a <strong>variable</strong>.  A <strong>variable</strong> is a name associated with computer memory that can hold a value and that value can change or vary.  One example of a <strong>variable</strong> is the score in a game.  The score starts off at 0 and increases as you play the game.</p>
+  <div class="section" id="computacion-con-numeros">
+<h1>Computación con números<a class="headerlink" href="#computacion-con-numeros" title="Permalink to this headline">¶</a></h1>
+<p>No utilizaremos muchas matemáticas en este eBook, así que no te preocupes si no son tu fuerte. Ejecutarás y modificarás programas que trabajan con palabras, tortugas (virtuales), e imágenes, además de con números. La únicas operaciones matemáticas que vas a necesitar son suma, resta, multiplicación, y división.</p>
+<p id="index-0">Los ordenadores se utilizaron inicialmente para calcular. Puede que estés acostumbrado a usar la calculadora, pero suele ser más sencillo calcular si <em>das un nombre</em> a los números con los que estás trabajando. Cuando le das un nombre a un número, o al resultado de una operación de cálculo, estás creando una <strong>variable</strong>. Una <strong>variable</strong> es un nombre que se da a la memoria del ordenador que puede almacenar un valor, y que puede cambiar. Un ejemplo de <strong>variable</strong> es el marcador de los puntos en un juego. El marcador comienza valiendo cero, y se incrementa según vamos jugando.</p>
 <div class="align-center figure" id="id1">
 <a class="reference internal image-reference" href="../_images/pongScore1.png"><img alt="A game in Scratch with a score" src="../_images/pongScore1.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-text">Figure 2: A pong game in <a class="reference external" href="http://scratch.mit.edu">Scratch</a> with a score shown in the upper left.</span></p>
+<p class="caption"><span class="caption-text">Imagen 2: Juego de pong en <a class="reference external" href="http://scratch.mit.edu">Scratch</a> con un marcador en la parte superior izquierda.</span></p>
 </div>
-<p>One thing that you might want to calculate is a <strong>Body Mass Index</strong>.    <a class="reference external" href="http://www.nhlbi.nih.gov/guidelines/obesity/BMI/bmicalc.htm">Body Mass Index (BMI)</a> is a measure of body fat that is useful in screening for health issues.  Generally speaking:</p>
+<p>Un valor que puedes calcular es el <strong>Indice de Masa Corporal</strong>.    El <a class="reference external" href="http://es.calcuworld.com/deporte-y-ejercicio/calculadora-de-imc/">Indice de Masa Corporal (IMC)</a> mide la cantidad de grasa que hay en el cuerpo, y es útil para determinar problemas de salud. En términos generales:</p>
 <ul class="simple">
-<li>A BMI of 18.5 or less is considered <em>underweight</em>.</li>
-<li>A BMI between 18.5 to 24.9 is considered <em>healthy</em>.</li>
-<li>A BMI between 25-29.9 is considered <em>overweight</em>.</li>
-<li>A BMI of 30 or over is considered <em>obese</em>.</li>
+<li>Un IMC igual o inferior a 18.5 se considera <em>bajo peso</em></li>
+<li>Un IMC entre 18.5 y 24.9 se considera <em>saludable</em></li>
+<li>Un IMC entre 25-29.9 se considera <em>sobrepeso</em></li>
+<li>Un IMC igual o superior a 30 indica <em>obesidad</em></li>
 </ul>
-<p>To calculate a BMI, you need the height in inches and the weight in pounds.  You square the height (multiply the height in inches by itself), then divide the weight in pounds by the squared-height.  BMI is defined in terms of meters and kilograms, so to convert from pounds and inches multiply by 703.</p>
-<p>In the box below is a computer program that calculates the BMI for someone 60 inches tall (5 feet) and 110 pounds.</p>
-<p>Press the <a class="reference internal" href="../_images/run-button2.png"><img alt="run button" class="align-top" src="../_images/run-button2.png" style="height: 20px;" /></a> button below to make the computer execute these steps. The output from this program will be displayed to the right of the program.</p>
-<p>Pres the <a class="reference internal" href="../_images/start-audio-tour4.png"><img alt="audio tour button" class="align-top" src="../_images/start-audio-tour4.png" style="height: 20px;" /></a> button below to bring up an &#8220;Audio Tour&#8221; that explains this program, line-by-line.</p>
-<p>You can only use the <em>Save</em> and <em>Load</em> buttons if you are logged in. The <em>Save</em> button will save the current program and the <em>Load</em> button will load a saved program.</p>
+<p>Para poder calcular el IMC necesitas saber la altura en metros y el peso en kilos. Debes elevar la altura al cuadrado (multiplicándola por sí misma), y a continuación dividir el peso por esa altura al cuadrado.</p>
+<p>En el cuadro de abajo puedes ver un programa que calcula el IMC de una persona que mide 1,60 metros y pesa 50 kilos.</p>
+<p>Pulsa el botón <a class="reference internal" href="../_images/run-button2.png"><img alt="run button" class="align-top" src="../_images/run-button2.png" style="height: 20px;" /></a> para que el ordenador ejecute estos pasos. A la derecha verás el resultado de ejecutar el programa.</p>
+<p>Pulsa el botón <a class="reference internal" href="../_images/start-audio-tour4.png"><img alt="audio tour button" class="align-top" src="../_images/start-audio-tour4.png" style="height: 20px;" /></a> para abrir una ventana donde se explica qué hace el programa, línea por línea.</p>
+<p>Sólo podrás utilizar los botones <em>Guardar</em> y <em>Cargar</em> si has iniciado sesión. El botón <em>Guardar</em> permite conservar el programa actual, y el botón <em>Cargar</em> sirve para recuperar un programa que se ha guardado previamente.</p>
 
 <div id="cont"></div>
 <div id="BMI" lang="python" time="" class="ac_section alert alert-warning" >
@@ -348,19 +349,18 @@
 <button class="ac_opt btn btn-default" style="display: inline-block" id="BMI_loadb" onclick="requestCode('BMI');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('BMI','height = 60    # in inches *open*60 inches is 5 feet*close**nline*weight = 110   # in pounds*nline*heightSquared = height * height*nline*BMI = weight / heightSquared*nline*BMImetric = BMI * 703*nline*print*open**doubleq*BMI:*doubleq**close**nline*print*open*BMImetric*close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: BMI-line1; 2: BMI-line2; 3: BMI-line3; 4: BMI-line4; 5: BMI-line5; 6: BMI-line6; 7: BMI-line7;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('BMI','altura = 1.60    # en metros. La coma decimal debe expresarse como punto*nline*peso = 50   # en kilos*nline*alturaalcuadrado = altura * altura*nline*IMC = peso / alturaalcuadrado*nline*print*open**doubleq*IMC: *doubleq**close**nline*print*open*IMC*close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: BMI-line1; 2: BMI-line2; 3: BMI-line3; 4: BMI-line4; 5: BMI-line5; 6: BMI-line6; 7: BMI-line7;*atype*')"/>
 
 </div>
 <br/>
 <div id="BMI_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="BMI_code" class="active_code" prefixcode="undefined" lang="python">
-height = 60    # in inches (60 inches is 5 feet)
-weight = 110   # in pounds
-heightSquared = height * height
-BMI = weight / heightSquared
-BMImetric = BMI * 703
-print("BMI:")
-print(BMImetric)
+altura = 1.60    # en metros. La coma decimal debe expresarse como punto
+peso = 50   # en kilos
+alturaalcuadrado = altura * altura
+IMC = peso / alturaalcuadrado
+print("IMC: ")
+print(IMC)
 </textarea>
 </div>
 
@@ -426,27 +426,31 @@ else{
 
 </div>
 
-<p>Change the weight (in inches) and height (in pounds) in the program above, and press the <em>Run</em> button to calculate a new BMI.</p>
+<p>Modifica en el programa los valores de altura y peso y haz clic en el botón <em>Run</em> para calcular un nuevo IMC. No olvides que la coma decimal debe expresarse como un punto.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Al dar un nombre a los valores (usando variables) de altura y peso es más fácil saber qué valor se cambia en cada momento.</p>
+</div>
 
             <div id="1_2_1_BMI_Q1" class="alert alert-warning">
-            csp-1-2-1: Imagine that you are 5 foot 7 inches and weighed 140 pounds.  What is your BMI?<form name="1_2_1_BMI_Q1_form" method="get" action="" onsubmit="return false;">
+            csp-1-2-1: Imagina que mides 1,80 metros y pesas 85 kilos. ¿Cuál sería tu IMC?<form name="1_2_1_BMI_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="1_2_1_BMI_Q1_opt_a" />
-            <label for= "1_2_1_BMI_Q1_opt_a">  a) 21.9</label><br />
+            <label for= "1_2_1_BMI_Q1_opt_a">  a) 26,2</label><br />
             
             <input type="radio" name="group1" value="b" id="1_2_1_BMI_Q1_opt_b" />
-            <label for= "1_2_1_BMI_Q1_opt_b">  b) 21.924704834</label><br />
+            <label for= "1_2_1_BMI_Q1_opt_b">  b) 26,2345679012</label><br />
             
             <input type="radio" name="group1" value="c" id="1_2_1_BMI_Q1_opt_c" />
-            <label for= "1_2_1_BMI_Q1_opt_c">  c) 21</label><br />
+            <label for= "1_2_1_BMI_Q1_opt_c">  c) 26</label><br />
             
             <input type="radio" name="group1" value="d" id="1_2_1_BMI_Q1_opt_d" />
-            <label for= "1_2_1_BMI_Q1_opt_d">  d) 22</label><br />
+            <label for= "1_2_1_BMI_Q1_opt_d">  d) 27</label><br />
             
 
             <script>
             $(document).ready(function(){checkRadio('1_2_1_BMI_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('1_2_1_BMI_Q1','b',['Close, but the computer will give you more digits than that.', 'Yes!', 'No, the result will be a number with a decimal point and numbers after the decimal point.', 'No, the computer does not round the result.'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('1_2_1_BMI_Q1','b',['Has estado cerca, pero el ordenador te va a dar más decimales.', '¡Bien hecho!', 'No, el resultado va a contener una coma, y cifras decimales.', 'No, el ordenador no redondea el resultado.'])">Check Me</button>
             <button class='btn btn-default' id="1_2_1_BMI_Q1_bcomp" disabled name="compare" onclick="compareAnswers('1_2_1_BMI_Q1');">Compare Me</button>
             </form><br />
             <div id="1_2_1_BMI_Q1_feedback">
@@ -457,19 +461,19 @@ else{
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - This Book is for Teachers' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Un libro para profesores' data-toggle="tooltip">
     <a href="teacherBook.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="teacherBook.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Compute with Words' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - Computación con palabras' data-toggle="tooltip" >
     <a href="computeWords.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="computeWords.html" >Next Section - Compute with Words</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="computeWords.html" >Next Section - Computación con palabras</a>
 
 <script type="text/javascript">
 

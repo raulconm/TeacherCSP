@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../_static/shortanswer.css" type="text/css" />
     <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
     <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
@@ -101,7 +102,7 @@
   eBookConfig.loginRequired = true;
   eBookConfig.build_info = "unknown";
   eBookConfig.isLoggedIn = false;
-  eBookConfig.useRunestoneServices = false;
+  eBookConfig.useRunestoneServices = true;
   eBookConfig.python3 = false;
 </script>
 
@@ -327,7 +328,7 @@
 <p class="cl_caption"><span class="cl_caption_text"> (Assign_Basic)</span> </p>
 </div>
 <script type="text/javascript">
-var Assign_Basic_trace = {"code": "a = 1\nb = 12.3\nc = \"Fred\"\nd = b", "trace": [{"ordered_globals": [], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {}, "heap": {}, "line": 1, "event": "step_line"}, {"ordered_globals": ["a"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"a": 1}, "heap": {}, "line": 2, "event": "step_line"}, {"ordered_globals": ["a", "b"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"a": 1, "b": 12.3}, "heap": {}, "line": 3, "event": "step_line"}, {"ordered_globals": ["a", "b", "c"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"a": 1, "c": "Fred", "b": 12.3}, "heap": {}, "line": 4, "event": "step_line"}, {"ordered_globals": ["a", "b", "c", "d"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"a": 1, "c": "Fred", "b": 12.3, "d": 12.3}, "heap": {}, "line": 4, "event": "return"}]};
+var Assign_Basic_trace = {"code": "a = 1\nb = 12.3\nc = \"Fred\"\nd = b", "trace": [{"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {}, "heap": {}, "ordered_globals": [], "stdout": "", "line": 1}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"a": 1}, "heap": {}, "ordered_globals": ["a"], "stdout": "", "line": 2}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"b": 12.3, "a": 1}, "heap": {}, "ordered_globals": ["a", "b"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"c": "Fred", "b": 12.3, "a": 1}, "heap": {}, "ordered_globals": ["a", "b", "c"], "stdout": "", "line": 4}, {"event": "return", "stack_to_render": [], "func_name": "<module>", "globals": {"d": 12.3, "c": "Fred", "b": 12.3, "a": 1}, "heap": {}, "ordered_globals": ["a", "b", "c", "d"], "stdout": "", "line": 4}]};
 var Assign_Basic_vis;
 
 $(document).ready(function() {
@@ -337,7 +338,7 @@ $(document).ready(function() {
                                     verticalStack: false,
                                     heightChangeCallback: redrawAllVisualizerArrows,
                                     codeDivWidth: 500,
-                                    lang : 'py2'
+                                    lang : 'py3'
                                     });
         attachLoggers(Assign_Basic_vis,'Assign_Basic');
         styleButtons('Assign_Basic');
@@ -396,7 +397,7 @@ $(window).resize(function() {
 <p class="cl_caption"><span class="cl_caption_text"> (Assign_Multiple)</span> </p>
 </div>
 <script type="text/javascript">
-var Assign_Multiple_trace = {"code": "var1 = 45\nvar1 = 17.3\nvar2 = var1", "trace": [{"ordered_globals": [], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {}, "heap": {}, "line": 1, "event": "step_line"}, {"ordered_globals": ["var1"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"var1": 45}, "heap": {}, "line": 2, "event": "step_line"}, {"ordered_globals": ["var1"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"var1": 17.3}, "heap": {}, "line": 3, "event": "step_line"}, {"ordered_globals": ["var1", "var2"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"var1": 17.3, "var2": 17.3}, "heap": {}, "line": 3, "event": "return"}]};
+var Assign_Multiple_trace = {"code": "var1 = 45\nvar1 = 17.3\nvar2 = var1", "trace": [{"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {}, "heap": {}, "ordered_globals": [], "stdout": "", "line": 1}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"var1": 45}, "heap": {}, "ordered_globals": ["var1"], "stdout": "", "line": 2}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"var1": 17.3}, "heap": {}, "ordered_globals": ["var1"], "stdout": "", "line": 3}, {"event": "return", "stack_to_render": [], "func_name": "<module>", "globals": {"var1": 17.3, "var2": 17.3}, "heap": {}, "ordered_globals": ["var1", "var2"], "stdout": "", "line": 3}]};
 var Assign_Multiple_vis;
 
 $(document).ready(function() {
@@ -406,7 +407,7 @@ $(document).ready(function() {
                                     verticalStack: false,
                                     heightChangeCallback: redrawAllVisualizerArrows,
                                     codeDivWidth: 500,
-                                    lang : 'py2'
+                                    lang : 'py3'
                                     });
         attachLoggers(Assign_Multiple_vis,'Assign_Multiple');
         styleButtons('Assign_Multiple');

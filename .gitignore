@@ -8,8 +8,7 @@
 *.egg
 *.egg-info
 dist/
-build/
-build\
+build/Teacher-CSP/*.html
 eggs/
 parts/
 var/

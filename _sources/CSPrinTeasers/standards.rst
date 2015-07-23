@@ -32,38 +32,39 @@
     :alt: teacher note
 
 
-Standards - Big Ideas
-=====================
+Principios - Conceptos Fundamentales
+====================================
 
-This book will address the following Big Ideas from the Computer Science Principles Course:
+En este libro se tratan los siguientes Conceptos Fundamentales extraídos del curso Fundamentos de Ciencias de la Computación (Computer Science Principles Course):
 
- - *Big Idea 1: Creativity*:
- - LO 1.2.1: ... Create a computational artifact for creative expression.
- - LO 1.2.2: ... Create a computational artifact using computing tools and techniques to solve a problem.
- - LO 1.2.3: ... Create a new computational artifact by combining or modifying existing artifacts. 
- - LO 1.3.1: ... Use computing tools and techniques for creative expression. 
+ - *Primer Concepto Fundamental: Creatividad*:
+ - LO 1.2.1: ... Crear un utensilio computacional que favorezca la expresión creativa.
+ - LO 1.2.2: ... Crear un utensilio computacional para resolver un problema, utilizando herramientas y técnicas computacionales.
+ - LO 1.2.3: ... Crear un utensilio computacional a partir de la combinación o modificación de los que ya existen.
+ - LO 1.3.1: ... Utilizar las herramientas y técnicas computacionales para expresarse de forma creativa. 
 
- - *Big Idea 2: Abstraction*:
- - LO 2.2.1: ... Develop an abstraction when writing a program or creating other computational artifacts.
- - LO 2.2.2: ... Use multiple levels of abstraction to write programs.
+ - *Segundo Concepto Fundamental: Abstracción*:
+ - LO 2.2.1: ... Desarrollar la capacidad de abstracción al escribir un programa o al crear otros utensilios computacionales.
+ - LO 2.2.2: ... Utilizar distintos niveles de abstracción al escribir programas.
  
- - *Big Idea 3: Data and Information*:
- - LO 3.1.1: ... Use computers to process information, find patterns, and test hypotheses about digitally processed information to gain insight and knowledge.
- - LO 3.2.1: ... Extract information from data to discover and explain connections, patterns, or trends. 
- - LO 3.2.2: ... Use large data sets to explore and discover information and knowledge. 
+ - *Tercer Comcepto Fundamental: Datos e información*:
+ - LO 3.1.1: ... Utilizar los ordenadores para procesar informacción, encontrar patrones, y verificar las hipótesis sobre la información que se ha procesado, para adquirir conocimiento y experiencia.
+ - LO 3.2.1: ... Extraer la información a partir de los datos, para descubrir y explicar las conexiones, patrones o tendencias. 
+ - LO 3.2.2: ... Utilizar conjuntos extensos de datos para explorar y descubrir información y conocimiento.
  
- - *Big Idea 4: Algorithms*:
- - LO 4.1.1: ... Develop an algorithm for implementation in a program. 
- - LO 4.1.2: ... Express an algorithm in a language.
- - LO 4.2.3: ... Explain the existence of undecidable problems in computer science.
- - LO 4.2.4: ... Evaluate algorithms analytically and empirically for efficiency, correctness, and clarity.
+ - *Cuarto Concepto Fundamental: Algoritmos*:
+ - LO 4.1.1: ... Desarrollar un algoritmo para implementarlo en un programa.
+ - LO 4.1.2: ... Expresar un algoritmo por medio de un lenguaje.
+ - LO 4.2.3: ... Explicar la existencia de problemas "indecidibles" en las ciencias de la computación.
+ - LO 4.2.4: ... Evaluar analítica y empíricamente los algoritmos para que sean eficientes, precisos y claros.
  
- - *Big Idea 5: Programming*:
- - LO 5.1.1: ... Develop a program for creative expression, to satisfy personal curiosity, or to create new knowledge. 
- - LO 5.1.2: ... Develop a correct program to solve problems. 
- - LO 5.2.1: ... Explain how programs implement algorithms.
- - LO 5.3.1: ... Use abstraction to manage complexity in programs.
- - LO 5.4.1: ... Evaluate the correctness of a program.
- - LO 5.5.1: ... Employ appropriate mathematical and logical concepts in programming.
+ - *Quinto Concepto Fundamental: Programación*:
+ - LO 5.1.1: ... Desarrollar un programa para expresar la creatividad, satisfacer la curiosidad personal, o para generar nuevos conocimientos.
+ - LO 5.1.2: ... Desarrollar un programa que resuelve adecuadamente algún problema.
+ - LO 5.2.1: ... Explicar cómo los programas implementan algoritmos.
+ - LO 5.3.1: ... Utilizar la abstracción para manejar problemas complejos en los programas.
+ - LO 5.4.1: ... Evaluar la precisión o extactitud de un programa.
+ - LO 5.5.1: ... Utilizar en programación conceptos matemáticos y lógicos de forma adecuada. 
+
  
-This chapter should have given you a sense for what we are going to be doing with a computer in this book.  Let's get started in the next chapter by talking about what the computer can do and how you can control it.  
+Este capítulo pretende darte una idea de lo que vamos a hacer con un ordenador mientras seguimos el libro. En el siguiente capítulo veremos qué cosas puede hacer un ordenador, y cómo podemos nosotros controlarlo. 

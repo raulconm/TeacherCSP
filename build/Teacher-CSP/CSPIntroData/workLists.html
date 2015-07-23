@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../_static/shortanswer.css" type="text/css" />
     <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
     <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
@@ -101,7 +102,7 @@
   eBookConfig.loginRequired = true;
   eBookConfig.build_info = "unknown";
   eBookConfig.isLoggedIn = false;
-  eBookConfig.useRunestoneServices = false;
+  eBookConfig.useRunestoneServices = true;
   eBookConfig.python3 = false;
 </script>
 
@@ -333,7 +334,7 @@ The function <code class="docutils literal"><span class="pre">len</span></code> 
 <p class="cl_caption"><span class="cl_caption_text"> (Simple_Lists)</span> </p>
 </div>
 <script type="text/javascript">
-var Simple_Lists_trace = {"code": "myFirstList = [12,\"ape\",13]\nprint len(myFirstList)\nprint myFirstList * 3\nmySecondList = myFirstList + [321.4]\nprint mySecondList", "trace": [{"ordered_globals": [], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {}, "heap": {}, "line": 1, "event": "step_line"}, {"ordered_globals": ["myFirstList"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"myFirstList": ["REF", 1]}, "heap": {"1": ["LIST", 12, "ape", 13]}, "line": 2, "event": "step_line"}, {"ordered_globals": ["myFirstList"], "stdout": "3\n", "func_name": "<module>", "stack_to_render": [], "globals": {"myFirstList": ["REF", 1]}, "heap": {"1": ["LIST", 12, "ape", 13]}, "line": 3, "event": "step_line"}, {"ordered_globals": ["myFirstList"], "stdout": "3\n[12, 'ape', 13, 12, 'ape', 13, 12, 'ape', 13]\n", "func_name": "<module>", "stack_to_render": [], "globals": {"myFirstList": ["REF", 1]}, "heap": {"1": ["LIST", 12, "ape", 13]}, "line": 4, "event": "step_line"}, {"ordered_globals": ["myFirstList", "mySecondList"], "stdout": "3\n[12, 'ape', 13, 12, 'ape', 13, 12, 'ape', 13]\n", "func_name": "<module>", "stack_to_render": [], "globals": {"mySecondList": ["REF", 2], "myFirstList": ["REF", 1]}, "heap": {"1": ["LIST", 12, "ape", 13], "2": ["LIST", 12, "ape", 13, 321.4]}, "line": 5, "event": "step_line"}, {"ordered_globals": ["myFirstList", "mySecondList"], "stdout": "3\n[12, 'ape', 13, 12, 'ape', 13, 12, 'ape', 13]\n[12, 'ape', 13, 321.4]\n", "func_name": "<module>", "stack_to_render": [], "globals": {"mySecondList": ["REF", 2], "myFirstList": ["REF", 1]}, "heap": {"1": ["LIST", 12, "ape", 13], "2": ["LIST", 12, "ape", 13, 321.4]}, "line": 5, "event": "return"}]};
+var Simple_Lists_trace = {"code": "myFirstList = [12,\"ape\",13]\nprint len(myFirstList)\nprint myFirstList * 3\nmySecondList = myFirstList + [321.4]\nprint mySecondList", "trace": [{"offset": 9, "line": 2, "exception_msg": "SyntaxError: invalid syntax (<string>, line 2)", "event": "uncaught_exception"}]};
 var Simple_Lists_vis;
 
 $(document).ready(function() {
@@ -343,7 +344,7 @@ $(document).ready(function() {
                                     verticalStack: false,
                                     heightChangeCallback: redrawAllVisualizerArrows,
                                     codeDivWidth: 500,
-                                    lang : 'py2'
+                                    lang : 'py3'
                                     });
         attachLoggers(Simple_Lists_vis,'Simple_Lists');
         styleButtons('Simple_Lists');
@@ -405,7 +406,7 @@ $(window).resize(function() {
 <p class="cl_caption"><span class="cl_caption_text"> (Items_As_Variables)</span> </p>
 </div>
 <script type="text/javascript">
-var Items_As_Variables_trace = {"code": "items = [2,4,6,8]\nitems[0] = \"First item\"\nitems[1] = items[0]\nitems[2] = items[2] + 1\nprint(items)", "trace": [{"ordered_globals": [], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {}, "heap": {}, "line": 1, "event": "step_line"}, {"ordered_globals": ["items"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"items": ["REF", 1]}, "heap": {"1": ["LIST", 2, 4, 6, 8]}, "line": 2, "event": "step_line"}, {"ordered_globals": ["items"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"items": ["REF", 1]}, "heap": {"1": ["LIST", "First item", 4, 6, 8]}, "line": 3, "event": "step_line"}, {"ordered_globals": ["items"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"items": ["REF", 1]}, "heap": {"1": ["LIST", "First item", "First item", 6, 8]}, "line": 4, "event": "step_line"}, {"ordered_globals": ["items"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"items": ["REF", 1]}, "heap": {"1": ["LIST", "First item", "First item", 7, 8]}, "line": 5, "event": "step_line"}, {"ordered_globals": ["items"], "stdout": "['First item', 'First item', 7, 8]\n", "func_name": "<module>", "stack_to_render": [], "globals": {"items": ["REF", 1]}, "heap": {"1": ["LIST", "First item", "First item", 7, 8]}, "line": 5, "event": "return"}]};
+var Items_As_Variables_trace = {"code": "items = [2,4,6,8]\nitems[0] = \"First item\"\nitems[1] = items[0]\nitems[2] = items[2] + 1\nprint(items)", "trace": [{"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {}, "heap": {}, "ordered_globals": [], "stdout": "", "line": 1}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"items": ["REF", 1]}, "heap": {"1": ["LIST", 2, 4, 6, 8]}, "ordered_globals": ["items"], "stdout": "", "line": 2}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"items": ["REF", 1]}, "heap": {"1": ["LIST", "First item", 4, 6, 8]}, "ordered_globals": ["items"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"items": ["REF", 1]}, "heap": {"1": ["LIST", "First item", "First item", 6, 8]}, "ordered_globals": ["items"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"items": ["REF", 1]}, "heap": {"1": ["LIST", "First item", "First item", 7, 8]}, "ordered_globals": ["items"], "stdout": "", "line": 5}, {"event": "return", "stack_to_render": [], "func_name": "<module>", "globals": {"items": ["REF", 1]}, "heap": {"1": ["LIST", "First item", "First item", 7, 8]}, "ordered_globals": ["items"], "stdout": "['First item', 'First item', 7, 8]\n", "line": 5}]};
 var Items_As_Variables_vis;
 
 $(document).ready(function() {
@@ -415,7 +416,7 @@ $(document).ready(function() {
                                     verticalStack: false,
                                     heightChangeCallback: redrawAllVisualizerArrows,
                                     codeDivWidth: 500,
-                                    lang : 'py2'
+                                    lang : 'py3'
                                     });
         attachLoggers(Items_As_Variables_vis,'Items_As_Variables');
         styleButtons('Items_As_Variables');

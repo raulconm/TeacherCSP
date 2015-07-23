@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../_static/shortanswer.css" type="text/css" />
     <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
     <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
@@ -101,7 +102,7 @@
   eBookConfig.loginRequired = true;
   eBookConfig.build_info = "unknown";
   eBookConfig.isLoggedIn = false;
-  eBookConfig.useRunestoneServices = false;
+  eBookConfig.useRunestoneServices = true;
   eBookConfig.python3 = false;
 </script>
 
@@ -328,7 +329,7 @@ Strings start with single quotes or double quotes.  You can actually do some sim
 <p class="cl_caption"><span class="cl_caption_text"> (String_Manip)</span> </p>
 </div>
 <script type="text/javascript">
-var String_Manip_trace = {"code": "name = \"Mark\"\nstart = 'My name is '\ncombined = start + name\nprint(len(combined))\nprint(combined)\nprint(name * 3)", "trace": [{"ordered_globals": [], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {}, "heap": {}, "line": 1, "event": "step_line"}, {"ordered_globals": ["name"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"name": "Mark"}, "heap": {}, "line": 2, "event": "step_line"}, {"ordered_globals": ["name", "start"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"start": "My name is ", "name": "Mark"}, "heap": {}, "line": 3, "event": "step_line"}, {"ordered_globals": ["name", "start", "combined"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"start": "My name is ", "name": "Mark", "combined": "My name is Mark"}, "heap": {}, "line": 4, "event": "step_line"}, {"ordered_globals": ["name", "start", "combined"], "stdout": "15\n", "func_name": "<module>", "stack_to_render": [], "globals": {"start": "My name is ", "name": "Mark", "combined": "My name is Mark"}, "heap": {}, "line": 5, "event": "step_line"}, {"ordered_globals": ["name", "start", "combined"], "stdout": "15\nMy name is Mark\n", "func_name": "<module>", "stack_to_render": [], "globals": {"start": "My name is ", "name": "Mark", "combined": "My name is Mark"}, "heap": {}, "line": 6, "event": "step_line"}, {"ordered_globals": ["name", "start", "combined"], "stdout": "15\nMy name is Mark\nMarkMarkMark\n", "func_name": "<module>", "stack_to_render": [], "globals": {"start": "My name is ", "name": "Mark", "combined": "My name is Mark"}, "heap": {}, "line": 6, "event": "return"}]};
+var String_Manip_trace = {"code": "name = \"Mark\"\nstart = 'My name is '\ncombined = start + name\nprint(len(combined))\nprint(combined)\nprint(name * 3)", "trace": [{"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {}, "heap": {}, "ordered_globals": [], "stdout": "", "line": 1}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"name": "Mark"}, "heap": {}, "ordered_globals": ["name"], "stdout": "", "line": 2}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"start": "My name is ", "name": "Mark"}, "heap": {}, "ordered_globals": ["name", "start"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"combined": "My name is Mark", "name": "Mark", "start": "My name is "}, "heap": {}, "ordered_globals": ["name", "start", "combined"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"combined": "My name is Mark", "name": "Mark", "start": "My name is "}, "heap": {}, "ordered_globals": ["name", "start", "combined"], "stdout": "15\n", "line": 5}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"combined": "My name is Mark", "name": "Mark", "start": "My name is "}, "heap": {}, "ordered_globals": ["name", "start", "combined"], "stdout": "15\nMy name is Mark\n", "line": 6}, {"event": "return", "stack_to_render": [], "func_name": "<module>", "globals": {"combined": "My name is Mark", "name": "Mark", "start": "My name is "}, "heap": {}, "ordered_globals": ["name", "start", "combined"], "stdout": "15\nMy name is Mark\nMarkMarkMark\n", "line": 6}]};
 var String_Manip_vis;
 
 $(document).ready(function() {
@@ -338,7 +339,7 @@ $(document).ready(function() {
                                     verticalStack: false,
                                     heightChangeCallback: redrawAllVisualizerArrows,
                                     codeDivWidth: 500,
-                                    lang : 'py2'
+                                    lang : 'py3'
                                     });
         attachLoggers(String_Manip_vis,'String_Manip');
         styleButtons('String_Manip');

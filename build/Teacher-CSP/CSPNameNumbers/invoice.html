@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../_static/shortanswer.css" type="text/css" />
     <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
     <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
@@ -101,7 +102,7 @@
   eBookConfig.loginRequired = true;
   eBookConfig.build_info = "unknown";
   eBookConfig.isLoggedIn = false;
-  eBookConfig.useRunestoneServices = false;
+  eBookConfig.useRunestoneServices = true;
   eBookConfig.python3 = false;
 </script>
 
@@ -448,7 +449,7 @@ else{
 <p class="cl_caption"><span class="cl_caption_text"> (Invoice2)</span> </p>
 </div>
 <script type="text/javascript">
-var Invoice2_trace = {"code": "quantity = 2\nunitPrice = 7.56\ntotal1 = quantity * unitPrice\nquantity = 4\nunitPrice = 4.71\ntotal2 = quantity * unitPrice\ninvoiceTotal = total1 + total2\nprint(invoiceTotal)", "trace": [{"ordered_globals": [], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {}, "heap": {}, "line": 1, "event": "step_line"}, {"ordered_globals": ["quantity"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"quantity": 2}, "heap": {}, "line": 2, "event": "step_line"}, {"ordered_globals": ["quantity", "unitPrice"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"unitPrice": 7.56, "quantity": 2}, "heap": {}, "line": 3, "event": "step_line"}, {"ordered_globals": ["quantity", "unitPrice", "total1"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"unitPrice": 7.56, "total1": 15.12, "quantity": 2}, "heap": {}, "line": 4, "event": "step_line"}, {"ordered_globals": ["quantity", "unitPrice", "total1"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"unitPrice": 7.56, "total1": 15.12, "quantity": 4}, "heap": {}, "line": 5, "event": "step_line"}, {"ordered_globals": ["quantity", "unitPrice", "total1"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"unitPrice": 4.71, "total1": 15.12, "quantity": 4}, "heap": {}, "line": 6, "event": "step_line"}, {"ordered_globals": ["quantity", "unitPrice", "total1", "total2"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"unitPrice": 4.71, "total1": 15.12, "total2": 18.84, "quantity": 4}, "heap": {}, "line": 7, "event": "step_line"}, {"ordered_globals": ["quantity", "unitPrice", "total1", "total2", "invoiceTotal"], "stdout": "", "func_name": "<module>", "stack_to_render": [], "globals": {"invoiceTotal": 33.96, "unitPrice": 4.71, "total1": 15.12, "total2": 18.84, "quantity": 4}, "heap": {}, "line": 8, "event": "step_line"}, {"ordered_globals": ["quantity", "unitPrice", "total1", "total2", "invoiceTotal"], "stdout": "33.96\n", "func_name": "<module>", "stack_to_render": [], "globals": {"quantity": 4, "unitPrice": 4.71, "total1": 15.12, "total2": 18.84, "invoiceTotal": 33.96}, "heap": {}, "line": 8, "event": "return"}]};
+var Invoice2_trace = {"code": "quantity = 2\nunitPrice = 7.56\ntotal1 = quantity * unitPrice\nquantity = 4\nunitPrice = 4.71\ntotal2 = quantity * unitPrice\ninvoiceTotal = total1 + total2\nprint(invoiceTotal)", "trace": [{"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {}, "heap": {}, "ordered_globals": [], "stdout": "", "line": 1}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"quantity": 2}, "heap": {}, "ordered_globals": ["quantity"], "stdout": "", "line": 2}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"unitPrice": 7.56, "quantity": 2}, "heap": {}, "ordered_globals": ["quantity", "unitPrice"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"total1": 15.12, "unitPrice": 7.56, "quantity": 2}, "heap": {}, "ordered_globals": ["quantity", "unitPrice", "total1"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"total1": 15.12, "unitPrice": 7.56, "quantity": 4}, "heap": {}, "ordered_globals": ["quantity", "unitPrice", "total1"], "stdout": "", "line": 5}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"total1": 15.12, "unitPrice": 4.71, "quantity": 4}, "heap": {}, "ordered_globals": ["quantity", "unitPrice", "total1"], "stdout": "", "line": 6}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"total1": 15.12, "unitPrice": 4.71, "total2": 18.84, "quantity": 4}, "heap": {}, "ordered_globals": ["quantity", "unitPrice", "total1", "total2"], "stdout": "", "line": 7}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"total1": 15.12, "unitPrice": 4.71, "total2": 18.84, "invoiceTotal": 33.96, "quantity": 4}, "heap": {}, "ordered_globals": ["quantity", "unitPrice", "total1", "total2", "invoiceTotal"], "stdout": "", "line": 8}, {"event": "return", "stack_to_render": [], "func_name": "<module>", "globals": {"total1": 15.12, "unitPrice": 4.71, "total2": 18.84, "invoiceTotal": 33.96, "quantity": 4}, "heap": {}, "ordered_globals": ["quantity", "unitPrice", "total1", "total2", "invoiceTotal"], "stdout": "33.96\n", "line": 8}]};
 var Invoice2_vis;
 
 $(document).ready(function() {
@@ -458,7 +459,7 @@ $(document).ready(function() {
                                     verticalStack: false,
                                     heightChangeCallback: redrawAllVisualizerArrows,
                                     codeDivWidth: 500,
-                                    lang : 'py2'
+                                    lang : 'py3'
                                     });
         attachLoggers(Invoice2_vis,'Invoice2');
         styleButtons('Invoice2');

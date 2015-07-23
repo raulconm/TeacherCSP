@@ -33,11 +33,11 @@
 
 
 
-Compute with Turtles
-=====================
+Computación con tortugas
+========================
 
-A turtle here is not an animal.  
-We are working with a virtual turtle, an idea that dates back to the 1960's.  The original robot turtle had a physical pen in it.  The student-programmers would steer the robot around using programs, and create drawings with the pen.
+No, aquí la tortuga no es un animal. 
+Vams a trabajar con una tortuga virtual, una idea de los años sesenta. La tortuga robótica original llevaba un lapiz. Los estudiantes de programación la desplazaban utilizando programas que ellos escribían, y creaban así dibujos con el lapiz. 
 
 .. figure:: Figures/mindstorms_turtle.jpg 
     :width: 200px
@@ -45,7 +45,7 @@ We are working with a virtual turtle, an idea that dates back to the 1960's.  Th
     :alt: Children playing with a Logo turtle robot that can draw with a pen
     :figclass: align-center
     
-    Figure 3: Children playing with a Logo turtle robot that could draw with a pen
+    Imagen 3: Niños jugando con un robot tortuga de Logo, que podía hacer dibujos con el lapiz
     
 ..	index::
 	single: comment
@@ -56,71 +56,72 @@ We are working with a virtual turtle, an idea that dates back to the 1960's.  Th
 	pair: programming; comment
 	pair: program; comment
     
-Today, we can play with virtual turtles in a fully-graphical and non-robotic way. Below is a Python program that first reads in a **library** that contains the code to let us work with turtles (``from turtle import *``). Then it creates a **Screen**, a space on the page for the turtle to move in and draw on (``space = Screen()``).  Next it creates a turtle named ``alex`` (``alex = Turtle()``), then has ``alex`` move around on the screen (``alex.forward(150)``) and when it moves it will draw. The part of any line that starts with a  ``#`` character is called a **comment**.  Python and the computer ignores everything from the ``#`` character to the end of the line.   **Comments** explain what we're doing in the programs and are intended to be read by people, not computers.
-
-Try clicking the |runbutton| button below to see what the following program does.
+Hoy en día podemos jugar con tortugas virtuales sin tener que emplear robots, y en un entorno gráfico completo. El siguiente programa en Python comienza cargando una **librería** que contiene el código que nos permite trabajar con las tortugas (``from turtle import *``). A continuación crea una **Screen**, un espacio donde la tortuga se puede mover, y dibujar (``espacio = Screen()``). Después crea una tortuga llamada ``alex`` (``alex = Turtle()``), y finalmente mueve a ``alex`` por la pantalla (``alex.forward(150)``), de manera que según se va desplazando va también dibujando. Cualquier texto precedido por un caracter ``#`` se llama comentario. Python y el ordenador ignorarán cualquier cosa que aparezca en la línea a continuación de ``#``. Los **comentarios** explican lo que hacen los programas, y sirven para que los lean las personas, no los ordenadores.
+    
+Haz clic en |runbutton| para ver lo que hace el siguiente programa.
 
 .. activecode:: Turtle_1
     :tour_1: "Line-by-line Tour"; 1: first-turtle-line-1; 2: first-turtle-line-2; 3: first-turtle-line-3; 4: first-turtle-line-4; 5: first-turtle-line-5; 6: first-turtle-line-6;
     :nocodelens:
 	
-    from turtle import *	# use the turtle library
-    space = Screen()		# create a turtle space
-    alex = Turtle()   		# create a turtle named alex
-    alex.forward(150)		# move forward by 150 units
-    alex.left(90)   		# turn by 90 degrees
-    alex.forward(75)		# move forward by 75 units 
+    from turtle import *  # carga la librería turtle para utilizarla
+    espacio = Screen()	  # crea el espacio donde va a estar la tortuga
+    alex = Turtle()   	  # crea una tortuga y la llama alex
+    alex.forward(150)	  # se mueve hacia adelante ciento cincuenta unidades
+    alex.left(90)   	  # gira noventa grados
+    alex.forward(75)	  # se mueve hacia adelante setenta y cinco unidades 
    
    
 ..	index::
 	single: dot notation
 	
 .. Note::
-   Notice that we tell ``alex`` what to do in the code above using **dot notation**: ``alex.forward(150)``, 	``alex.left(90)``, and ``alex.forward(75)``.  That is how you communicate with a turtle.  You use the name of the turtle followed by a ``.`` and then what you want it to do.  
+    Fíjate que le decimos a ``alex`` qué hacer utilizando **notación por punto**: ``alex.forward(150)``, ``alex.left(90)``, y ``alex.forward(75)``. Así es como te comunicas con la tortuga. Utilizas su nombre seguido de un ``.``, y a continuación indicas lo que quieres que haga.
 
 .. mchoicemf:: 1_4_1_Turtle_Q1
-   :answer_a: North
-   :answer_b: West
-   :answer_c: South
-   :answer_d: East
+   :answer_a: Norte
+   :answer_b: Oeste
+   :answer_c: Sur
+   :answer_d: Este
    :correct: d
-   :feedback_a: Check which way alex moved first
-   :feedback_b: Check which way alex moved first
-   :feedback_c: Check which way alex moved first
-   :feedback_d: Turtles start off facing east by default
+   :feedback_a: Comprueba en qué dirección ha comenzado alex a moverse
+   :feedback_b: Comprueba en qué dirección ha comenzado alex a moverse
+   :feedback_c: Comprueba en qué dirección ha comenzado alex a moverse
+   :feedback_d: La tortuga apunta inicialmente al este
    
-   Which direction will alex move when the code below executes? 
-   
+   ¿En qué dirección se va a mover alex cuando se ejecute este código?   
+
    :: 
    
       from turtle import *       
-      space = Screen()    		  
+      espacio = Screen()    		  
       alex = Turtle()   		
       alex.forward(100)  
 
-Just by going forward, backward, left, and right, we can have a turtle draw a shape.  
+Simplemente moviéndola hacia adelante, hacia atrás, a izquierda y a derecha, podemos hacer que la tortuga dibuje una forma.
 
 .. fillintheblank:: 1_4_2_Shape
-   :correct: ^square$|^Square$|^SQUARE$
-   :feedback1: ('.*','Did you actually run the program?')
+   :correct: ^cuadrado$|^Cuadrado$|^CUADRADO$
+   :feedback1: ('.*','¿Has ejecutado el programa?')
    :blankid: shapeBlank
 
-   What shape will the program below draw when you click on the *Run* button? :textfield:`shapeBlank::medium`
+   ¿Qué forma dibujará el siguiente programa cuando hagas clic en el botón *Run*? :textfield:`shapeBlank::medium`
+   
 
 .. activecode:: Turtle_2
     :tour_1: "Line-by-line Tour"; 1: t1-line1; 2: t1-line2; 3: t1-line3; 4: t1-line4; 5: t1-line5; 6: t1-line6; 7: t1-for100-1; 8: t1-right90-1; 9: t1-for100-2; 10: t1-right90-2; 11: t1-for100-3; 12: t1-right90-3; 
     :nocodelens:
 	
-    from turtle import *	# use the turtle library
-    space = Screen()    	# create a turtle screen (space)
-    zari = Turtle()   		# create a turtle named zari
-    zari.setheading(90) 	# Point due north
-    zari.forward(100)   	# tell zari to move forward by 100 units
-    zari.right(90)       	# turn by 90 degrees
-    zari.forward(100)   	# tell zari to move forward by 100 units
-    zari.right(90)       	# turn by 90 degrees
-    zari.forward(100)   	# tell zari to move forward by 100 units
-    zari.right(90)      	# turn by 90 degrees
-    zari.forward(100)    	# tell zari to move forward by 100 units
-    zari.right(90)       	# turn by 90 degrees
+    from turtle import *	# utiliza la librería turtle
+    espacio = Screen()    	# crea un espacio para la tortuga (espacio)
+    juan = Turtle()   		# crea una tortuga llamada juan
+    juan.setheading(90) 	# la orienta hacia el norte
+    juan.forward(100)   	# le dice a juan que se mueva cien unidades hacia adelante
+    juan.right(90)       	# gira noventa gados
+    juan.forward(100)   	# le dice a juan que se mueva cien unidades hacia adelante
+    juan.right(90)       	# gira noventa gados
+    juan.forward(100)   	# le dice a juan que se mueva cien unidades hacia adelante
+    juan.right(90)      	# gira noventa gados
+    juan.forward(100)   	# le dice a juan que se mueva cien unidades hacia adelante
+    juan.right(90)      	# gira noventa gados
    

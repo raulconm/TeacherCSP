@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Compute with Images &mdash; Runestone Interactive Overview</title>
+    <title>Computación con imágenes &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../_static/shortanswer.css" type="text/css" />
     <link rel="stylesheet" href="../_static/tabbedstuff.css" type="text/css" />
     <link rel="stylesheet" href="../_static/video.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/""/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/jquery-ui-1.10.3.custom.min.css" type="text/css" />
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
@@ -87,7 +88,7 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
     <link rel="next" title="Standards - Big Ideas" href="standards.html" />
-    <link rel="prev" title="Compute with Turtles" href="computeTurtles.html" />
+    <link rel="prev" title="Computación con tortugas" href="computeTurtles.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -101,7 +102,7 @@
   eBookConfig.loginRequired = true;
   eBookConfig.build_info = "unknown";
   eBookConfig.isLoggedIn = false;
-  eBookConfig.useRunestoneServices = false;
+  eBookConfig.useRunestoneServices = true;
   eBookConfig.python3 = false;
 </script>
 
@@ -273,7 +274,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Compute with Images</a></li>
+<li><a class="reference internal" href="#">Computación con imágenes</a></li>
 </ul>
 </ul>
 </li>
@@ -281,7 +282,7 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Compute with Turtles" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Computación con tortugas" data-toggle="tooltip">
     <a href="computeTurtles.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
@@ -318,58 +319,58 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="compute-with-images">
-<h1>Compute with Images<a class="headerlink" href="#compute-with-images" title="Permalink to this headline">¶</a></h1>
-<span class="target" id="index-0"></span><span class="target" id="index-1"></span><p id="index-2">Pictures on a computer are broken up into little bits called <strong>pixels</strong>, for <em>picture</em> (pix) <em>elements</em> (els).  These are laid out on a grid, from left to right (the horizontal or <strong>x</strong> dimension) and top to bottom (the vertical or <strong>y</strong> dimension).</p>
+  <div class="section" id="computacion-con-imagenes">
+<h1>Computación con imágenes<a class="headerlink" href="#computacion-con-imagenes" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="index-0"></span><span class="target" id="index-1"></span><p id="index-2">Las imágenes representadas en un ordenador se descomponen en pequeños elementos llamados <strong>pixels</strong> o <strong>píxeles</strong>, del inglés <em>picture</em> (pix) <em>elements</em> (els). Estos pixels se distribuyen en una matriz, de izquierda a derecha (dimensión horizontal o eje <strong>x</strong>) y de arriba a abajo (dimensión vertical o eje <strong>y</strong>).</p>
 <div class="align-center figure" id="id1">
 <img alt="A grid with horizontal (x) and vertical (y) dimensions" src="../_images/grid1.png" />
-<p class="caption"><span class="caption-text">Figure 1: A grid with horizontal (x) and vertical (y) dimensions</span></p>
+<p class="caption"><span class="caption-text">Imagen 1: Una matriz con sus dimensiones horizontal (x) y vertical (y)</span></p>
 </div>
-<p>Pixels are quite small.  Even this small picture below has 180 columns and 240 rows of pixels:</p>
+<p>Los pixels son realmente pequeños. La siguiente imagen, aún siendo tan pequeña, está formada por ciento ochenta columnas y doscientas cuarenta filas de pixels (180x240):</p>
 <div class="align-center figure" id="id2">
 <img alt="picture of an arch from Oxford, England" src="../_images/arch.jpg" />
-<p class="caption"><span class="caption-text">Figure 2: Picture of an arch from Oxford, England</span></p>
+<p class="caption"><span class="caption-text">Imagen 2: Imagen de un arco en Oxford, Inglaterra</span></p>
 </div>
 
             <div id="1_5_1_Image_Q1" class="alert alert-warning">
-            csp-1-5-1: Which way does y increase on an image?<form name="1_5_1_Image_Q1_form" method="get" action="" onsubmit="return false;">
+            csp-1-5-1: ¿En qué dirección se incrementa el valor de y en una imagen?<form name="1_5_1_Image_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="1_5_1_Image_Q1_opt_a" />
-            <label for= "1_5_1_Image_Q1_opt_a">  a) From left to right</label><br />
+            <label for= "1_5_1_Image_Q1_opt_a">  a) De izquierda a derecha</label><br />
             
             <input type="radio" name="group1" value="b" id="1_5_1_Image_Q1_opt_b" />
-            <label for= "1_5_1_Image_Q1_opt_b">  b) From right to left</label><br />
+            <label for= "1_5_1_Image_Q1_opt_b">  b) De derecha a izquierda</label><br />
             
             <input type="radio" name="group1" value="c" id="1_5_1_Image_Q1_opt_c" />
-            <label for= "1_5_1_Image_Q1_opt_c">  c) From top to bottom</label><br />
+            <label for= "1_5_1_Image_Q1_opt_c">  c) De arriba a abajo</label><br />
             
             <input type="radio" name="group1" value="d" id="1_5_1_Image_Q1_opt_d" />
-            <label for= "1_5_1_Image_Q1_opt_d">  d) From bottom to top</label><br />
+            <label for= "1_5_1_Image_Q1_opt_d">  d) De abajo a arriba</label><br />
             
 
             <script>
             $(document).ready(function(){checkRadio('1_5_1_Image_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('1_5_1_Image_Q1','c',['The x value increases from left to right', 'The horizontal direction is the x direction', 'The y value increases from top to bottom', 'This is common on a Cartesian coordinate system, but it is not true here'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('1_5_1_Image_Q1','c',['El valor que se incrementa de izquierda a derecha es el de x', 'El valor que se representa horizontalmente es el de x', 'El valor de y se incrementa de arriba a abajo', 'Esto es lo habitual en un sistema de coordenadas cartesianas, pero no es cierto en este caso'])">Check Me</button>
             <button class='btn btn-default' id="1_5_1_Image_Q1_bcomp" disabled name="compare" onclick="compareAnswers('1_5_1_Image_Q1');">Compare Me</button>
             </form><br />
             <div id="1_5_1_Image_Q1_feedback">
             </div>
             </div>
-            <p>Each pixel has a color associated with it: An amount of red, an amount of green, and an amount of blue.  The amount can be in the range of 0 to 255 where 0 is none of that color and 255 is the maximum amount of that color.  A pixel is displayed using light, not paint, so it may work a bit differently than you might expect if you only have experience making colors by mixing paint.  For example, you would mix blue and yellow paint to make green, but you mix red and green light to make yellow light.  See <a class="reference external" href="http://www.webexhibits.org/causesofcolor/1BE.html">http://www.webexhibits.org/causesofcolor/1BE.html</a> for a procedure to try this out for yourself.</p>
+            <p>Cada pixel tiene asociado un color: una cantidad de color rojo, una cantidad de verde, y una cantidad de azul. Estas tres cantidades varían en un rango de 0 a 255, siendo 0 la ausencia de color y 255 la mayor cantidad de ese color. Los colores se muestran en pantalla por medio de luz, no de pintura, así que funciona de una manera diferente a la que podrías esperar si mezclas pinturas de colores. Por ejemplo, para obtener pintura de color verde mezclas pintura azul con pintura amarilla, pero para obtener luz amarilla debes mezclar luz roja con luz verde. Visita la página <a class="reference external" href="http://www.webexhibits.org/causesofcolor/1BE.html">http://www.webexhibits.org/causesofcolor/1BE.html</a> (en inglés) si quieres pobar esto por ti mismo.</p>
 <div class="align-center figure" id="id3">
-<a class="reference internal image-reference" href="http://www.d.umn.edu/~mharvey/colorwheel.jpg"><img alt="a color wheel for combining color lights" src="http://www.d.umn.edu/~mharvey/colorwheel.jpg" style="width: 200px;" /></a>
-<p class="caption"><span class="caption-text">Figure 3: How lights combine to make colors</span></p>
+<a class="reference internal image-reference" href="../_images/rgb.jpg"><img alt="a color wheel for combining color lights" src="../_images/rgb.jpg" style="width: 200px;" /></a>
+<p class="caption"><span class="caption-text">Imagen 3: combinación de luces para obtener los distintos colores</span></p>
 </div>
-<p>All image manipulations in Photoshop and all filters in Instagram or Hipstamatic are created through manipulating those red, green, and blue color components in each pixel.</p>
-<p>Let&#8217;s remove the red from this picture.  The program below does that.</p>
-<p id="index-3"><strong>There are lot of lines in the program below. Don&#8217;t worry if they don&#8217;t all make sense to you right now.</strong></p>
+<p>Las manipulaciones de imágenes en Photoshop y los filtros en Instagram o Hipstamatic se basan en la alteración de los componentes rojo, verde y azul de cada pixel.</p>
+<p>Vamos ahora a eliminar el color rojo de esta imagen. Eso es lo que hace el siguiente programa.</p>
+<p id="index-3"><strong>Este programa tiene muchas líneas. De momento no te preocupes si no entiendes la mayoría de ellas.</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>Especially when we write programs to manipulate images, you can ignore many of the lines.  Some read in a library to allow us to work with images, like <code class="docutils literal"><span class="pre">from</span> <span class="pre">image</span> <span class="pre">import</span> <span class="pre">*</span></code>.  Others like <code class="docutils literal"><span class="pre">win</span> <span class="pre">=</span> <span class="pre">ImageWin(img.getWidth(),img.getHeight())</span></code> and <code class="docutils literal"><span class="pre">img.draw(win)</span></code> let us see the result.</li>
-<li>Words after the <code class="docutils literal"><span class="pre">#</span></code> are ignored by the computer.  They are <strong>comments</strong> to human readers to help them understand a program.</li>
+<li>Especialmente en los programas para manipular imágenes puedes ignorar la mayoría de las líneas. Algunas hacen referencia a librerías que nos permiten trabajar con imágenes, como <code class="docutils literal"><span class="pre">from</span> <span class="pre">image</span> <span class="pre">import</span> <span class="pre">*</span></code>. Otras como <code class="docutils literal"><span class="pre">win</span> <span class="pre">=</span> <span class="pre">ImageWin(img.getWidth(),img.getHeight())</span></code> y <code class="docutils literal"><span class="pre">img.draw(win)</span></code> nos muestran simplemente el resultado.</li>
+<li>Ya sabes que el ordenador ignora cualquier texto que aparezca a continuación de <code class="docutils literal"><span class="pre">#</span></code>. Son <strong>comentarios</strong> que los humanos escribimos para entender mejor el programa.</li>
 </ul>
 </div></blockquote>
-<p>The lines that are important are under the comments (lines that start with a <code class="docutils literal"><span class="pre">#</span></code>). Press the <a class="reference internal" href="../_images/start-audio-tour4.png"><img alt="audio tour button" class="align-top" src="../_images/start-audio-tour4.png" style="height: 20px;" /></a> button to hear an audio explanation of the important lines.  Press the <a class="reference internal" href="../_images/run-button2.png"><img alt="run button" class="align-top" src="../_images/run-button2.png" style="height: 20px;" /></a> button to run the program and show the changed image.  Please note that processing all those pixels can take a few minutes.</p>
+<p>En el siguiente ejemplo, las líneas importantes son las que aparecen debajo de los comentarios. Pulsa <a class="reference internal" href="../_images/start-audio-tour4.png"><img alt="audio tour button" class="align-top" src="../_images/start-audio-tour4.png" style="height: 20px;" /></a> para escuchar la explicación de cada línea importante. Haz clic en <a class="reference internal" href="../_images/run-button2.png"><img alt="run button" class="align-top" src="../_images/run-button2.png" style="height: 20px;" /></a> para ejecutar el programa y ver la imagen modificada. Ten paciencia, procesar todos los pixels de la imagen puede llevar unos minutos.</p>
 <img src="../_static/arch.jpg" id="arch.jpg" >
 <div id="cont"></div>
 <div id="Images_1" lang="python" time="" class="ac_section alert alert-warning" >
@@ -380,7 +381,7 @@
 <button class="ac_opt btn btn-default" style="display: inline-block" id="Images_1_loadb" onclick="requestCode('Images_1');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Images_1','from image import **nline**nline*# CREATE AN IMAGE FROM A FILE*nline*img = Image*open**doubleq*arch.jpg*doubleq**close**nline**nline*# LOOP THROUGH ALL THE PIXELS*nline*pixels = img.getPixels*open**close**nline*for p in pixels:*nline**nline*    # CLEAR THE RED*nline*    p.setRed*open*0*close**nline*    img.updatePixel*open*p*close**nline**nline*# SHOW THE CHANGED IMAGE*nline*win = ImageWin*open*img.getWidth*open**close*,img.getHeight*open**close**close**nline*img.draw*open*win*close*','1','*doubleq*Important Lines Tour*doubleq*; 3,6,10,14: timg1-line361014; 4: timg1-line4; 7: timg1-line7; 8: timg1-line8; 11: timg1-line11; 12: timg1-line12; 15-16: timg1-line15-16;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Images_1','from image import **nline**nline*# CREA UNA IMAGEN CARGADA DESDE UN ARCHIVO*nline*img = Image*open**doubleq*arch.jpg*doubleq**close**nline**nline*# RECORRE CADA PIXEL DE LA IMAGEN*nline*pixels = img.getPixels*open**close**nline*for p in pixels:*nline**nline*    # ELIMINA EL ROJO*nline*    p.setRed*open*0*close**nline*    img.updatePixel*open*p*close**nline**nline*# MUESTRA LA IMAGEN UNA VEZ MODIFICADA*nline*win = ImageWin*open*img.getWidth*open**close*,img.getHeight*open**close**close**nline*img.draw*open*win*close*','1','*doubleq*Important Lines Tour*doubleq*; 3,6,10,14: timg1-line361014; 4: timg1-line4; 7: timg1-line7; 8: timg1-line8; 11: timg1-line11; 12: timg1-line12; 15-16: timg1-line15-16;*atype*')"/>
 
 </div>
 <br/>
@@ -388,18 +389,18 @@
 <textarea cols="50" rows="12" id="Images_1_code" class="active_code" prefixcode="undefined" lang="python">
 from image import *
 
-# CREATE AN IMAGE FROM A FILE
+# CREA UNA IMAGEN CARGADA DESDE UN ARCHIVO
 img = Image("arch.jpg")
 
-# LOOP THROUGH ALL THE PIXELS
+# RECORRE CADA PIXEL DE LA IMAGEN
 pixels = img.getPixels()
 for p in pixels:
 
-    # CLEAR THE RED
+    # ELIMINA EL ROJO
     p.setRed(0)
     img.updatePixel(p)
 
-# SHOW THE CHANGED IMAGE
+# MUESTRA LA IMAGEN UNA VEZ MODIFICADA
 win = ImageWin(img.getWidth(),img.getHeight())
 img.draw(win)
 </textarea>
@@ -469,21 +470,21 @@ else{
 
 
             <div id="1_5_2_Image_Black" class="alert alert-warning">
-            csp-1-5-2: What do you think happens when you set all the colors to 0?  Try adding <code class="docutils literal"><span class="pre">p.setBlue(0)</span></code> and <code class="docutils literal"><span class="pre">p.setGreen(0)</span></code> to the program above after the <code class="docutils literal"><span class="pre">p.setRed(0)</span></code> and run it to check.<form name="1_5_2_Image_Black_form" method="get" action="" onsubmit="return false;">
+            csp-1-5-2: ¿Qué crees que ocurriría si cambiaras todos los colores por 0? Intenta añadir las instrucciones <code class="docutils literal"><span class="pre">p.setBlue(0)</span></code> y <code class="docutils literal"><span class="pre">p.setGreen(0)</span></code> al programa después de la sentencia <code class="docutils literal"><span class="pre">p.setRed(0)</span></code> y ejecútalo de nuevo para ver qué sucede.<form name="1_5_2_Image_Black_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="1_5_2_Image_Black_opt_a" />
-            <label for= "1_5_2_Image_Black_opt_a">  a) You still see the picture, but it is all in shades of gray.</label><br />
+            <label for= "1_5_2_Image_Black_opt_a">  a) Aún se vería la imagen, pero sólo como tonos de gris.</label><br />
             
             <input type="radio" name="group1" value="b" id="1_5_2_Image_Black_opt_b" />
-            <label for= "1_5_2_Image_Black_opt_b">  b) The picture is all white.</label><br />
+            <label for= "1_5_2_Image_Black_opt_b">  b) La imagen se vería completamente blanca.</label><br />
             
             <input type="radio" name="group1" value="c" id="1_5_2_Image_Black_opt_c" />
-            <label for= "1_5_2_Image_Black_opt_c">  c) The picture is all black.</label><br />
+            <label for= "1_5_2_Image_Black_opt_c">  c) La imagen se vería completamente negra.</label><br />
             
 
             <script>
             $(document).ready(function(){checkRadio('1_5_2_Image_Black');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('1_5_2_Image_Black','c',['Not if you set all the color values to 0.', 'Did you try it?  This would be true if you set all the values to 255 instead of 0.', 'Black is the absence of light so setting all colors to 0 results in an all black image since there is no light.'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('1_5_2_Image_Black','c',['No sucedería eso si cambias por 0 cada componente rojo, verde y auzl.', '¿Lo has probado? Esto ocurriría si se cambiaran los valores a 255, no a 0.', 'El negro es la ausencia total de luz, así que cambiando todos los valores a 0 obtendríamos una imagen de color negro, al no haber nada de luz.'])">Check Me</button>
             <button class='btn btn-default' id="1_5_2_Image_Black_bcomp" disabled name="compare" onclick="compareAnswers('1_5_2_Image_Black');">Compare Me</button>
             </form><br />
             <div id="1_5_2_Image_Black_feedback">
@@ -494,7 +495,7 @@ else{
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Compute with Turtles' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Computación con tortugas' data-toggle="tooltip">
     <a href="computeTurtles.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>

@@ -32,66 +32,66 @@
     :alt: teacher note
 
 
-Compute with Words
-===================
+Computación con palabras
+========================
 
 ..	index::
 	single: string
 	pair: programming; string
 
-The computer can also compute with words, or more accurately, with **strings** which are sequences of characters.  A **string** is anything we can type between a pair of double quotes (``"Hi"``) or a pair of single quotes (``'Hi'``).  We can "compute" with words using some of the same basic arithmetic operators -- they just mean something different here.  Here we generate silly song lyrics by using ``+`` to combine (append) two strings and ``*`` to repeat strings.
+Los ordenadores pueden también trabajar con palabras, o dicho de una forma más precisa, con **cadenas** formadas por una sucesión de caracteres. Se le llama **cadena** a cualquier cosa que se puede escribir entre comillas dobles (``"Hola"``) o sencillas (``'Hola'``). Se pueden "hacer cálculos" con palabras utilizando alguno de los operadores artiméticos básicos -- aquí tienen una función diferente. Probemos a generar algunas letras tontas para una canción usando ``+`` para combinar (sumar) dos cadenas, y ``*`` para repetirlas.
 
-Underneath the program below, to the right of the *Run* button |runbutton|, you'll see the button to open the audio tour for this program: |audiobutton|.  Click on that button and then click on "Line-by-line Tour" to hear the audio tour.  You can use the provided buttons to pause, play, jump ahead, or go back. 
+Debajo del siguiente programa, a la derecha del botón *Run* |runbutton|, verás un botón que abre la guía de sonido para este programa: |audiobutton|. Haz clic en ese botón y después pulsa sobre "Guiar línea por línea" para oir la guía de sonido. Puedes utilizar los botónes para detener, reproducir, saltar hacia adelante o hacia atrás.
 
 .. activecode:: String_Operators
   :tour_1: "Line-by-line Tour"; 1: str1-line1; 2: str1-line2; 3: str1-line3; 4: str1-line4; 5: str1-line5; 6: str1-line6; 7: str1-line7; 8: str1-line8; 9: str1-line9; 10: str1-line10;
   :nocodelens:
   
-  basic = "Ma"
-  print(basic)
-  basic3 = basic + basic + basic
-  print(basic3)
-  next = "Mow"
-  next3 = next * 3
-  print(next3)
-  together = (basic * 3) + (next * 2)
-  print(together)
-  print(together + "Mmm" + together)
+  basico = "Ma"
+  print(basico)
+  basico3 = basico + basico + basico
+  print(basico3)
+  siguiente = "Mu"
+  siguiente3 = siguiente * 3
+  print(siguiente3)
+  juntos = (basico * 3) + (siguiente * 2)
+  print(juntos)
+  print(juntos + "Mmm" + juntos)
   
 ..	index::
 	single: dot-notation
 	pair: programming; dot-notation
 
-A string can also be asked to return a new string that is changed in some way from the original string.  In the example below, we'll take a string in all-caps and turn it into a nicely capitalized sentence.  This example uses **dot-notation** (``sentence.lower()``) which is the way to tell a string how we want it to change. 
+También se puede generar una nueva cadena en la que cambiemos alguna cosa respecto de una cadena original. En el siguiente ejemplo, tomamos una cadena en mayúsuculas y la convertimos a minúsuculas. Este ejemplo utiliza una **notación con punto** (``sentence.lower()``), que es la forma de decirle a la cadena en qué queremos que cambie. 
 
 .. activecode:: String_Methods
    :tour_1: "Line-by-line Tour"; 1: str2-line1; 2: str2-line2; 3: str2-line3; 4: str2-line4; 5: str2-line5;
    :nocodelens:
    
-   sentence = "THIS IS A TEST"
-   better = sentence.lower()
-   print(better)
-   betterStill = better.capitalize() + "."
-   print(betterStill)
+   frase = "ESTO ES UNA PRUEBA"
+   mejor = frase.lower()
+   print(mejor)
+   mejortodavia = mejor.capitalize() + "."
+   print(mejortodavia)
    
 .. mchoicemf:: 1_3_1_String_Methods_Q1
-   :answer_a: Hi There
-   :answer_b: HiThere
-   :answer_c: Hi There Hi There
-   :answer_d: HiThereHiThere
-   :answer_e: HiThere2
+   :answer_a: Buenos días
+   :answer_b: Buenosdías
+   :answer_c: Buenos días Buenos días
+   :answer_d: BuenosdíasBuenosdías
+   :answer_e: Buenosdías2
    :correct: d
-   :feedback_a: When you add strings together you copy the second string right after the first, without any added space
-   :feedback_b: Remember that * 2 repeats two copies of the same string
-   :feedback_c: Adding strings together and repeating them doesn't add spaces between the strings
-   :feedback_d: Strings are added together without adding any space and they are repeated without adding a space
-   :feedback_e: The * 2 repeats the string two times
+   :feedback_a: Cuando sumas cadenas estás copiando la segunda justo a continuación de la primera, sin añadir espacios
+   :feedback_b: Recuerda que * 2 repite dos veces la misma cadena
+   :feedback_c: Sumar cadenas y repetirlas no añade espacios entre ellas
+   :feedback_d: Las cadenas se suman sin que se añadan espacios, y se repiten sin agregar tampoco ningún espacio
+   :feedback_e: * 2 repite la cadena dos veces
    
-   What would the following code print?
+   ¿Qué imprimirá este código?
    
    :: 
    
-      first = "Hi"
-      next = "There"
-      print ((first + next) * 2)
+      primero = "Buenos"
+      segundo = "días"
+      print ((primero + segundo) * 2)
 
