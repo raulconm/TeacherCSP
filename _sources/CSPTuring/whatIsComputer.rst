@@ -16,16 +16,16 @@
 	:prefix: csp-2-1-
 
 
-What is a Computer?
+¿Qué es un ordenador?
 ==================================
 
-*Learning Objectives:*
+*Objetivos de aprendizaje:*
 
-- Understand that computers process data.
-- Understand that a program is a sequence of instructions for a computer.
-- Understand what a Turing machine is and how it is used in determining what we can and can not compute.
-- Understand that computers can't solve all problems.
-- Understand what a programming language is.
+- Comprender que los ordenadores procesan datos.
+- Comprender que un programa es una secuencia de instrucciones que se le dan al ordenador.
+- Comprender qué es una máquina de Turing y cómo se usa para determinar qué se puede y qué no se puede computar.
+- Comprender que los ordenadores no pueden resolver todos los problemas.
+- Comprender qué es un leguaje de programación.
 
 ..	index::
 	single: computer
@@ -33,7 +33,8 @@ What is a Computer?
 ..	index::
 	single: program
 	
-A **computer** is a device that can perform actions on input (which is also called data).  The actions are specified by a **program**, which is a sequence of instructions.  A computer doesn't really even have to be electronic.  Did you know that there were female computers?  `The Harvard computers <http://en.wikipedia.org/wiki/Harvard_Computers>`_ were hired to do astronomical calculations.  Computer was a job title, like waiter or doctor.
+
+Un **ordenador** es un dispositivo que puede llevar a cabo acciones con los datos que se le proporcionan. Las acciones se especifican a través de un **programa**, que no es otra cosa que una secuencia de instruccciones. Ni siquiera es necesario que los ordenadores sean electrónicos. ¿Sabías qe hubo mujeres ordenadoras? A `Las computadoras de Harvard <http://francis.naukas.com/2008/09/09/las-computadoras-de-harvard-o-el-haren-astronomico-de-pickering/>`_ se las contrataba para que hicieran cálculos astronómicos. Computador es un trabajo, como puede ser camarero o médico.
 
 ..	index::
 	single: Harvard computers
@@ -44,9 +45,9 @@ A **computer** is a device that can perform actions on input (which is also call
     :alt: The Harvard Computers from 1913
     :figclass: align-center
     
-    Figure 1: The Harvard Computers of 1913
+    Image 1: Las computadoras de Harvard en 1913
 
-Computers today are electronic, but it's possible to build a computer with light, or DNA, or even `TinkerToys <http://www.retrothing.com/2006/12/the_tinkertoy_c.html>`_.  All computers manipulate data based on instructions.
+Los ordenadores actuales son electrónicos, pero es posible construir ordenadores que utilizan luz, ADN, o usando incluso  piezas de juegos de construcción para niños. Absolutamente todos los ordenadores manejan datos siguiendo unas instrucciones. 
 
 
 

@@ -14,13 +14,13 @@
 	:start: 1
 	:prefix: csp-2-3-
 
-Computer Abilities
+Las cualidades de los ordenadores
 ==================================
 
-In this book, we are going to talk about what a computer can do in terms of the programming language **Python**.  We are not going to cover *all* of Python.  We are going to describe the four abilities of a computer, the four abilities that cover *everything* that a computer can do.
+En este libro, vamos a aprender lo que puede hacer un ordenador utilizando **Python** como lenguaje de programación. No vamos a explicar Python *profundamente*. Describiremos las cuatro cualidades de un ordenador, las cuatro que engloban *todo* lo que puede hacer un ordenador:
 
-- Computers can remember names for values.  Computers can name *anything*.
-- Computers can repeat steps.
-- Computers can make decisions.
-- Computers can take data apart.
+- Los ordenadores pueden recordar valores por medio de nombres. Pueden darle nombre a *todo*.
+- Los ordenadores pueden repetir pasos.
+- Los ordenadores pueden tomar decisiones.
+- Los ordenadores pueden manejar datos.
 

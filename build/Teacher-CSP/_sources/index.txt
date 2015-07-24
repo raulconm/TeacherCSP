@@ -22,7 +22,7 @@ CS Principles: Big Ideas in Programming
 .. Sources can also be included from subfolders of this directory.
    (e.g. "DataStructures/queues.rst").
 
-SECCIÓN 1: LAS HABILIDADES DE LOS ORDENADORES
+SECCIÓN 1: LAS CUALIDADES DE LOS ORDENADORES
 :::::::::::::::::::::::::::::::::::::::::::::
 
 .. toctree::
@@ -40,7 +40,7 @@ Capítulo 1: ¿De qué trata este libro?
    CSPrinTeasers/computeTurtles.rst
    CSPrinTeasers/computeImages.rst
    CSPrinTeasers/standards.rst
-   CSPrinTeasers/ch1_summary.rst
+.. CSPrinTeasers/ch1_summary.rst
    
 Capítulo 2: ¿Qué pueden hacer los ordenadores?
 ::::::::::::::::::::::::::::::::::::::::::::::
@@ -120,8 +120,8 @@ Capítulo 6: Los ordenadores pueden nombrar cualquier cosa
    CSPNameNames/ch6_summary.rst
    CSPNameNames/exam5a6.rst
    
-SECCIÓN 3: REPITIENDO
-:::::::::::::::::::::::::
+SECCIÓN 3: REPETIR
+::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
@@ -191,8 +191,8 @@ Capítulo 11: Repitiendo pasos con imágenes
    CSPRepeatImages/ch11_summary.rst
    CSPRepeatImages/exam9t11.rst
    
-SECCIÓN 4: DECISIONES
-::::::::::::::::::::::::::::::::::::::::::::
+SECCIÓN 4: DECIDIR
+::::::::::::::::::
 
 .. toctree::
    :maxdepth: 3

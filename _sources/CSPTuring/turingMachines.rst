@@ -16,14 +16,14 @@
 	:prefix: csp-2-2-
 
 
-Turing Machines
+Máquinas de Turing
 ==================================
 
 ..	index::
 	single: Turing, Alan
 	single: Turing Machine
 
-The idea for a computer was first described in 1936, over a dozen years before the first electronic computer was ever built.  `Alan Turing <http://en.wikipedia.org/wiki/Alan_Turing>`_, a brilliant mathematician, was trying to answer a question that mathematicians were struggling with at the beginning of the 20th century, "What are the limits of mathematics?  What can be computed using mathematics, and what truths can't be computed?"  Turing defined a device (a `Turing Machine <http://en.wikipedia.org/wiki/Turing_machine>`_) that answered that question: *Anything that is possible to mathematically compute could be programmed on a Turing Machine.* 
+El concepto de ordenador se utilizó por primera vez en 1936, alrededor de doce años antes de que se construyera el primer ordenador electrónico. `Alan Turing <http://es.wikipedia.org/wiki/Alan_Turing>`_, un brillante matemático, intentaba hallar la respuesta a una pregunta con la que los matemáticos se peleaban a principios del siglo veinte, "¿Cuáles son los límites de la matemática? ¿Qué se puede computar por medio de las matemáticas, y qué hechos científicos no se pueden calcular?" Turing ideó un dispositivo (una `Máquina de Turing <https://es.wikipedia.org/wiki/M%C3%A1quina_de_Turing>`_) que respondía a esa questión: "Todo lo que se puede calcular matemáticamente se puede también programar en una máquina de Turing". 
 
 .. figure:: Figures/Alan_Turing_photo.jpg
     :width: 200px
@@ -31,22 +31,23 @@ The idea for a computer was first described in 1936, over a dozen years before t
     :alt: A Photo of Alan Turing 
     :figclass: align-center
         
-    Figure 2: Photo of Alan Turing
+    Imagen 2: Foto de Alan Turing
     
 .. mchoicemf:: 2_2_1_Turing_Q1
-		   :answer_a: He occasionally ran 40 miles to London for meetings.
-		   :answer_b: He proposed the Turing Test to decide if a computer was intelligent.   
-		   :answer_c: He worked on breaking Enigma ciphers in World War II.   
-		   :answer_d: He went to school in Oxford, England. 
+		   :answer_a: Corría durante más de sesenta kilómetros para asistir a las reuniones en Londres.
+		   :answer_b: Propuso el Test de Turing para determinar si un ordenador era inteligente.   
+		   :answer_c: Trabajó en la Segunda Guerra Mundial para descifrar la máquina Enigma.   
+		   :answer_d: Fue al colegio en Oxford, Inglaterra. 
 		   :correct: d
-		   :feedback_a: This is true.  He was a talented runner and even tried out for the olympics.
-		   :feedback_b: This is true.  He said that if a computer could fool a person into thinking it was a person, that that computer was intelligent.  
-		   :feedback_c: This is true.  Winston Churchill said that Alan Turing made the single biggest contribution to winning World War II.   
-		   :feedback_d: This is false.  He attended King's College at Cambridge and Princeton University.
+		   :feedback_a: Es cierto. Fue un gran corredor, incluso intentó participar en una Olimpiada.
+		   :feedback_b: Es verdad. Dijo que si un ordenador podía hacerse pasar por persona, significaba que era inteligente.  
+		   :feedback_c: Verdadero.  Winston Churchill dijo que Alan Turing hizo la mejor contribución de una sola persona para ganar la Segunda Guerra Mundial.   
+		   :feedback_d: Esto es falso.  Estudió en el King's College de Cambridge y en la Universidad de Princeton.
 
-		   Use the following link to learn more about `Alan Turing <http://en.wikipedia.org/wiki/Alan_Turing>`_.  Which of the following is **false** about him?
+		   Consulta el siguiente enlace para conocer mejor a  `Alan Turing <http://es.wikipedia.org/wiki/Alan_Turing>`_.  ¿Cuál de las siguientes afirmaciones sore él es **falsa**?
 
-Today's computers work differently than Turing's machine, but are mathematically equivalent.  *Anything that is possible to compute can be programmed on any modern electronic computer.*  **ALL** computers, from the ones in your microwave to the super-duper computers that predict the weather all have the same basic abilities.  Click on the following link to learn more about `how Turing Machines work. <http://www.storyofmathematics.com/20th_turing.html>`_
+
+Los ordenadores de nuestro tiempo no funcionan como una Máquina de Turing, pero son equivalentes desde el punto de vista matemático. "Cualquier cosa que se puede calcular puede ser también programada en un ordenador electrónico moderno". **TODOS** los ordenadores, desde los que se emplean en el microondas hasta los super-ordenadores que predicen el tiempo, todos tienen las mismas habilidades. Haz clic en el siguiente enlace para aprender más sobre `cómo funcionan las Máquinas de Turin <http://maquinaturing.blogspot.com.es/p/funcionamiento-de-la-maquina-turing.html>`_
 
 .. figure:: Figures/turing_machine.gif
     :width: 300px
@@ -54,35 +55,35 @@ Today's computers work differently than Turing's machine, but are mathematically
     :alt: A Turing Machine 
     :figclass: align-center
         
-    Figure 3: Figure of a Turing Machine
+    Imagen 3: Representación de una Máquina de Turing
 
-The meaning of that statement is huge.  For example, it means that it's *possible* to run any program on any computer, but it might mean that you have to do a lot of programming to make it work.  But it doesn't mean that we can solve *all* problems on any computer.  One of the important things that Turing proved is that **some problems can't be solved by computers at all, ever**.
+El alcance de esta afirmación es muy amplio. Significa, por ejemplo, que es **posible** ejecutar cualquier programa en cualquier ordenador, aunque probablemente tengas que programar un motón para hacer que funcione. Pero esto no quiere decir que *todos* los problemas se tengan que resolver usando un ordenador.Una de las cosas más importantes que Turing probó era que **algunos problemas no podían resolverse utilizando un ordenador, y nunca será posible hacerlo**.
 
-Turing's machine didn't actually know anything about numbers, which might be surprising for a device that could do any mathematical computation.  Instead, it could simply make marks on a piece of paper tape, and then *count* those marks to be able to do mathematics.  In reality, electronic computers are just as dumb.  They *count* using patterns of voltages on wires (e.g., "off,on,off,off" is a representation of the number *4* in binary).  But we don't really want to deal with patterns like this, so people have already programmed basic mathematical operations into the computer.  
+La Máquina de Turing no sabía realmente nada sobre números, lo cuál es sorprendente para un dispositivo capaz de hacer cualquier operación matemática. En su lugar, simplemente hacía marcas en una cinta de papel, y después las *contaba* para hacer los cálculos. En realidad, los ordenadores electrónicos son bastante tontos. Sólo *cuentan* utilizando patrones de voltajes a través de un cable (por ejemplo, "apagado, encendido, apagado, apagado" es la representación del número *4* en sistema binario). Pero nosotros, las personas, no queremos tener que utilizar patrones como este, así que hemos programado dentro de los ordenadores las operaciones matemáticas fundamentales.
 
 ..	index::
 	single: abstraction
 	
-When you work with a computer, you have all kinds of abilities already built-in by others.  Your computer already knows how to deal with numbers and mathematical operations, and lots of other things as well.  At the basic level, though, even the biggest, most powerful, most expensive supercomputer cannot solve problems better than a Turing Machine. **All computers are exactly the same in terms of what they can do.** 
+Cuando utilizas un ordenador ya dispones de todas las habilidades y funciones que otros han programado. Tu ordenador ya sabe cómo manejar los números y las operaciones matemáticas, y también otras muchas cosas. Pero sin embargo, por debajo, en el nivel más básico, incluso los super-ordenadores más grandes, caros y potentes no pueden resolver los problemas mejor de lo que lo hace una Máquina de Turing. **Todos los ordenadores son exáctamente iguales respecto a lo que pueden hacer**. 
 
 .. mchoicemf:: 2_2_2_Computers_Q1
-		   :answer_a: There were female computers.
-		   :answer_b: You can make a computer with Tinkertoys.     
-		   :answer_c: Computers can solve any problem.   
-		   :answer_d: Computers use sequences of voltages on wires to represent numbers.   
+		   :answer_a: Había mujeres computadoras.
+		   :answer_b: Puedes fabricar un ordenador con piezas de construcción para niños.     
+		   :answer_c: Los ordenadores pueden resolver cualquier problema.   
+		   :answer_d: Los ordenadores usan secuencias de voltajes en un cable para representar números 
 		   :correct: c
-		   :feedback_a: This is true.  Look for information on the Harvard Computers and Secret Rosies.  
-		   :feedback_b: This is true.  Some students at MIT did this in the 1980s.   
-		   :feedback_c: This is false.  Turing provide that there are problems computers cannot solve.  
-		   :feedback_d: This is true.  Computers use patterns of on and off voltages to represent numbers.  
+		   :feedback_a: Verdadero. Busca más información en las computadoras de Harvard.  
+		   :feedback_b: Es cierto. Algunos estudiantes del MIT lo hicieron en 1980.   
+		   :feedback_c: Falso. Turing afirmó que hay problemas que un ordenador no puede resolver.  
+		   :feedback_d: Verdadero. Los ordenadores representan números por medio patrones de encendido y apagado en un cable.  
 
-		   Which of the following is **false** about computers?
+		   ¿Cuál de las siguientes afirmaciones sobre los ordenadores es *falsa*?
 	
 ..	index::
 	single: programming language
 	pair: programming; languages
 	
-A **programming language** (like *Java* or *Python*) which is a language that allows you to tell a computer what to do, can do anything that a Turing Machine can do (no more or less).  A programming tool like `Alice <http://www.alice.org>`_ or `Scratch <http://scratch.mit.edu>`_ can do *most* of what a Turing Machine can do, but typically, not everything.  **You can program anything that a Turing Machine can do in Python .**
+Un **lenguaje de programación** (Como *Java* o *Python*), que es el lenguaje que te permite darle instrucciones a un ordenador, puede hacer lo mismo que una máquina de Turing (ni más ni menos). Una herramienta de programación como `Alice <http://www.alice.org>`_ o `Scratch <http://scratch.mit.edu>`_ puede hacer *la mayoría* de las cosas que hace una máquina de Turing, pero no todo. **Con Python puedes programar cualquiera de las cosas que puede hacer una máquina de Turing**.
 
 
 
