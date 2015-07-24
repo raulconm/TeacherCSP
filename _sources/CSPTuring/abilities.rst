@@ -17,7 +17,7 @@
 Las cualidades de los ordenadores
 ==================================
 
-En este libro, vamos a aprender lo que puede hacer un ordenador utilizando **Python** como lenguaje de programación. No vamos a explicar Python *profundamente*. Describiremos las cuatro cualidades de un ordenador, las cuatro que engloban *todo* lo que puede hacer un ordenador:
+En este libro, vamos a aprender lo que puede hacer un ordenador utilizando **Python** como lenguaje de programación. No se trata de aprender Python *a fondo*. Describiremos las cuatro cualidades de un ordenador, las cuatro que engloban *todo* lo que puede hacer un ordenador:
 
 - Los ordenadores pueden recordar valores por medio de nombres. Pueden darle nombre a *todo*.
 - Los ordenadores pueden repetir pasos.

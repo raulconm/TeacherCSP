@@ -53,38 +53,38 @@
 .. highlight:: java
    :linenothreshold: 4
 
-Assigning a Name
+Asignar un nombre
 ==================
 
-*Learning Objectives:*
+*Objetivos de aprendizaje:*
 
-- Understand the concept of a variable.
-- Assign a value to a variable.
-- Use assignment in calculations.
-- Understand the ways that students get assignments wrong.
-- Reuse variables across different assignment statements.
+- Comprender el concepto de variable
+- Asignar un valor a una variable
+- Usar ese nombre para hacer cálculos
+- Conocer los errores que cometen los estudiantes al asignar nombres
+- Reutilizar las variables a lo largo del programa
 	
 ..	index::
 	single: variable
 	pair: programming; variable
 	
-A computer can associate a name with a value.  It does this by creating a **variable**, which is space in computer memory that can represent a value. An example of a **variable** is a score in a computer game.  The score usually starts at 0 and increases as you play the game.  The score can change or *vary* during the game, which is why we call it a **variable**. You also associate a name with a value when you enter a new contact name and phone number in your cell phone. When you tell your phone to call "Alexa" it will look up the phone number associated with that name and call it.  
+Un ordenador puede asociar un nombre con una variable. Esto se consigue creando una **variable**, que es un espacio de la memoria del ordenador que representa a un valor. Un ejemplo de **variable** puede ser el marcador de un videojuego. Normalmente este marcador se inicia con 0 se va incrementando según el juego avanza. El marcador puede camviar o *variar* durante el juego, de ahí el nombre de **variable**. También asocias un nombre a un número cuando añades un nuevo nombre y número de teléfono en la agenda de tu móvil. Cuando le pides que llame a "María" tu móvil buscará el número de teléfono asociado a ese nombre y llamará.
 
 .. figure:: Figures/pongScore.png
     :width: 400px
     :align: center
     :figclass: align-center
     
-    Figure 1: A pong game in `Scratch <http://scratch.mit.edu>`_ with a score shown in the upper left.
+    Imagen 1: Un juego de pong en `Scratch <http://scratch.mit.edu>`_ con un marcador en la esquina superior izquierda.
     
-Think of a variable as a box that has a label on it and you can store a value in the box.  The value can be anything that can be represented on a computer and stored in a computer's memory.  A computer's memory is only made up of numbers (really, just patterns of voltages, but we can think about them as numbers).  Everything that a computer can remember in its memory is translated into these numbers -- but don't worry about how this works right now.
+Imagina que una variable es cmo una caja que tiene una etiqueta, y dentro de la cual puedes guarda un valor. El valor será cualquier cosa que se pueda representar en un ordenador, y almacenado en su memoria. La memoria de un ordenador está formada únicamente por números (en realidad por patrones de voltajes, pero podemos tomarlos como números). Todo lo que un ordenador puede recordar en su memoria se traduce a números -- pero no te preocupes ahora de cómo sucede esto.  
 
 .. figure:: Figures/assignA.png
     :align: center
     :width: 60
     :figclass: align-center
     
-    Figure 2: Creating a variable and setting its value in memory.
+    Imagen 2: Crear una variable y definir su valor en la memoria.
 
 ..	index::
 	single: assignment
