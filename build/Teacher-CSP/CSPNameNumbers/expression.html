@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Expressions &mdash; Runestone Interactive Overview</title>
+    <title>Expresiones &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -88,7 +88,7 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
     <link rel="next" title="Summary of Expression Types" href="expressionTable.html" />
-    <link rel="prev" title="Assigning a Name" href="assignName.html" />
+    <link rel="prev" title="Asignar un nombre" href="assignName.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -274,10 +274,10 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Expressions</a><ul>
-<li><a class="reference internal" href="#bigteachernote-teacher-note-assignment-dyslexia"> Teacher Note: Assignment Dyslexia</a></li>
-<li><a class="reference internal" href="#integer-division">Integer Division</a></li>
-<li><a class="reference internal" href="#modulo">Modulo</a></li>
+<li><a class="reference internal" href="#">Expresiones</a><ul>
+<li><a class="reference internal" href="#bigteachernote-nota-para-el-profesor-dislexia-en-las-asignaciones"> Nota para el profesor: Dislexia en las asignaciones</a></li>
+<li><a class="reference internal" href="#division-de-numeros-enteros">División de números enteros</a></li>
+<li><a class="reference internal" href="#modulo">Módulo</a></li>
 </ul>
 </li>
 </ul>
@@ -287,7 +287,7 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Assigning a Name" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Asignar un nombre" data-toggle="tooltip">
     <a href="assignName.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
@@ -324,16 +324,16 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="expressions">
-<h1>Expressions<a class="headerlink" href="#expressions" title="Permalink to this headline">¶</a></h1>
-<p id="index-0">The <em>right hand</em> side of the assignment statement doesn&#8217;t have to be a value.  It can be <em>an arithmetic expression</em>, like <code class="docutils literal"><span class="pre">2*2</span></code>.  The expression will be evaluated and the result from the expression will be stored in the variable.</p>
+  <div class="section" id="expresiones">
+<h1>Expresiones<a class="headerlink" href="#expresiones" title="Permalink to this headline">¶</a></h1>
+<p id="index-0">Lo que hay <em>a la derecha</em> del igual en una asignación no tiene por qué ser obligatoriamente un valor. También puede ser una <em>expresión aritmética</em>, como <code class="docutils literal"><span class="pre">2*2</span></code>. En ese caso se evaluará la expresión y el resultado se almacenará en la variable.</p>
 
             <div id="3_2_1_Mult" class="alert alert-warning">
-            csp-3-2-1: What will be printed when you click on the <em>Run</em> button in the code below? <input type='text' id='multBlank' class="form-control" style="display:inline; width: 90px;" value=""></input>
+            csp-3-2-1: ¿Qué imprimirá el programa cuando pulses el botón para ejecutar el siguiente código? <input type='text' id='multBlank' class="form-control" style="display:inline; width: 90px;" value=""></input>
             <script>
             $(document).ready(function(){checkPreviousFIB('3_2_1_Mult');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkFIBStorage('3_2_1_Mult', 'multBlank', '^4$',[['.*', 'Did you actually run the program?']], false)">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkFIBStorage('3_2_1_Mult', 'multBlank', '^4$',[['.*', '\u00bfHas ejecutado el programa?']], false)">Check Me</button>
             <button class='btn btn-default' id="3_2_1_Mult_bcomp" disabled name="compare" onclick="compareFITBAnswers('3_2_1_Mult');">Compare Me</button>
             <br />
             <br />
@@ -423,20 +423,20 @@ else{
 
 </div>
 
-<div class="section" id="bigteachernote-teacher-note-assignment-dyslexia">
-<h2><a class="reference internal" href="../_images/apple3.jpg"><img alt="teacher note" class="align-top" src="../_images/apple3.jpg" style="width: 50px;" /></a> Teacher Note: Assignment Dyslexia<a class="headerlink" href="#bigteachernote-teacher-note-assignment-dyslexia" title="Permalink to this headline">¶</a></h2>
-<p id="index-1">Some students will write the expression on the left side of the <code class="docutils literal"><span class="pre">=</span></code> and the variable name on the right side (<code class="docutils literal"><span class="pre">2</span> <span class="pre">*</span> <span class="pre">2</span> <span class="pre">=</span> <span class="pre">a</span></code>).  This is called assignment dyslexia and will result in an error.  The variable name <em>always</em> has to be on the left side of the <code class="docutils literal"><span class="pre">=</span></code> in an assignment.</p>
+<div class="section" id="bigteachernote-nota-para-el-profesor-dislexia-en-las-asignaciones">
+<h2><a class="reference internal" href="../_images/apple3.jpg"><img alt="teacher note" class="align-top" src="../_images/apple3.jpg" style="width: 50px;" /></a> Nota para el profesor: Dislexia en las asignaciones<a class="headerlink" href="#bigteachernote-nota-para-el-profesor-dislexia-en-las-asignaciones" title="Permalink to this headline">¶</a></h2>
+<p id="index-1">Algunos estudiantes escribirán la expresión en el lado izquiero de <code class="docutils literal"><span class="pre">=</span></code> y el nombre de la variable en el lado derecho (<code class="docutils literal"><span class="pre">2</span> <span class="pre">*</span> <span class="pre">2</span> <span class="pre">=</span> <span class="pre">a</span></code>). Esto se llama dislexia en la asignación, y originará un error. El nombre de la variable <em>siempre</em> debe ir a la izquierda del <code class="docutils literal"><span class="pre">=</span></code> en una asignación.</p>
 </div>
-<div class="section" id="integer-division">
-<h2>Integer Division<a class="headerlink" href="#integer-division" title="Permalink to this headline">¶</a></h2>
-<p id="index-2">You can use all the standard mathematical symbols.</p>
+<div class="section" id="division-de-numeros-enteros">
+<h2>División de números enteros<a class="headerlink" href="#division-de-numeros-enteros" title="Permalink to this headline">¶</a></h2>
+<p id="index-2">Puedes utilizar cualquiera de los símbolos matemáticos habituales.</p>
 
             <div id="3_2_2_Div" class="alert alert-warning">
-            csp-3-2-2: What will be printed when you click on the <em>Run</em> button in the code below? <input type='text' id='divBlank' class="form-control" style="display:inline; width: 150px;" value=""></input>
+            csp-3-2-2: ¿Qué se va a mostrar cuando pulses el botón de ejecutar en el siguiente código? <input type='text' id='divBlank' class="form-control" style="display:inline; width: 150px;" value=""></input>
             <script>
             $(document).ready(function(){checkPreviousFIB('3_2_2_Div');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkFIBStorage('3_2_2_Div', 'divBlank', '^0.333333333333$',[['.*', 'Did you actually run the program?']], false)">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkFIBStorage('3_2_2_Div', 'divBlank', '^0.333333333333$',[['.*', '\u00bfHas ejecutado el programa?']], false)">Check Me</button>
             <button class='btn btn-default' id="3_2_2_Div_bcomp" disabled name="compare" onclick="compareFITBAnswers('3_2_2_Div');">Compare Me</button>
             <br />
             <br />
@@ -528,19 +528,19 @@ else{
 
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">This book is using Python 3.0 which returns a decimal value from an integer calculation like <code class="docutils literal"><span class="pre">1</span> <span class="pre">/</span> <span class="pre">3</span></code>.  If we had executed <code class="docutils literal"><span class="pre">1</span> <span class="pre">/</span> <span class="pre">3</span></code> in an older Python development environment it would have printed <code class="docutils literal"><span class="pre">0</span></code> instead.  In many languages if you are only using integers in calculations (whole numbers - like -3,65, -39028, 602939) the result will also be an integer and the factional part (part after the decimal point) is thrown away. In those environments it is important to use decimal values (like <code class="docutils literal"><span class="pre">1.0</span> <span class="pre">/</span> <span class="pre">2</span></code>, <code class="docutils literal"><span class="pre">1</span> <span class="pre">/</span> <span class="pre">2.0</span></code>, or <code class="docutils literal"><span class="pre">1.0</span> <span class="pre">/</span> <span class="pre">2.0</span></code>) if you want a decimal result.</p>
+<p class="last">En este libro se utiliza Python 3.0, y el resultado de un cálculo entre enteros como <code class="docutils literal"><span class="pre">1</span> <span class="pre">/</span> <span class="pre">3</span></code> devuelve un valor decimal. Si hubiéramos ejecutado <code class="docutils literal"><span class="pre">1</span> <span class="pre">/</span> <span class="pre">3</span></code> en una versión más antigua de Python el resultado hubiera sido <code class="docutils literal"><span class="pre">0</span></code>. En muchos lenguajes, si en los cálculos estás utilizando solamente números enteros (como -3, 65, -39028, 602939) el resultado será también un entero, y se ignorará la parte decimal, la que aparecería detrás del punto (en los lenguajes de programación la coma decimal se representa como un punto). En esos entornos de programación más antiguos es fudamental expresar valores decimales en las operaciones (como <code class="docutils literal"><span class="pre">1.0</span> <span class="pre">/</span> <span class="pre">2</span></code>, <code class="docutils literal"><span class="pre">1</span> <span class="pre">/</span> <span class="pre">2.0</span></code>, o <code class="docutils literal"><span class="pre">1.0</span> <span class="pre">/</span> <span class="pre">2.0</span></code>) si quieres que el resultado sea decimal.</p>
 </div>
 </div>
 <div class="section" id="modulo">
-<h2>Modulo<a class="headerlink" href="#modulo" title="Permalink to this headline">¶</a></h2>
-<p id="index-3">There are also some symbols that may be used in ways that you don&#8217;t expect.</p>
+<h2>Módulo<a class="headerlink" href="#modulo" title="Permalink to this headline">¶</a></h2>
+<p id="index-3">También se pueden utilizar algunos otros símbolos de formas que no te esperas.</p>
 
             <div id="3_2_3_Mod" class="alert alert-warning">
-            csp-3-2-3: What will be printed when you click on the <em>Run</em> button in the code below? <input type='text' id='modBlank' class="form-control" style="display:inline; width: 90px;" value=""></input>
+            csp-3-2-3: ¿Qué valor se mostrará cuando pulses el botón de ejecutar en el siguiente código? <input type='text' id='modBlank' class="form-control" style="display:inline; width: 90px;" value=""></input>
             <script>
             $(document).ready(function(){checkPreviousFIB('3_2_3_Mod');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkFIBStorage('3_2_3_Mod', 'modBlank', '^0$',[['.*', 'Did you actually run the program?']], false)">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkFIBStorage('3_2_3_Mod', 'modBlank', '^0$',[['.*', '\u00bfHas ejecutado ya el programa?']], false)">Check Me</button>
             <button class='btn btn-default' id="3_2_3_Mod_bcomp" disabled name="compare" onclick="compareFITBAnswers('3_2_3_Mod');">Compare Me</button>
             <br />
             <br />
@@ -630,14 +630,14 @@ else{
 
 </div>
 
-<p>You may not be familiar with the <strong>modulo</strong> (remainder) operator <code class="docutils literal"><span class="pre">%</span></code>.  It returns the remainder when you divide the first number by the second.  You probably did this long ago when you were learning long division.  In the case of <code class="docutils literal"><span class="pre">4</span> <span class="pre">%</span> <span class="pre">2</span></code>, <code class="docutils literal"><span class="pre">2</span></code> goes into <code class="docutils literal"><span class="pre">4</span></code> two times with a remainder of <code class="docutils literal"><span class="pre">0</span></code>.  The result of <code class="docutils literal"><span class="pre">5</span> <span class="pre">%</span> <span class="pre">2</span></code> would be <code class="docutils literal"><span class="pre">1</span></code> since <code class="docutils literal"><span class="pre">2</span></code> goes into <code class="docutils literal"><span class="pre">5</span></code>, two times with a remainder of <code class="docutils literal"><span class="pre">1</span></code>. In fact you can check if the result of <code class="docutils literal"><span class="pre">X</span> <span class="pre">%</span> <span class="pre">2</span></code> is equal to <code class="docutils literal"><span class="pre">1</span></code> to see if <code class="docutils literal"><span class="pre">X</span></code> is odd and if the result of <code class="docutils literal"><span class="pre">X</span> <span class="pre">%</span> <span class="pre">2</span></code> is equal to <code class="docutils literal"><span class="pre">0</span></code> then <code class="docutils literal"><span class="pre">X</span></code> is even.</p>
+<p>Es posible que no estés familiarizado con el operador <strong>módulo</strong> (resto) <code class="docutils literal"><span class="pre">%</span></code>. Este operador devuelve el resto de dividir el primer número entre el segundo. Muy probablemente hiciste esto hace mucho tiempo, cuando estabas aprendiendo a dividir. En el caso de <code class="docutils literal"><span class="pre">4</span> <span class="pre">%</span> <span class="pre">2</span></code>, <code class="docutils literal"><span class="pre">2</span></code> &#8220;cabe&#8221; dos veces dentro de <code class="docutils literal"><span class="pre">4</span></code> y no sobra nada, luego el resto es <code class="docutils literal"><span class="pre">0</span></code>. El resultado de <code class="docutils literal"><span class="pre">5</span> <span class="pre">%</span> <span class="pre">2</span></code> sería <code class="docutils literal"><span class="pre">1</span></code>, porque <code class="docutils literal"><span class="pre">2</span></code> cabe dos veces dentro de <code class="docutils literal"><span class="pre">5</span></code> y el resto es <code class="docutils literal"><span class="pre">1</span></code>. En la práctica, por ejemplo, si el resultado de <code class="docutils literal"><span class="pre">X</span> <span class="pre">%</span> <span class="pre">2</span></code> es igual a <code class="docutils literal"><span class="pre">1</span></code> significa que <code class="docutils literal"><span class="pre">X</span></code> es impar, y si el resultado es <code class="docutils literal"><span class="pre">0</span></code> significará que <code class="docutils literal"><span class="pre">X</span></code> es par.</p>
 <div class="align-center figure" id="id1">
 <a class="reference internal image-reference" href="../_images/mod-py.png"><img alt="../_images/mod-py.png" src="../_images/mod-py.png" style="width: 150px;" /></a>
-<p class="caption"><span class="caption-text">Figure 3: Long division showing the whole number result and the remainder</span></p>
+<p class="caption"><span class="caption-text">Imagen 3: Desarrollo de una división donde se muestra el resultado y el resto.</span></p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The result of <code class="docutils literal"><span class="pre">x</span> <span class="pre">%</span> <span class="pre">y</span></code> when <code class="docutils literal"><span class="pre">x</span></code> is smaller than <code class="docutils literal"><span class="pre">y</span></code> is always <code class="docutils literal"><span class="pre">x</span></code>.  The value <code class="docutils literal"><span class="pre">y</span></code> can&#8217;t go into <code class="docutils literal"><span class="pre">x</span></code> at all, since <code class="docutils literal"><span class="pre">x</span></code> is smaller than <code class="docutils literal"><span class="pre">y</span></code>, so the result is just <code class="docutils literal"><span class="pre">x</span></code>.  So if you see <code class="docutils literal"><span class="pre">2</span> <span class="pre">%</span> <span class="pre">3</span></code> the result is <code class="docutils literal"><span class="pre">2</span></code>.  You can edit the code above to try this for yourself.</p>
+<p class="last">El resultado de <code class="docutils literal"><span class="pre">x</span> <span class="pre">%</span> <span class="pre">y</span></code> cuando <code class="docutils literal"><span class="pre">x</span></code> es más pequeño que <code class="docutils literal"><span class="pre">y</span></code> es siempre <code class="docutils literal"><span class="pre">x</span></code>. El valor de <code class="docutils literal"><span class="pre">y</span></code> no caben en <code class="docutils literal"><span class="pre">x</span></code>, puesto que <code class="docutils literal"><span class="pre">x</span></code> es más pequeño que <code class="docutils literal"><span class="pre">y</span></code>, luego el resultado es simplemente <code class="docutils literal"><span class="pre">x</span></code>. Así pues, el resultado de <code class="docutils literal"><span class="pre">2</span> <span class="pre">%</span> <span class="pre">3</span></code> es <code class="docutils literal"><span class="pre">2</span></code>. Puedes comprobarlo por ti mismo modificando el código anterior.</p>
 </div>
 </div>
 </div>
@@ -645,7 +645,7 @@ else{
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Assigning a Name' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Asignar un nombre' data-toggle="tooltip">
     <a href="assignName.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>

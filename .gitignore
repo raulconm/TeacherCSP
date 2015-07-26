@@ -9,6 +9,7 @@
 *.egg-info
 dist/
 build/Teacher-CSP/*.html
+build/
 eggs/
 parts/
 var/

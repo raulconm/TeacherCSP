@@ -68,7 +68,7 @@ Asignar un nombre
 	single: variable
 	pair: programming; variable
 	
-Un ordenador puede asociar un nombre con una variable. Esto se consigue creando una **variable**, que es un espacio de la memoria del ordenador que representa a un valor. Un ejemplo de **variable** puede ser el marcador de un videojuego. Normalmente este marcador se inicia con 0 se va incrementando según el juego avanza. El marcador puede camviar o *variar* durante el juego, de ahí el nombre de **variable**. También asocias un nombre a un número cuando añades un nuevo nombre y número de teléfono en la agenda de tu móvil. Cuando le pides que llame a "María" tu móvil buscará el número de teléfono asociado a ese nombre y llamará.
+Un ordenador puede asociar un nombre con un valor. Esto se consigue creando una **variable**, que es un espacio de la memoria del ordenador que representa a un valor. Un ejemplo de **variable** puede ser el marcador de un videojuego. Normalmente este marcador se inicia con 0, y se va incrementando según el juego avanza. El marcador puede cambiar o *variar* durante el juego, de ahí el nombre de **variable**. También asocias un nombre a un número cuando añades un nuevo nombre y número de teléfono en la agenda de tu móvil. Cuando le pides que llame a "María", tu móvil buscará el número de teléfono asociado a ese nombre y llamará.
 
 .. figure:: Figures/pongScore.png
     :width: 400px
@@ -77,7 +77,7 @@ Un ordenador puede asociar un nombre con una variable. Esto se consigue creando 
     
     Imagen 1: Un juego de pong en `Scratch <http://scratch.mit.edu>`_ con un marcador en la esquina superior izquierda.
     
-Imagina que una variable es cmo una caja que tiene una etiqueta, y dentro de la cual puedes guarda un valor. El valor será cualquier cosa que se pueda representar en un ordenador, y almacenado en su memoria. La memoria de un ordenador está formada únicamente por números (en realidad por patrones de voltajes, pero podemos tomarlos como números). Todo lo que un ordenador puede recordar en su memoria se traduce a números -- pero no te preocupes ahora de cómo sucede esto.  
+Imagina que una variable es como una caja que tiene una etiqueta, dentro de la cual puedes guardar un valor. El valor será cualquier cosa que se pueda representar en un ordenador, y que pueda almacenar en su memoria. La memoria de un ordenador está formada únicamente por números (en realidad por patrones de voltajes, pero podemos tomarlos como números). Todo lo que un ordenador puede recordar en su memoria se traduce a números -- pero no te preocupes ahora de cómo sucede esto.  
 
 .. figure:: Figures/assignA.png
     :align: center
@@ -90,16 +90,16 @@ Imagina que una variable es cmo una caja que tiene una etiqueta, y dentro de la 
 	single: assignment
 	pair: programming; assignment
 	
-In programming languages, setting a variable's value is also called **assignment**.  A statement like ``a = 4`` means that the symbol ``a`` refers to space (in the computer's memory) that is assigned the value ``4``.  When we use the symbol ``a`` in a program the computer will substitute the value ``4``.  If we later change the value stored at ``a``, say by doing ``a = 7.2`` then we say that the variable ``a`` now has the value ``7.2`` meaning that the value in the box (memory) associated with the name ``a`` is changed to ``7.2``.
+En los lenguajes de programación, dar un nombre a una variable se conoce como **asignar**. Una instrucción como ``a = 4`` significa que el símbolo ``a`` hace referencia a un espacio (en la memoria del ordenador) que tiene asignado el valor ``4``. Cuando en el programa utilicemos el símbolo ``a``, el ordenador sabrá que nos referimos al valor ``4``. Si más adelante cambiamos el valor almacenado en ``a``, por ejemplo con la instrucción ``a = 7.2``, diremos que la variable ``a`` vale ahora ``7.2``, lo que significa que el valor contenido en la caja (de memoria) asociada con el nombre ``a`` se ha cambiado por ``7.2``.  
 
 .. figure:: Figures/changeA.png
     :align: center
     :width: 60
     :figclass: align-center
     
-    Figure 3: Changing the value of a variable in memory
+    Imagen 3: Cambiar el valor de una variable en la memoria.
 
-**Click on the right arrow below to play the following video.**
+**Haz clic en el icono de reproducir para ver el siguiente vídeo.**
 
 .. video:: intro_assignment
    :controls:
@@ -108,49 +108,49 @@ In programming languages, setting a variable's value is also called **assignment
    http://ice-web.cc.gatech.edu/ce21/1/static/video/assignment-v2-small.mov
    http://ice-web.cc.gatech.edu/ce21/1/static/video/assignment-v2-small.webm
    
-Legal Variable Names
-----------------------
+Nombres permitidos para las variables
+-------------------------------------
 
 ..	index::
 	single: variable names
 
-There are restrictions on what you can use as a variable name. 
+Hay algunas restricciones sobre los nombres que puedes darle a las variables. 
 
-* It must start with a letter (uppercase like ``A`` or lowercase like ``a``) or an underscore ``_``
-* It can also contain digits, like ``1`` or ``9``, just not as the first character
-* It can't be a Python keyword such as ``and``, ``def``, ``elif``, ``else``, ``for``, ``if``, ``import``, ``in``, ``not``, ``or``, ``return``, or ``while``.  These have special meaning in Python and are part of the language.
-* Case does matter.  A variable named ``result`` is not the same as one named ``Result``.
+* Deben comenzar por una letra (mayúscula como ``A`` o minúscula como ``a``) o por el símbolo de subrayado ``_``
+* Puede contener números, como ``1`` o ``9``, pero no empezar por un número.
+* No puede ser una palabra reservada de Python, como ``and``, ``def``, ``elif``, ``else``, ``for``, ``if``, ``import``, ``in``, ``not``, ``or``, ``return``, o ``while``.  Estas palabras tienen ya un significado en Python, son parte del lenguaje.
+* Las mayúsculas y minúsuculas son importantes.  Una variable llamada ``resultado`` no es la misma que otra llamada ``Resultado``.
 
-Since you can't have spaces in a variable name you can either join words together by uppercasing the first letter of each new word like ``heightInInches`` or use underscores between words ``height_in_inches``.  Uppercasing the first letter of each new word is called **camel-case** or **mixed-case**.  
+Como no están permitidos los espacios en el nombre de las variables, puedes unir palabras poniendo en mayúscula la primera letra de cada nueva palabra, como ``alturaEnCentimetros`` o utilizar el subrayado entre palabras, ``altura_en_centimetros``. 
 
 .. mchoicemf:: 3_1_1_varNames_Q1
    :answer_a: _a1
-   :answer_b: my_name
-   :answer_c: amountOfStuff
+   :answer_b: mi_nombre
+   :answer_c: muchasCosas
    :answer_d: BMP
    :answer_e: 1A
    :correct: e
-   :feedback_a: You can use an underscore as the first character in a variable name
-   :feedback_b: You can use an underscore between words in a variable name.
-   :feedback_c: You can use both uppercase and lowercase letters in a variable name.
-   :feedback_d: You can use only uppercase letters in a variable name.
-   :feedback_e: You can't use a digit as the first letter in a variable name.
+   :feedback_a: Sí puedes utilizar un signo de subrayado como primer carácter del nombre de una variable.
+   :feedback_b: Sí puedes utilizar el subrayado entre las palabras del nombre de una variable.
+   :feedback_c: En el nombre de una variable se pueden mezclar mayúsuculas y minúsculas.
+   :feedback_d: Sí puedes utilizar sólo mayúsuculas en el nombre de una variable.
+   :feedback_e: No está permitido que los nombres de variables comiencen por un número.
 
-   Which of the following is *not* a legal variable name?
+   ¿Cuál de los siguientes *no* es un nombre permitido para una variable?
    
 .. mchoicemf:: 3_1_2_varNames_Q2
-   :answer_a: _my_name
-   :answer_b: my name
-   :answer_c: myname
-   :answer_d: myName
-   :answer_e: my_name
+   :answer_a: _mi_nombre
+   :answer_b: mi nombre
+   :answer_c: minombre
+   :answer_d: miNombre
+   :answer_e: mi_nombre
    :correct: b
-   :feedback_a: This is legal, but you don't usually start a variable name with an underscore.
-   :feedback_b: You can't have a space in a variable name.  
-   :feedback_c: This may be hard to read, but it is legal.  
-   :feedback_d: Since you can't have spaces in names, one way to make variable names easier to read is to use camel case (uppercase the first letter of each new word).  
-   :feedback_e: Since you can't have spaces in names, one way to make variable names easier to read is to use an underscore between two words.  
+   :feedback_a: Está permitido, pero no es habitual que el nombre de una variable comience por subrayado.
+   :feedback_b: Los nombres de variables no pueden contener espacios.  
+   :feedback_c: Puede ser difícil de leer, pero está permitido.  
+   :feedback_d: Como no están permitidos los espacios, una manera de facilitar la lectura es poner en mayúsucula la primera letra de cada palabra del nombre de la variable.  
+   :feedback_e: Como no están permitidos los espacios en el nombre de las variables, puedes sustituirlos por subrayados.  
 
-   Which of the following is *not* a legal variable name?
+   ¿Cuál de los siguientes *no* es un nombre permitido para una variable?
 
 

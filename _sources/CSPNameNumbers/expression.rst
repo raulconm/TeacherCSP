@@ -55,21 +55,21 @@
 
 
 
-Expressions
+Expresiones
 =============
 
 ..	index::
 	single: expressions
 	single: arithmetic expressions
 
-The *right hand* side of the assignment statement doesn't have to be a value.  It can be *an arithmetic expression*, like ``2*2``.  The expression will be evaluated and the result from the expression will be stored in the variable.  
+Lo que hay *a la derecha* del igual en una asignación no tiene por qué ser obligatoriamente un valor. También puede ser una *expresión aritmética*, como ``2*2``. En ese caso se evaluará la expresión y el resultado se almacenará en la variable.  
 
 .. fillintheblank:: 3_2_1_Mult
    :correct: ^4$
-   :feedback1: ('.*','Did you actually run the program?')
+   :feedback1: ('.*','¿Has ejecutado el programa?')
    :blankid: multBlank
 
-   What will be printed when you click on the *Run* button in the code below? :textfield:`multBlank::small`
+   ¿Qué imprimirá el programa cuando pulses el botón para ejecutar el siguiente código? :textfield:`multBlank::small`
 
 .. activecode:: Expression_Mult
     :tour_1: "Line-by-line Tour"; 1: ex1-line1; 2: ex1-line2; 
@@ -78,28 +78,28 @@ The *right hand* side of the assignment statement doesn't have to be a value.  I
     result = 2 * 2
     print(result)
     
-|bigteachernote| Teacher Note: Assignment Dyslexia
-----------------------------------------------------
+|bigteachernote| Nota para el profesor: Dislexia en las asignaciones
+--------------------------------------------------------------
 
 ..	index::
 	single: assignment dyslexia
 
-Some students will write the expression on the left side of the ``=`` and the variable name on the right side (``2 * 2 = a``).  This is called assignment dyslexia and will result in an error.  The variable name *always* has to be on the left side of the ``=`` in an assignment.  
+Algunos estudiantes escribirán la expresión en el lado izquiero de ``=`` y el nombre de la variable en el lado derecho (``2 * 2 = a``). Esto se llama dislexia en la asignación, y originará un error. El nombre de la variable *siempre* debe ir a la izquierda del ``=`` en una asignación. 
 
-Integer Division
--------------------
+División de números enteros
+---------------------------
 
 ..	index::
 	single: integer division
    
-You can use all the standard mathematical symbols.
+Puedes utilizar cualquiera de los símbolos matemáticos habituales. 
 
 .. fillintheblank:: 3_2_2_Div
    :correct: ^0.333333333333$
-   :feedback1: ('.*','Did you actually run the program?')
+   :feedback1: ('.*','¿Has ejecutado el programa?')
    :blankid: divBlank
 
-   What will be printed when you click on the *Run* button in the code below? :textfield:`divBlank::medium`
+   ¿Qué se va a mostrar cuando pulses el botón de ejecutar en el siguiente código? :textfield:`divBlank::medium`
    
 .. activecode:: Expression_Div
     :tour_1: "Line-by-line Tour"; 1: ex2-line1; 2: ex1-line2; 
@@ -109,23 +109,23 @@ You can use all the standard mathematical symbols.
     print(result)
 
 .. note::
-   This book is using Python 3.0 which returns a decimal value from an integer calculation like ``1 / 3``.  If we had executed ``1 / 3`` in an older Python development environment it would have printed ``0`` instead.  In many languages if you are only using integers in calculations (whole numbers - like -3,65, -39028, 602939) the result will also be an integer and the factional part (part after the decimal point) is thrown away. In those environments it is important to use decimal values (like ``1.0 / 2``, ``1 / 2.0``, or ``1.0 / 2.0``) if you want a decimal result.
+   En este libro se utiliza Python 3.0, y el resultado de un cálculo entre enteros como ``1 / 3`` devuelve un valor decimal. Si hubiéramos ejecutado ``1 / 3`` en una versión más antigua de Python el resultado hubiera sido ``0``. En muchos lenguajes, si en los cálculos estás utilizando solamente números enteros (como -3, 65, -39028, 602939) el resultado será también un entero, y se ignorará la parte decimal, la que aparecería detrás del punto (en los lenguajes de programación la coma decimal se representa como un punto). En esos entornos de programación más antiguos es fudamental expresar valores decimales en las operaciones (como ``1.0 / 2``, ``1 / 2.0``, o ``1.0 / 2.0``) si quieres que el resultado sea decimal.  
    
-Modulo 
+Módulo 
 ---------
 
 ..	index::
 	single: modulo
 	single: remainder
    
-There are also some symbols that may be used in ways that you don't expect.  
+También se pueden utilizar algunos otros símbolos de formas que no te esperas.  
 
 .. fillintheblank:: 3_2_3_Mod
    :correct: ^0$
-   :feedback1: ('.*','Did you actually run the program?')
+   :feedback1: ('.*','¿Has ejecutado ya el programa?')
    :blankid: modBlank
 
-   What will be printed when you click on the *Run* button in the code below? :textfield:`modBlank::small`
+   ¿Qué valor se mostrará cuando pulses el botón de ejecutar en el siguiente código? :textfield:`modBlank::small`
    
 .. activecode:: Expression_Mod
     :tour_1: "Line-by-line Tour"; 1: ex3-line1; 2: ex1-line2; 
@@ -134,15 +134,15 @@ There are also some symbols that may be used in ways that you don't expect.
     result = 4 % 2
     print(result)
 
-You may not be familiar with the **modulo** (remainder) operator ``%``.  It returns the remainder when you divide the first number by the second.  You probably did this long ago when you were learning long division.  In the case of ``4 % 2``, ``2`` goes into ``4`` two times with a remainder of ``0``.  The result of ``5 % 2`` would be ``1`` since ``2`` goes into ``5``, two times with a remainder of ``1``. In fact you can check if the result of ``X % 2`` is equal to ``1`` to see if ``X`` is odd and if the result of ``X % 2`` is equal to ``0`` then ``X`` is even.
+Es posible que no estés familiarizado con el operador **módulo** (resto) ``%``. Este operador devuelve el resto de dividir el primer número entre el segundo. Muy probablemente hiciste esto hace mucho tiempo, cuando estabas aprendiendo a dividir. En el caso de ``4 % 2``, ``2`` "cabe" dos veces dentro de ``4`` y no sobra nada, luego el resto es ``0``. El resultado de ``5 % 2`` sería ``1``, porque ``2`` cabe dos veces dentro de ``5`` y el resto es ``1``. En la práctica, por ejemplo, si el resultado de ``X % 2`` es igual a ``1`` significa que ``X`` es impar, y si el resultado es ``0`` significará que ``X`` es par. 
 
 .. figure:: Figures/mod-py.png
     :width: 150px
     :align: center
     :figclass: align-center
     
-    Figure 3: Long division showing the whole number result and the remainder
+    Imagen 3: Desarrollo de una división donde se muestra el resultado y el resto.
     
 .. note::
-   The result of ``x % y`` when ``x`` is smaller than ``y`` is always ``x``.  The value ``y`` can't go into ``x`` at all, since ``x`` is smaller than ``y``, so the result is just ``x``.  So if you see ``2 % 3`` the result is ``2``.  You can edit the code above to try this for yourself.
+   El resultado de ``x % y`` cuando ``x`` es más pequeño que ``y`` es siempre ``x``. El valor de ``y`` no caben en ``x``, puesto que ``x`` es más pequeño que ``y``, luego el resultado es simplemente ``x``. Así pues, el resultado de ``2 % 3`` es ``2``. Puedes comprobarlo por ti mismo modificando el código anterior. 
 
