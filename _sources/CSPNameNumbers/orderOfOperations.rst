@@ -54,48 +54,49 @@
    :linenothreshold: 4
 
 
-How Expressions are Evaluated
-===============================
+Cómo se evalúan las expresiones
+================================
 
-The order that expressions are executed is the same as it is in math and is shown in the table below from highest precedence to lowest. If two symbols have the same precedence they are evaluated from left to right.   
+El orden en que se ejecutan las expresiones es el mismo que en matemáticas, tal como se muestra en la siguiente tabla, de mayor a menor prioridad. Cuando dos símbolos tienen la misma prioridad se evalúan de izquierda a derecha.
+   
 
 +------------------------+----------------------------------------------------+
-|Operator                | Name                                               |
+|Operador                | Nombre                                             |
 +------------------------+----------------------------------------------------+
-| -x                     | Negation                                           |
+| -x                     | Negación                                           |
 +------------------------+----------------------------------------------------+
-| x * y, x / y, x % y    | Multiplication, Division, and Modulo               |
+| x * y, x / y, x % y    | Multiplicación, División, y Módulo                 |
 +------------------------+----------------------------------------------------+
-| x + y, x - y           | Addition and subtraction                           |
+| x + y, x - y           | Suma y resta                                       |
 +------------------------+----------------------------------------------------+
 
 .. fillintheblank:: 3_4_1_Order1
    :correct: ^-2$
-   :feedback1: ('.*','Did you actually run the program?')
+   :feedback1: ('.*','¿Has ejecutado ya el programa?')
    :blankid: order1Blank
 
-   What is printed when you click on the *Run* button in the code below? :textfield:`order1Blank::small`
+   ¿Qué va a imprimir el siguiente programa cuando pulses el botón de ejecutar? :textfield:`order1Blank::small`
 
 .. activecode:: Expression_Order1
     :tour_1: "Line-by-line Tour"; 1: ex1-line1; 2: ex1-line2; 
     :nocodelens:
     
-    result = 4 + -2 * 3
-    print(result)
+    resultado = 4 + -2 * 3
+    print(resultado)
    
-You can change the default order by adding parentheses around part of an expression.
+Puedes cambiar el orden de ejecución de las expresiones añadiendo paréntesis para agruparlas.
 
 .. fillintheblank:: 3_4_2_Order2
    :correct: ^6$
-   :feedback1: ('.*','Did you actually run the program?')
+   :feedback1: ('.*','¿Has ejecutado el programa?')
    :blankid: order2Blank
 
-   What is printed when you click on the *Run* button in the code below? :textfield:`order2Blank::small`
+   ¿Qué imprimirá el siguiente programa cuando pulses el botón de ejecutar? :textfield:`order2Blank::small`
 
 .. activecode:: Expression_Order2
     :tour_1: "Line-by-line Tour"; 1: ex1-line1; 2: ex1-line2; 
     :nocodelens:
     
-    result = (4 + -2) * 3
-    print(result)
+    resultado = (4 + -2) * 3
+    print(resultado)
 

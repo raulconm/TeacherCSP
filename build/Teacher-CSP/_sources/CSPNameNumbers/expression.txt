@@ -79,7 +79,7 @@ Lo que hay *a la derecha* del igual en una asignación no tiene por qué ser oblig
     print(result)
     
 |bigteachernote| Nota para el profesor: Dislexia en las asignaciones
-----------------------------------------------------
+--------------------------------------------------------------
 
 ..	index::
 	single: assignment dyslexia

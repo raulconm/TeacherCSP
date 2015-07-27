@@ -53,41 +53,41 @@
 .. highlight:: java
    :linenothreshold: 4
 
-Driving from Chicago to Dallas
-====================================
+Conducir de Málaga a Santander
+==============================
 
 ..	index::
 	single: CodeLens
 	
-As an example, imagine that you were planning to drive from Chicago to Dallas. If you know how many miles-per-gallon your car gets, and how many miles it is, you can estimate the number of gallons it will take.
+Imagínate que estás planeando un viaje de Málaga a Santander. Si sabes cuántos kilómetros por litro puede recorrer tu coche, y cuántos kilómetros de distancia hay de una ciudad a otra, puedes calcular el número de litros que vas a consumir.
 
-Use the *CodeLens* below to trace through what it would look like for a computer to execute this program:
+Utiliza el siguiente *CodeLens* para observar cómo ejecutaría un ordenador el siguiente programa:
 
-- Press |codelensfwd| to go forward executing a single line of the program.
-- Press |codelenslast| to execute all the lines of the program.
+- Pulsa |codelensfwd| para ejecutar el programa línea por línea.
+- Pulsa |codelenslast| para ejecutar todas las líneas del programa de una vez.
 
-.. codelens:: Chicago_2_Dallas
+.. codelens:: Malaga_2_Santander
 
-   distance = 924.7
-   mpg = 35.5
-   gallons = distance / mpg
+   distancia = 948.1
+   kpl = 16
+   litros = distancia / kpl
    
 ..	index::
 	single: camel case
 
-Now, if we know the average cost of a gallon of gas, we can figure out the cost of the trip from Chicago to Dallas in your car.  
+Además, si sabemos cuál es el coste medio de un litro de combustible, podemos calcular cuánto nos va a costar el viaje en coche de Málaga a Santander.  
 
 .. Note::
 
-   Notice that in the code below that we are using variable names like ``costPerGallon`` and ``costTrip``.  A variable name can't contain any spaces in it, so one way to make a variable name more readable when it contains more than one word is to use uppercase the first letter of each new word, as you see in ``costPerGallon`` and ``costTrip``.  This is also called **camel case**. Also be aware that case does matter in Python:  ``costTrip`` is a different name than ``costtrip``.   
+   Observa que estamos utilizando nombres de variables como ``costePorLitro`` y ``costeDelViaje``. Un nombre de variable no puede contener espacios, así que una forma de hacer que la variable sea más fácil de leer cuando contiene más de una palabra es escribiendo en mayúscula la primera letra de cada nueva palabra, como en ``costePorLitro`` y ``costeDelViaje``. Fíjate que esta diferencia entre mayúsculas y minúsuclas es importante en Python, porque ``costedelviaje`` y ``costeDelViaje`` serán variables distintas.   
 
-.. codelens:: Chicago_2_Dallas_Cost
+.. codelens:: Malaga_2_Santander_Coste
 
-   distance = 924.7
-   mpg = 35.5
-   gallons = distance / mpg
-   costPerGallon = 3.65
-   costTrip = gallons * costPerGallon
+   distancia = 948.1
+   kpl = 16
+   litros = distancia / kpl
+   costePorLitro = 1.22
+   costDelViaje = litros * costePorLitro
    
 ..	index::
 	single: tracing
@@ -95,46 +95,46 @@ Now, if we know the average cost of a gallon of gas, we can figure out the cost 
 	single: print
 	pair: programming; tracing
 	
-What we're doing above is **tracing** a program.  Normally, we **run** a program -- tell the computer to execute each step of the program as fast as possible. When we do that, we don't see individual variable values, as we can above.  We can check values (including the values for variables) by printing them.  The function ``print`` can take an *input* (a variable name inside of parentheses) whose value will be displayed. The ``print`` function can also print a **string** (like ``"Cost to get from Chicago to Dallas"``) which is a sequence of characters inside a pair of double quotes as seen in line 6.  It will print the exact contents of the string.  This is useful for explaining the values that you are printing.
+Esto que hemos hecho se llama **trazar** el programa. Normalmente lo que hacemos es **ejecutar** un programa -- le decimos al ordenador que ejecute cada paso del programa tan rápido como pueda. Cuando lo hacemos, no podemos ver los valores que va tomando cada variable, como hemos hecho aquí. Podemos saber qué valores tiene cada variable haciendo que se muestren en la pantalla del ordenador. La función ``print`` puede tomar una *entrada* (el nombre de una variable indicada entre paréntesis) y mostrar su contenido, su valor, por pantalla. Con ``print`` también se puede imprimir en pantalla una **cadena de caracteres** (como ``"Coste para ir de Málaga a Santander"``), que es una secuencia de caracteres delimitada por comillas, como en la línea 6. Esto imprimirá el contenido exacto de la cadena, y es muy útil para indicar qué valores se están mostrando.
 
-Press the |runbutton| below to see this program run at full speed.
+Pulsa |runbutton| para ejecutar este programa a velocidad normal.
 
 .. activecode:: Trip_Calculator
    :tour_1: "Line by line tour"; 1: trp-line1; 2: trp-line2; 3: trp-line3; 4: trp-line4; 5: trp-line5; 6: trp-line6; 7: trp-line7; 
 
-   distance = 924.7
-   mpg = 35.5
-   gallons = distance / mpg
-   costPerGallon = 3.65
-   costTrip = gallons * costPerGallon
-   print("Cost to get from Chicago to Dallas")
-   print(costTrip)
+   distancia = 948.1
+   kpl = 16
+   litros = distancia / kpl
+   costePorLitro = 1.22
+   costeDelViaje = litros * costePorLitro
+   print("Coste del viaje de Málaga a Santander")
+   print(costeDelViaje)
 
-How does this program work?  Try pressing the |audiobutton| button above to listen to an explanation of the program.
+¿Cómo funciona este programa? Pulsa el botón |audiobutton| para escuchar una explicación al programa. 
 
-Try editing the program above and running it to answer this question:
+Modifica el programa anterior y ejecútalo para contestar a esta pregunta:
 
-.. mchoicemf:: 3_5_1_Chicago_2_Dallas_Q1
-   :answer_a: Yes
-   :answer_b: No
-   :answer_c: We should fly instead.
+.. mchoicemf:: 3_5_1_Malaga_2_Santander_Q1
+   :answer_a: Sí.
+   :answer_b: No.
+   :answer_c: Sería mejor ir en avión.
    :correct: a
-   :feedback_a: Yes, the cost would be $89.86 (which you knew by editing the program above and running it)
-   :feedback_b: Try it -- it's just under $90.
-   :feedback_c: You might be right, but figure out the cost by editing the above program
+   :feedback_a: Sí, el coste sería 69.922375 euros (lo has confirmado al modificar y ejecutar el programa anterior).
+   :feedback_b: Pruébalo -- está justo por debajo del límite de 70 euros.
+   :feedback_c: Puede que tengas razón, pero mejor calcula el coste modificando en programa.
 
-   If the cost per gallon drops to $3.45, can we drive from Chicago to Dallas for less than $90 in gas?
+    Si el precio por litro fuera de 1.18 euros, ¿podríamos conducir de Málaga a Santander por menos de 70 euros de combustible?
    
-.. mchoicemf:: 3_5_2_Chicago_2_Dallas_Q2
-   :answer_a: 3.45
-   :answer_b: 3.65
-   :answer_c: costPerGallon
+.. mchoicemf:: 3_5_2_Malaga_2_Santander_Q2
+   :answer_a: 1.22
+   :answer_b: 1.18
+   :answer_c: costePorLitro
    :correct: c
-   :feedback_a: This would be true if it was printing the value of original variable.
-   :feedback_b: This would be true if it was printing the value of the variable after you changed it to figure out the previous question.
-   :feedback_c: Since <code>costPerGallon</code> is in double quotes it is a string, and it will print out those exact characters.
+   :feedback_a: Sería cierto si estuviéramos imprimiendo el valor de la variable original.
+   :feedback_b: Sería así si estuviéramos imprimiendo el valor de la variable una vez modificado para calcular la pregunta anterior.
+   :feedback_c: Como <code>costPorLitro</code> está entre comillas el programa lo considera una cadena, y por tanto imprime extactamente los caracteres que contiene la cadena.
 
-   What would be printed by ``print("costPerGallon")`` if this line was added to the end of the last program?
+   ¿Qué imprimirá la instrucción ``print("costePorLitro")`` si añadimos esta línea al final del programa?
 
 
 
