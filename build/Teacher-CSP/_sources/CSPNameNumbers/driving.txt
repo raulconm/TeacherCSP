@@ -107,7 +107,7 @@ Pulsa |runbutton| para ejecutar este programa a velocidad normal.
    litros = distancia / kpl
    costePorLitro = 1.22
    costeDelViaje = litros * costePorLitro
-   print("Coste del viaje de Málaga a Santander")
+   print("Coste del viaje de Malaga a Santander")
    print(costeDelViaje)
 
 ¿Cómo funciona este programa? Pulsa el botón |audiobutton| para escuchar una explicación al programa. 

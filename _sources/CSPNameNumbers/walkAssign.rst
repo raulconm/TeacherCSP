@@ -53,16 +53,16 @@
 .. highlight:: java
    :linenothreshold: 4
 
-Walking through Assignment more Generally
+Consideraciones generales sobre las asignaciones
 ======================================================
 
-Let's explore assignment in general.  Try tracing this example.
+Vamos a ver algunas generalidades sobre las asignaciones. Intenta trazar el siguiente ejemplo.
 
 .. codelens:: Assign_Basic
 
    a = 1
    b = 12.3
-   c = "Fred"
+   c = "Alfredo"
    d = b
 
 .. mchoicemf:: 3_7_1_Assignment_Q1
@@ -71,14 +71,14 @@ Let's explore assignment in general.  Try tracing this example.
    :answer_c: "b"
    :answer_d: "d"
    :correct: b
-   :feedback_a: The variable a is not used in defining the variable b.
-   :feedback_b: The variable d is set to a copy of the value in variable b.  The variable b still holds the value 12.3 as well.  
-   :feedback_c: The variable d gets assigned the same value as the one stored in b.
-   :feedback_d: The variable d gets its value from the variable b.  
+   :feedback_a: Para definir el valor de la variable b no se ha utilizado la variable a.
+   :feedback_b: La variable d ha copiado su valor a partir del valor de la variable b.  La variable también b sigue conteniendo el valor 12.3.  
+   :feedback_c: A la variable d se le ha asignado el valor que estaba almacenado en b. 
+   :feedback_d: La variable d ha tomado el valor de la variable b.  
 
-   What is the value of variable ``d`` when this program is finished running?
+   ¿Cuál es el valor de la variable ``d`` una vez ejecutado el programa?
 
-The *sequence* of statements in a program is very important.  Assignment doesn't create some kind of relationship between the names, like in mathematics.  The variable ``a`` might equal ``12`` at one point, and ``15`` at another. An assignment statement is an action that occurs once, and then is over with.    
+Es muy importante la *secuencia* de las instrucciones en un programa. Una asignación no crea una relación entre los nombres, como ocurre en matemáticas. La variable ``a`` puede ser igual a ``12`` en un momento, e igual a ``15`` en otro. Una instrucción de asignación es una acción que ocurre en un momento, y que puede cambiar después.    
 
 .. codelens:: Assign_Multiple
 
@@ -87,57 +87,58 @@ The *sequence* of statements in a program is very important.  Assignment doesn't
 	    var2 = var1
 
 .. mchoicemf:: 3_7_2_Assignment_Multiple_Q1
-		   :answer_a: var1 is 45, var2 is 45
-		   :answer_b: var1 is 45, var2 is var1
-		   :answer_c: var1 is 17.3, var2 is 45
-		   :answer_d: var1 is 17.3, var2 is 17.3
+		   :answer_a: var1 es 45, var2 es 45
+		   :answer_b: var1 es 45, var2 es "var1"
+		   :answer_c: var1 es 17.3, var2 es 45
+		   :answer_d: var1 es 17.3, var2 es 17.3
 		   :correct: d
-		   :feedback_a: The variable var1 was set to 45, but that gets changed in line 2, before var2 gets set to any value at all.
-		   :feedback_b: Both variables contain numeric values, because those are the only values in this program.
-		   :feedback_c: The variable var2 never gets set to 45 in this program.
-		   :feedback_d: The variable var1 is first set to 45 and then changed to 17.3, and then, var2 gets the value from var1.
+		   :feedback_a: A la variable var1 se le ha asignado el valor 45, pero esto cambia en la línea 2, antes incluso de que var2 haya tenido ningún valor.
+		   :feedback_b: Ambas variables contienen valores numéricos, porque así son los valores que existen en este programa.
+		   :feedback_c: A la variable var2 nunca se le ha asignado el valor 45 en el programa.
+		   :feedback_d: A la variable var1 se le asigna primero el valor 45, y a continuación se le asigna el valor 17.3, y finalmente, a la variable var2 se le asigna el valor contenido en var1.
 
-		   What are the values in ``var1`` and ``var2`` after this program runs?
+		   ¿Cuáles son los valores de ``var1`` y ``var2`` una vez ejecutado este programa?
 
-We can see values (including the values for named variables) by printing them.  It's a useful way to see what's going on inside a program.  Try running this example where we're having the computer calculate the number of days in three weeks:
+Podemos ver los valores (también los contenidos en las variables) imprimiéndolos. Es un método muy útil para saber qué está ocurriendo en el programa. Ejecuta este programa de ejemplo donde se calcula el número de días que hay en tres semanas: 
 
 .. activecode:: Assign_Days
    :tour_1: "Line by line tour"; 1: calcDays-line1; 2: calcDays-line2; 3: calcDays-line3; 4: calcDays-line4; 5: calcDays-line5; 6: calcDays-line6;
 
-   daysInWeek = 7
-   print(daysInWeek)
-   numDays = 7 * 3
-   print(numDays)
-   numDays2 = daysInWeek * 3
-   print(numDays2)
+   diasEnSemana = 7
+   print(diasEnSemana)
+   numeroDeDias = 7 * 3
+   print(numeroDeDias)
+   numeroDeDias2 = diasEnSemana * 3
+   print(numeroDeDias2)
 
 .. mchoicemf:: 3_7_3_Assign_Days_Q1
-		   :answer_a: 7, 7*3, daysInWeek*3
-		   :answer_b: daysInWeek, numDays, numDays2
+		   :answer_a: 7, 7*3, diasEnSemana*3
+		   :answer_b: diasEnSemana, numeroDeDias, numeroDeDias2
 		   :answer_c: 7, 21, 21
 		   :answer_d: 7, 21, 3
 		   :correct: c
-		   :feedback_a: The values will actually be computed and numbers will be printed.
-		   :feedback_b: The variable names will not be printed.
-		   :feedback_c: The first print will print the value of daysInWeek (7), the second the value of numDays (21), and the third the value of numDays2 (21).
-		   :feedback_d: The value for daysInWeek will be computed and assigned.
+		   :feedback_a: Se imprimen los números, una vez calculado su valor.
+		   :feedback_b: No se imprimen nombres de variables.
+		   :feedback_c: El primer print imprime el valor de diasEnSemana (7), el segundo imprime el valor de numeroDeDias (21), y el tercero imprime el valor de numeroDeDias2 (21).
+		   :feedback_d: Para hacer el cálculo se utiliza el valor de diasEnSemana, y a continuación se asigna el resultado a numeroDeDias2.
 
-		   What three values are printed when this program runs?
+		   ¿Cuáles son los tres valores que se imprimen al ejecutar este programa?
    
 .. parsonsprob:: 3_7_4_Per_Person_Cost
 
-   The following program should figure out the cost per person for a dinner including the tip. But the blocks have been mixed up.  Drag the blocks from the left and put them in the correct order on the right.  Click the <i>Check Me</i> button to check your solution.</p>
+   Este programa calcula el coste por persona de una cena, incluyendo la propina. Pero los bloques están mezclados. Arrástralos desde la parte izquierda y colócalos a la derecha en el orden correcto. Haz clic en <i>Check Me</> para comprobar la solución.</p>
+
    -----
-   bill = 89.23
+   cuenta = 89.23
    =====
-   tip = bill * 0.20
+   propina = cuenta * 0.20
    =====
-   total = bill + tip
+   total = cuenta + propina
    =====
-   numPeople = 3
-   perPersonCost = total / numPeople
+   numeroDePersonas = 3
+   costePorPersona = total / numeroDePersonas
    =====
-   print(perPersonCost)
+   print(costePorPersona)
 
 
 

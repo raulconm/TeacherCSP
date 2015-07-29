@@ -53,10 +53,10 @@
 .. highlight:: java
    :linenothreshold: 4
 
-Following the Ketchup Ooze
-====================================
+La velocidad del ketchup
+========================
 
-Let's compute how long it would take ketchup to ooze down a table.  Imagine that you tilted a four foot table, and poured ketchup at the top.  How long would it take to get to the bottom of the table?  We're going to ignore physics and the angle of the table, and just start from the average speed of ketchup as .028 miles per hour.
+Vamos a calcular el tiempo que tardaría el ketchup en rebosar de una mesa. Imaginemos para ello que tenemos una mesa normal, de 1,5 metros de largo, y que comenzamos a derramar sobre ella una cantidad suficiente de ketchup. ¿Cuánto tiempo tardaría el ketchup en alcanzar el otro lado de la mesa y caer al suelo? Para simplificar, vamos a ignorar la física avanzada y el ángulo de la mesa, y comenzaremos considerando que la velocidad media a la que se desplaza el ketchup es de 0,045 kilómetros por hora.   
 
 .. figure:: Figures/ketchup.jpg
     :width: 200px
@@ -64,24 +64,24 @@ Let's compute how long it would take ketchup to ooze down a table.  Imagine that
     :alt: A picture of ketchup dripping from a bottle
     :figclass: align-center
 
-    Figure 2: Ketchup dripping speed
+    Imagen 2: Velocidad de una gota de ketchup
 
 .. codelens:: Ketchup_Speed
 
-   dripMPH = .028
-   FPM = 5280.0
-   dripFPH = dripMPH * FPM
-   MPH = 60
-   dripFPM = dripFPH / MPH
-   print("Ketchup speed in feet per minute:")
-   print(dripFPM)
-   print("Ketchup speed to move 4 feet in minutes:")
-   print(4 / dripFPM)
+   velKPH = .045            # Velocidad del ketchup en Km/hora
+   CPK = 100000.0           # Centímetros en 1 kilómetro  
+   velCPH = velKPH * CPK    # Velocidad ketchup en cm\hora  
+   MPH = 60                 # Minutos en 1 hora 
+   velCPM = velCPH / MPH    # Velocidad ketchup en cm\minuto
+   print("Velocidad del ketchup en centrímetros por minuto:")
+   print(velCPM)
+   print("Minutos para recorrer los 150 cm. de mesa:")
+   print(150 / velCPM)
 
    
-The next type of problem is new.  It shows correct code in code blocks on the left side, but the order is mixed up.  You need to drag the blocks to the right side in the right order.  Please watch the video below for a demonstration.
+A continuación veamos un nuevo tipo de problema. A la izquierda se muestra el código del programa separado en bloques desordenados. Para resolverlo tienes que arrastrar los bloques a la parte derecha y colocarlos en el orden correcto. Observa por favor el siguiente vídeo par ver una demostración.
    
-**Click on the right arrow below to play the following video.**
+**Haz clic en el icono de reproducir para ver el vídeo.**
    
 .. video:: parsons
    :controls:
@@ -92,20 +92,20 @@ The next type of problem is new.  It shows correct code in code blocks on the le
 
 .. parsonsprob:: 3_6_1_Ketchup_Speed
 
-   The following program figures out the ketchup speed in feet per <i>seconds</i>.  Drag the blocks from the left and put them in the correct order on the right.  Click the <i>Check Me</i> button to check your solution.</p>
+   El programa siguiente calcula la velocidad del ketchup en centímetros por <i>segundo</i>. Arrastra los bloques desde la izquierda y colócalos a la derecha en el orden correcto. Pulsa el botón <i>Check Me</i> para comprobar si lo has hecho correctamente.</p>
    -----
-   dripMPH = .028
-   FPM= 5280.0
-   dripFPH = dripMPH * FPM
+   velKPH = .045
+   CPK= 100000.0
+   velCPH = velKPH * CPK    
    =====
-   MPH = 60
-   dripFPM = dripFPH / MPH
+   MPH = 60  #mins por hora
+   velCPM = velCPH / MPH    
    =====
-   SPM = 60
-   dripFPS = dripFPM / SPM
+   SPM = 60  #segs. por minuto
+   velCPS = velCPM / SPM
    =====
-   print("Ketchup speed:")
-   print(ketchupFPS)
+   print("Velocidad en cm. por segundo:")
+   print(velCPS)
 
 
 

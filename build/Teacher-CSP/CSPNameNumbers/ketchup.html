@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Following the Ketchup Ooze &mdash; Runestone Interactive Overview</title>
+    <title>La velocidad del ketchup &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -87,8 +87,8 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
-    <link rel="next" title="Walking through Assignment more Generally" href="walkAssign.html" />
-    <link rel="prev" title="Driving from Chicago to Dallas" href="driving.html" />
+    <link rel="next" title="Consideraciones generales sobre las asignaciones" href="walkAssign.html" />
+    <link rel="prev" title="Conducir de Málaga a Santander" href="driving.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -274,7 +274,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Following the Ketchup Ooze</a></li>
+<li><a class="reference internal" href="#">La velocidad del ketchup</a></li>
 </ul>
 </ul>
 </li>
@@ -282,13 +282,13 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Driving from Chicago to Dallas" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Conducir de Málaga a Santander" data-toggle="tooltip">
     <a href="driving.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Walking through Assignment more Generally' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - Consideraciones generales sobre las asignaciones' data-toggle="tooltip" >
     <a href="walkAssign.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -319,12 +319,12 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="following-the-ketchup-ooze">
-<h1>Following the Ketchup Ooze<a class="headerlink" href="#following-the-ketchup-ooze" title="Permalink to this headline">¶</a></h1>
-<p>Let&#8217;s compute how long it would take ketchup to ooze down a table.  Imagine that you tilted a four foot table, and poured ketchup at the top.  How long would it take to get to the bottom of the table?  We&#8217;re going to ignore physics and the angle of the table, and just start from the average speed of ketchup as .028 miles per hour.</p>
+  <div class="section" id="la-velocidad-del-ketchup">
+<h1>La velocidad del ketchup<a class="headerlink" href="#la-velocidad-del-ketchup" title="Permalink to this headline">¶</a></h1>
+<p>Vamos a calcular el tiempo que tardaría el ketchup en rebosar de una mesa. Imaginemos para ello que tenemos una mesa normal, de 1,5 metros de largo, y que comenzamos a derramar sobre ella una cantidad suficiente de ketchup. ¿Cuánto tiempo tardaría el ketchup en alcanzar el otro lado de la mesa y caer al suelo? Para simplificar, vamos a ignorar la física avanzada y el ángulo de la mesa, y comenzaremos considerando que la velocidad media a la que se desplaza el ketchup es de 0,045 kilómetros por hora.</p>
 <div class="align-center figure" id="id1">
 <a class="reference internal image-reference" href="../_images/ketchup.jpg"><img alt="A picture of ketchup dripping from a bottle" src="../_images/ketchup.jpg" style="width: 200px;" /></a>
-<p class="caption"><span class="caption-text">Figure 2: Ketchup dripping speed</span></p>
+<p class="caption"><span class="caption-text">Imagen 2: Velocidad de una gota de ketchup</span></p>
 </div>
 
 <div class="alert alert-warning cd_section">
@@ -332,7 +332,7 @@
 <p class="cl_caption"><span class="cl_caption_text"> (Ketchup_Speed)</span> </p>
 </div>
 <script type="text/javascript">
-var Ketchup_Speed_trace = {"code": "dripMPH = .028\nFPM = 5280.0\ndripFPH = dripMPH * FPM\nMPH = 60\ndripFPM = dripFPH / MPH\nprint(\"Ketchup speed in feet per minute:\")\nprint(dripFPM)\nprint(\"Ketchup speed to move 4 feet in minutes:\")\nprint(4 / dripFPM)", "trace": [{"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {}, "heap": {}, "ordered_globals": [], "stdout": "", "line": 1}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"dripMPH": 0.028}, "heap": {}, "ordered_globals": ["dripMPH"], "stdout": "", "line": 2}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"FPM": ["SPECIAL_FLOAT", "5280.0"], "dripMPH": 0.028}, "heap": {}, "ordered_globals": ["dripMPH", "FPM"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"FPM": ["SPECIAL_FLOAT", "5280.0"], "dripMPH": 0.028, "dripFPH": 147.84}, "heap": {}, "ordered_globals": ["dripMPH", "FPM", "dripFPH"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"FPM": ["SPECIAL_FLOAT", "5280.0"], "dripFPH": 147.84, "MPH": 60, "dripMPH": 0.028}, "heap": {}, "ordered_globals": ["dripMPH", "FPM", "dripFPH", "MPH"], "stdout": "", "line": 5}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"FPM": ["SPECIAL_FLOAT", "5280.0"], "MPH": 60, "dripMPH": 0.028, "dripFPH": 147.84, "dripFPM": 2.464}, "heap": {}, "ordered_globals": ["dripMPH", "FPM", "dripFPH", "MPH", "dripFPM"], "stdout": "", "line": 6}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"FPM": ["SPECIAL_FLOAT", "5280.0"], "MPH": 60, "dripMPH": 0.028, "dripFPH": 147.84, "dripFPM": 2.464}, "heap": {}, "ordered_globals": ["dripMPH", "FPM", "dripFPH", "MPH", "dripFPM"], "stdout": "Ketchup speed in feet per minute:\n", "line": 7}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"FPM": ["SPECIAL_FLOAT", "5280.0"], "MPH": 60, "dripMPH": 0.028, "dripFPH": 147.84, "dripFPM": 2.464}, "heap": {}, "ordered_globals": ["dripMPH", "FPM", "dripFPH", "MPH", "dripFPM"], "stdout": "Ketchup speed in feet per minute:\n2.464\n", "line": 8}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"FPM": ["SPECIAL_FLOAT", "5280.0"], "MPH": 60, "dripMPH": 0.028, "dripFPH": 147.84, "dripFPM": 2.464}, "heap": {}, "ordered_globals": ["dripMPH", "FPM", "dripFPH", "MPH", "dripFPM"], "stdout": "Ketchup speed in feet per minute:\n2.464\nKetchup speed to move 4 feet in minutes:\n", "line": 9}, {"event": "return", "stack_to_render": [], "func_name": "<module>", "globals": {"FPM": ["SPECIAL_FLOAT", "5280.0"], "dripMPH": 0.028, "dripFPM": 2.464, "dripFPH": 147.84, "MPH": 60}, "heap": {}, "ordered_globals": ["dripMPH", "FPM", "dripFPH", "MPH", "dripFPM"], "stdout": "Ketchup speed in feet per minute:\n2.464\nKetchup speed to move 4 feet in minutes:\n1.6233766233766234\n", "line": 9}]};
+var Ketchup_Speed_trace = {"code": "velKPH = .045            # Velocidad del ketchup en Km/hora\nCPK = 100000.0           # Cent\u00edmetros en 1 kil\u00f3metro\nvelCPH = velKPH * CPK    # Velocidad ketchup en cm\\hora\nMPH = 60                 # Minutos en 1 hora\nvelCPM = velCPH / MPH    # Velocidad ketchup en cm\\minuto\nprint(\"Velocidad del ketchup en centr\u00edmetros por minuto:\")\nprint(velCPM)\nprint(\"Minutos para recorrer los 150 cm. de mesa:\")\nprint(150 / velCPM)", "trace": [{"ordered_globals": [], "line": 1, "stdout": "", "event": "step_line", "func_name": "<module>", "stack_to_render": [], "heap": {}, "globals": {}}, {"ordered_globals": ["velKPH"], "line": 2, "stdout": "", "event": "step_line", "func_name": "<module>", "stack_to_render": [], "heap": {}, "globals": {"velKPH": 0.045}}, {"ordered_globals": ["velKPH", "CPK"], "line": 3, "stdout": "", "event": "step_line", "func_name": "<module>", "stack_to_render": [], "heap": {}, "globals": {"velKPH": 0.045, "CPK": ["SPECIAL_FLOAT", "100000.0"]}}, {"ordered_globals": ["velKPH", "CPK", "velCPH"], "line": 4, "stdout": "", "event": "step_line", "func_name": "<module>", "stack_to_render": [], "heap": {}, "globals": {"velKPH": 0.045, "CPK": ["SPECIAL_FLOAT", "100000.0"], "velCPH": ["SPECIAL_FLOAT", "4500.0"]}}, {"ordered_globals": ["velKPH", "CPK", "velCPH", "MPH"], "line": 5, "stdout": "", "event": "step_line", "func_name": "<module>", "stack_to_render": [], "heap": {}, "globals": {"velKPH": 0.045, "CPK": ["SPECIAL_FLOAT", "100000.0"], "MPH": 60, "velCPH": ["SPECIAL_FLOAT", "4500.0"]}}, {"ordered_globals": ["velKPH", "CPK", "velCPH", "MPH", "velCPM"], "line": 6, "stdout": "", "event": "step_line", "func_name": "<module>", "stack_to_render": [], "heap": {}, "globals": {"velKPH": 0.045, "velCPM": ["SPECIAL_FLOAT", "75.0"], "CPK": ["SPECIAL_FLOAT", "100000.0"], "MPH": 60, "velCPH": ["SPECIAL_FLOAT", "4500.0"]}}, {"ordered_globals": ["velKPH", "CPK", "velCPH", "MPH", "velCPM"], "line": 7, "stdout": "Velocidad del ketchup en centr\u00edmetros por minuto:\n", "event": "step_line", "func_name": "<module>", "stack_to_render": [], "heap": {}, "globals": {"velKPH": 0.045, "velCPM": ["SPECIAL_FLOAT", "75.0"], "CPK": ["SPECIAL_FLOAT", "100000.0"], "MPH": 60, "velCPH": ["SPECIAL_FLOAT", "4500.0"]}}, {"ordered_globals": ["velKPH", "CPK", "velCPH", "MPH", "velCPM"], "line": 8, "stdout": "Velocidad del ketchup en centr\u00edmetros por minuto:\n75.0\n", "event": "step_line", "func_name": "<module>", "stack_to_render": [], "heap": {}, "globals": {"velKPH": 0.045, "velCPM": ["SPECIAL_FLOAT", "75.0"], "CPK": ["SPECIAL_FLOAT", "100000.0"], "MPH": 60, "velCPH": ["SPECIAL_FLOAT", "4500.0"]}}, {"ordered_globals": ["velKPH", "CPK", "velCPH", "MPH", "velCPM"], "line": 9, "stdout": "Velocidad del ketchup en centr\u00edmetros por minuto:\n75.0\nMinutos para recorrer los 150 cm. de mesa:\n", "event": "step_line", "func_name": "<module>", "stack_to_render": [], "heap": {}, "globals": {"velKPH": 0.045, "velCPM": ["SPECIAL_FLOAT", "75.0"], "CPK": ["SPECIAL_FLOAT", "100000.0"], "MPH": 60, "velCPH": ["SPECIAL_FLOAT", "4500.0"]}}, {"ordered_globals": ["velKPH", "CPK", "velCPH", "MPH", "velCPM"], "line": 9, "stdout": "Velocidad del ketchup en centr\u00edmetros por minuto:\n75.0\nMinutos para recorrer los 150 cm. de mesa:\n2.0\n", "event": "return", "func_name": "<module>", "stack_to_render": [], "heap": {}, "globals": {"velKPH": 0.045, "velCPM": ["SPECIAL_FLOAT", "75.0"], "CPK": ["SPECIAL_FLOAT", "100000.0"], "MPH": 60, "velCPH": ["SPECIAL_FLOAT", "4500.0"]}}]};
 var Ketchup_Speed_vis;
 
 $(document).ready(function() {
@@ -369,8 +369,8 @@ $(window).resize(function() {
     Ketchup_Speed_vis.redrawConnectors();
 });
 </script>
-<p>The next type of problem is new.  It shows correct code in code blocks on the left side, but the order is mixed up.  You need to drag the blocks to the right side in the right order.  Please watch the video below for a demonstration.</p>
-<p><strong>Click on the right arrow below to play the following video.</strong></p>
+<p>A continuación veamos un nuevo tipo de problema. A la izquierda se muestra el código del programa separado en bloques desordenados. Para resolverlo tienes que arrastrar los bloques a la parte derecha y colocarlos en el orden correcto. Observa por favor el siguiente vídeo par ver una demostración.</p>
+<p><strong>Haz clic en el icono de reproducir para ver el vídeo.</strong></p>
 <div id="parsons" class="video_popup" >
 <video controls preload="none"  poster="../_static/MixedUpCodeVideoThumb.png">
     <source src="http://ice-web.cc.gatech.edu/ce21/1/static/video/MixedUpCode.mov" type="video/mp4"></source>
@@ -396,12 +396,12 @@ $(window).resize(function() {
 </script>
 
         <div class='parsons alert alert-warning' id="parsons-93">
-        <div class="parsons-text">csp-3-6-1: The following program figures out the ketchup speed in feet per <i>seconds</i>.  Drag the blocks from the left and put them in the correct order on the right.  Click the <i>Check Me</i> button to check your solution.</p><br /><br /></div>
+        <div class="parsons-text">csp-3-6-1: El programa siguiente calcula la velocidad del ketchup en centímetros por <i>segundo</i>. Arrastra los bloques desde la izquierda y colócalos a la derecha en el orden correcto. Pulsa el botón <i>Check Me</i> para comprobar si lo has hecho correctamente.</p><br /><br /></div>
         <div style="clear:left;"></div>
-        <div id="parsons-orig-93" style="display:none;">dripMPH = .028\nFPM= 5280.0\ndripFPH = dripMPH * FPM
-MPH = 60\ndripFPM = dripFPH / MPH
-SPM = 60\ndripFPS = dripFPM / SPM
-print("Ketchup speed:")\nprint(ketchupFPS)</div>
+        <div id="parsons-orig-93" style="display:none;">velKPH = .045\nCPK= 100000.0\nvelCPH = velKPH * CPK
+MPH = 60  #mins por hora\nvelCPM = velCPH / MPH
+SPM = 60  #segs. por minuto\nvelCPS = velCPM / SPM
+print("Velocidad en cm. por segundo:")\nprint(velCPS)</div>
         <div class="sortable-code-container">
         <div id="parsons-sortableTrash-93" class="sortable-code"></div>
         <div id="parsons-sortableCode-93" class="sortable-code"></div>
@@ -525,19 +525,19 @@ print("Ketchup speed:")\nprint(ketchupFPS)</div>
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Driving from Chicago to Dallas' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Conducir de Málaga a Santander' data-toggle="tooltip">
     <a href="driving.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="driving.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Walking through Assignment more Generally' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - Consideraciones generales sobre las asignaciones' data-toggle="tooltip" >
     <a href="walkAssign.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="walkAssign.html" >Next Section - Walking through Assignment more Generally</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="walkAssign.html" >Next Section - Consideraciones generales sobre las asignaciones</a>
 
 <script type="text/javascript">
 
