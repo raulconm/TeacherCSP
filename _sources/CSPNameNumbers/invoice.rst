@@ -53,10 +53,10 @@
 .. highlight:: java
    :linenothreshold: 4
 
-Figuring out an Invoice
-====================================
+Calcular una factura
+====================
 
-We can use variables to solve problems like those we might solve in a spreadsheet.  Imagine that you had a spreadsheet with an invoice for an office supply company.
+Podemos utilizar variables para resolver problemas como los que tratamos utilizando una hoja de cáculo. Imagina que tienes una hoja de cálculo con una factura del material de oficina de una empresa. 
 
 .. figure:: Figures/invoice.png
     :width: 600px
@@ -64,21 +64,21 @@ We can use variables to solve problems like those we might solve in a spreadshee
     :alt: a spreadsheet
     :figclass: align-center
     
-    Figure 3: A spreadsheet with order information  
+    Imagen 3: Una hoja de cálculo con información de una factura
 
-Here's a program to compute the total price for the invoice.  Be sure to click |audiobutton| to understand what's happening here.
+A continuación se muestra un programa que calcula el precio total de la factura. Haz clic en el botón  |audiobutton| para entender todo lo que ocurre en el programa.
 
 .. activecode:: Invoice1
     :tour_1: "Line by line tour"; 1: inv-line1; 2: inv-line2; 3: inv-line3; 4: inv-line4; 5: inv-line5; 6: inv-line6; 7: inv-line7; 8: inv-line8; 
 
-    quantity1 = 2
-    unitPrice1 = 7.56
-    total1 = quantity1 * unitPrice1
-    quantity2 = 4
-    unitPrice2 = 4.71
-    total2 = quantity2 * unitPrice2
-    invoiceTotal = total1 + total2
-    print(invoiceTotal)
+    cantidad1 = 2
+    precioUnitario1 = 2.90
+    total1 = cantidad1 * precioUnitario1
+    cantidad2 = 4
+    precioUnitario2 = 4.30
+    total2 = cantidad2 * precioUnitario2
+    totalFactura = total1 + total2
+    print(totalFactura)
 
 .. mchoicemf:: 3_9_1_Invoice1_Q1
 		   :answer_a: 7
@@ -86,25 +86,25 @@ Here's a program to compute the total price for the invoice.  Be sure to click |
 		   :answer_c: 5
 		   :answer_d: 2
 		   :correct: a
-		   :feedback_a: Yes, quantity1, unitPrice1, total1, quantity2, unitPrice2, total2, invoiceTotal.
-		   :feedback_b: There are three variables per line, two lines, and one total.
-		   :feedback_c: There are three variables per line, two lines, and one total.
-		   :feedback_d: There are three variables per line, two lines, and one total.
+		   :feedback_a: Así es, cantidad1, precioUnitario1, total1, cantidad2, precioUnitario2, total2, totalFactura.
+		   :feedback_b: Hay tres variables por línea, dos líneas, y un total.
+		   :feedback_c: Hay tres variables por línea, dos líneas, y un total.
+		   :feedback_d: Hay tres variables por línea, dos líneas, y un total.
 
-		   How many variables are in this program?
+		   ¿Cuántas variables hay en este programa?
 
-We don't really have to create new variables ``quantity2`` and ``unitPrice2``.  We only use those to compute the total for the line, and then we could reuse those variable names.
+En realidad no necesitamos crear nuevas variables ``cantidad2`` y ``precioUnitario2``. Sólo las empleamos para calcular el total de cada línea, y por lo tanto podríamos reutilizar las anteriores.
 
 .. codelens:: Invoice2
 
-  quantity = 2
-  unitPrice = 7.56
-  total1 = quantity * unitPrice
-  quantity = 4
-  unitPrice = 4.71
-  total2 = quantity * unitPrice
-  invoiceTotal = total1 + total2
-  print(invoiceTotal)
+  cantidad = 2
+  precioUnitario = 2.90
+  total1 = cantidad * precioUnitario
+  cantidad = 4
+  precioUnitario = 4.30
+  total2 = cantidad * precioUnitario
+  totalFactura = total1 + total2
+  print(totalFactura)
 
 .. mchoicemf:: 3_9_2_Invoice2_Q1
 		   :answer_a: 7
@@ -112,38 +112,38 @@ We don't really have to create new variables ``quantity2`` and ``unitPrice2``.  
 		   :answer_c: 5
 		   :answer_d: 2
 		   :correct: c
-		   :feedback_a: We have two fewer variables now.
-		   :feedback_b: We have a total for each line (two), a quantity, a unitPrice, and an invoiceTotal.
-		   :feedback_c: The variables are quantity, unitPrice, total1, total2, and invoiceTotal. 
-		   :feedback_d: We have a total for each line (two), a quantity, a unitPrice, and an invoiceTotal.
+		   :feedback_a: En este caso tenemos dos variables menos.
+		   :feedback_b: Tenemos un total por cada línea (dos), una cantidad, un precioUnitario, y un totalFactura.
+		   :feedback_c: Las variables son cantidad, precioUnitario, total1, total, y totalFactura. 
+		   :feedback_d: En este caso tenemos un total para cada línea (dos), una cantidad, un precioUnitario, y un totalFactura.
 
-		   How many variables are in this program?
+		   ¿Cuántas variables hay en este programa?
 		   
 .. Note::
-   It is best to use variable names that make sense like ``invoiceTotal`` and ``quantity`` instead of names that don't make any sense like ``thisVariableIsMyFriend`` and ``Fred``.  The name should help you remember what the variable is representing.  
+   Es muy conveniente utilizar nombres de variables que tengan sentido, como ``totalFactura`` y ``cantidad``, en lugar de otros que no significan nada, como ``estaVariableEsMiAmiga``, o ``Juan``. El nombre debe ayudarnos a identificar qué dato está representando la variable.   
 
-Let's say that apples are $0.40 apiece, and pears are $0.65 apiece.  Modify the program below to calculate the total cost.
+Imagina que las manzanas cuestan 0.30 euros por pieza, y que las peras cuestan 0.50 euros por pieza. Modifica el siguiente programa para que calcule el coste total.
 
 .. activecode:: Complete_Assignment
 
-   apples = 4
-   pears = 3
-   totalCost =
-   print(totalCost)
+   manzanas = 4
+   peras = 3
+   precioTotal =
+   print(precioTotal)
 
-You are welcome to try out the following answers by copying and pasting them into the program above before answering this question:
+Si lo prefieres, puedes probar con las siguientes respuestas, copiándolas y pegándolas dentro del programa,antes de responder a la pregunta: 
 
 .. mchoicemf:: 3_9_3_Make_An_Assignment_Q1
-  :answer_a: totalCost = apples + pears
-  :answer_b: totalCost = (0.4 * apples) + (0.65 * pears)
-  :answer_c: totalCost = (0.4 * pears) + (0.65 * apples)
-  :answer_d: totalCost = (0.4 + apples) * (0.65 + pears)
+  :answer_a: precioTotal = manzanas + peras
+  :answer_b: precioTotal = (0.30 * manzanas) + (0.50 * peras)
+  :answer_c: precioTotal = (0.30 * peras) + (0.50 * manzanas)
+  :answer_d: precioTotal = (0.30 + apples) * (0.50 + peras)
   :correct: b
-  :feedback_a: That does not consider the cost of the apples or pears.
-  :feedback_b: We need to multiply the cost per apple times the number of apples and add it to the cost per pear times the number of pears.
-  :feedback_c: That gets the costs backwards
-  :feedback_d: That is the wrong formula for computing total cost.
+  :feedback_a: No se está considerando el precio de las manzanas ni de las peras.
+  :feedback_b: Necesitamos multiplicar el precio de una manzana por el número de manzanas, y sumarle el precio de una pera por el número de peras.
+  :feedback_c: Esta fórmula tiene los precios al revés.
+  :feedback_d: Está fórmula para hallar el precio total es erronea.
 
-   Which line of code will compute the correct ``totalCost`` if put into line 3 above?
+   ¿Cuál de estas líneas de código calculará correctamente el valor de ``precioTotal`` si la colocamos en la línea 3 del programa?
 
 

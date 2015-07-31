@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Figuring out an Invoice &mdash; Runestone Interactive Overview</title>
+    <title>Calcular una factura &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -88,7 +88,7 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
     <link rel="next" title="Teacher Note: Why Videos?" href="whyVideo.html" />
-    <link rel="prev" title="Teacher Note: Misconceptions" href="misconceptions.html" />
+    <link rel="prev" title="Nota para el profesor: Ideas equivocadas" href="misconceptions.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -274,7 +274,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Figuring out an Invoice</a></li>
+<li><a class="reference internal" href="#">Calcular una factura</a></li>
 </ul>
 </ul>
 </li>
@@ -282,7 +282,7 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter -  Teacher Note: Misconceptions" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter -  Nota para el profesor: Ideas equivocadas" data-toggle="tooltip">
     <a href="misconceptions.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
@@ -319,14 +319,14 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="figuring-out-an-invoice">
-<h1>Figuring out an Invoice<a class="headerlink" href="#figuring-out-an-invoice" title="Permalink to this headline">¶</a></h1>
-<p>We can use variables to solve problems like those we might solve in a spreadsheet.  Imagine that you had a spreadsheet with an invoice for an office supply company.</p>
+  <div class="section" id="calcular-una-factura">
+<h1>Calcular una factura<a class="headerlink" href="#calcular-una-factura" title="Permalink to this headline">¶</a></h1>
+<p>Podemos utilizar variables para resolver problemas como los que tratamos utilizando una hoja de cáculo. Imagina que tienes una hoja de cálculo con una factura del material de oficina de una empresa.</p>
 <div class="align-center figure" id="id1">
 <a class="reference internal image-reference" href="../_images/invoice.png"><img alt="a spreadsheet" src="../_images/invoice.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-text">Figure 3: A spreadsheet with order information</span></p>
+<p class="caption"><span class="caption-text">Imagen 3: Una hoja de cálculo con información de una factura</span></p>
 </div>
-<p>Here&#8217;s a program to compute the total price for the invoice.  Be sure to click <a class="reference internal" href="../_images/start-audio-tour.png"><img alt="audio tour button" class="align-top" src="../_images/start-audio-tour.png" style="height: 20px;" /></a> to understand what&#8217;s happening here.</p>
+<p>A continuación se muestra un programa que calcula el precio total de la factura. Haz clic en el botón  <a class="reference internal" href="../_images/start-audio-tour.png"><img alt="audio tour button" class="align-top" src="../_images/start-audio-tour.png" style="height: 20px;" /></a> para entender todo lo que ocurre en el programa.</p>
 
 <div id="cont"></div>
 <div id="Invoice1" lang="python" time="" class="ac_section alert alert-warning" >
@@ -337,21 +337,21 @@
 <button class="ac_opt btn btn-default" style="display: inline-block" id="Invoice1_loadb" onclick="requestCode('Invoice1');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Invoice1','quantity1 = 2*nline*unitPrice1 = 7.56*nline*total1 = quantity1 * unitPrice1*nline*quantity2 = 4*nline*unitPrice2 = 4.71*nline*total2 = quantity2 * unitPrice2*nline*invoiceTotal = total1 + total2*nline*print*open*invoiceTotal*close*','1','*doubleq*Line by line tour*doubleq*; 1: inv-line1; 2: inv-line2; 3: inv-line3; 4: inv-line4; 5: inv-line5; 6: inv-line6; 7: inv-line7; 8: inv-line8;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Invoice1','cantidad1 = 2*nline*precioUnitario1 = 2.90*nline*total1 = cantidad1 * precioUnitario1*nline*cantidad2 = 4*nline*precioUnitario2 = 4.30*nline*total2 = cantidad2 * precioUnitario2*nline*totalFactura = total1 + total2*nline*print*open*totalFactura*close*','1','*doubleq*Line by line tour*doubleq*; 1: inv-line1; 2: inv-line2; 3: inv-line3; 4: inv-line4; 5: inv-line5; 6: inv-line6; 7: inv-line7; 8: inv-line8;*atype*')"/>
 <button class='btn btn-default' id="Invoice1_vizb" onclick="injectCodelens(this,'Invoice1');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="Invoice1_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="Invoice1_code" class="active_code" prefixcode="undefined" lang="python">
-quantity1 = 2
-unitPrice1 = 7.56
-total1 = quantity1 * unitPrice1
-quantity2 = 4
-unitPrice2 = 4.71
-total2 = quantity2 * unitPrice2
-invoiceTotal = total1 + total2
-print(invoiceTotal)
+cantidad1 = 2
+precioUnitario1 = 2.90
+total1 = cantidad1 * precioUnitario1
+cantidad2 = 4
+precioUnitario2 = 4.30
+total2 = cantidad2 * precioUnitario2
+totalFactura = total1 + total2
+print(totalFactura)
 </textarea>
 </div>
 
@@ -419,7 +419,7 @@ else{
 
 
             <div id="3_9_1_Invoice1_Q1" class="alert alert-warning">
-            csp-3-9-1: How many variables are in this program?<form name="3_9_1_Invoice1_Q1_form" method="get" action="" onsubmit="return false;">
+            csp-3-9-1: ¿Cuántas variables hay en este programa?<form name="3_9_1_Invoice1_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="3_9_1_Invoice1_Q1_opt_a" />
             <label for= "3_9_1_Invoice1_Q1_opt_a">  a) 7</label><br />
             
@@ -436,20 +436,20 @@ else{
             <script>
             $(document).ready(function(){checkRadio('3_9_1_Invoice1_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('3_9_1_Invoice1_Q1','a',['Yes, quantity1, unitPrice1, total1, quantity2, unitPrice2, total2, invoiceTotal.', 'There are three variables per line, two lines, and one total.', 'There are three variables per line, two lines, and one total.', 'There are three variables per line, two lines, and one total.'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('3_9_1_Invoice1_Q1','a',['Así es, cantidad1, precioUnitario1, total1, caantidad2, precioUnitario2, total2, totalFactura.', 'Hay tres variables por línea, dos líneas, y un total.', 'Hay tres variables por línea, dos líneas, y un total.', 'Hay tres variables por línea, dos líneas, y un total.'])">Check Me</button>
             <button class='btn btn-default' id="3_9_1_Invoice1_Q1_bcomp" disabled name="compare" onclick="compareAnswers('3_9_1_Invoice1_Q1');">Compare Me</button>
             </form><br />
             <div id="3_9_1_Invoice1_Q1_feedback">
             </div>
             </div>
-            <p>We don&#8217;t really have to create new variables <code class="docutils literal"><span class="pre">quantity2</span></code> and <code class="docutils literal"><span class="pre">unitPrice2</span></code>.  We only use those to compute the total for the line, and then we could reuse those variable names.</p>
+            <p>En realidad no necesitamos crear nuevas variables <code class="docutils literal"><span class="pre">cantidad2</span></code> y <code class="docutils literal"><span class="pre">precioUnitario2</span></code>. Sólo las empleamos para calcular el total de cada línea, y por lo tanto podríamos reutilizar ls anteriores.</p>
 
 <div class="alert alert-warning cd_section">
 <div id="Invoice2"></div>
 <p class="cl_caption"><span class="cl_caption_text"> (Invoice2)</span> </p>
 </div>
 <script type="text/javascript">
-var Invoice2_trace = {"code": "quantity = 2\nunitPrice = 7.56\ntotal1 = quantity * unitPrice\nquantity = 4\nunitPrice = 4.71\ntotal2 = quantity * unitPrice\ninvoiceTotal = total1 + total2\nprint(invoiceTotal)", "trace": [{"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {}, "heap": {}, "ordered_globals": [], "stdout": "", "line": 1}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"quantity": 2}, "heap": {}, "ordered_globals": ["quantity"], "stdout": "", "line": 2}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"unitPrice": 7.56, "quantity": 2}, "heap": {}, "ordered_globals": ["quantity", "unitPrice"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"total1": 15.12, "unitPrice": 7.56, "quantity": 2}, "heap": {}, "ordered_globals": ["quantity", "unitPrice", "total1"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"total1": 15.12, "unitPrice": 7.56, "quantity": 4}, "heap": {}, "ordered_globals": ["quantity", "unitPrice", "total1"], "stdout": "", "line": 5}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"total1": 15.12, "unitPrice": 4.71, "quantity": 4}, "heap": {}, "ordered_globals": ["quantity", "unitPrice", "total1"], "stdout": "", "line": 6}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"total1": 15.12, "unitPrice": 4.71, "total2": 18.84, "quantity": 4}, "heap": {}, "ordered_globals": ["quantity", "unitPrice", "total1", "total2"], "stdout": "", "line": 7}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"total1": 15.12, "unitPrice": 4.71, "total2": 18.84, "invoiceTotal": 33.96, "quantity": 4}, "heap": {}, "ordered_globals": ["quantity", "unitPrice", "total1", "total2", "invoiceTotal"], "stdout": "", "line": 8}, {"event": "return", "stack_to_render": [], "func_name": "<module>", "globals": {"total1": 15.12, "unitPrice": 4.71, "total2": 18.84, "invoiceTotal": 33.96, "quantity": 4}, "heap": {}, "ordered_globals": ["quantity", "unitPrice", "total1", "total2", "invoiceTotal"], "stdout": "33.96\n", "line": 8}]};
+var Invoice2_trace = {"trace": [{"func_name": "<module>", "heap": {}, "event": "step_line", "globals": {}, "ordered_globals": [], "stack_to_render": [], "stdout": "", "line": 1}, {"func_name": "<module>", "heap": {}, "event": "step_line", "globals": {"cantidad": 2}, "ordered_globals": ["cantidad"], "stack_to_render": [], "stdout": "", "line": 2}, {"func_name": "<module>", "heap": {}, "event": "step_line", "globals": {"precioUnitario": 2.9, "cantidad": 2}, "ordered_globals": ["cantidad", "precioUnitario"], "stack_to_render": [], "stdout": "", "line": 3}, {"func_name": "<module>", "heap": {}, "event": "step_line", "globals": {"precioUnitario": 2.9, "total1": 5.8, "cantidad": 2}, "ordered_globals": ["cantidad", "precioUnitario", "total1"], "stack_to_render": [], "stdout": "", "line": 4}, {"func_name": "<module>", "heap": {}, "event": "step_line", "globals": {"precioUnitario": 2.9, "total1": 5.8, "cantidad": 4}, "ordered_globals": ["cantidad", "precioUnitario", "total1"], "stack_to_render": [], "stdout": "", "line": 5}, {"func_name": "<module>", "heap": {}, "event": "step_line", "globals": {"precioUnitario": 4.3, "total1": 5.8, "cantidad": 4}, "ordered_globals": ["cantidad", "precioUnitario", "total1"], "stack_to_render": [], "stdout": "", "line": 6}, {"func_name": "<module>", "heap": {}, "event": "step_line", "globals": {"precioUnitario": 4.3, "total1": 5.8, "total2": 17.2, "cantidad": 4}, "ordered_globals": ["cantidad", "precioUnitario", "total1", "total2"], "stack_to_render": [], "stdout": "", "line": 7}, {"func_name": "<module>", "heap": {}, "event": "step_line", "globals": {"precioUnitario": 4.3, "total1": 5.8, "total2": 17.2, "totalFactura": ["SPECIAL_FLOAT", "23.0"], "cantidad": 4}, "ordered_globals": ["cantidad", "precioUnitario", "total1", "total2", "totalFactura"], "stack_to_render": [], "stdout": "", "line": 8}, {"func_name": "<module>", "heap": {}, "event": "return", "globals": {"precioUnitario": 4.3, "total1": 5.8, "total2": 17.2, "totalFactura": ["SPECIAL_FLOAT", "23.0"], "cantidad": 4}, "ordered_globals": ["cantidad", "precioUnitario", "total1", "total2", "totalFactura"], "stack_to_render": [], "stdout": "23.0\n", "line": 8}], "code": "cantidad = 2\nprecioUnitario = 2.90\ntotal1 = cantidad * precioUnitario\ncantidad = 4\nprecioUnitario = 4.30\ntotal2 = cantidad * precioUnitario\ntotalFactura = total1 + total2\nprint(totalFactura)"};
 var Invoice2_vis;
 
 $(document).ready(function() {
@@ -488,7 +488,7 @@ $(window).resize(function() {
 </script>
 
             <div id="3_9_2_Invoice2_Q1" class="alert alert-warning">
-            csp-3-9-2: How many variables are in this program?<form name="3_9_2_Invoice2_Q1_form" method="get" action="" onsubmit="return false;">
+            csp-3-9-2: ¿Cuántas variables hay en este programa?<form name="3_9_2_Invoice2_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="3_9_2_Invoice2_Q1_opt_a" />
             <label for= "3_9_2_Invoice2_Q1_opt_a">  a) 7</label><br />
             
@@ -505,7 +505,7 @@ $(window).resize(function() {
             <script>
             $(document).ready(function(){checkRadio('3_9_2_Invoice2_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('3_9_2_Invoice2_Q1','c',['We have two fewer variables now.', 'We have a total for each line (two), a quantity, a unitPrice, and an invoiceTotal.', 'The variables are quantity, unitPrice, total1, total2, and invoiceTotal.', 'We have a total for each line (two), a quantity, a unitPrice, and an invoiceTotal.'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('3_9_2_Invoice2_Q1','c',['En este caso tenemos dos variables menos.', 'Tenemos un total por cada línea (dos), una cantidad, un precioUnitario, y un totalFactura.', 'Las variables son cantidad, precioUnitario, total1, total, y totalFactura.', 'En este caso tenemos un total para cada línea (dos), una cantidad, un precioUnitario, y un totalFactura.'])">Check Me</button>
             <button class='btn btn-default' id="3_9_2_Invoice2_Q1_bcomp" disabled name="compare" onclick="compareAnswers('3_9_2_Invoice2_Q1');">Compare Me</button>
             </form><br />
             <div id="3_9_2_Invoice2_Q1_feedback">
@@ -513,9 +513,9 @@ $(window).resize(function() {
             </div>
             <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">It is best to use variable names that make sense like <code class="docutils literal"><span class="pre">invoiceTotal</span></code> and <code class="docutils literal"><span class="pre">quantity</span></code> instead of names that don&#8217;t make any sense like <code class="docutils literal"><span class="pre">thisVariableIsMyFriend</span></code> and <code class="docutils literal"><span class="pre">Fred</span></code>.  The name should help you remember what the variable is representing.</p>
+<p class="last">Es muy conveniente utilizar nombres de variables que tengan sentido, como <code class="docutils literal"><span class="pre">totalFactura</span></code> y <code class="docutils literal"><span class="pre">cantidad</span></code>, en lugar de otros que no significan nada, como <code class="docutils literal"><span class="pre">estaVariableEsMiAmiga</span></code>, o <code class="docutils literal"><span class="pre">Juan</span></code>. El nombre debe ayudarnos a identificar qué dato está representando la variable.</p>
 </div>
-<p>Let&#8217;s say that apples are $0.40 apiece, and pears are $0.65 apiece.  Modify the program below to calculate the total cost.</p>
+<p>Imagina que las manzanas cuestan 0.30 euros por pieza, y que las peras cuestan 0.50 euros por pieza. Modifica el siguiente programa para que calcule el coste total.</p>
 
 <div id="cont"></div>
 <div id="Complete_Assignment" lang="python" time="" class="ac_section alert alert-warning" >
@@ -530,10 +530,10 @@ $(window).resize(function() {
 <br/>
 <div id="Complete_Assignment_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="Complete_Assignment_code" class="active_code" prefixcode="undefined" lang="python">
-apples = 4
-pears = 3
-totalCost =
-print(totalCost)
+manzanas = 4
+peras = 3
+precioTotal =
+print(precioTotal)
 </textarea>
 </div>
 
@@ -599,27 +599,27 @@ else{
 
 </div>
 
-<p>You are welcome to try out the following answers by copying and pasting them into the program above before answering this question:</p>
+<p>Si lo prefieres, puedes probar con las siguientes respuestas, copiándolas y pegándolas dentro del programa,antes de responder a la pregunta:</p>
 
             <div id="3_9_3_Make_An_Assignment_Q1" class="alert alert-warning">
-            csp-3-9-3:  Which line of code will compute the correct <code class="docutils literal"><span class="pre">totalCost</span></code> if put into line 3 above?<form name="3_9_3_Make_An_Assignment_Q1_form" method="get" action="" onsubmit="return false;">
+            csp-3-9-3:  ¿Cuál de estas líneas de código calculará correctamente el valor de <code class="docutils literal"><span class="pre">precioTotal</span></code> si la colocamos en la línea 3 del programa?<form name="3_9_3_Make_An_Assignment_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="3_9_3_Make_An_Assignment_Q1_opt_a" />
-            <label for= "3_9_3_Make_An_Assignment_Q1_opt_a">  a) totalCost = apples + pears</label><br />
+            <label for= "3_9_3_Make_An_Assignment_Q1_opt_a">  a) precioTotal = manzanas + peras</label><br />
             
             <input type="radio" name="group1" value="b" id="3_9_3_Make_An_Assignment_Q1_opt_b" />
-            <label for= "3_9_3_Make_An_Assignment_Q1_opt_b">  b) totalCost = (0.4 * apples) + (0.65 * pears)</label><br />
+            <label for= "3_9_3_Make_An_Assignment_Q1_opt_b">  b) precioTotal = (0.30 * manzanas) + (0.50 * peras)</label><br />
             
             <input type="radio" name="group1" value="c" id="3_9_3_Make_An_Assignment_Q1_opt_c" />
-            <label for= "3_9_3_Make_An_Assignment_Q1_opt_c">  c) totalCost = (0.4 * pears) + (0.65 * apples)</label><br />
+            <label for= "3_9_3_Make_An_Assignment_Q1_opt_c">  c) precioTotal = (0.30 * peras) + (0.50 * manzanas)</label><br />
             
             <input type="radio" name="group1" value="d" id="3_9_3_Make_An_Assignment_Q1_opt_d" />
-            <label for= "3_9_3_Make_An_Assignment_Q1_opt_d">  d) totalCost = (0.4 + apples) * (0.65 + pears)</label><br />
+            <label for= "3_9_3_Make_An_Assignment_Q1_opt_d">  d) precioTotal = (0.30 + apples) * (0.50 + peras)</label><br />
             
 
             <script>
             $(document).ready(function(){checkRadio('3_9_3_Make_An_Assignment_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('3_9_3_Make_An_Assignment_Q1','b',['That does not consider the cost of the apples or pears.', 'We need to multiply the cost per apple times the number of apples and add it to the cost per pear times the number of pears.', 'That gets the costs backwards', 'That is the wrong formula for computing total cost.'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('3_9_3_Make_An_Assignment_Q1','b',['No se está considerando el precio de las manzanas ni de las peras.', 'Necesitamos multiplicar el precio de una manzana por el número de manzanas, y sumarle el precio de una pera por el número de peras.', 'Esta fórmula tiene los precios al revés.', 'Está fórmula para hallar el precio total es erronea.'])">Check Me</button>
             <button class='btn btn-default' id="3_9_3_Make_An_Assignment_Q1_bcomp" disabled name="compare" onclick="compareAnswers('3_9_3_Make_An_Assignment_Q1');">Compare Me</button>
             </form><br />
             <div id="3_9_3_Make_An_Assignment_Q1_feedback">
@@ -630,7 +630,7 @@ else{
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section -  Teacher Note: Misconceptions' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section -  Nota para el profesor: Ideas equivocadas' data-toggle="tooltip">
     <a href="misconceptions.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
