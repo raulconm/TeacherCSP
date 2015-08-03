@@ -86,14 +86,14 @@ A continuación se muestra un programa que calcula el precio total de la factura.
 		   :answer_c: 5
 		   :answer_d: 2
 		   :correct: a
-		   :feedback_a: Así es, cantidad1, precioUnitario1, total1, caantidad2, precioUnitario2, total2, totalFactura.
+		   :feedback_a: Así es, cantidad1, precioUnitario1, total1, cantidad2, precioUnitario2, total2, totalFactura.
 		   :feedback_b: Hay tres variables por línea, dos líneas, y un total.
 		   :feedback_c: Hay tres variables por línea, dos líneas, y un total.
 		   :feedback_d: Hay tres variables por línea, dos líneas, y un total.
 
 		   ¿Cuántas variables hay en este programa?
 
-En realidad no necesitamos crear nuevas variables ``cantidad2`` y ``precioUnitario2``. Sólo las empleamos para calcular el total de cada línea, y por lo tanto podríamos reutilizar ls anteriores.
+En realidad no necesitamos crear nuevas variables ``cantidad2`` y ``precioUnitario2``. Sólo las empleamos para calcular el total de cada línea, y por lo tanto podríamos reutilizar las anteriores.
 
 .. codelens:: Invoice2
 

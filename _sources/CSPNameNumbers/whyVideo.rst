@@ -54,11 +54,12 @@
    :linenothreshold: 4
 
 
-|bigteachernote| Teacher Note: Why Videos?
-======================================================
+|bigteachernote| Nota para el profesor: ¿Por qué utilizar vídeos?
+=====================================================================
 
-Why are we using video to demonstrate different ways of thinking about assignment?  Video is not as effective as text or diagrams for conveying information, because it's dynamic (it moves) which makes it harder to remember.  However, video is good for presenting *spatial* or *visual* models.  
+¿Por qué estamos usando vídeos para demostrar distintas formas de pensar sobre las asignaciones? Para transmitir este tipo de información el vídeo no es tan efectivo como el texto o los diagramas, porque el hecho de que sea dinámico (se mueve) lo hace más difícil de recordar. Sin embargo, para representar modelos *espaciales* o *visuales* el vídeo es una buena opción.   
 
 Researchers in spatial reasoning suggests that computer science has a strong visual component.   Students with strong spatial reasoning skills are more likely to succeed in computer science (but if students don't have strong spatial reasoning, we can help them develop those skills). We know that understanding what an ``=`` (equals sign) means in mathematics relies heavily on spatial reasoning.  It may be that spatial reasoning is also important in understanding assignment in computer science. Gestures, sketches, and *video* are good ways to provide spatial information to students, to provide guidance to students to *think* visually -- not just memorize a diagram. It's easy to get a diagram wrong (in conflict with how the students think about the subject).  Gestures, sketches, and videos are fleeting (only available for a short while) and thus support learning, but require students to develop their *own* visual understanding.
-
+Los investigadores en razonamiento espacial sugieren que las ciencias de la computación tienen un fuerte componente visual. Los estudiantes que poseen buenas dotes para el razonamiento espacial tienen más probabilidades de tener éxito en las ciencias de la computación (pero también podemos ayudar a desarrollar esas capacidades a aquellos alumnos que no las tienen). Sabemos que la comprensión del significado de `=` (signo igual) en matemáticas tiene mucho que ver con el razonamiento espacial. Y puede ser que el razonamiento espacial sea también importante para entender el concepto de asignación en las ciencias de la computación. Los gestures, sketches y el *vídeo* son buenos métodos para ofrecer información espacial a los estudiantes, de proporcionarles una guía para que *piensen* visualmente -- no sólo memorizando un diagrama. Es fácil equivocarse en un diagrama (los estudiantes puede pensar sobre el asunto de una forma diferente). Los gestures, sketches y los vídeos son efímeros (perduran muy poco tiempo en nuestra memoria)y por supuesto sirven para aprender, pero es necesario que el estudiante desarrolle su *propio* razonamiento visual.
+   
 
