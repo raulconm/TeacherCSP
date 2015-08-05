@@ -30,109 +30,110 @@
 	:start: 1
 	:prefix: csp-4-1-
 
-Assign a Name to a String
+Asignar un nombre a una cadena
 ===================================
 
 ..	index::
 	single: assignment
 	pair: strings; assignment
 
-*Learning Objectives:*
+*Objetivos de aprendizaje:*
 
-- Create a variable that can store text (a string)
-- Add (append or concatenate) strings together to create new strings
-- Convert a number into a string to concatenate it to another string
-- Use dot-notation to invoke functions on objects
-- Show that strings are immutable (don't change)
+- Crear una variable para almacenar un texto (una cadena)
+- Sumar (unir o concatenar) cadenas para crear nuevas cadenas 
+- Convertir un número en una cadena para concatenarla con otra
+- Usar la notación de puntos para invocar funciones sobre los objetos
+- Demostrar que las cadenas son inmutables (no cambian) 
 
-Computers can use names to represent *anything*.  In the last chapter we saw that we can name numbers (declare a variable and set its value to a number) and then do calculations using the names for the numbers.  We can also name strings and do calculations with their names, too.  What does it mean to do a calculation on a string?  Well, Python uses the ``+`` symbol to concatenate strings as shown below.
+Los ordenadores pueden representar *cualquier cosa* utilizando nombres. En el capítulo anterior vimos que podíamos darle un nombre a números (declarar una variable con un nombre y ocuparla con un número) y hacer después cálculos usando los nombres que le habíamos dado a esos números. También podemos nombrar cadenas y hacer cálculos entre ellas refiriéndonos a ellas por sus nombres. ¿Qué significa hacer un cálculo con una cadena? Bueno, en Python podemos utilizar el símbolo ``+`` para concatenar cadenas, como se muestra a continuación. 
 
 .. activecode:: String_Assign
    :tour_1: "Line-by-line Tour"; 1: sa1-line1; 2: sa1-line2; 3: sa1-line3; 4: sa1-line4; 
    
-   first = "Jorge"
-   last = "Garcia"
-   fullName = first + " " + last
-   print(fullName)
+   nombre = "Jorge"
+   apellido = "Herranz"
+   nombreCompleto = nombre + " " + apellido
+   print(nombreCompleto)
    
 .. note::
-   Blank spaces are not automatically added when you append two strings.  If you want a blank space in between two strings then put it there explicitly using a string with just a space in it ``" "`` as shown above.
+   Los espacios en blanco no se agregan automáticamente cuando sumamos dos cadenas. Si quieres que aparezca un espacio entre ellas tienes que indicarlo explíciamente añadiendo una cadena que contenga un único espacio en blanco ``" "`` como aparece arriba.
    
-Concatenating Strings and Numbers
------------------------------------
+Concatenar cadenas de  caracteres y números
+--------------------------------------------
 
-You can print both strings and numbers, and you can concatenate strings using ``+``, but if you try to concatenate a string and a number you will get an error. The string ``"5"`` is stored very differently than the number ``5`` in computer memory, so to concatenate the number ``5`` and a string we need to convert the number into a string first.  The ``str(num)`` function will convert a number into a string.  
+Puedes imprimir tanto cadenas como números, y puedes concatenar cadenas por medio del ``+``, pero si intentas concatenar una cadena con un número te dará un error. El ordenador almacena en su memoria la cadena ``"5"`` y el número ``5`` de forma distinta, así que para concatenar el número ``5`` con una cadena es necesario convertir primero el número en cadena. Para convertir un número a cadena se emplea la función ``str(num)``.
 
 .. activecode:: String_Convert
    :tour_1: "Line-by-line Tour"; 1: sa3-line1; 2: sa3-line2; 3: sa3-line3; 4: sa3-line4; 
    
-   Fred = 5
-   print("Fred")
-   print(Fred)
-   print("Fred" + " is " + str(Fred))
+   Juan = 5
+   print("Juan")
+   print(Juan)
+   print("Juan" + " es " + str(Juan))
    
 .. note::
-   Notice how printing the string ``"Fred"`` prints something different than printing the value of the variable ``Fred``. Printing the string ``"Fred"`` prints the exact characters in that string. Remember that strings are enclosed in pairs of double or single quotes and when they are printed it will print the exact characters in the string. When you print a variable it will print the *value* of that variable.  
+   Observa que el ordenador hace algo diferente cuando imprime la cadena ``"Juan"`` que cuando imprime el valor de la variable ``Juan``. Imprimir la cadena ``"Juan"`` significa que imprime exactamente los caracteres incluidos en esa cadena. Recuerda que las cadenas están delimitadas por comillas simples o dobles, y que cuando se imprimen se muestran exactamente los caracteres que forman parte de la cadena. Cuando imprimes una variable se mostrará el *valor* de dicha variable. 
    
-We can update our driving example to print out the cost of the trip with just one ``print`` statement.
+Podemos ahora mejorar el ejemplo del coste del viaje que hicimos antes, imprimiendo todo con una sola instrucción ``print``.
 
 .. activecode:: Trip_Calculator2
    :tour_1: "Line by line tour"; 1: trp-line1; 2: trp-line2; 3: trp-line3; 4: trp-line4; 5: trp-line5; 6: trp2-line6;
 
-   distance = 924.7
-   mpg = 35.5
-   gallons = distance / mpg
-   costPerGallon = 3.65
-   costTrip = gallons * costPerGallon
-   print("Cost to get from Chicago to Dallas: $" + str(costTrip))
-   
-Strings are Objects
+   distancia = 948.1
+   kpl = 16
+   litros = distancia / kpl
+   costePorLitro = 1.22
+   costeDelViaje = litros * costePorLitro
+   print("Coste del viaje de Malaga a Santander: "+str(costeDelViaje) + " euros")
+   print(costeDelViaje)
+  
+Las cadenas son objetos
 ------------------------------------
    
 ..	index::
 	single: dot-notation
 	pair: programming; dot-notation
 
-Strings are objects in Python which means that there is a set of built-in functions that you can use to manipulate strings.  You use **dot-notation** to invoke the functions on a string object such as ``sentence.lower()``.  The function ``lower()`` returns a new string with all of the characters in the original string set to lowercase.  The function ``capitalize()`` will capitalize the first letter of the string.  
+En Python las cadenas son objetos. Esto significa que puedes utilizar el conjunto de funciones que existen en Python para manipular cadenas. Puedes utilizar la **notación de puntos** para invocar las funciones que permiten manejar cadenas, como ``cadena.lower()``. La función ``lower()`` nos devolverá una cadena con todos los caracteres de la cadena original en minúsculas. La función ``capitalize()`` pondrá en mayúscula la primera letra de la cadena original.  
 
 .. activecode:: String_Methods2
    :tour_1: "Line-by-line Tour"; 1: str2-line1; 2: str2-line2; 3: str2-line3; 4: str2-line4; 5: str2-line5;
    :nocodelens:
    
-   sentence = "THIS IS A TEST"
-   better = sentence.lower()
-   print(better)
-   betterStill = better.capitalize() + "."
-   print(betterStill)
+   frase = "ESTO ES UNA PRUEBA"
+   mejor = frase.lower()
+   print(mejor)
+   mejorTodavia = mejor.capitalize() + "."
+   print(mejorTodavia)
    
 
-Strings are Immutable
------------------------
+Las cadenas son inmutables
+---------------------------
 
 ..	index::
 	pair: string; immutable
 
-Even though you can manipulate a string to create a new string the original string is **immutable** which means that it doesn't change.  Notice that after you execute the code below the string stored in the variable ``sentence`` hasn't changed.  
-  
+Aunque podemos manipular una cadena para crear otra a partir de la primera, la cadena original es **inmutable**, no cambia. Fíjate que después de ejecutar el siguiente código, la cadena contenida en la variable ``frase`` no ha cambiado.    
+
 .. activecode:: String_Immutable
    :tour_1: "Line-by-line Tour"; 1: str2-line1; 2: str2-line2; 3: str2-line3; 4: str2-line4; 5: str2-line5; 6: str2-line6;
    
-   sentence = "THIS IS A TEST"
-   better = sentence.lower()
-   print(better)
-   betterStill = better.capitalize() + "."
-   print(betterStill)
-   print(sentence)
+   frase = "ESTO ES UNA PRUEBA"
+   mejor = frase.lower()
+   print(mejor)
+   mejorTodavia = mejor.capitalize() + "."
+   print(mejorTodavia)
+   print(frase)
    
-While the strings themselves can't be changed you can change the value of a variable. This throws away the original string and sets the variable's value to the new string.   
+Aunque las cadenas no se pueden modificar, sí es posible  alterar el valor de una variable. De esta forma puedes indicarle al ordenador que olvide la cadena original y que establezca una nueva cadena como valor de la variable. 
 
 .. activecode:: String_Reassign
    :tour_1: "Line-by-line Tour"; 1: sa2-line1; 2: sa2-line3; 3: sa2-line2; 4: sa2-line3;
    
-   sentence = "THIS IS A TEST"
-   print(sentence)
-   sentence = "Hi there"
-   print(sentence)
+   frase = "ESTO ES UNA PRUEBA"
+   print(frase)
+   frase = "Hola"
+   print(frase)
    
 .. mchoicemf:: 4_1_1_s1
    :answer_a: xyz
@@ -141,13 +142,13 @@ While the strings themselves can't be changed you can change the value of a vari
    :answer_d: xy z
    :answer_e: z
    :correct: b
-   :feedback_a: s1 will equal "xy" plus another "xy" then z at the end.
-   :feedback_b: s1 contains the original value, plus itself, plus "z"  
-   :feedback_c: No spaces are added during concatenation.
-   :feedback_d: No spaces are added during concatenation, and an additional "xy" should be included at the beginning.
-   :feedback_e: s1 was set to "xy" initially, so the final answer will be "xyxyz"
+   :feedback_a: s1 será igual a "xy" y otro "xy" y con una z al final.
+   :feedback_b: s1 contiene el valor original, además de sí mismo, y una "z"
+   :feedback_c: En una concatenación no se añaden los espacios.
+   :feedback_d: En una concatenación no se añaden los espacios, y se debería agregar un "xy" adicional al principio.
+   :feedback_e: s1 se definió inicialmente como "xy", así que la frase final será "xyxyz"
 
-   Given the following code segment, what is the value of the string s1 after these are executed?
+   ¿Cuál será el valor de la cadena s1 una vez ejecutado el siguiente fragmento de código?
    
    ::
 
@@ -160,11 +161,11 @@ While the strings themselves can't be changed you can change the value of a vari
    :answer_b: hey
    :answer_c: HEY
    :correct: c
-   :feedback_a: This would be correct if we had asked what the value of s3 was. What is the value of s1?
-   :feedback_b: This would be true if we asked what the value of s2 was after the code executes.  What is the value of s1?
-   :feedback_c: Strings are immutable, meaning they don't change.  Any function that changes a string returns a new string.  So s1 never changes unless you set it to a different string. 
+   :feedback_a: Sería correcto si hubiésemos preguntado cuál es el valor de s3. ¿Cuál es el valor de s1?
+   :feedback_b: Sería correcto si hubiésemos preguntado cuál es el valor de s2 después de ejecutar el código. ¿Cuál es el valor de s1?
+   :feedback_c: Las cadenas son inmutables, lo que significa que no cambian. Cualquier función que modifica una cadena devuelve una nueva cadena.  Así pues s1 no cambia nunca, a menos que explícitamente le asignemos como valor una cadena diferentes.
 
-   What is the value of s1 after the following code executes?
+   ¿Cuál es el valor de s1 después de ejecutar el siguiente código?
    
    :: 
 

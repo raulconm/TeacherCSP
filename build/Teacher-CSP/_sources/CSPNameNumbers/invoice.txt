@@ -56,7 +56,7 @@
 Calcular una factura
 ====================
 
-Podemos utilizar variables para resolver problemas como los que tratamos utilizando una hoja de cáculo. Imagina que tienes una hoja de cálculo con una factura del material de oficina de una empresa. 
+Podemos utilizar variables para resolver problemas como los que habitualmente resolvemos utilizando una hoja de cáculo. Imagina que tienes una hoja de cálculo con una factura del material de oficina para una empresa. 
 
 .. figure:: Figures/invoice.png
     :width: 600px
@@ -114,13 +114,13 @@ En realidad no necesitamos crear nuevas variables ``cantidad2`` y ``precioUnitar
 		   :correct: c
 		   :feedback_a: En este caso tenemos dos variables menos.
 		   :feedback_b: Tenemos un total por cada línea (dos), una cantidad, un precioUnitario, y un totalFactura.
-		   :feedback_c: Las variables son cantidad, precioUnitario, total1, total, y totalFactura. 
+		   :feedback_c: Las variables son cantidad, precioUnitario, total1, total2, y totalFactura. 
 		   :feedback_d: En este caso tenemos un total para cada línea (dos), una cantidad, un precioUnitario, y un totalFactura.
 
 		   ¿Cuántas variables hay en este programa?
 		   
 .. Note::
-   Es muy conveniente utilizar nombres de variables que tengan sentido, como ``totalFactura`` y ``cantidad``, en lugar de otros que no significan nada, como ``estaVariableEsMiAmiga``, o ``Juan``. El nombre debe ayudarnos a identificar qué dato está representando la variable.   
+   Es muy conveniente utilizar nombres de variables que tengan sentido, como ``totalFactura`` y ``cantidad``, en lugar de otros que no signifiquen nada, como ``estaVariableEsMiAmiga``, o ``Juan``. El nombre debe ayudarnos a identificar qué dato está representando la variable.   
 
 Imagina que las manzanas cuestan 0.30 euros por pieza, y que las peras cuestan 0.50 euros por pieza. Modifica el siguiente programa para que calcule el coste total.
 

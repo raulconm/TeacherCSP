@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Assign a Name to a String &mdash; Runestone Interactive Overview</title>
+    <title>Asignar un nombre a una cadena &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -274,10 +274,10 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Assign a Name to a String</a><ul>
-<li><a class="reference internal" href="#concatenating-strings-and-numbers">Concatenating Strings and Numbers</a></li>
-<li><a class="reference internal" href="#strings-are-objects">Strings are Objects</a></li>
-<li><a class="reference internal" href="#strings-are-immutable">Strings are Immutable</a></li>
+<li><a class="reference internal" href="#">Asignar un nombre a una cadena</a><ul>
+<li><a class="reference internal" href="#concatenar-cadenas-de-caracteres-y-numeros">Concatenar cadenas de  caracteres y números</a></li>
+<li><a class="reference internal" href="#las-cadenas-son-objetos">Las cadenas son objetos</a></li>
+<li><a class="reference internal" href="#las-cadenas-son-inmutables">Las cadenas son inmutables</a></li>
 </ul>
 </li>
 </ul>
@@ -324,17 +324,17 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="assign-a-name-to-a-string">
-<h1>Assign a Name to a String<a class="headerlink" href="#assign-a-name-to-a-string" title="Permalink to this headline">¶</a></h1>
-<p id="index-0"><em>Learning Objectives:</em></p>
+  <div class="section" id="asignar-un-nombre-a-una-cadena">
+<h1>Asignar un nombre a una cadena<a class="headerlink" href="#asignar-un-nombre-a-una-cadena" title="Permalink to this headline">¶</a></h1>
+<p id="index-0"><em>Objetivos de aprendizaje:</em></p>
 <ul class="simple">
-<li>Create a variable that can store text (a string)</li>
-<li>Add (append or concatenate) strings together to create new strings</li>
-<li>Convert a number into a string to concatenate it to another string</li>
-<li>Use dot-notation to invoke functions on objects</li>
-<li>Show that strings are immutable (don&#8217;t change)</li>
+<li>Crear una variable para almacenar un texto (una cadena)</li>
+<li>Sumar (unir o concatenar) cadenas para crear nuevas cadenas</li>
+<li>Convertir un número en una cadena para concatenarla con otra</li>
+<li>Usar la notación de puntos para invocar funciones sobre los objetos</li>
+<li>Demostrar que las cadenas son inmutables (no cambian)</li>
 </ul>
-<p>Computers can use names to represent <em>anything</em>.  In the last chapter we saw that we can name numbers (declare a variable and set its value to a number) and then do calculations using the names for the numbers.  We can also name strings and do calculations with their names, too.  What does it mean to do a calculation on a string?  Well, Python uses the <code class="docutils literal"><span class="pre">+</span></code> symbol to concatenate strings as shown below.</p>
+<p>Los ordenadores pueden representar <em>cualquier cosa</em> utilizando nombres. En el capítulo anterior vimos que podíamos darle un nombre a números (declarar una variable con un nombre y ocuparla con un número) y hacer después cálculos usando los nombres que le habíamos dado a esos números. También podemos nombrar cadenas y hacer cálculos entre ellas refiriéndonos a ellas por sus nombres. ¿Qué significa hacer un cálculo con una cadena? Bueno, en Python podemos utilizar el símbolo <code class="docutils literal"><span class="pre">+</span></code> para concatenar cadenas, como se muestra a continuación.</p>
 
 <div id="cont"></div>
 <div id="String_Assign" lang="python" time="" class="ac_section alert alert-warning" >
@@ -345,17 +345,17 @@
 <button class="ac_opt btn btn-default" style="display: inline-block" id="String_Assign_loadb" onclick="requestCode('String_Assign');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('String_Assign','first = *doubleq*Jorge*doubleq**nline*last = *doubleq*Garcia*doubleq**nline*fullName = first + *doubleq* *doubleq* + last*nline*print*open*fullName*close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: sa1-line1; 2: sa1-line2; 3: sa1-line3; 4: sa1-line4;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('String_Assign','nombre = *doubleq*Jorge*doubleq**nline*apellido = *doubleq*García*doubleq**nline*nombreCompleto = nombre + *doubleq* *doubleq* + apellido*nline*print*open*nombreCompleto*close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: sa1-line1; 2: sa1-line2; 3: sa1-line3; 4: sa1-line4;*atype*')"/>
 <button class='btn btn-default' id="String_Assign_vizb" onclick="injectCodelens(this,'String_Assign');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="String_Assign_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="String_Assign_code" class="active_code" prefixcode="undefined" lang="python">
-first = "Jorge"
-last = "Garcia"
-fullName = first + " " + last
-print(fullName)
+nombre = "Jorge"
+apellido = "García"
+nombreCompleto = nombre + " " + apellido
+print(nombreCompleto)
 </textarea>
 </div>
 
@@ -423,11 +423,11 @@ else{
 
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Blank spaces are not automatically added when you append two strings.  If you want a blank space in between two strings then put it there explicitly using a string with just a space in it <code class="docutils literal"><span class="pre">&quot;</span> <span class="pre">&quot;</span></code> as shown above.</p>
+<p class="last">Los espacios en blanco no se agregan automáticamente cuando sumamos dos cadenas. Si quieres que aparezca un espacio entre ellas tienes que indicarlo explíciamente añadiendo una cadena que contenga un único espacio en blanco <code class="docutils literal"><span class="pre">&quot;</span> <span class="pre">&quot;</span></code> como aparece arriba.</p>
 </div>
-<div class="section" id="concatenating-strings-and-numbers">
-<h2>Concatenating Strings and Numbers<a class="headerlink" href="#concatenating-strings-and-numbers" title="Permalink to this headline">¶</a></h2>
-<p>You can print both strings and numbers, and you can concatenate strings using <code class="docutils literal"><span class="pre">+</span></code>, but if you try to concatenate a string and a number you will get an error. The string <code class="docutils literal"><span class="pre">&quot;5&quot;</span></code> is stored very differently than the number <code class="docutils literal"><span class="pre">5</span></code> in computer memory, so to concatenate the number <code class="docutils literal"><span class="pre">5</span></code> and a string we need to convert the number into a string first.  The <code class="docutils literal"><span class="pre">str(num)</span></code> function will convert a number into a string.</p>
+<div class="section" id="concatenar-cadenas-de-caracteres-y-numeros">
+<h2>Concatenar cadenas de  caracteres y números<a class="headerlink" href="#concatenar-cadenas-de-caracteres-y-numeros" title="Permalink to this headline">¶</a></h2>
+<p>Puedes imprimir tanto cadenas como números, y puedes concatenar por medio del <code class="docutils literal"><span class="pre">+</span></code>, pero si intentas concatenar una cadena con un número te dará un error. El ordenador almacena la cadena <code class="docutils literal"><span class="pre">&quot;5&quot;</span></code> y el número <code class="docutils literal"><span class="pre">5</span></code> de forma distinta en la memoria, así que para concatenar el número <code class="docutils literal"><span class="pre">5</span></code> con una cadena es necesario convertir primero el número en cadena. Para convertir un número a una cadena se emplea la función <code class="docutils literal"><span class="pre">str(num)</span></code>.</p>
 
 <div id="cont"></div>
 <div id="String_Convert" lang="python" time="" class="ac_section alert alert-warning" >
@@ -438,7 +438,7 @@ else{
 <button class="ac_opt btn btn-default" style="display: inline-block" id="String_Convert_loadb" onclick="requestCode('String_Convert');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('String_Convert','Fred = 5*nline*print*open**doubleq*Fred*doubleq**close**nline*print*open*Fred*close**nline*print*open**doubleq*Fred*doubleq* + *doubleq* is *doubleq* + str*open*Fred*close**close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: sa3-line1; 2: sa3-line2; 3: sa3-line3; 4: sa3-line4;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('String_Convert','Fred = 5*nline*print*open**doubleq*Juan*doubleq**close**nline*print*open*Juan*close**nline*print*open**doubleq*Juan*doubleq* + *doubleq* es *doubleq* + str*open*Juan*close**close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: sa3-line1; 2: sa3-line2; 3: sa3-line3; 4: sa3-line4;*atype*')"/>
 <button class='btn btn-default' id="String_Convert_vizb" onclick="injectCodelens(this,'String_Convert');">Show in Codelens</button>
 
 </div>
@@ -446,9 +446,9 @@ else{
 <div id="String_Convert_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="String_Convert_code" class="active_code" prefixcode="undefined" lang="python">
 Fred = 5
-print("Fred")
-print(Fred)
-print("Fred" + " is " + str(Fred))
+print("Juan")
+print(Juan)
+print("Juan" + " es " + str(Juan))
 </textarea>
 </div>
 
@@ -516,101 +516,31 @@ else{
 
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Notice how printing the string <code class="docutils literal"><span class="pre">&quot;Fred&quot;</span></code> prints something different than printing the value of the variable <code class="docutils literal"><span class="pre">Fred</span></code>. Printing the string <code class="docutils literal"><span class="pre">&quot;Fred&quot;</span></code> prints the exact characters in that string. Remember that strings are enclosed in pairs of double or single quotes and when they are printed it will print the exact characters in the string. When you print a variable it will print the <em>value</em> of that variable.</p>
+<p class="last">Observa que el ordenador hace algo diferente cuando imprime la cadena <code class="docutils literal"><span class="pre">&quot;Juan&quot;</span></code> que cuando imprime el valor de la variable <code class="docutils literal"><span class="pre">Juan</span></code>. Imprimir la cadena <code class="docutils literal"><span class="pre">&quot;Juan&quot;</span></code> significa que imprime exactamente los caracteres incluidos en esa cadena. Recuerda que las cadenas están delimitadas por comillas simples o dobles, y que cuando se imprimen se muestran exactamente los caracteres que forman parte de la cadena. Cuando imprimes una variable se mostrará el <em>valor</em> de dicha variables.</p>
 </div>
-<p>We can update our driving example to print out the cost of the trip with just one <code class="docutils literal"><span class="pre">print</span></code> statement.</p>
-
-<div id="cont"></div>
-<div id="Trip_Calculator2" lang="python" time="" class="ac_section alert alert-warning" >
-
-<div class="ac_actions">
-<button class='btn btn-success' id="Trip_Calculator2_runb">Run</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="Trip_Calculator2_saveb" onclick="saveEditor('Trip_Calculator2');">Save</button>
-<button class="ac_opt btn btn-default" style="display: inline-block" id="Trip_Calculator2_loadb" onclick="requestCode('Trip_Calculator2');">Load</button>
-
-<span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Trip_Calculator2','distance = 924.7*nline*mpg = 35.5*nline*gallons = distance / mpg*nline*costPerGallon = 3.65*nline*costTrip = gallons * costPerGallon*nline*print*open**doubleq*Cost to get from Chicago to Dallas: $*doubleq* + str*open*costTrip*close**close*','1','*doubleq*Line by line tour*doubleq*; 1: trp-line1; 2: trp-line2; 3: trp-line3; 4: trp-line4; 5: trp-line5; 6: trp2-line6;*atype*')"/>
-<button class='btn btn-default' id="Trip_Calculator2_vizb" onclick="injectCodelens(this,'Trip_Calculator2');">Show in Codelens</button>
-
+<p>Podemos ahora mejorar el ejemplo del coste del viaje que hicimos antes para imprimir todo con una sola instrucción <code class="docutils literal"><span class="pre">print</span></code>.
+.. activecode:: Trip_Calculator2</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">tour_1:</th><td class="field-body">&#8220;Line by line tour&#8221;; 1: trp-line1; 2: trp-line2; 3: trp-line3; 4: trp-line4; 5: trp-line5; 6: trp2-line6;</td>
+</tr>
+</tbody>
+</table>
+<p>distancia = 948.1
+kpl = 16
+litros = distancia / kpl
+costePorLitro = 1.22
+costeDelViaje = litros * costePorLitro
+print(&#8220;Coste del viaje de Malaga a Santander: &#8220;+str(costeDelViaje) + &#8221; euros&#8221;)
+print(costeDelViaje)</p>
+</div></blockquote>
 </div>
-<br/>
-<div id="Trip_Calculator2_code_div" style="display: block" class="ac_code_div">
-<textarea cols="50" rows="12" id="Trip_Calculator2_code" class="active_code" prefixcode="undefined" lang="python">
-distance = 924.7
-mpg = 35.5
-gallons = distance / mpg
-costPerGallon = 3.65
-costTrip = gallons * costPerGallon
-print("Cost to get from Chicago to Dallas: $" + str(costTrip))
-</textarea>
-</div>
-
-<div class="ac_output">
-<div style="text-align: center">
-<div id="Trip_Calculator2_canvas" class="ac-canvas" style="border-style: solid; text-align: center"></div>
-</div>
-<pre id="Trip_Calculator2_suffix" style="display:none">
-</pre><pre id="Trip_Calculator2_pre" class="active_out"></pre>
-
-</div> <!-- end output --> 
-<div class="clearfix"></div>
-<p class="ac_caption"><span class="ac_caption_text"> (Trip_Calculator2)</span> </p>
-<div id="Trip_Calculator2_codelens_div" style="display:none"></div>
-<script>
-if ('block' == 'none') {
-    // a hack to preserve the inline-block display style. Toggle() will use display: block
-    // (instead of inline-block) if the previous display style was 'none'
-    $('#Trip_Calculator2_saveb').toggle();
-    $('#Trip_Calculator2_loadb').toggle();
-}
-if ($("#Trip_Calculator2").attr("lang") !== "html" && $("#Trip_Calculator2_code_div").parents(".admonition").length == 0 && $("#Trip_Calculator2_code_div").parents("#exercises").length == 0){
-    if ($(window).width() > 975){
-        $("#Trip_Calculator2_code_div").offset({
-            left: $("#Trip_Calculator2 .clearfix").offset().left
-        });
-    }
-    $("#Trip_Calculator2_runb").one("click", function(){
-        $({})
-        .queue(function (next) {
-            if ($(window).width() > 975){
-                $("#Trip_Calculator2_code_div").animate({
-                    left: 40
-                }, 500, next);
-                if (! Sk.TurtleGraphics ) {
-                    Sk.TurtleGraphics = {};
-                }
-                Sk.TurtleGraphics.height = 320;
-                Sk.TurtleGraphics.width = 320;
-            }
-            else{
-                next();
-            }
-        })
-        .queue(function (next) {
-            $("#Trip_Calculator2_runb").parent().siblings(".ac_output").show();
-            runit('Trip_Calculator2',this, undefined);
-            $("#Trip_Calculator2_runb").on("click", function(){
-                runit('Trip_Calculator2',this, undefined);
-            });
-        })
-
-    });
-}
-else{
-    $("#Trip_Calculator2_code_div").css({float : "none", marginLeft : "auto", marginRight : "auto"});
-    $("#Trip_Calculator2_runb").parent().siblings(".ac_output").show().css({float : "none", right : "0px"});
-    $("#Trip_Calculator2_runb").on("click", function(){
-        runit('Trip_Calculator2',this, undefined);
-    });
-}
-</script>
-
-</div>
-
-</div>
-<div class="section" id="strings-are-objects">
-<h2>Strings are Objects<a class="headerlink" href="#strings-are-objects" title="Permalink to this headline">¶</a></h2>
-<p id="index-1">Strings are objects in Python which means that there is a set of built-in functions that you can use to manipulate strings.  You use <strong>dot-notation</strong> to invoke the functions on a string object such as <code class="docutils literal"><span class="pre">sentence.lower()</span></code>.  The function <code class="docutils literal"><span class="pre">lower()</span></code> returns a new string with all of the characters in the original string set to lowercase.  The function <code class="docutils literal"><span class="pre">capitalize()</span></code> will capitalize the first letter of the string.</p>
+<div class="section" id="las-cadenas-son-objetos">
+<h2>Las cadenas son objetos<a class="headerlink" href="#las-cadenas-son-objetos" title="Permalink to this headline">¶</a></h2>
+<p id="index-1">En Python las cadenas son objetos. Esto significa que puedes utilizar el conjunto de funciones que existen en Python para manipular cadenas. Puedes utilizar la <strong>notación de puntos</strong> para invocar las funciones de Python que permiten manejar cadenas, como <code class="docutils literal"><span class="pre">cadena.lower()</span></code>. La función <code class="docutils literal"><span class="pre">lower()</span></code> nos devolverá una cadena con todos los caracteres de la cadena original en minúsculas. La función <code class="docutils literal"><span class="pre">capitalize()</span></code> pondrá en mayúscula la primera letra de la cadena original.</p>
 
 <div id="cont"></div>
 <div id="String_Methods2" lang="python" time="" class="ac_section alert alert-warning" >
@@ -621,17 +551,17 @@ else{
 <button class="ac_opt btn btn-default" style="display: inline-block" id="String_Methods2_loadb" onclick="requestCode('String_Methods2');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('String_Methods2','sentence = *doubleq*THIS IS A TEST*doubleq**nline*better = sentence.lower*open**close**nline*print*open*better*close**nline*betterStill = better.capitalize*open**close* + *doubleq*.*doubleq**nline*print*open*betterStill*close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: str2-line1; 2: str2-line2; 3: str2-line3; 4: str2-line4; 5: str2-line5;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('String_Methods2','frase = *doubleq*ESTO ES UNA PRUEBA*doubleq**nline*mejor = frase.lower*open**close**nline*print*open*mejor*close**nline*mejorTodavia = mejor.capitalize*open**close* + *doubleq*.*doubleq**nline*print*open*mejorTodavia*close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: str2-line1; 2: str2-line2; 3: str2-line3; 4: str2-line4; 5: str2-line5;*atype*')"/>
 
 </div>
 <br/>
 <div id="String_Methods2_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="String_Methods2_code" class="active_code" prefixcode="undefined" lang="python">
-sentence = "THIS IS A TEST"
-better = sentence.lower()
-print(better)
-betterStill = better.capitalize() + "."
-print(betterStill)
+frase = "ESTO ES UNA PRUEBA"
+mejor = frase.lower()
+print(mejor)
+mejorTodavia = mejor.capitalize() + "."
+print(mejorTodavia)
 </textarea>
 </div>
 
@@ -698,9 +628,9 @@ else{
 </div>
 
 </div>
-<div class="section" id="strings-are-immutable">
-<h2>Strings are Immutable<a class="headerlink" href="#strings-are-immutable" title="Permalink to this headline">¶</a></h2>
-<p id="index-2">Even though you can manipulate a string to create a new string the original string is <strong>immutable</strong> which means that it doesn&#8217;t change.  Notice that after you execute the code below the string stored in the variable <code class="docutils literal"><span class="pre">sentence</span></code> hasn&#8217;t changed.</p>
+<div class="section" id="las-cadenas-son-inmutables">
+<h2>Las cadenas son inmutables<a class="headerlink" href="#las-cadenas-son-inmutables" title="Permalink to this headline">¶</a></h2>
+<p id="index-2">Aunque podemos manipular una cadena para crear otra a partir de la primera, la cadena original es <strong>inmutable</strong>, no cambia. Fíjate que después de ejecutar el siguiente código, la cadena contenida en la variable <code class="docutils literal"><span class="pre">frase</span></code> no ha cambiado.</p>
 
 <div id="cont"></div>
 <div id="String_Immutable" lang="python" time="" class="ac_section alert alert-warning" >
@@ -711,19 +641,19 @@ else{
 <button class="ac_opt btn btn-default" style="display: inline-block" id="String_Immutable_loadb" onclick="requestCode('String_Immutable');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('String_Immutable','sentence = *doubleq*THIS IS A TEST*doubleq**nline*better = sentence.lower*open**close**nline*print*open*better*close**nline*betterStill = better.capitalize*open**close* + *doubleq*.*doubleq**nline*print*open*betterStill*close**nline*print*open*sentence*close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: str2-line1; 2: str2-line2; 3: str2-line3; 4: str2-line4; 5: str2-line5; 6: str2-line6;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('String_Immutable','frase = *doubleq*ESTO ES UNA PRUEBA*doubleq**nline*mejor = frase.lower*open**close**nline*print*open*mejor*close**nline*mejorTodavia = mejor.capitalize*open**close* + *doubleq*.*doubleq**nline*print*open*mejorTodavia*close**nline*print*open*frase*close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: str2-line1; 2: str2-line2; 3: str2-line3; 4: str2-line4; 5: str2-line5; 6: str2-line6;*atype*')"/>
 <button class='btn btn-default' id="String_Immutable_vizb" onclick="injectCodelens(this,'String_Immutable');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="String_Immutable_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="String_Immutable_code" class="active_code" prefixcode="undefined" lang="python">
-sentence = "THIS IS A TEST"
-better = sentence.lower()
-print(better)
-betterStill = better.capitalize() + "."
-print(betterStill)
-print(sentence)
+frase = "ESTO ES UNA PRUEBA"
+mejor = frase.lower()
+print(mejor)
+mejorTodavia = mejor.capitalize() + "."
+print(mejorTodavia)
+print(frase)
 </textarea>
 </div>
 
@@ -789,7 +719,7 @@ else{
 
 </div>
 
-<p>While the strings themselves can&#8217;t be changed you can change the value of a variable. This throws away the original string and sets the variable&#8217;s value to the new string.</p>
+<p>Aunque las cadenas no se pueden modificar, sí es posible  alterar el valor de una variable. De esta forma puedes indicarle al ordenador que olvide la cadena original y que establezca una nueva cadena como valor de la variable.</p>
 
 <div id="cont"></div>
 <div id="String_Reassign" lang="python" time="" class="ac_section alert alert-warning" >
@@ -800,17 +730,17 @@ else{
 <button class="ac_opt btn btn-default" style="display: inline-block" id="String_Reassign_loadb" onclick="requestCode('String_Reassign');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('String_Reassign','sentence = *doubleq*THIS IS A TEST*doubleq**nline*print*open*sentence*close**nline*sentence = *doubleq*Hi there*doubleq**nline*print*open*sentence*close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: sa2-line1; 2: sa2-line3; 3: sa2-line2; 4: sa2-line3;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('String_Reassign','frase = *doubleq*ESTO ES UNA PRUEBA*doubleq**nline*print*open*frase*close**nline*frase = *doubleq*Hola*doubleq**nline*print*open*frase*close*','1','*doubleq*Line-by-line Tour*doubleq*; 1: sa2-line1; 2: sa2-line3; 3: sa2-line2; 4: sa2-line3;*atype*')"/>
 <button class='btn btn-default' id="String_Reassign_vizb" onclick="injectCodelens(this,'String_Reassign');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="String_Reassign_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="String_Reassign_code" class="active_code" prefixcode="undefined" lang="python">
-sentence = "THIS IS A TEST"
-print(sentence)
-sentence = "Hi there"
-print(sentence)
+frase = "ESTO ES UNA PRUEBA"
+print(frase)
+frase = "Hola"
+print(frase)
 </textarea>
 </div>
 
@@ -878,7 +808,7 @@ else{
 
 
             <div id="4_1_1_s1" class="alert alert-warning">
-            <p>csp-4-1-1: Given the following code segment, what is the value of the string s1 after these are executed?</p>
+            <p>csp-4-1-1: ¿Cuál será el valor de la cadena s1 una vez ejecutado el siguiente fragmento de código?</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">s1</span> <span class="o">=</span> <span class="s">&quot;xy&quot;</span>
 <span class="n">s2</span> <span class="o">=</span> <span class="n">s1</span>
 <span class="n">s1</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span> <span class="o">+</span> <span class="s">&quot;z&quot;</span>
@@ -904,7 +834,7 @@ else{
             <script>
             $(document).ready(function(){checkRadio('4_1_1_s1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('4_1_1_s1','b',['s1 will equal \u0022xy\u0022 plus another \u0022xy\u0022 then z at the end.', 's1 contains the original value, plus itself, plus \u0022z\u0022', 'No spaces are added during concatenation.', 'No spaces are added during concatenation, and an additional \u0022xy\u0022 should be included at the beginning.', 's1 was set to \u0022xy\u0022 initially, so the final answer will be \u0022xyxyz\u0022'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('4_1_1_s1','b',['s1 será igual a \u0022xy\u0022 y otro \u0022xy\u0022 y con una z al final.', 's1 contiene el valor original, además de sí mismo, y una \u0022z\u0022', 'En una concatenación no se añaden los espacios.', 'En una concatenación no se añaden los espacios, y se debería agregar un \u0022xy\u0022 adicional al principio.', 's1 se definió inicialmente como \u0022xy\u0022, así que la frase final será \u0022xyxyz\u0022'])">Check Me</button>
             <button class='btn btn-default' id="4_1_1_s1_bcomp" disabled name="compare" onclick="compareAnswers('4_1_1_s1');">Compare Me</button>
             </form><br />
             <div id="4_1_1_s1_feedback">
@@ -912,7 +842,7 @@ else{
             </div>
             
             <div id="4_1_2_s2" class="alert alert-warning">
-            <p>csp-4-1-2: What is the value of s1 after the following code executes?</p>
+            <p>csp-4-1-2: ¿Cuál es el valor de s1 después de ejecutar el siguiente código?</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">s1</span> <span class="o">=</span> <span class="s">&quot;HEY&quot;</span>
 <span class="n">s2</span> <span class="o">=</span> <span class="n">s1</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
 <span class="n">s3</span> <span class="o">=</span> <span class="n">s2</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
@@ -932,7 +862,7 @@ else{
             <script>
             $(document).ready(function(){checkRadio('4_1_2_s2');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('4_1_2_s2','c',['This would be correct if we had asked what the value of s3 was. What is the value of s1?', 'This would be true if we asked what the value of s2 was after the code executes.  What is the value of s1?', 'Strings are immutable, meaning they don\u0027t change.  Any function that changes a string returns a new string.  So s1 never changes unless you set it to a different string.'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('4_1_2_s2','c',['Sería correcto si hubiésemos preguntado cuál es el valor de s3. ¿Cuál es el valor de s1?', 'Sería correcto si hubiésemos preguntado cuál es el valor de s2 después de ejecutar el código. ¿Cuál es el valor de s1?', 'Las cadenas son inmutables, lo que significa que no cambian. Cualquier función que modifica una cadena devuelve una nueva cadena.  Así pues s1 no cambia nunca, a menos que explícitamente le asignemos como valor una cadena diferentes.'])">Check Me</button>
             <button class='btn btn-default' id="4_1_2_s2_bcomp" disabled name="compare" onclick="compareAnswers('4_1_2_s2');">Compare Me</button>
             </form><br />
             <div id="4_1_2_s2_feedback">
