@@ -51,7 +51,7 @@ Los ordenadores pueden representar *cualquier cosa* utilizando nombres. En el ca
    :tour_1: "Line-by-line Tour"; 1: sa1-line1; 2: sa1-line2; 3: sa1-line3; 4: sa1-line4; 
    
    nombre = "Jorge"
-   apellido = "García"
+   apellido = "Herranz"
    nombreCompleto = nombre + " " + apellido
    print(nombreCompleto)
    
@@ -61,20 +61,21 @@ Los ordenadores pueden representar *cualquier cosa* utilizando nombres. En el ca
 Concatenar cadenas de  caracteres y números
 --------------------------------------------
 
-Puedes imprimir tanto cadenas como números, y puedes concatenar por medio del ``+``, pero si intentas concatenar una cadena con un número te dará un error. El ordenador almacena la cadena ``"5"`` y el número ``5`` de forma distinta en la memoria, así que para concatenar el número ``5`` con una cadena es necesario convertir primero el número en cadena. Para convertir un número a una cadena se emplea la función ``str(num)``.
+Puedes imprimir tanto cadenas como números, y puedes concatenar cadenas por medio del ``+``, pero si intentas concatenar una cadena con un número te dará un error. El ordenador almacena en su memoria la cadena ``"5"`` y el número ``5`` de forma distinta, así que para concatenar el número ``5`` con una cadena es necesario convertir primero el número en cadena. Para convertir un número a cadena se emplea la función ``str(num)``.
 
 .. activecode:: String_Convert
    :tour_1: "Line-by-line Tour"; 1: sa3-line1; 2: sa3-line2; 3: sa3-line3; 4: sa3-line4; 
    
-   Fred = 5
+   Juan = 5
    print("Juan")
    print(Juan)
    print("Juan" + " es " + str(Juan))
    
 .. note::
-   Observa que el ordenador hace algo diferente cuando imprime la cadena ``"Juan"`` que cuando imprime el valor de la variable ``Juan``. Imprimir la cadena ``"Juan"`` significa que imprime exactamente los caracteres incluidos en esa cadena. Recuerda que las cadenas están delimitadas por comillas simples o dobles, y que cuando se imprimen se muestran exactamente los caracteres que forman parte de la cadena. Cuando imprimes una variable se mostrará el *valor* de dicha variables. 
+   Observa que el ordenador hace algo diferente cuando imprime la cadena ``"Juan"`` que cuando imprime el valor de la variable ``Juan``. Imprimir la cadena ``"Juan"`` significa que imprime exactamente los caracteres incluidos en esa cadena. Recuerda que las cadenas están delimitadas por comillas simples o dobles, y que cuando se imprimen se muestran exactamente los caracteres que forman parte de la cadena. Cuando imprimes una variable se mostrará el *valor* de dicha variable. 
    
-Podemos ahora mejorar el ejemplo del coste del viaje que hicimos antes para imprimir todo con una sola instrucción ``print``.
+Podemos ahora mejorar el ejemplo del coste del viaje que hicimos antes, imprimiendo todo con una sola instrucción ``print``.
+
 .. activecode:: Trip_Calculator2
    :tour_1: "Line by line tour"; 1: trp-line1; 2: trp-line2; 3: trp-line3; 4: trp-line4; 5: trp-line5; 6: trp2-line6;
 
@@ -93,7 +94,7 @@ Las cadenas son objetos
 	single: dot-notation
 	pair: programming; dot-notation
 
-En Python las cadenas son objetos. Esto significa que puedes utilizar el conjunto de funciones que existen en Python para manipular cadenas. Puedes utilizar la **notación de puntos** para invocar las funciones de Python que permiten manejar cadenas, como ``cadena.lower()``. La función ``lower()`` nos devolverá una cadena con todos los caracteres de la cadena original en minúsculas. La función ``capitalize()`` pondrá en mayúscula la primera letra de la cadena original.  
+En Python las cadenas son objetos. Esto significa que puedes utilizar el conjunto de funciones que existen en Python para manipular cadenas. Puedes utilizar la **notación de puntos** para invocar las funciones que permiten manejar cadenas, como ``cadena.lower()``. La función ``lower()`` nos devolverá una cadena con todos los caracteres de la cadena original en minúsculas. La función ``capitalize()`` pondrá en mayúscula la primera letra de la cadena original.  
 
 .. activecode:: String_Methods2
    :tour_1: "Line-by-line Tour"; 1: str2-line1; 2: str2-line2; 3: str2-line3; 4: str2-line4; 5: str2-line5;
