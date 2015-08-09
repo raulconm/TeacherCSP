@@ -95,18 +95,18 @@ Tal vez cuando eras pequeño jugabas con tus amigos o amigas a construir historia
    :answer_a: Sí
    :answer_b: No
    :correct: a
-   :feedback_a: La única diferencia es el orden en de las líneas en el código, pero la historia se imprime igual.
+   :feedback_a: La única diferencia es el orden de las líneas en el código, pero la historia se imprime igual.
    :feedback_b: ¿Lo has ejecutado? Copia el código en el recuadro del programa y ejecútalo.
  
    ¿Imprimirá el siguiente código la historia igual que antes? 
    
    :: 
 
-     firstName = "Sofia"
-     lastName = "Diaz"
-     gender = "una chica"
-     address = "la Avenida de la Paz numero 8"
-     verb = "cocinar"
+     nombre = "Sofia"
+     apellido = "Diaz"
+     genero = "una chica"
+     direccion = "la Avenida de la Paz numero 8"
+     verbo = "cocinar"
      comienzo = "Erase una vez " + gender + " que se llamaba " + nombre + "."
      print(comienzo)
      siguiente1 = nombre + " vivia en " + direccion + "."

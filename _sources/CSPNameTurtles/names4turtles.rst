@@ -18,133 +18,135 @@
 .. highlight:: java
    :linenothreshold: 4
 
-Assign a Name to a Turtle
-==============================
+Asignar un nombre a una tortuga
+===============================
 
-*Learning Objectives:*
+*Objetivos de aprendizaje:*
 
-- Use assignment to name objects like turtles.
-- Ask turtle objects to perform actions.
-- Understand that using the right object at the right time, in order, is critical to success.
+- Utilizar las asignaciones para nombrar objetos tortuga
+- Indicarle a una tortuga que ejecute acciones
+- Entender la importancia de usar el objeto adecuado en el orden correcto para que el programa funcione como queremos
 
 ..	index::
 	single: objects
 	
-Names can be more than numbers and strings.  They can also be turtles or "screens" (a space on the page where a turtle can draw).  You can also call things like turtles and screens **objects**.  **Objects** in programming are things that do the action in a program.  
+Es posible asignar nombres a otros objetos, no sólo a números o cadenas. Se puede dar nombres también a tortugas o a "screens" (el espacio de la pantalla reservado para dibujar las tortugas). Las tortugas o las screens, entre otros, se conocen como **objetos**. Un objeto, en programación, es cualquier cosa que puede ejecutar acciones en un programa.     
 
-We have seen this example once before.
+Ya hemos visto este ejemplo anteriormente.
 
 .. activecode:: Turtle_Names1
     :tour_1: "Line-by-line Tour"; 1: t1-line1; 2: t1-line2; 3: t1-line3; 4: t1-line4; 5: t1-line5; 6: t1-line6; 7: t1-for100-1; 8: t1-right90-1; 9: t1-for100-2; 10: t1-right90-2; 11: t1-for100-3; 12: t1-right90-3;
     :nocodelens:
 	
-    from turtle import *	# use the turtle library
-    space = Screen()		# create a turtle screen (space)
-    zari = Turtle() 		# create a turtle named zari
-    zari.setheading(90)		# Point due north
-    zari.forward(100)		# tell zari to move forward by 100 units
-    zari.right(90)   		# turn by 90 degrees
-    zari.forward(100)		# tell zari to move forward by 100 units
-    zari.right(90)   		# turn by 90 degrees
-    zari.forward(100)		# tell zari to move forward by 100 units
-    zari.right(90)   		# turn by 90 degrees
-    zari.forward(100)		# tell zari to move forward by 100 units
-    zari.right(90)    		# turn by 90 degrees
+    from turtle import *	# usa la libreria de tortugas
+    espacio = Screen()	# crea un espacio para la tortuga
+    Juan = Turtle() 		# crea la tortuga Juan
+    Juan.setheading(90)	# Apunta al norte
+    Juan.forward(100)		# Le indica a Juan que avance 100 unidades
+    Juan.right(90)   		# Gira 90 grados
+    Juan.forward(100)		# Le indica a Juan que avance 100 unidades
+    Juan.right(90)   		# Gira 90 grados
+    Juan.forward(100)		# Le indica a Juan que avance 100 unidades
+    Juan.right(90)   		# Gira 90 grados
+    Juan.forward(100)		# Le indica a Juan que avance 100 unidades
+    Juan.right(90)    	# Gira 90 grados
 
-Now try this one.  
+Ahora prueba con este otro.  
 
 .. activecode:: Turtle_Names2
     :tour_1: "Line-by-line Tour"; 1: tri-line1; 2: tri-line2; 3: tri-line3; 4: tri-line4; 5: tri-line5; 6: tri-line6; 7: tri-line7; 8: tri-line8; 9: tri-line9; 10: tri-line10;
     :nocodelens:
 	
-    from turtle import *   	# use the turtle library
-    space = Screen()     	# create a turtle screen (space)
-    zari = Turtle()      	# create a turtle named zari
-    zari.setheading(90) 	# Point due north
-    zari.forward(100)  		# tell zari to move forward by 100 units
-    zari.right(120) 		# turn right by 120 degrees
-    zari.forward(100)		# tell zari to move forward by 100 units
-    zari.right(120)   		# turn right by 120 degrees
-    zari.forward(100) 		# tell zari to move forward by 100 units
-    zari.right(120)   		# turn right by 120 degrees
+    from turtle import *	# usa la libreria de tortugas
+    espacio = Screen()	# crea un espacio para la tortuga
+    Juan = Turtle() 		# crea la tortuga Juan
+    Juan.setheading(90)	# Apunta al norte
+    Juan.forward(100)		# Le indica a Juan que avance 100 unidades
+    Juan.right(120)   	# Gira 120 grados
+    Juan.forward(100)		# Le indica a Juan que avance 100 unidades
+    Juan.right(120)   	# Gira 120 grados
+    Juan.forward(100)		# Le indica a Juan que avance 100 unidades
+    Juan.right(120)   	# Gira 120 grados
 
 .. mchoicemf:: 5_1_1_Turtle_Names2_Q1
-   :answer_a: A square
-   :answer_b: A triangle
-   :answer_c: A rectangle
+   :answer_a: Un cuadrado
+   :answer_b: Un triángulo
+   :answer_c: Un rectángulo
    :correct: b
-   :feedback_a: That was the first program, but not the second program.
-   :feedback_b: Now, what if you did one more forward and right.  Would it still be a triangle? Try it!
-   :feedback_c: But, we could change the first program to make a rectangle.  Can you change two lines in the first program to draw a rectangle?
+   :feedback_a: Eso es lo que hace el primer programa, pero no el segundo.
+   :feedback_b: Y ahora, que pasaría si ejecutara un forward y un right adicional. ¿Seguiría siendo un triángulo? ¡Pruébalo!
+   :feedback_c: Pero, podrías modificar el primer ejemplo para que haga un rectángulo. ¿Te atreves a cambiar dos líneas en el primer programa para que dibuje en rectángulo?
 
-   What shape did that draw?
+   ¿Qué figura has dibujado?
 
-This works because ``zari`` is a turtle, and each statement gets executed, one right after the other.  If we introduce another turtle and another name, it doesn't work the same
+Esto funciona porque ``Juan`` es una tortuga, que ejecuta cada instrucción de forma precisa y en orden, una después de otra. Si añadimos otra tortuga con otro nombre, el resultado será distinto. 
 
 .. activecode:: Two_Turtles
     :tour_1: "Line-by-line Tour"; 1: tt-line1; 2: tt-line2; 3: tt-line3; 4: tt-line4; 5: tt-line5; 6: tt-line6; 7: tt-line7; 8: tt-line8; 9: tt-line9; 10: tt-line10; 11: tt-line11; 12: tt-line12;
     :nocodelens:
 	
-    from turtle import * 	# use the turtle library
-    space = Screen()     	# create a turtle screen (space)
-    zari = Turtle()     	# create a turtle named zari
-    zari.setheading(90) 	# Point due north
-    zari.forward(100)   	# tell zari to move forward by 100 units
-    zari.right(120)     	# turn right by 120 degrees
-    zari.forward(100)     	# tell zari to move forward by 100 units
-    zari.right(120)      	# turn right by 120 degrees
-    chad = Turtle()     	# create a new turtle named chad
-    chad.color("orange")  	# change the color chad's draws with
-    chad.forward(100)     	# tell chad to move forward by 100 units
-    chad.right(120)     	# turn chad by 120 degrees
+    from turtle import * 	# usa la libreria de tortugas
+    espacio = Screen()     	# crea un espacio para la tortuga
+    Juan = Turtle()     	# crea la tortuga Juan
+    Juan.setheading(90) 	# Apunta al norte
+    Juan.forward(100)   	# Le indica a Juan que avance 100 unidades
+    Juan.right(120)     	# Gira 120 grados a la derecha
+    Juan.forward(100)     	# Le indica a Juan que avance 100 unidades
+    Juan.right(120)      	# Gira 120 grados a la derecha
+    Ana = Turtle()     	# crea la tortuga Ana
+    Ana.color("orange")  	# cambiar el color de Ana
+    Ana.forward(100)     	# Le dice a Ana que avance 100 unidades
+    Ana.right(120)     	# Gira 120 grados a la derecha
     
 .. mchoicemf:: 5_1_2_Turtle_Dir_Q1
-   :answer_a: North
-   :answer_b: South
-   :answer_c: East
-   :answer_d: West
+   :answer_a: Norte
+   :answer_b: Sur
+   :answer_c: Este
+   :answer_d: Oeste
    :correct: c
-   :feedback_a: The turtles in some of the examples faced north because of the <code>setheading(90)</code> instruction. Which way does chad move first?
-   :feedback_b: Which way does chad first move in the example above?  North is at the top of the page.
-   :feedback_c: Turtles start off facing east which is toward the right side of the page.
-   :feedback_d: Which way does chad first move in the example above?   North is at the top of the page.
+   :feedback_a: En algunos de los ejemplos las turtugas se apuntan al norte porque le damos la instrucción <code>setheading(90)</code>. ¿En qué dirección se desplaza Ana inicialmente?
+   :feedback_b: ¿En qué dirección se mueve inicialmente Ana en este ejemplo? El norte es el lado superior de la pantalla.
+   :feedback_c: Las tortugas miran inicialmente hacia el este, o lo que es lo mismo, hacia el lado derecho de la pantalla.
+   :feedback_d: ¿En qué dirección se mueve inicialmente Ana en este ejemplo? El norte es el lado superior de la pantalla.
 
-   Which way does a turtle face when first created?
+   ¿En qué dirección apunta inicialmete una tortuga, cuando la creamos?
     
-**Mixed up programs**
+**Programas desordenados**
 
 .. parsonsprob:: 5_1_3_Turtle_L
 
-   The following program uses a turtle to draw a capital L as shown in the picture to the left of this text, <img src="../_static/TurtleL4.png" width="150" align="left" hspace="10" vspace="5" /> but the lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the space to draw on, and create the turtle.  Remember that the turtle starts off facing east when it is created.  The turtle should turn to face south and draw a line that is 150 pixels long and then turn to face east and draw a line that is 75 pixels long.  We have added a compass to the picture to indicate the directions north, south, west, and east.  <br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>
+   El siguiente programa utiliza una tortuga para dibujar una L mayúscula, tal como puedes ver en el dibujo, <img src="../_static/TurtleL4.png" width="150" align="left" hspace="10" vspace="5" /> pero las líneas del programa están desordenadas. El programa tiene que indicar todos los pasos necesarios: importar el módulo para manejar tortugas, crear el espacio para la tortuga, y crear la tortuga. Acuérdate de que cuando creas la tortuga siempre apunta hacia el este. Debes girarla para que apunte al sur, y dibujar entonces una línea recta de 150 pixels de longitud. A continuación debe girar hacia el este y dibujar otra línea de una longitud de 75 pixels. Hemos añadido una brújula al dibujo para indicar el norte, sur, este y oeste. <br /><br /><p>Arrastra los bloques de código desde el lado izquierdo al lado derecho colocándolos en el orden correcto. A continuación pulsa <i>Check Me</i> para comprobar si lo has hecho correctamente. El ejercicio te indicará si has colocado algún bloque en el orden equivocado.</p>
+
    -----
    from turtle import *
    =====
-   space = Screen()
-   ella = Turtle()
+   espacio = Screen()
+   pepa = Turtle()
    =====
-   ella.right(90)
-   ella.forward(150)
+   pepa.right(90)
+   pepa.forward(150)
    =====
-   ella.left(90)
+   pepa.left(90)
    =====
-   ella.forward(75)
+   pepa.forward(75)
    
 .. parsonsprob:: 5_1_4_Turtle_Check
 
-   The following program uses a turtle to draw a checkmark as shown to the left, <img src="../_static/TurtleCheckmark4.png" width="150" align="left" hspace="10" vspace="5" /> but the lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  The turtle should turn to face southeast, draw a line that is 75 pixels long, then turn to face northeast, and draw a line that is 150 pixels long.  We have added a compass to the picture to indicate the directions north, south, west, and east.  Northeast is between north and east. Southeast is between south and east. <br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>
+   El programa siguiente usa una tortuga para dibujar un signo como el que puedes ver a la izquierda, <img src="../_static/TurtleCheckmark4.png" width="150" align="left" hspace="10" vspace="5" /> pero de nuevo las líneas de código están desordenadas. El programa tiene que importar el módulo de manejar tortugas, crear la ventana donde dibujar la tortuga, y finalmente crear la tortuga. Hay que hacer que la tortuga apunte hacia el sureste, dibujar una línea de 75 de longitud, girar hacia el noreste, y dibujar una línea de 150 pixels de largo. Hemos añadido una brújula para indicar dónde están norte, sur, este y oeste. <br /><br /><p>Arrastra los bloques con las instrucciones desde la parte izquierda hasta la parte derecha, y colócalos en el orden correcto. El ejercicio te indicará si has cometido algún error.</p>
+
    -----
    from turtle import *
    =====
-   space = turtle.Screen()
-   maria = turtle.Turtle()
+   espacio = turtle.Screen()
+   pepe = turtle.Turtle()
    =====
-   maria.right(45)
+   pepe.right(45)
    =====
-   maria.forward(75)
+   pepe.forward(75)
    =====
-   maria.left(90)
+   pepe.left(90)
    =====
-   maria.forward(150)
+   pepe.forward(150)
    
 
 

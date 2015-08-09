@@ -55,6 +55,7 @@ Este libro electrónico es diferente porque utiliza *ejemplos y práctica*. Muchos
 - Más que escribir mucho código, te pediremos que *leas* un montón de *ejemplos* de código, porque eso es lo que más hacen los profesores de ciencias de la computación. 
 - Te pediremos que hagas algunos ejercicios *prácticos* sencillos para que *uses* lo que has aprendido en los ejemplos. Intentaremos que los ejercicios sean cortos y sencillos, para que sean compatibles con la atareada vida de un profesor. 
 - Como profesor, necesitas saber qué *errores* suelen cometer los estudiantes, dónde puedes encontrar *recursos* para enseñar, y *cómo* enseñar las distintas ideas. El libro contiene algunas |teachernote| **Notas del profesor** que explican cómo ser un profesor efectivo en ciencias de la computación.
-- **No tendrás que instalar nada**. Leerás, editarás y ejecutarás todos los programas desde las páginas de este libro electrónico, sin salir del navegador. 
+- **No tendrás que instalar nada**. Leerás, editarás y ejecutarás todos los programas desde las páginas de este libro electrónico, sin salir del navegador.
+- El lenguaje Python se basa en el inglés, y por eso algunas palabras del lenguaje están en inglés, pero no te preocupes, son sólo palabras, no textos, así que no supondrá en absoluto un problema. 
 
 Haz clic en la flecha que hay en la esquina inferior izquierda de esta ventana para acceder a la siguiente sección de este capítulo. Haz clic en el nombre del libro, en la esquina superior izquierda de la página, para ir a la tabla de contenidos.

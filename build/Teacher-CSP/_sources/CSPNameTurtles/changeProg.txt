@@ -18,47 +18,47 @@
 .. highlight:: java
    :linenothreshold: 4
 
-Changing Turtle Programs
-==============================
+Modificar los programas de tortugas
+====================================
 
-Run the following program.  
+Ejecuta el siguiente programa.
 
 .. activecode:: Turtle_Names4
     :tour_1: "Line-by-line Tour"; 1: first-turtle-line-1; 2: first-turtle-line-2; 3: first-turtle-line-3; 4: first-turtle-line-4; 5: first-turtle-line-5; 6: first-turtle-line-6;
     :nocodelens:
 	
-    from turtle import * 	# use the turtle library
-    space = Screen()    	# create a turtle screen (space)
-    alex = Turtle()      	# create a turtle named alex
-    alex.forward(150)     	# tell alex to move forward by 150 units
-    alex.left(90)       	# turn by 90 degrees
-    alex.forward(75)      	# tell alex to move forward by 75 units
+    from turtle import * 	# usa la libreria de tortugas
+    espacio = Screen()    	# crea el espacio para la tortuga
+    alex = Turtle()      	# crea la tortuga Alex
+    alex.forward(150)     	# le dice a Alex que avance 150 unidades
+    alex.left(90)       	# le indica que gire 90 grados
+    alex.forward(75)      	# le dice a Alex que avance 150 unidades
 
 .. mchoicemf:: 5_3_1_Turtle_Names4_Q1
-   :answer_a: Change the 150 to 90
-   :answer_b: Change the 75 to 90
-   :answer_c: Change the 75 to 150
+   :answer_a: Cambiar el 150 por 90
+   :answer_b: Cambiar el 75 por 90
+   :answer_c: Cambiar el 75 por 150
    :correct: c
-   :feedback_a: The turtle moves forward 150 units and turns 90 degrees.
-   :feedback_b: The turtle moves forward 75 units and turns 90 degrees.
-   :feedback_c: Then both sides would be 150 units long.
+   :feedback_a: La tortuga avanza 150 unidades y gira 90 grados.
+   :feedback_b: La tortuga avanza 75 unidades y gira 90 grados.
+   :feedback_c: Así ambos lados medirían 150 unidades.
 
-   If you wanted to make both of the turtle lines in that last program the same length, what change would you make to the program?  (Feel free to actually make the change in the program and click *Run* to try it!)
+   ¿Qué modificación debes hacer en el programa si quieres que ambas líneas tengan la misma longitud? (¡Haz los cambios que consideres y pulsa *Run* para ver si lo has hecho correctamente!)
 
 
-**Slightly Harder Problem:** Now, let's connect the end point to the starting point.  The shape we'll create is a right triangle (a triangle that has a 90 degree interior angle).  The number 57 isn't guesswork -- it is roughly the square root of 40^2 + 40^2.  However, there is an error in this program and it won't work as intended.  **Can you fix it?**  
+**Un poco más complicado:** Ahora vamos a conectar el punto final con el inicial. Crearemos entonces un triángulo rectángulo (que tiene un ángulo de 90 grados en su interior). El número 57 no se ha elegido al azar -- es aproximadamente el valor de la raiz cuadrada de 40^2 + 40^2.  No obstante, en este progrnama hay un error, y por ello no funciona como se espera.   **¿Puedes encontrarlo y arreglarlo?**  
 
 .. activecode:: Turtle_Names5
     :nocodelens:
 	
-    from turtle import * 	# use the turtle library
-    space = Screen()     	# create a turtle screen (space)
-    alex = Turtle()      	# create a turtle named alex
-    alex.forward(40)     	# tell alex to move forward by 150 units
-    alex.left(90)       	# turn by 90 degrees
-    alex.forward(40)     	# complete the second leg of a triangle
-    alex.left(0)         	# ZERO won't actually work
-    alex.forward(57)      	# Close the triangle
+    from turtle import * 	# usa la libreria de tortugas
+    espacio = Screen()     	# crea el espacio para la tortuga
+    alex = Turtle()      	# crea la tortuga Alex
+    alex.forward(40)     	# indica a alex que avance 40 unidades
+    alex.left(90)       	# gira 90 grados
+    alex.forward(40)     	# completa el segundo lado del triangulo
+    alex.left(0)         	# el valor 0 relmente no hace nada
+    alex.forward(57)      	# cierra el triángulo
 
 
 .. mchoicemf:: 5_3_2_Turtle_Names5_Q1
@@ -66,30 +66,30 @@ Run the following program.
    :answer_b: alex.left(90)
    :answer_c: alex.left(135)
    :correct: c
-   :feedback_a: The turtle turns the exterior angle, not the interior angle.
-   :feedback_b: That would make another right angle. Which would be more like a square shape.
-   :feedback_c: The interior angles of a triangle need to add up to 180.  So far we have one angle of 90 so the other two must be equal and must total 90.  They both have to be 45, but we tell the turtle to turn the exterior angle so 180 - 45 = 135.
+   :feedback_a: La tortuga ira hacia el exterior, no hacia el interior.
+   :feedback_b: Esto dibujaría otro ángulo recto, que sería lo adecuado para crear un cuadrado.
+   :feedback_c: Los ángulos interiores de un triángulo deben sumar 180. Hasta este momento tenemos un ángulo de 90, así que faltarían dos ángulos más, cuya suma debería ser otros 90. Ambos deben ser de 45 grados, pero le indicamos a la tortuga que gire el ángulo hacia el exterior de forma que 180 - 45 = 135.
 
-   The code ``alex.left(0)`` will not turn the turtle toward the starting point.  Which of these will?
+   La instrucción ``alex.left(0)`` no hace que la tortga gire en la dirección del punto inicial. ¿Cuál de las líneas siguientes sería la correcta?
    
 .. parsonsprob:: 5_3_3_Turtle-T
 
-   The following program uses a turtle to draw a capital T as shown to the left, <img src="../_static/TurtleT.png" width="150" align="left" hspace="10" vspace="5"/> but the lines are mixed up.  The program should do all necessary set-up, create the turtle.  After that the turtle should turn to face north, draw a line that is 150 pixels long, turn to face west, and draw a line that is 50 pixels long.  Next, the turtle should turn 180 degrees and draw a line that is 100 pixels long.  Finally, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>  
+   El siguiente programa utiliza una tortuga para dibujar una letra T mayúscula, como la que aparece representada a la izquierda, <img src="../_static/TurtleT.png" width="150" align="left" hspace="10" vspace="5"/> pero las líneas de código están desordenadas. El programa debe crear el espacio de trabajo y crear la tortuga. A continuación hay que girar la tortuga hacia el norte, y dibujar una línea de 150 pixels, girar después hacia el oeste, y trazar una línea de 50 pixels de longitud. Después, la tortuga debe girar 180 grados y dibujar otra línea de 100 pixels. Para terminar, hay que indicar que se cierre la ventana cuando el usuario haga clic sobre ella.<br /><br /><p>Arrastra los bloques desde la parte izquierda hasta la derecha en el orden correcto. Pulsa <i>Check Me</i> para comprobar si lo has hecho bien. El ejercicio te indicará en caso de que hayas cometido cualquier error.</p>
    -----
    from turtle import *
    =====
-   space = Screen()    	
-   jamal = Turtle()
+   espacio = Screen()    	
+   marcos = Turtle()
    ===== 
-   jamal.setheading(90) 
+   marcos.setheading(90) 
    =====                
-   jamal.forward(150)
+   marcos.forward(150)
    =====
-   jamal.left(90)
-   jamal.forward(50)
+   marcos.left(90)
+   marcos.forward(50)
    =====
-   jamal.right(180)
-   jamal.forward(100)
+   marcos.right(180)
+   marcos.forward(100)
    
 
 

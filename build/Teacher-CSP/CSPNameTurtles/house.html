@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Bob Builds a House &mdash; Runestone Interactive Overview</title>
+    <title>Pedro construye una casa &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -87,8 +87,8 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
-    <link rel="next" title="Changing Turtle Programs" href="changeProg.html" />
-    <link rel="prev" title="Assign a Name to a Turtle" href="names4turtles.html" />
+    <link rel="next" title="Modificar los programas de tortugas" href="changeProg.html" />
+    <link rel="prev" title="Asignar un nombre a una tortuga" href="names4turtles.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -274,7 +274,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Bob Builds a House</a></li>
+<li><a class="reference internal" href="#">Pedro construye una casa</a></li>
 </ul>
 </ul>
 </li>
@@ -282,13 +282,13 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Assign a Name to a Turtle" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Asignar un nombre a una tortuga" data-toggle="tooltip">
     <a href="names4turtles.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Changing Turtle Programs' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - Modificar los programas de tortugas' data-toggle="tooltip" >
     <a href="changeProg.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -319,12 +319,13 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="bob-builds-a-house">
-<h1>Bob Builds a House<a class="headerlink" href="#bob-builds-a-house" title="Permalink to this headline">¶</a></h1>
-<p>Let&#8217;s combine the square and triangle code to create a drawing of a simple house.</p>
+  <div class="section" id="pedro-construye-una-casa">
+<h1>Pedro construye una casa<a class="headerlink" href="#pedro-construye-una-casa" title="Permalink to this headline">¶</a></h1>
+<p>Vamos a combinar a hora el código del cuadrado y el del triángulo
+para crear un dibujo sencillo de una casa.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The program below has blank lines between the lines of code.  The computer ignores the blank lines.  We add blank lines to programs to group lines that are working together such as the lines below that draw a square.  Often a comment (starts with a <code class="docutils literal"><span class="pre">#</span></code>) is used before a several lines of code to explain the purpose of the code.</p>
+<p class="last">El siguiente programa tiene líneas en blanco alternadas con líneas de código. El ordenador ignora estas líneas en blanco. Las añadimos en los programas para agrupar las partes del código que hacen algo concreto, como dibujar un cuadrado, en este caso. Normalmente estas agrupaciones van precedidas de un comentario (comienzan con el caracter <code class="docutils literal"><span class="pre">#</span></code>), para indicar qué hace esa parte del código.</p>
 </div>
 
 <div id="cont"></div>
@@ -336,35 +337,36 @@
 <button class="ac_opt btn btn-default" style="display: inline-block" id="Turtle_House_loadb" onclick="requestCode('Turtle_House');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Turtle_House','from turtle import *      # use the turtle library*nline*space = Screen*open**close*          # create a turtle screen *open*space*close**nline*bob = Turtle*open**close*            # create a turtle named bob*nline**nline*# Make a square*nline*bob.forward*open*100*close*          # tell bob to move forward by 100 units*nline*bob.right*open*90*close*             # turn right by 90 degrees*nline*bob.forward*open*100*close*          # tell bob to move forward by 100 units*nline*bob.right*open*90*close*             # turn right by 90 degrees*nline*bob.forward*open*100*close*          # tell bob to move forward by 100 units*nline*bob.right*open*90*close*             # turn right by 90 degrees*nline*bob.forward*open*100*close*          # tell bob to move forward by 100 units*nline**nline*# Position for roof*nline*bob.right*open*90*close**nline**nline*# Make a roof*nline*bob.forward*open*100*close*          # tell bob to move forward by 100 units*nline*bob.right*open*-120*close*           # turn LEFT by 120 degrees*nline*bob.forward*open*100*close*          # tell bob to move forward by 100 units*nline*bob.right*open*-120*close*           # turn LEFT by 120 degrees*nline*bob.forward*open*100*close*          # tell bob to move forward by 100 units*nline*bob.right*open*-120*close*           # turn LEFT by 120 degrees','1','*doubleq*Section Tour*doubleq*; 1-3: house-line1-3; 6-12: house-line5-11; 15: house-line13; 18-23: house-line18-23;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Turtle_House','from turtle import *      # usa la librería de manejar tortugas*nline*space = Screen*open**close*          # crea el área para la tortuga *open*espacio*close**nline*pedro = Turtle*open**close*          # crea la tortuga pedro*nline**nline*# Dibuja un cuadrado*nline*pedro.forward*open*100*close*        # le ordena a pedro que avance 100 unidades*nline*pedro.right*open*90*close*           # gira 90 grados a la derecha*nline*pedro.forward*open*100*close*          # le ordena a pedro que avance 100  unidades*nline*pedro.right*open*90*close*           # gira 90 grados a la derecha*nline*pedro.forward*open*100*close*          # le ordena a pedro que avance 100  unidades*nline*pedro.right*open*90*close*           # gira 90 grados a la derecha*nline*pedro.forward*open*100*close*          # le ordena a pedro que avance 100  unidades*nline**nline*# Coloca a pedro para dibujar el tejado*nline*pedro.right*open*90*close**nline**nline*# Dibuja el tejado*nline*pedro.forward*open*100*close*        # le ordena a pedro que avance 100  unidades*nline**nline*pedro.right*open*-120*close*         # gira 120 grado a la IZQUIERDA*nline*pedro.forward*open*100*close*        # le ordena a pedro que avance 100  unidades*nline*pedro.right*open*-120*close*         # gira 120 grado a la IZQUIERDA*nline*pedro.forward*open*100*close*        # le ordena a pedro que avance 100  unidades*nline*pedro.right*open*-120*close*           # gira 120 grado a la IZQUIERDA','1','*doubleq*Section Tour*doubleq*; 1-3: house-line1-3; 6-12: house-line5-11; 15: house-line13; 18-23: house-line18-23;*atype*')"/>
 
 </div>
 <br/>
 <div id="Turtle_House_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="Turtle_House_code" class="active_code" prefixcode="undefined" lang="python">
-from turtle import *      # use the turtle library
-space = Screen()          # create a turtle screen (space)
-bob = Turtle()            # create a turtle named bob
+from turtle import *      # usa la librería de manejar tortugas
+space = Screen()          # crea el área para la tortuga (espacio)
+pedro = Turtle()          # crea la tortuga pedro
 
-# Make a square
-bob.forward(100)          # tell bob to move forward by 100 units
-bob.right(90)             # turn right by 90 degrees
-bob.forward(100)          # tell bob to move forward by 100 units
-bob.right(90)             # turn right by 90 degrees
-bob.forward(100)          # tell bob to move forward by 100 units
-bob.right(90)             # turn right by 90 degrees
-bob.forward(100)          # tell bob to move forward by 100 units
+# Dibuja un cuadrado
+pedro.forward(100)        # le ordena a pedro que avance 100 unidades
+pedro.right(90)           # gira 90 grados a la derecha
+pedro.forward(100)          # le ordena a pedro que avance 100  unidades
+pedro.right(90)           # gira 90 grados a la derecha
+pedro.forward(100)          # le ordena a pedro que avance 100  unidades
+pedro.right(90)           # gira 90 grados a la derecha
+pedro.forward(100)          # le ordena a pedro que avance 100  unidades
 
-# Position for roof
-bob.right(90)
+# Coloca a pedro para dibujar el tejado
+pedro.right(90)
 
-# Make a roof
-bob.forward(100)          # tell bob to move forward by 100 units
-bob.right(-120)           # turn LEFT by 120 degrees
-bob.forward(100)          # tell bob to move forward by 100 units
-bob.right(-120)           # turn LEFT by 120 degrees
-bob.forward(100)          # tell bob to move forward by 100 units
-bob.right(-120)           # turn LEFT by 120 degrees
+# Dibuja el tejado
+pedro.forward(100)        # le ordena a pedro que avance 100  unidades
+
+pedro.right(-120)         # gira 120 grado a la IZQUIERDA
+pedro.forward(100)        # le ordena a pedro que avance 100  unidades
+pedro.right(-120)         # gira 120 grado a la IZQUIERDA
+pedro.forward(100)        # le ordena a pedro que avance 100  unidades
+pedro.right(-120)           # gira 120 grado a la IZQUIERDA
 </textarea>
 </div>
 
@@ -430,45 +432,46 @@ else{
 
 </div>
 
-<p>Let&#8217;s imagine going on to make another partial square along the slope, to create a &#8220;chimney.&#8221;</p>
+<p>Imagina que quieres crear otro cuadrado incompleto en el tejado para dibujar una &#8220;chimenea&#8221;.</p>
 <img alt="../_images/turtle-house.png" src="../_images/turtle-house.png" />
 
-        <div class='parsons alert alert-warning' id="parsons-61">
-        <div class="parsons-text">csp-5-2-1: Align the program pieces below to make the house and chimney figure above.  Draw the square first for the main part of the house, next draw the roof, and finally draw the chimney.<br /><br /></div>
+        <div class='parsons alert alert-warning' id="parsons-63">
+        <div class="parsons-text">csp-5-2-1: Coloca los siguientes bloques de código paa dibujar una casa y su chimenea, como en la imagen de arriba. Dibuja primero un cuadrado para el cuerpo de la casa, a continuación dibuja el tejado, y finalmente dibuja la chimenea.
+<br /><br /></div>
         <div style="clear:left;"></div>
-        <div id="parsons-orig-61" style="display:none;">from turtle import *\nspace = Screen()\nbob = Turtle()
-# Make a square\nbob.forward(100)\nbob.right(90)\nbob.forward(100)\nbob.right(90)\nbob.forward(100)\nbob.right(90)\nbob.forward(100)
-# Position for roof\nbob.right(90)
-# Make a roof\nbob.forward(100)\nbob.right(-120)\nbob.forward(100)\nbob.right(-120)\nbob.forward(100)\nbob.right(-120)
-# Position for chimney\nbob.right(-60)\nbob.forward(40)\nbob.setheading(90)
-# Draw chimney\nbob.pencolor("red")\nbob.forward(30)\nbob.right(90)\nbob.forward(30)\nbob.right(90)\nbob.forward(30)\nbob.right(90)</div>
+        <div id="parsons-orig-63" style="display:none;">from turtle import *\nespacio = Screen()\npedro = Turtle()
+# Dibuja un cuadrado\npedro.forward(100)\npedro.right(90)\npedro.forward(100)\npedro.right(90)\npedro.forward(100)\npedro.right(90)\npedro.forward(100)
+# Coloca para dibujar el tejado\npedro.right(90)
+# dibuja el tejado\npedro.forward(100)\npedro.right(-120)\npedro.forward(100)\npedro.right(-120)\npedro.forward(100)\npedro.right(-120)
+# Coloca para dibujar la chimenea\npedro.right(-60)\npedro.forward(40)\npedro.setheading(90)
+# Dibuja la chimenea\npedro.pencolor("red")\npedro.forward(30)\npedro.right(90)\npedro.forward(30)\npedro.right(90)\npedro.forward(30)\npedro.right(90)</div>
         <div class="sortable-code-container">
-        <div id="parsons-sortableTrash-61" class="sortable-code"></div>
-        <div id="parsons-sortableCode-61" class="sortable-code"></div>
+        <div id="parsons-sortableTrash-63" class="sortable-code"></div>
+        <div id="parsons-sortableCode-63" class="sortable-code"></div>
         <div style="clear:left;"></div>
         </div>
         <div class="parsons-controls">
-        <input type="button" class='btn btn-success' id="checkMe61" value="Check Me"/>
-        <input type="button" class='btn btn-default' id="reset61" value="Reset"/>
-        <div id="parsons-message-61"></div>
+        <input type="button" class='btn btn-success' id="checkMe63" value="Check Me"/>
+        <input type="button" class='btn btn-default' id="reset63" value="Reset"/>
+        <div id="parsons-message-63"></div>
         </div>
         </div>
 
     <script>
         $pjQ(document).ready(function(){
 
-            $("#parsons-61").not(".sortable-code").not(".parsons-controls").on("click", function(){
+            $("#parsons-63").not(".sortable-code").not(".parsons-controls").on("click", function(){
                  $('html, body').animate({
-                    scrollTop: ($("#parsons-61").offset().top - 50)
+                    scrollTop: ($("#parsons-63").offset().top - 50)
                 }, 700);
             }).find(".sortable-code, .parsons-controls").click(function(e) {
                 return false;
                 });
-            var msgBox = $("#parsons-message-61");
+            var msgBox = $("#parsons-message-63");
             msgBox.hide();
         var displayErrors = function (fb) {
             if(fb.errors.length > 0) {
-                    var hash = pp_61.getHash("#ul-parsons-sortableCode-61");
+                    var hash = pp_63.getHash("#ul-parsons-sortableCode-63");
                     msgBox.fadeIn(500);
                     msgBox.attr('class','alert alert-danger');
                     msgBox.html(fb.errors[0]);
@@ -485,8 +488,8 @@ else{
 
         $(window).load(function() {
             // set min width and height
-            var sortableul = $("#ul-parsons-sortableCode-61");
-            var trashul = $("#ul-parsons-sortableTrash-61");
+            var sortableul = $("#ul-parsons-sortableCode-63");
+            var trashul = $("#ul-parsons-sortableTrash-63");
             var sortableHeight = sortableul.height();
             var sortableWidth = sortableul.width();
             var trashWidth = trashul.width();
@@ -501,35 +504,35 @@ else{
         });
  
 
-        var pp_61 = new ParsonsWidget({
-                'sortableId': 'parsons-sortableCode-61',
-        'trashId': 'parsons-sortableTrash-61',
+        var pp_63 = new ParsonsWidget({
+                'sortableId': 'parsons-sortableCode-63',
+        'trashId': 'parsons-sortableTrash-63',
                 'max_wrong_lines': 1,
                 'solution_label': 'Drop blocks here',
                 'feedback_cb' : displayErrors
         });
-        pp_61.init($pjQ("#parsons-orig-61").text());
-    pp_61.shuffleLines();
+        pp_63.init($pjQ("#parsons-orig-63").text());
+    pp_63.shuffleLines();
             
         if(localStorage.getItem('5_2_1_Turtle_House') && localStorage.getItem('5_2_1_Turtle_House-trash')) {
             try {
                 var solution = localStorage.getItem('5_2_1_Turtle_House');
                 var trash = localStorage.getItem('5_2_1_Turtle_House-trash');
-                pp_61.createHTMLFromHashes(solution,trash);
-                pp_61.getFeedback();
+                pp_63.createHTMLFromHashes(solution,trash);
+                pp_63.getFeedback();
             } catch(err) {
                 var text = "An error occured restoring old 5_2_1_Turtle_House state.  Error: ";
                 console.log(text + err.message);
             }
 
         }
-            $pjQ("#reset61").click(function(event){
+            $pjQ("#reset63").click(function(event){
               event.preventDefault();
-              pp_61.shuffleLines();
+              pp_63.shuffleLines();
             
             // set min width and height
-            var sortableul = $("#ul-parsons-sortableCode-61");
-            var trashul = $("#ul-parsons-sortableTrash-61");
+            var sortableul = $("#ul-parsons-sortableCode-63");
+            var trashul = $("#ul-parsons-sortableTrash-63");
             var sortableHeight = sortableul.height();
             var sortableWidth = sortableul.width();
             var trashWidth = trashul.width();
@@ -543,14 +546,14 @@ else{
               msgBox.hide();
             });
             
-            $pjQ("#checkMe61").click(function(event){
+            $pjQ("#checkMe63").click(function(event){
               event.preventDefault();
-              var hash = pp_61.getHash("#ul-parsons-sortableCode-61");
+              var hash = pp_63.getHash("#ul-parsons-sortableCode-63");
               localStorage.setItem('5_2_1_Turtle_House',hash);
-              hash = pp_61.getHash("#ul-parsons-sortableTrash-61");
+              hash = pp_63.getHash("#ul-parsons-sortableTrash-63");
               localStorage.setItem('5_2_1_Turtle_House-trash',hash);
             
-            pp_61.getFeedback();
+            pp_63.getFeedback();
             msgBox.fadeIn(100);
             
             });
@@ -565,19 +568,19 @@ else{
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Assign a Name to a Turtle' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Asignar un nombre a una tortuga' data-toggle="tooltip">
     <a href="names4turtles.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="names4turtles.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Changing Turtle Programs' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - Modificar los programas de tortugas' data-toggle="tooltip" >
     <a href="changeProg.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="changeProg.html" >Next Section - Changing Turtle Programs</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="changeProg.html" >Next Section - Modificar los programas de tortugas</a>
 
 <script type="text/javascript">
 

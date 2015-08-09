@@ -62,6 +62,9 @@ Debajo del siguiente programa, a la derecha del botón *Run* |runbutton|, verás u
 	single: dot-notation
 	pair: programming; dot-notation
 
+.. Note::
+   El entorno de programación utilizado para los ejemplos de este libro utiliza caracteres estándar, y por eso no están permitidos los caracteres especiales del castellano, como la ``ñ``, el signo ``¡`` o los acentos. Esto es sólo en este libro, en el lenguaje Python estándar **sí** se podrán utilizar estos u otros caracteres sin limitación.
+
 También se puede generar una nueva cadena en la que cambiemos alguna cosa respecto de una cadena original. En el siguiente ejemplo, tomamos una cadena en mayúsuculas y la convertimos a minúsuculas. Este ejemplo utiliza una **notación con punto** (``sentence.lower()``), que es la forma de decirle a la cadena en qué queremos que cambie. 
 
 .. activecode:: String_Methods

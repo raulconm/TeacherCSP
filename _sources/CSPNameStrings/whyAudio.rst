@@ -30,7 +30,7 @@
 	:start: 1
 	:prefix: csp-4-3-
    
-|bigteachernote| Teacher Note: Why Audio Tours?
-======================================================================
- The apple icon above indicates a teacher note, for more explanation behind the pedagogy, suggestions how to teach something, or insight into student difficulties with a concept.  Why are we using audio tours to explain the code?  Research in educational psychology suggests that text explanation for a text program may lead to cognitive overload.  Learners might understand a program better with an audio explanation, rather than a text explanation, so that you can be looking at the program while you hear the explanation.  In the classroom, your voice explaining a program may be more easier for a student to understand than reading a textbook.
+|bigteachernote| Nota para el profesor: ¿Por qué las guías de audio?
+=======================================================================
+El icono de la manzana que aparece arriba indica que lo que sigue es una nota para el profesor. Sirven para ofrecer una explicación desde un punto de vista más pedagógico, sugerir cómo enseñar algún concepto, o profundizar en las posibles dificultades que un estudiante pueda tener para comprender dicho concepto. ¿Por qué utilizamos guías de audio para explicar el código? Las investigaciones en psicología educativa sugieren que utilizar texto para explicar el código textual de un programa, puede llevar a una sobrecarga cognitiva. Muy probablemente los estudiantes entiendan mejor un programa escuchando una explicación, mientras siguen visualmente el código escrito del programa. En clase, escuchar tu voz explicándoles el programa mientras ellos lo leen puede ser más efectivo que intentar entenderlo siguiendo un libro de texto.  
  

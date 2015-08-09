@@ -18,87 +18,90 @@
 .. highlight:: java
    :linenothreshold: 4
 
-Bob Builds a House
+Pedro construye una casa
 ==============================
 
-Let's combine the square and triangle code to create a drawing of a simple house.
+Vamos a combinar a hora el código del cuadrado y el del triángulo 
+para crear un dibujo sencillo de una casa.
 
 .. Note::
-   The program below has blank lines between the lines of code.  The computer ignores the blank lines.  We add blank lines to programs to group lines that are working together such as the lines below that draw a square.  Often a comment (starts with a ``#``) is used before a several lines of code to explain the purpose of the code. 
+   El siguiente programa tiene líneas en blanco alternadas con líneas de código. El ordenador ignora estas líneas en blanco. Las añadimos en los programas para agrupar las partes del código que hacen algo concreto, como dibujar un cuadrado, en este caso. Normalmente estas agrupaciones van precedidas de un comentario (comienzan con el caracter ``#``), para indicar qué hace esa parte del código.
 
 .. activecode:: Turtle_House
   :tour_1: "Section Tour"; 1-3: house-line1-3; 6-12: house-line5-11; 15: house-line13; 18-23: house-line18-23;
   :nocodelens:
   
-  from turtle import *      # use the turtle library
-  space = Screen()          # create a turtle screen (space)
-  bob = Turtle()            # create a turtle named bob
+  from turtle import *      # usa la librería de manejar tortugas
+  space = Screen()          # crea el área para la tortuga (espacio)
+  pedro = Turtle()          # crea la tortuga pedro
   
-  # Make a square
-  bob.forward(100)          # tell bob to move forward by 100 units
-  bob.right(90)             # turn right by 90 degrees
-  bob.forward(100)          # tell bob to move forward by 100 units
-  bob.right(90)             # turn right by 90 degrees
-  bob.forward(100)          # tell bob to move forward by 100 units
-  bob.right(90)             # turn right by 90 degrees
-  bob.forward(100)          # tell bob to move forward by 100 units
+  # Dibuja un cuadrado
+  pedro.forward(100)        # le ordena a pedro que avance 100 unidades
+  pedro.right(90)           # gira 90 grados a la derecha
+  pedro.forward(100)          # le ordena a pedro que avance 100  unidades
+  pedro.right(90)           # gira 90 grados a la derecha
+  pedro.forward(100)          # le ordena a pedro que avance 100  unidades
+  pedro.right(90)           # gira 90 grados a la derecha
+  pedro.forward(100)          # le ordena a pedro que avance 100  unidades
   
-  # Position for roof
-  bob.right(90)
+  # Coloca a pedro para dibujar el tejado
+  pedro.right(90)
   
-  # Make a roof
-  bob.forward(100)          # tell bob to move forward by 100 units
-  bob.right(-120)           # turn LEFT by 120 degrees
-  bob.forward(100)          # tell bob to move forward by 100 units
-  bob.right(-120)           # turn LEFT by 120 degrees
-  bob.forward(100)          # tell bob to move forward by 100 units
-  bob.right(-120)           # turn LEFT by 120 degrees
+  # Dibuja el tejado
+  pedro.forward(100)        # le ordena a pedro que avance 100  unidades
 
-Let's imagine going on to make another partial square along the slope, to create a "chimney."
+  pedro.right(-120)         # gira 120 grado a la IZQUIERDA
+  pedro.forward(100)        # le ordena a pedro que avance 100  unidades
+  pedro.right(-120)         # gira 120 grado a la IZQUIERDA
+  pedro.forward(100)        # le ordena a pedro que avance 100  unidades
+  pedro.right(-120)           # gira 120 grado a la IZQUIERDA
+
+Imagina que quieres crear otro cuadrado incompleto en el tejado para dibujar una "chimenea".
 
 .. image:: Figures/turtle-house.png
 
 .. parsonsprob:: 5_2_1_Turtle_House
 
-   Align the program pieces below to make the house and chimney figure above.  Draw the square first for the main part of the house, next draw the roof, and finally draw the chimney.
+   Coloca los siguientes bloques de código paa dibujar una casa y su chimenea, como en la imagen de arriba. Dibuja primero un cuadrado para el cuerpo de la casa, a continuación dibuja el tejado, y finalmente dibuja la chimenea.
+
    -----
    from turtle import * 
-   space = Screen()
-   bob = Turtle() 
+   espacio = Screen()
+   pedro = Turtle() 
    =====
-   # Make a square
-   bob.forward(100) 
-   bob.right(90) 
-   bob.forward(100) 
-   bob.right(90) 
-   bob.forward(100) 
-   bob.right(90) 
-   bob.forward(100) 
+   # Dibuja un cuadrado
+   pedro.forward(100) 
+   pedro.right(90) 
+   pedro.forward(100) 
+   pedro.right(90) 
+   pedro.forward(100) 
+   pedro.right(90) 
+   pedro.forward(100) 
    =====
-   # Position for roof
-   bob.right(90)
+   # Coloca para dibujar el tejado
+   pedro.right(90)
    =====
-   # Make a roof
-   bob.forward(100)   
-   bob.right(-120)   
-   bob.forward(100)   
-   bob.right(-120)   
-   bob.forward(100) 
-   bob.right(-120)  
+   # dibuja el tejado
+   pedro.forward(100)   
+   pedro.right(-120)   
+   pedro.forward(100)   
+   pedro.right(-120)   
+   pedro.forward(100) 
+   pedro.right(-120)  
    =====
-   # Position for chimney
-   bob.right(-60)
-   bob.forward(40)
-   bob.setheading(90) 
+   # Coloca para dibujar la chimenea
+   pedro.right(-60)
+   pedro.forward(40)
+   pedro.setheading(90) 
    =====
-   # Draw chimney
-   bob.pencolor("red")
-   bob.forward(30)
-   bob.right(90)
-   bob.forward(30)
-   bob.right(90)
-   bob.forward(30)
-   bob.right(90)
+   # Dibuja la chimenea
+   pedro.pencolor("red")
+   pedro.forward(30)
+   pedro.right(90)
+   pedro.forward(30)
+   pedro.right(90)
+   pedro.forward(30)
+   pedro.right(90)
 
 
 

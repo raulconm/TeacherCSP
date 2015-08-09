@@ -18,15 +18,15 @@
 .. highlight:: java
    :linenothreshold: 4 
 
-|bigteachernote| Teacher Note: Body Syntonic
+|bigteachernote| Nota para el profesor: Aplicación corporal
 ============================================================
 
 ..	index::
 	single: Seymour Papert
 	
-One of the things that `Seymour Papert <http://en.wikipedia.org/wiki/Seymour_Papert>`_, the person who first used turtles in programming, most liked about the turtle is that students could test their programs using `body syntonic <http://en.wikipedia.org/wiki/Turtle_graphics>`_ reasoning.  This means that a turtle moves in the way that a student moves.  Students can go forward and turn right.  A student can pretend to *be the turtle*, doing exactly what the program says.  In this video, our "turtle" person, Barbara Ericson, doesn't take 100 steps.  Instead, she goes forward 3 steps since her steps are so much larger than a turtle's.
+Una de las cosas que más le gustaban de la programación con tortugas a `Seymour Papert <https://es.wikipedia.org/wiki/Seymour_Papert>`_, la persona que las utilizó por primera vez, era que los estudiantes podían probar el código de los programas utilizando su propio cuerpo <http://en.wikipedia.org/wiki/Turtle_graphics>`_ .  Es decir, que la tortuga se va a mover de la misma forma en que lo haga el estudiante con su cuerpo. Un estudiante puede avanzar y girar a la derecha. El estudiante puede *ser la tortuga*, y ejecutar exactamente lo que dice el programa. En el siguiente vídeo, nuestra "tortuga humana" no avanza cien pasos sino tres, porque los pasos de un humano son mucho más grandes que los de una tortuga.
 
-**Click on the right arrow below to play the following video.**
+**Haz clic en el icono triangular del siguiente vídeo para reproducirlo.**
 
 .. video:: body_syntonic_turtle
    :controls:

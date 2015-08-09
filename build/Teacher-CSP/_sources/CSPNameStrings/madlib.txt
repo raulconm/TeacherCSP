@@ -33,7 +33,7 @@
 Historias al azar
 ==================
 
-Tal vez cuando eras pequeño jugaras con tus amigos o amigas a construir historias al azar. Tomábais algunos datos, como el nombre de un amigo, un verbo, y un juego favorito (por ejemplo), y los añadíais dentro de una historia que otro u otra había inventado. Como no conocíais la historia de antemano, os sorprendíais al saber qué le sucedía en ella a vuestro amigo o amiga.
+Tal vez cuando eras pequeño jugabas con tus amigos o amigas a construir historias al azar. Tomábais algunos datos, como el nombre de un amigo, un verbo, y un juego favorito (por ejemplo), y los añadíais dentro de una historia que otro u otra había inventado. Como no conocíais la historia de antemano, os sorprendíais al saber qué le sucedía en ella a vuestro amigo o amiga.
 
 .. activecode:: Story1
    :tour_1: "Line by line tour"; 1: StEx-line1; 2: StEx-line2; 3: StEx-line3; 4: StEx-line4; 5: StEx-line5; 6: StEx-line6; 7: StEx-line7; 8: StEx-line8; 9: StEx-line9; 10: StEx-line10; 11: StEx-line11; 12: StEx-line12; 13: StEx-line13; 14: StEx-line14; 15: StEx-line15;
@@ -41,13 +41,13 @@ Tal vez cuando eras pequeño jugaras con tus amigos o amigas a construir historia
 
    nombre = "Patricia"
    apellido = "Sanchez"
-   genero = "una niña"
-   direccion = " la Plaza del Ayuntamiento número 2"
+   genero = "una chica"
+   direccion = " la Plaza del Ayuntamiento numero 2"
    verbo = "comer"
    comienzo = "Erase una vez  " + genero + " que se llamaba " + nombre + "."
    siguiente1 = nombre + " vivia en " + direccion + "."
    siguiente2 = "Un dia, una bruja se acerco a casa de la familia " + apellido + "."
-   siguiente3 = "¡La malvada bruja se queria " + verbo + " a " + nombre + "!"
+   siguiente3 = "La malvada bruja se queria " + verbo + " a " + nombre + "."
    final = "Pero " + nombre + " se dio cuenta de sus intenciones y se libro de ella."
    print(comienzo)
    print(siguiente1)
@@ -58,7 +58,7 @@ Tal vez cuando eras pequeño jugaras con tus amigos o amigas a construir historia
 
 .. mchoicemf:: 4_2_1_Story1_Q1
    :answer_a: finalReal = nombre + " llamo a la policia y la detuvieron."
-   :answer_b: print(nombre + " llamó a la policia y la detuvieron.")
+   :answer_b: print(nombre + " llamo a la policia y la detuvieron.")
    :answer_c: print("Patricia llamo a la policia y la detuvieron.")
    :correct: b
    :feedback_a: Esta opción sólo sería correcta si añadieras la instrucción <code>print(finalReal)</code> a continuación.
@@ -68,7 +68,7 @@ Tal vez cuando eras pequeño jugaras con tus amigos o amigas a construir historia
    Imagina que quieres ampliar la historia para que diga algo así: "Patricia llamó a la policía y la detuvieron." ¿Cuál de las siguientes líneas debes añadir para que eso ocurra? (Pista: ¡Es una buena opción *probar* con cada una de ellas!)
 
 
-**Qué hacer a continuación:** Ejecuta este programa para comprobar qué texto genera, y modifica el contenido de las variables para construir diferentes historías. Prueba con otros nombres, o con verbos distintos. 
+**Qué hacer a continuación:** Ejecuta este programa para comprobar qué texto genera, y modifica el contenido de las variables para construir diferentes historias. Prueba con otros nombres, o con verbos distintos. 
 
 
 .. activecode:: Story2
@@ -76,13 +76,13 @@ Tal vez cuando eras pequeño jugaras con tus amigos o amigas a construir historia
 
    nombre = "Sofia"
    apellido = "Diaz"
-   genero = "una niña"
-   direccion = " la Avenida de la Paz número 8"
+   genero = "una chica"
+   direccion = " la Avenida de la Paz numero 8"
    verbo = "cocinar"
    comienzo = "Erase una vez  " + genero + " que se llamaba " + nombre + "."
    siguiente1 = nombre + " vivia en " + direccion + "."
    siguiente2 = "Un dia, una bruja se acerco a casa de la familia " + apellido + "."
-   siguiente3 = "¡La malvada bruja se queria " + verbo + " a " + nombre + "!"
+   siguiente3 = "La malvada bruja se queria " + verbo + " a " + nombre + "."
    final = "Pero " + nombre + " se dio cuenta de sus intenciones y se libro de ella."
    print(comienzo)
    print(siguiente1)
@@ -95,18 +95,18 @@ Tal vez cuando eras pequeño jugaras con tus amigos o amigas a construir historia
    :answer_a: Sí
    :answer_b: No
    :correct: a
-   :feedback_a: La única diferencia es el orden en que se imprimen las líneas, pero el código es el mismo.
+   :feedback_a: La única diferencia es el orden de las líneas en el código, pero la historia se imprime igual.
    :feedback_b: ¿Lo has ejecutado? Copia el código en el recuadro del programa y ejecútalo.
  
    ¿Imprimirá el siguiente código la historia igual que antes? 
    
    :: 
 
-     firstName = "Sofia"
-     lastName = "Diaz"
-     gender = "una niña"
-     address = "la Avenida de la Paz número 8"
-     verb = "cocinar"
+     nombre = "Sofia"
+     apellido = "Diaz"
+     genero = "una chica"
+     direccion = "la Avenida de la Paz numero 8"
+     verbo = "cocinar"
      comienzo = "Erase una vez " + gender + " que se llamaba " + nombre + "."
      print(comienzo)
      siguiente1 = nombre + " vivia en " + direccion + "."
@@ -114,7 +114,7 @@ Tal vez cuando eras pequeño jugaras con tus amigos o amigas a construir historia
      print(siguiente1)
      siguiente2 = "Un dia, una bruja se acerco a casa de la familia " + apellido + "."
      print(siguiente2)
-     siguiente3 = "¡La malvada bruja se queria " + verbo + " a " + nombre + "!"
+     siguiente3 = "La malvada bruja se queria " + verbo + " a " + nombre + "."
      print(siguiente3)
      final = "Pero " + nombre + " se dio cuenta de sus intenciones y se libro de ella."
      print(final)
@@ -138,7 +138,7 @@ Tal vez cuando eras pequeño jugaras con tus amigos o amigas a construir historia
      print("Cinco" + " es " + str(Cinco))
      
 .. Note::
-   Cuando en Python se imprime una cadena (una secuencia de caracteres encerrados entre comillas simples o dobles) se imprimirán exactamente sus caracteres, tal como se han especificado entre las comillas. Cuando se imprime una variable, lo que se imprimirá será el valor de la variable.
+   Cuando en Python se imprime una cadena (una secuencia de caracteres encerrados entre comillas simples o dobles) se imprimirán exactamente sus caracteres, tal como se han especificado entre las comillas. Cuando se imprime una variable, lo que se imprimirá será el valor de dicha variable.
      
 .. parsonsprob:: 4_2_4_Poem
 
@@ -154,7 +154,6 @@ Tal vez cuando eras pequeño jugaras con tus amigos o amigas a construir historia
      
 .. parsonsprob:: 4_2_5_Story
 
-   Put the blocks below into the correct order to declare the variables and then print the following story. One day Jay went shopping.  He wanted to buy shoes.  But, he didn't like any.  So, Jay went home. 
    Coloca los siguientes bloques en el orden adecuado para declarar primero las variables e imprimir después la siguiente historia. Un día Juan fue a la tienda. Quería comprar unos zapatos. Pero ningún le gustó. Así que Juan regresó a casa.  
    -----
    nombre = "Juan"
