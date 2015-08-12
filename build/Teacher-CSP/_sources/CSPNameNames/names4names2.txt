@@ -19,16 +19,14 @@
    :linenothreshold: 4
 
 
-Naming Everything
+Nombrar todo
 ========================================
 
-*Learning Objectives:*
+*Objetivos de aprendizaje:*
 
-- Learn how to define new functions and procedures.
-- Learn that we can use libraries containing functions and procedures written by others.
-- Learn that *any* name can be renamed, even Python's internal names.
+- Aprender a definir funciones y procedimientos
+- Aprender que podemos utilizar librerías que contienen funciones y procedimientos que otros han creado
+- Aprender que se puede cambiar el nombre *cualquier* cosa, incluso los nombres internos que usa Python
 
-Earlier we learned about how a variable can store a value in a memory location (box).  The "value" can be anything.  It doesn't have to just be a number
-or a string.  It can be steps, instructions, and even other names.  This ability to 
-name other things is key to `Alan Turing's <http://en.wikipedia.org/wiki/Alan_Turing>`_ vision of a computer. 
+Hemos aprendido cómo una variable puede almacenar información en una posición de la memoria del ordenador (una pequeña caja o contenedor). El "valor" de esa variable puede ser cualquier cosa. No tiene que ser necesariamente un número o una cadena. Pueden ser pasos, instrucciones, e incluso otros nombres. Esta capacidad para nombrar otras cosas es crucial para entener la visión de un ordenador según la concebía `Alan Turing <http://en.wikipedia.org/wiki/Alan_Turing>`_.
 

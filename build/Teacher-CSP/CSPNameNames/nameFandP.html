@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Naming Procedures and Functions &mdash; Runestone Interactive Overview</title>
+    <title>Nombrar procedimientos y funciones &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -87,8 +87,8 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
-    <link rel="next" title="Naming Sets of Steps" href="nameSteps.html" />
-    <link rel="prev" title="Naming Everything" href="names4names2.html" />
+    <link rel="next" title="Nombrar conjuntos de pasos" href="nameSteps.html" />
+    <link rel="prev" title="Nombrar todo" href="names4names2.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -274,7 +274,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Naming Procedures and Functions</a></li>
+<li><a class="reference internal" href="#">Nombrar procedimientos y funciones</a></li>
 </ul>
 </ul>
 </li>
@@ -282,13 +282,13 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Naming Everything" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Nombrar todo" data-toggle="tooltip">
     <a href="names4names2.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Naming Sets of Steps' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - Nombrar conjuntos de pasos' data-toggle="tooltip" >
     <a href="nameSteps.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -319,14 +319,14 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="naming-procedures-and-functions">
-<h1>Naming Procedures and Functions<a class="headerlink" href="#naming-procedures-and-functions" title="Permalink to this headline">¶</a></h1>
-<span class="target" id="index-0"></span><p id="index-1">We&#8217;ve already seen how we can use names to represent numbers (both integers like <code class="docutils literal"><span class="pre">3</span></code> and <code class="docutils literal"><span class="pre">-325</span></code> and decimal numbers like <code class="docutils literal"><span class="pre">2.4</span></code> and <code class="docutils literal"><span class="pre">-322.9392</span></code>), strings (like <code class="docutils literal"><span class="pre">&quot;Hi</span> <span class="pre">There&quot;</span></code>), turtles, and images.  When we do calculations using the names, the computer will look up the value for each name, and then use the value in the calculation.  We can also name a sequence of statements and then ask the computer to run that sequence whenever we use that name.  This is similar to asking someone to do a dance that they know, like the <a class="reference external" href="http://en.wikipedia.org/wiki/Macarena_(song)">Macarena</a> or <a class="reference external" href="http://en.wikipedia.org/wiki/Salsa_(dance)">Salsa</a>. Once you know the dance you can do the steps.</p>
+  <div class="section" id="nombrar-procedimientos-y-funciones">
+<h1>Nombrar procedimientos y funciones<a class="headerlink" href="#nombrar-procedimientos-y-funciones" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="index-0"></span><p id="index-1">Hemos visto cómo podemos utilizar nombres para representar números (enteros como <code class="docutils literal"><span class="pre">3</span></code> y <code class="docutils literal"><span class="pre">-325</span></code>, o decimales como <code class="docutils literal"><span class="pre">2.4</span></code> y <code class="docutils literal"><span class="pre">-322.9392</span></code>), cadenas (como <code class="docutils literal"><span class="pre">&quot;Hola</span> <span class="pre">a</span> <span class="pre">todos&quot;</span></code>), tortugas, e imágenes. Cuando hacemos cálculos utilizando los nombres, el ordenador buscará qué valor está asociado a cada nombre, y utilizará esos valores en los cálculos. También podemos dar un nombre a una secuencia de instrucciones, e indicarle al ordenador que ejecute la secuencia cada vez que utilicemos su nombre. Es algo parecido a cuando le pedimos a alguien que baile de acuerdo a los pasos conocidos para ese tipo de baile, como la <a class="reference external" href="http://en.wikipedia.org/wiki/Salsa_(dance)">Salsa</a> o las Sevillanas. Una vez que conoces el baile puedes ejecutar sus pasos.</p>
 <div class="align-center figure" id="id1">
 <a class="reference internal image-reference" href="../_images/salsaDancer.jpg"><img alt="a women dancing Salsa" src="../_images/salsaDancer.jpg" style="height: 100px;" /></a>
-<p class="caption"><span class="caption-text">Figure 1: A Salsa dancer</span></p>
+<p class="caption"><span class="caption-text">Imagen 1: Una bailrina de Salsa.</span></p>
 </div>
-<p>In programming there are two different terms used for a named sequence of statements: <strong>procedure</strong> and <strong>function</strong>.  A <strong>procedure</strong> accomplishes some task or makes something happen, but doesn&#8217;t return anything. A <strong>function</strong> returns a result. Many procedures and functions are built into Python.  The function <code class="docutils literal"><span class="pre">abs</span></code> returns the absolute value of its input.  The function <code class="docutils literal"><span class="pre">int</span></code> takes a decimal number as input and returns just the integer part.</p>
+<p>En programación existen dos términos distintos para nombrar una secuencia de instrucciones: <strong>procedimiento</strong> y <strong>función</strong>. Un <strong>procedimiento</strong> lleva a cabo una tarea para que suceda algo, pero no nos devuelve ningún valor. Una <strong>función</strong>, por el contrario, sí devuelve un resultado. En Python existen muchos procedimientos y funciones ya creados para que los usemos. La función <code class="docutils literal"><span class="pre">abs</span></code> devuelve el valor absoluto del valor que le damos como dato de entrada a la función. La función <code class="docutils literal"><span class="pre">int</span></code> toma un número decimal como entrada y devuelve su parte entera.</p>
 
 <div id="cont"></div>
 <div id="Functions" lang="python" time="" class="ac_section alert alert-warning" >
@@ -337,16 +337,16 @@
 <button class="ac_opt btn btn-default" style="display: inline-block" id="Functions_loadb" onclick="requestCode('Functions');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Functions','print*open**doubleq*Absolute value of -5:*doubleq**close**nline*print*open*abs*open*-5*close**close**nline*print*open**doubleq*Integer part of 34.2*doubleq**close**nline*print*open*int*open*34.2*close**close*','1','*doubleq*Line by line tour*doubleq*; 1: fun-line1; 2: fun-line2; 3: fun-line3; 4: fun-line4;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Functions','print*open**doubleq*Valor absoluto de -5:*doubleq**close**nline*print*open*abs*open*-5*close**close**nline*print*open**doubleq*Parte entera de 34.2*doubleq**close**nline*print*open*int*open*34.2*close**close*','1','*doubleq*Line by line tour*doubleq*; 1: fun-line1; 2: fun-line2; 3: fun-line3; 4: fun-line4;*atype*')"/>
 <button class='btn btn-default' id="Functions_vizb" onclick="injectCodelens(this,'Functions');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="Functions_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="Functions_code" class="active_code" prefixcode="undefined" lang="python">
-print("Absolute value of -5:")
+print("Valor absoluto de -5:")
 print(abs(-5))
-print("Integer part of 34.2")
+print("Parte entera de 34.2")
 print(int(34.2))
 </textarea>
 </div>
@@ -415,7 +415,7 @@ else{
 
 
             <div id="6_2_1_Functions_Q1" class="alert alert-warning">
-            csp-6-2-1: What do you think <cite>print(int(abs(-16.789)))</cite>, prints?<form name="6_2_1_Functions_Q1_form" method="get" action="" onsubmit="return false;">
+            csp-6-2-1: ¿Qué crees que imprimirá la instrucción  <cite>print(int(abs(-16.789)))</cite>?<form name="6_2_1_Functions_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="6_2_1_Functions_Q1_opt_a" />
             <label for= "6_2_1_Functions_Q1_opt_a">  a) -16</label><br />
             
@@ -432,7 +432,7 @@ else{
             <script>
             $(document).ready(function(){checkRadio('6_2_1_Functions_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('6_2_1_Functions_Q1','d',['The function abs will change the negative.', 'The original number will change.', 'The function int will remove the decimal part.', 'The function abs will make it positive, and the function int will cut it down to 16.'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('6_2_1_Functions_Q1','d',['La función abs quitará el signo negativo.', 'Se modificará el número original.', 'La función int quitará la parte decimal.', 'La función abs convertirá el número en positivo, y l función int lo dejará como 16.'])">Check Me</button>
             <button class='btn btn-default' id="6_2_1_Functions_Q1_bcomp" disabled name="compare" onclick="compareAnswers('6_2_1_Functions_Q1');">Compare Me</button>
             </form><br />
             <div id="6_2_1_Functions_Q1_feedback">
@@ -443,19 +443,19 @@ else{
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Naming Everything' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Nombrar todo' data-toggle="tooltip">
     <a href="names4names2.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="names4names2.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Naming Sets of Steps' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - Nombrar conjuntos de pasos' data-toggle="tooltip" >
     <a href="nameSteps.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="nameSteps.html" >Next Section - Naming Sets of Steps</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="nameSteps.html" >Next Section - Nombrar conjuntos de pasos</a>
 
 <script type="text/javascript">
 

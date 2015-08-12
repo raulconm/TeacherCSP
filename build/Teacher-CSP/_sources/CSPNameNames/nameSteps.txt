@@ -18,26 +18,26 @@
 .. highlight:: java
    :linenothreshold: 4
 
-Naming Sets of Steps
-=====================
+Nombrar conjuntos de pasos
+==========================
 
-How did `abs` and `int` get defined?  By *defining* new procedures and functions, we can associate a name with a sequence of steps.  Look at the program below.  What do you think it will do when you press the *Run* button?  Click *Run* and see what happens. 
+¿Cómo se han definido `abs` e `int`? *Definiendo* un nuevo  procedimiento o una función podemos asociar un nombre con una secuencia de pasos. Observa el siguiente programa. ¿Qué crees que ocurrirá cuando pulses el botón de ejecutar? Haz clic en *Run* y mira lo que sucede.
 
 .. activecode:: First_Function
   :tour_1: "Line by line tour"; 1: dsq-line1; 2: dsq-line2; 3: dsq-line3; 4: dsq-line4; 5: dsq-line5; 6: dsq-line6; 7: dsq-line7; 8: dsq-line8; 9: dsq-line9;
   :nocodelens:
 
-  def square(turtle):
-      turtle.forward(100)
-      turtle.right(90)
-      turtle.forward(100)
-      turtle.right(90)
-      turtle.forward(100)
-      turtle.right(90)
-      turtle.forward(100)
-      turtle.right(90)
+  def cuadrado(unaTortuga):
+      unaTortuga.forward(100)
+      unaTortuga.right(90)
+      unaTortuga.forward(100)
+      unaTortuga.right(90)
+      unaTortuga.forward(100)
+      unaTortuga.right(90)
+      unaTortuga.forward(100)
+      unaTortuga.right(90)
 
-If you are wondering why the *Run* button didn't seem to do anything, all that the program did was define the procedure ``square`` which takes a ``turtle`` as input.  If we want to actually execute the program we need to create a turtle and *call* the procedure as shown in the next example.
+Si te pensando por qué parece que no ocurre nada cuando pulsas el botón *Run*, observa que lo que hace el programa es definir el procedimiento ``cuadrado``, que recoge com entrada una tortuga definida como ``unaTortuga``. Si queremos que el programa ejecute realmente algo más tendremos que crear una tortuga y **llamar** al procedimiento como lo hacemos en el siguiente ejemplo.
 
 ..	index::
 	single: def
@@ -48,49 +48,49 @@ If you are wondering why the *Run* button didn't seem to do anything, all that t
   :tour_1: "Important lines tour"; 1-9: dsq2-line1-9; 11-13: dsq2-line11-13; 14: dsq2-line14;
   :nocodelens:
 
-  def square(turtle):
-      turtle.forward(100)
-      turtle.right(90)
-      turtle.forward(100)
-      turtle.right(90)
-      turtle.forward(100)
-      turtle.right(90)
-      turtle.forward(100)
-      turtle.right(90)
+  def cuadrado(unaTortuga):
+      unaTortuga.forward(100)
+      unaTortuga.right(90)
+      unaTortuga.forward(100)
+      unaTortuga.right(90)
+      unaTortuga.forward(100)
+      unaTortuga.right(90)
+      unaTortuga.forward(100)
+      unaTortuga.right(90)
 
-  from turtle import * 	# use the turtle library
-  space = Screen()     	# create a turtle screen
-  malik = Turtle()    	# create a turtle named malik
-  square(malik)       	# draw a square with malik
+  from turtle import * 	# usa la libreria turtle
+  espacio = Screen()     	# crea el espacio para la tortuga
+  Mario = unaTortuga()    	# crea la tortuga Mario
+  cuadrado(Mario)       	# dibuja un cuadrado con Mario
   
 ..	index::
 	single: parameter
 	pair: programming; parameter    
 
-In the above program, we *DEFine* the word ``square`` to represent the Python statements that draw a square with a turtle.  The ``square`` procedure takes as input a ``turtle`` that will be used to draw the square. Notice that the sequence of statements that are part of the ``square`` procedure are indented.  Python uses indention to show what statements belong to the procedure.  When the indention stops with ``from turtle import *`` it means that the new statements are not part of the procedure.  
+En el ejemplo anterior *DEFinimos* la palabra ``cuadrado`` para representar las instrucciones de Python con las que dibujaremos un cuadrado utilizando una tortuga. El procedimiento ``cuadrado`` toma ``unaTortuga`` como dato de entrada, y con ella dibujará el cuadrado. Observa que la secuencia de instrucciones incluidas en el procedimiento ``cuadrado`` está indentada. Esto es, que las líneas de instrucciones no comienzan en la primera columna, debajo de la palabra ``def``, sino unas posiciones más a la derecha. Python utiliza la indentación para mostrar qué instrucciones forman parte del procedimiento. El hecho de que la línea ``from turtle import *`` no esté indentada significa que esa instrucción y las siguientes ya no forman parte del procedimiento ``cuadrado``.
 
-.. Note::
-   Notice that we defined the turtle procedure ``def square (turtle):`` in the code above before we tried to call it ``square(malik)``.  This is required in Python, but not in some other programming languages.
+.. Nota::
+   Observa que hemos definido el procedimiento ``def cuadrado(unaTortuga):`` antes de intentar utilizarlo con ``cuadrado(Mario)``. En Python es necesario que suceda en ese orden, pero no lo es en otros lenguajes de programación.
 
 .. mchoicemf:: 6_3_1_Functions_Q2
-   :answer_a: Procedure
-   :answer_b: Function
+   :answer_a: Es un procedimiento.
+   :answer_b: Es una función.
    :correct: b
-   :feedback_a: It returns a value so it is a function
-   :feedback_b: It returns a value so it can't be a procedure
+   :feedback_a: Devuelve un valor, luego es una función.
+   :feedback_b: Si devuelve un valor no puede ser un procedimiento.
 
-   Is ``abs`` a procedure or a function?
+   ¿Es ``abs`` un procedimiento, o una función?
    
 .. mchoicemf:: 6_3_2_Functions_Q3
-   :answer_a: Procedure
-   :answer_b: Function
+   :answer_a: Es un procedimiento.
+   :answer_b: Es una función.
    :correct: a
-   :feedback_a: It doesn't return a value so it is a procedure
-   :feedback_b: It doesn't return a value so it can't be a function
+   :feedback_a: No devuelve ningún valor, así que es un procedimiento.
+   :feedback_b: No puede ser una función, porque no devuelve ningún valor.
 
-   Is ``square`` a procedure or a function?
+   ¿Es ``cuadrado`` un procedimiento o una función?
    
-See the video below for a hint on how to solve the next mixed up code problem. 
+Fíjate atentamente en el siguiente vídeo para saber cómo resolver el problema de código desordenado.
 
 .. video:: indentVideo
 		   :controls:
@@ -101,17 +101,18 @@ See the video below for a hint on how to solve the next mixed up code problem.
    
 .. parsonsprob:: 6_3_3_Triangle_Procedure
 
-   The following code should define a procedure that draws a triangle, but it may be mixed up *and may contain extra (unused) code*.  Drag the needed code to the right side in the correct order.  <b>Remember that the statements in the procedure must be indented!</b>  To indent a block drag it further right. 
+   El siguiente código debería definir un procedimiento que dibuje un triángulo, pero puede que las instrucciones estén desordenadas, e incluso *puede que contenga algunas líneas de código inútil*. Arrastra a la parte derecha y en el orden correcto las líneas de código que se necesiten. <b>¡Recuerda que las líneas de instrucciones que forman parte del procedimiento deben estar indentadas1</b>. Para indentar esas líneas arrástralas un poco más a la derecha.
+ 
    -----
-   def triangle(turtle):
+   def triangulo(unaTortuga):
    =====
-       turtle.left(60)
-       turtle.forward(100)
-       turtle.right(120)
-       turtle.forward(100)
-       turtle.right(120)
-       turtle.forward(100)
-       turtle.right(120)  
+       unaTortuga.left(60)
+       unaTortuga.forward(100)
+       unaTortuga.right(120)
+       unaTortuga.forward(100)
+       unaTortuga.right(120)
+       unaTortuga.forward(100)
+       unaTortuga.right(120)  
    ===== 
        endDef #distractor
 

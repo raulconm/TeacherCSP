@@ -18,7 +18,7 @@
 .. highlight:: java
    :linenothreshold: 4
 
-Naming Procedures and Functions
+Nombrar procedimientos y funciones
 ========================================
 
 ..	index::
@@ -29,7 +29,7 @@ Naming Procedures and Functions
 	single: function
 	pair: programming; function	
 	
-We've already seen how we can use names to represent numbers (both integers like ``3`` and ``-325`` and decimal numbers like ``2.4`` and ``-322.9392``), strings (like ``"Hi There"``), turtles, and images.  When we do calculations using the names, the computer will look up the value for each name, and then use the value in the calculation.  We can also name a sequence of statements and then ask the computer to run that sequence whenever we use that name.  This is similar to asking someone to do a dance that they know, like the `Macarena <http://en.wikipedia.org/wiki/Macarena_(song)>`_ or `Salsa <http://en.wikipedia.org/wiki/Salsa_(dance)>`_. Once you know the dance you can do the steps.    
+Hemos visto cómo podemos utilizar nombres para representar números (enteros como ``3`` y ``-325``, o decimales como ``2.4`` y ``-322.9392``), cadenas (como ``"Hola a todos"``), tortugas, e imágenes. Cuando hacemos cálculos utilizando los nombres, el ordenador buscará qué valor está asociado a cada nombre, y utilizará esos valores en los cálculos. También podemos dar un nombre a una secuencia de instrucciones, e indicarle al ordenador que ejecute la secuencia cada vez que utilicemos su nombre. Es algo parecido a cuando le pedimos a alguien que baile de acuerdo a los pasos conocidos para ese tipo de baile, como la `Salsa <http://en.wikipedia.org/wiki/Salsa_(dance)>`_ o las Sevillanas. Una vez que conoces el baile puedes ejecutar sus pasos.
 
 .. figure:: Figures/salsaDancer.jpg
     :height: 100px
@@ -37,16 +37,16 @@ We've already seen how we can use names to represent numbers (both integers like
     :alt: a women dancing Salsa
     :figclass: align-center
 
-    Figure 1: A Salsa dancer
+    Imagen 1: Una bailrina de Salsa.
     
-In programming there are two different terms used for a named sequence of statements: **procedure** and **function**.  A **procedure** accomplishes some task or makes something happen, but doesn't return anything. A **function** returns a result. Many procedures and functions are built into Python.  The function ``abs`` returns the absolute value of its input.  The function ``int`` takes a decimal number as input and returns just the integer part.
+En programación existen dos términos distintos para nombrar una secuencia de instrucciones: **procedimiento** y **función**. Un **procedimiento** lleva a cabo una tarea para que suceda algo, pero no nos devuelve ningún valor. Una **función**, por el contrario, sí devuelve un resultado. En Python existen muchos procedimientos y funciones ya creados para que los usemos. La función ``abs`` devuelve el valor absoluto del valor que le damos como dato de entrada a la función. La función ``int`` toma un número decimal como entrada y devuelve su parte entera.
 
 .. activecode:: Functions
   :tour_1: "Line by line tour"; 1: fun-line1; 2: fun-line2; 3: fun-line3; 4: fun-line4;
 
-  print("Absolute value of -5:")
+  print("Valor absoluto de -5:")
   print(abs(-5))
-  print("Integer part of 34.2")
+  print("Parte entera de 34.2")
   print(int(34.2))
   
 .. mchoicemf:: 6_2_1_Functions_Q1
@@ -55,10 +55,10 @@ In programming there are two different terms used for a named sequence of statem
    :answer_c: 16.789
    :answer_d: 16
    :correct: d
-   :feedback_a: The function abs will change the negative.
-   :feedback_b: The original number will change.
-   :feedback_c: The function int will remove the decimal part.
-   :feedback_d: The function abs will make it positive, and the function int will cut it down to 16.
+   :feedback_a: La función abs quitará el signo negativo.
+   :feedback_b: Se modificará el número original.
+   :feedback_c: La función int quitará la parte decimal.
+   :feedback_d: La función abs convertirá el número en positivo, y l función int lo dejará como 16.
    
-   What do you think `print(int(abs(-16.789)))`, prints?
+   ¿Qué crees que imprimirá la instrucción  `print(int(abs(-16.789)))`?
 

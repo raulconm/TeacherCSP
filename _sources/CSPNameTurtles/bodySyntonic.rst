@@ -18,13 +18,13 @@
 .. highlight:: java
    :linenothreshold: 4 
 
-|bigteachernote| Nota para el profesor: Aplicación corporal
-============================================================
+|bigteachernote| Nota para el profesor: Experimentación corporal
+======================================================================
 
 ..	index::
 	single: Seymour Papert
 	
-Una de las cosas que más le gustaban de la programación con tortugas a `Seymour Papert <https://es.wikipedia.org/wiki/Seymour_Papert>`_, la persona que las utilizó por primera vez, era que los estudiantes podían probar el código de los programas utilizando su propio cuerpo <http://en.wikipedia.org/wiki/Turtle_graphics>`_ .  Es decir, que la tortuga se va a mover de la misma forma en que lo haga el estudiante con su cuerpo. Un estudiante puede avanzar y girar a la derecha. El estudiante puede *ser la tortuga*, y ejecutar exactamente lo que dice el programa. En el siguiente vídeo, nuestra "tortuga humana" no avanza cien pasos sino tres, porque los pasos de un humano son mucho más grandes que los de una tortuga.
+Una de las cosas que más le gustaban de la programación con tortugas a `Seymour Papert <https://es.wikipedia.org/wiki/Seymour_Papert>`_, la persona que las utilizó por primera vez, era que los estudiantes podían probar el código de los programas utilizando `su propio cuerpo <http://en.wikipedia.org/wiki/Turtle_graphics>`_ .  Es decir, que igual que se mueva la tortuga se podrá mover el estudiante con su propio cuerpo. Un estudiante puede avanzar y girar a la derecha, así que el estudiante puede *ser la tortuga*, y ejecutar exactamente lo que dice el programa. En el siguiente vídeo, nuestra "tortuga humana" no avanza cien pasos sino tres, porque los pasos de un humano son mucho más grandes que los de una tortuga.
 
 **Haz clic en el icono triangular del siguiente vídeo para reproducirlo.**
 

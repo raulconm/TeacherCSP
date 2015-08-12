@@ -18,7 +18,7 @@
 .. highlight:: java
    :linenothreshold: 4
 
-Modificar los programas de tortugas
+Modificar los programas con tortugas
 ====================================
 
 Ejecuta el siguiente programa.
@@ -32,7 +32,7 @@ Ejecuta el siguiente programa.
     alex = Turtle()      	# crea la tortuga Alex
     alex.forward(150)     	# le dice a Alex que avance 150 unidades
     alex.left(90)       	# le indica que gire 90 grados
-    alex.forward(75)      	# le dice a Alex que avance 150 unidades
+    alex.forward(75)      	# le dice a Alex que avance 75 unidades
 
 .. mchoicemf:: 5_3_1_Turtle_Names4_Q1
    :answer_a: Cambiar el 150 por 90
@@ -46,7 +46,7 @@ Ejecuta el siguiente programa.
    ¿Qué modificación debes hacer en el programa si quieres que ambas líneas tengan la misma longitud? (¡Haz los cambios que consideres y pulsa *Run* para ver si lo has hecho correctamente!)
 
 
-**Un poco más complicado:** Ahora vamos a conectar el punto final con el inicial. Crearemos entonces un triángulo rectángulo (que tiene un ángulo de 90 grados en su interior). El número 57 no se ha elegido al azar -- es aproximadamente el valor de la raiz cuadrada de 40^2 + 40^2.  No obstante, en este progrnama hay un error, y por ello no funciona como se espera.   **¿Puedes encontrarlo y arreglarlo?**  
+**Un poco más complicado:** Ahora vamos a conectar el punto final con el inicial. Crearemos entonces un triángulo rectángulo (que tiene un ángulo de 90 grados en su interior). El número 57 no se ha elegido al azar -- es aproximadamente el valor de la raiz cuadrada de 40^2 + 40^2.  Sin embargo, en este programa hay un error, y por ello no funciona como se espera.   **¿Puedes encontrarlo y arreglarlo?**  
 
 .. activecode:: Turtle_Names5
     :nocodelens:
@@ -70,7 +70,7 @@ Ejecuta el siguiente programa.
    :feedback_b: Esto dibujaría otro ángulo recto, que sería lo adecuado para crear un cuadrado.
    :feedback_c: Los ángulos interiores de un triángulo deben sumar 180. Hasta este momento tenemos un ángulo de 90, así que faltarían dos ángulos más, cuya suma debería ser otros 90. Ambos deben ser de 45 grados, pero le indicamos a la tortuga que gire el ángulo hacia el exterior de forma que 180 - 45 = 135.
 
-   La instrucción ``alex.left(0)`` no hace que la tortga gire en la dirección del punto inicial. ¿Cuál de las líneas siguientes sería la correcta?
+   La instrucción ``alex.left(0)`` no hace que la tortuga gire en la dirección del punto inicial. ¿Cuál de las líneas siguientes sería la correcta?
    
 .. parsonsprob:: 5_3_3_Turtle-T
 
