@@ -321,7 +321,7 @@
   
   <div class="section" id="nombrar-conjuntos-de-pasos">
 <h1>Nombrar conjuntos de pasos<a class="headerlink" href="#nombrar-conjuntos-de-pasos" title="Permalink to this headline">¶</a></h1>
-<p>¿Cómo se han definido <cite>abs</cite> e <cite>int</cite>? <em>Definiendo</em> un nuevo  procedimiento o una función podemos asociar un nombre con una secuencia de pasos. Observa el siguiente programa. ¿Qué crees que ocurrirá cuando pulses el botón de ejecutar? Haz clic en <em>Run</em> y mira lo que sucede.</p>
+<p>¿Cómo se han definido <code class="docutils literal"><span class="pre">abs</span></code> e <code class="docutils literal"><span class="pre">int</span></code>? <em>Definiendo</em> un nuevo  procedimiento o una función podemos asociar un nombre con una secuencia de pasos. Observa el siguiente programa. ¿Qué crees que ocurrirá cuando pulses el botón de ejecutar? Haz clic en <em>Run</em> y mira lo que sucede.</p>
 
 <div id="cont"></div>
 <div id="First_Function" lang="python" time="" class="ac_section alert alert-warning" >
@@ -412,7 +412,7 @@ else{
 
 </div>
 
-<p>Si te pensando por qué parece que no ocurre nada cuando pulsas el botón <em>Run</em>, observa que lo que hace el programa es definir el procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code>, que recoge com entrada una tortuga definida como <code class="docutils literal"><span class="pre">unaTortuga</span></code>. Si queremos que el programa ejecute realmente algo más tendremos que crear una tortuga y <strong>llamar</strong> al procedimiento como lo hacemos en el siguiente ejemplo.</p>
+<p>Si estás pensando por qué parece que no ocurre nada cuando pulsas el botón <em>Run</em>, observa que lo que hace el programa es definir el procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code>, que recoge com entrada una tortuga definida como <code class="docutils literal"><span class="pre">unaTortuga</span></code>. Si queremos que el programa ejecute realmente algo más tendremos que crear una tortuga y <strong>llamar</strong> al procedimiento como lo hacemos en el siguiente ejemplo.</p>
 
 <div id="cont"></div>
 <div id="First_Function_Call" lang="python" time="" class="ac_section alert alert-warning" >
@@ -508,7 +508,11 @@ else{
 
 </div>
 
-<p id="index-1">En el ejemplo anterior <em>DEFinimos</em> la palabra <code class="docutils literal"><span class="pre">cuadrado</span></code> para representar las instrucciones de Python con las que dibujaremos un cuadrado utilizando una tortuga. El procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code> toma <code class="docutils literal"><span class="pre">unaTortuga</span></code> como dato de entrada, y con ella dibujará el cuadrado. Observa que la secuencia de instrucciones incluidas en el procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code> está indentada. Esto es, que las líneas de instrucciones no comienzan en la primera columna, debajo de la palabra <code class="docutils literal"><span class="pre">def</span></code>, sino unas posiciones más a la derecha. Python utiliza la indentación para mostrar qué instrucciones forman parte del procedimiento. El hecho de que la línea <code class="docutils literal"><span class="pre">from</span> <span class="pre">turtle</span> <span class="pre">import</span> <span class="pre">*</span></code> no esté indentada significa que esa instrucción y las siguientes ya no forman parte del procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code>.</p>
+<p id="index-1">En el ejemplo anterior <em>DEFinimos</em> la palabra <code class="docutils literal"><span class="pre">cuadrado</span></code> para representar las instrucciones de Python con las que dibujaremos un cuadrado utilizando una tortuga. El procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code> toma <code class="docutils literal"><span class="pre">unaTortuga</span></code> como dato de entrada, y con ella dibujará el cuadrado. Observa que la secuencia de instrucciones incluidas en el procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code> está indentada. Esto es que las líneas de instrucciones no comienzan en la primera columna, debajo de la palabra <code class="docutils literal"><span class="pre">def</span></code>, sino unas posiciones más a la derecha. Python utiliza la indentación para mostrar qué instrucciones forman parte del procedimiento. El hecho de que la línea <code class="docutils literal"><span class="pre">from</span> <span class="pre">turtle</span> <span class="pre">import</span> <span class="pre">*</span></code> no esté indentada significa que esa instrucción y las siguientes ya no forman parte del procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Observa que hemos definido el procedimiento <code class="docutils literal"><span class="pre">def</span> <span class="pre">cuadrado(unaTortuga):</span></code> antes de intentar utilizarlo con <code class="docutils literal"><span class="pre">cuadrado(Mario)</span></code>. En Python es necesario que suceda en ese orden, pero no lo es en otros lenguajes de programación.</p>
+</div>
 
             <div id="6_3_1_Functions_Q2" class="alert alert-warning">
             csp-6-3-1: ¿Es <code class="docutils literal"><span class="pre">abs</span></code> un procedimiento, o una función?<form name="6_3_1_Functions_Q2_form" method="get" action="" onsubmit="return false;">
@@ -573,7 +577,7 @@ else{
 </script>
 
         <div class='parsons alert alert-warning' id="parsons-102">
-        <div class="parsons-text">csp-6-3-3: El siguiente código debería definir un procedimiento que dibuje un triángulo, pero puede que las instrucciones estén desordenadas, e incluso *puede que contenga algunas líneas de código inútil*. Arrastra a la parte derecha y en el orden correcto las líneas de código que se necesiten. <b>¡Recuerda que las líneas de instrucciones que forman parte del procedimiento deben estar indentadas1</b>. Para indentar esas líneas arrástralas un poco más a la derecha.
+        <div class="parsons-text">csp-6-3-3: El siguiente código debería definir un procedimiento que dibuje un triángulo, pero puede que las instrucciones estén desordenadas, e incluso *puede que contenga algunas líneas de código inútil*. Arrastra a la parte derecha y en el orden correcto las líneas de código que se necesiten. <b>Recuerda que las líneas de instrucciones que forman parte del procedimiento deben estar indentadas</b>. Para indentar esas líneas arrástralas un poco más a la derecha.
 <br /><br /></div>
         <div style="clear:left;"></div>
         <div id="parsons-orig-102" style="display:none;">def triangulo(unaTortuga):

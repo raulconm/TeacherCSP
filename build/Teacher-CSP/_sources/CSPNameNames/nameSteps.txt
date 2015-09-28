@@ -21,7 +21,7 @@
 Nombrar conjuntos de pasos
 ==========================
 
-¿Cómo se han definido `abs` e `int`? *Definiendo* un nuevo  procedimiento o una función podemos asociar un nombre con una secuencia de pasos. Observa el siguiente programa. ¿Qué crees que ocurrirá cuando pulses el botón de ejecutar? Haz clic en *Run* y mira lo que sucede.
+¿Cómo se han definido ``abs`` e ``int``? *Definiendo* un nuevo  procedimiento o una función podemos asociar un nombre con una secuencia de pasos. Observa el siguiente programa. ¿Qué crees que ocurrirá cuando pulses el botón de ejecutar? Haz clic en *Run* y mira lo que sucede.
 
 .. activecode:: First_Function
   :tour_1: "Line by line tour"; 1: dsq-line1; 2: dsq-line2; 3: dsq-line3; 4: dsq-line4; 5: dsq-line5; 6: dsq-line6; 7: dsq-line7; 8: dsq-line8; 9: dsq-line9;
@@ -37,7 +37,7 @@ Nombrar conjuntos de pasos
       unaTortuga.forward(100)
       unaTortuga.right(90)
 
-Si te pensando por qué parece que no ocurre nada cuando pulsas el botón *Run*, observa que lo que hace el programa es definir el procedimiento ``cuadrado``, que recoge com entrada una tortuga definida como ``unaTortuga``. Si queremos que el programa ejecute realmente algo más tendremos que crear una tortuga y **llamar** al procedimiento como lo hacemos en el siguiente ejemplo.
+Si estás pensando por qué parece que no ocurre nada cuando pulsas el botón *Run*, observa que lo que hace el programa es definir el procedimiento ``cuadrado``, que recoge com entrada una tortuga definida como ``unaTortuga``. Si queremos que el programa ejecute realmente algo más tendremos que crear una tortuga y **llamar** al procedimiento como lo hacemos en el siguiente ejemplo.
 
 ..	index::
 	single: def
@@ -67,9 +67,9 @@ Si te pensando por qué parece que no ocurre nada cuando pulsas el botón *Run*, o
 	single: parameter
 	pair: programming; parameter    
 
-En el ejemplo anterior *DEFinimos* la palabra ``cuadrado`` para representar las instrucciones de Python con las que dibujaremos un cuadrado utilizando una tortuga. El procedimiento ``cuadrado`` toma ``unaTortuga`` como dato de entrada, y con ella dibujará el cuadrado. Observa que la secuencia de instrucciones incluidas en el procedimiento ``cuadrado`` está indentada. Esto es, que las líneas de instrucciones no comienzan en la primera columna, debajo de la palabra ``def``, sino unas posiciones más a la derecha. Python utiliza la indentación para mostrar qué instrucciones forman parte del procedimiento. El hecho de que la línea ``from turtle import *`` no esté indentada significa que esa instrucción y las siguientes ya no forman parte del procedimiento ``cuadrado``.
+En el ejemplo anterior *DEFinimos* la palabra ``cuadrado`` para representar las instrucciones de Python con las que dibujaremos un cuadrado utilizando una tortuga. El procedimiento ``cuadrado`` toma ``unaTortuga`` como dato de entrada, y con ella dibujará el cuadrado. Observa que la secuencia de instrucciones incluidas en el procedimiento ``cuadrado`` está indentada. Esto es que las líneas de instrucciones no comienzan en la primera columna, debajo de la palabra ``def``, sino unas posiciones más a la derecha. Python utiliza la indentación para mostrar qué instrucciones forman parte del procedimiento. El hecho de que la línea ``from turtle import *`` no esté indentada significa que esa instrucción y las siguientes ya no forman parte del procedimiento ``cuadrado``.
 
-.. Nota::
+.. Note::
    Observa que hemos definido el procedimiento ``def cuadrado(unaTortuga):`` antes de intentar utilizarlo con ``cuadrado(Mario)``. En Python es necesario que suceda en ese orden, pero no lo es en otros lenguajes de programación.
 
 .. mchoicemf:: 6_3_1_Functions_Q2
@@ -101,7 +101,7 @@ Fíjate atentamente en el siguiente vídeo para saber cómo resolver el problema de
    
 .. parsonsprob:: 6_3_3_Triangle_Procedure
 
-   El siguiente código debería definir un procedimiento que dibuje un triángulo, pero puede que las instrucciones estén desordenadas, e incluso *puede que contenga algunas líneas de código inútil*. Arrastra a la parte derecha y en el orden correcto las líneas de código que se necesiten. <b>¡Recuerda que las líneas de instrucciones que forman parte del procedimiento deben estar indentadas1</b>. Para indentar esas líneas arrástralas un poco más a la derecha.
+   El siguiente código debería definir un procedimiento que dibuje un triángulo, pero puede que las instrucciones estén desordenadas, e incluso *puede que contenga algunas líneas de código inútil*. Arrastra a la parte derecha y en el orden correcto las líneas de código que se necesiten. <b>Recuerda que las líneas de instrucciones que forman parte del procedimiento deben estar indentadas</b>. Para indentar esas líneas arrástralas un poco más a la derecha.
  
    -----
    def triangulo(unaTortuga):
