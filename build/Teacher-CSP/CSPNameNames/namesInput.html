@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Naming Input &mdash; Runestone Interactive Overview</title>
+    <title>Nombrar entradas &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -88,7 +88,7 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
     <link rel="next" title="Teachers Note: Creating Procedures with Parameters" href="params.html" />
-    <link rel="prev" title="Naming Sets of Steps" href="nameSteps.html" />
+    <link rel="prev" title="Nombrar conjuntos de pasos" href="nameSteps.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -274,7 +274,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Naming Input</a></li>
+<li><a class="reference internal" href="#">Nombrar entradas</a></li>
 </ul>
 </ul>
 </li>
@@ -282,7 +282,7 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Naming Sets of Steps" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Nombrar conjuntos de pasos" data-toggle="tooltip">
     <a href="nameSteps.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
@@ -319,9 +319,9 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="naming-input">
-<h1>Naming Input<a class="headerlink" href="#naming-input" title="Permalink to this headline">¶</a></h1>
-<p>What if we want to draw a different size square, like one with a side length of 50?  We could change each of the calls to the <code class="docutils literal"><span class="pre">forward</span></code> procedure as shown below.</p>
+  <div class="section" id="nombrar-entradas">
+<h1>Nombrar entradas<a class="headerlink" href="#nombrar-entradas" title="Permalink to this headline">¶</a></h1>
+<p>¿Qué podemos hacer para dibujar un cuadrado de diferente tamaño, por ejemplo uno cuyo lado tenga una longitud de 50? Podríamos modificar cada una de las llamadas a la instrucción <code class="docutils literal"><span class="pre">forward</span></code> como se muestra a continuación.</p>
 
 <div id="cont"></div>
 <div id="Function_Change_Size" lang="python" time="" class="ac_section alert alert-warning" >
@@ -332,13 +332,13 @@
 <button class="ac_opt btn btn-default" style="display: inline-block" id="Function_Change_Size_loadb" onclick="requestCode('Function_Change_Size');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Function_Change_Size','def square*open*turtle*close*:*nline*    turtle.forward*open*50*close**nline*    turtle.right*open*90*close**nline*    turtle.forward*open*50*close**nline*    turtle.right*open*90*close**nline*    turtle.forward*open*50*close**nline*    turtle.right*open*90*close**nline*    turtle.forward*open*50*close**nline*    turtle.right*open*90*close**nline**nline*from turtle import *  # use the turtle library*nline*space = Screen*open**close*      # create a turtle screen*nline*malik = Turtle*open**close*      # create a turtle named malik*nline*square*open*malik*close*         # draw a square with malik','1','*doubleq*Important lines tour*doubleq*; 1-9: sq50-line1-9; 2,4,6,8: sq50-line2468; 11-13: sq50-line11-13; 14: sq50-line14;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Function_Change_Size','def cuadrado*open*turtle*close*:*nline*    turtle.forward*open*50*close**nline*    turtle.right*open*90*close**nline*    turtle.forward*open*50*close**nline*    turtle.right*open*90*close**nline*    turtle.forward*open*50*close**nline*    turtle.right*open*90*close**nline*    turtle.forward*open*50*close**nline*    turtle.right*open*90*close**nline**nline*from turtle import *  # usa la librería turtle*nline*espacio = Screen*open**close*            # crea un espacio para la tortuga*nline*malik = Turtle*open**close*      # crea una tortuga llamada malik*nline*cuadrado*open*malik*close*          # dibuja un cuadrado con malik','1','*doubleq*Important lines tour*doubleq*; 1-9: sq50-line1-9; 2,4,6,8: sq50-line2468; 11-13: sq50-line11-13; 14: sq50-line14;*atype*')"/>
 
 </div>
 <br/>
 <div id="Function_Change_Size_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="Function_Change_Size_code" class="active_code" prefixcode="undefined" lang="python">
-def square(turtle):
+def cuadrado(turtle):
     turtle.forward(50)
     turtle.right(90)
     turtle.forward(50)
@@ -348,10 +348,10 @@ def square(turtle):
     turtle.forward(50)
     turtle.right(90)
 
-from turtle import *  # use the turtle library
-space = Screen()      # create a turtle screen
-malik = Turtle()      # create a turtle named malik
-square(malik)         # draw a square with malik
+from turtle import *  # usa la librería turtle
+espacio = Screen()            # crea un espacio para la tortuga
+malik = Turtle()      # crea una tortuga llamada malik
+cuadrado(malik)          # dibuja un cuadrado con malik
 </textarea>
 </div>
 
@@ -417,7 +417,7 @@ else{
 
 </div>
 
-<p>But, this means we have to change each of the four <code class="docutils literal"><span class="pre">forward</span></code> statements and we could make a mistake and not set all of them to the same number.  Is there a better way?  What if we create a variable <code class="docutils literal"><span class="pre">size</span></code> and set its value to the amount to move forward?</p>
+<p>Pero, esto implica que tendremos que modificar cuatro veces las instrucciones <code class="docutils literal"><span class="pre">forward</span></code>, y podríamos equivocarnos al poner el valor. ¿Hay una manera mejor de hacerlo? ¿Y si creamos la variable <code class="docutils literal"><span class="pre">longitud</span></code> y definimos en ella el valor que queremos que se mueva la tortuga hacia delante?</p>
 
 <div id="cont"></div>
 <div id="Function_Add_Var" lang="python" time="" class="ac_section alert alert-warning" >
@@ -428,27 +428,27 @@ else{
 <button class="ac_opt btn btn-default" style="display: inline-block" id="Function_Add_Var_loadb" onclick="requestCode('Function_Add_Var');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Function_Add_Var','def square*open*turtle*close*:*nline*    size = 50*nline*    turtle.forward*open*size*close**nline*    turtle.right*open*90*close**nline*    turtle.forward*open*size*close**nline*    turtle.right*open*90*close**nline*    turtle.forward*open*size*close**nline*    turtle.right*open*90*close**nline*    turtle.forward*open*size*close**nline*    turtle.right*open*90*close**nline**nline*from turtle import *  # use the turtle library*nline*space = Screen*open**close*      # create a turtle screen*nline*malik = Turtle*open**close*      # create a turtle named malik*nline*square*open*malik*close*         # draw a square with malik','1','*doubleq*Important lines tour*doubleq*; 1-10: sqvar-line1-10; 2: sqvar-line2; 3: sqvar-line3; 4: sqvar-line4; 5-10: sqvar-line5-10; 12-14: sqvar-line12-14; 15: sqvar-line15;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Function_Add_Var','def cuadrado*open*tortuga*close*:*nline*    longitud = 50*nline*    tortuga.forward*open*longitud*close**nline*    tortuga.right*open*90*close**nline*    tortuga.forward*open*longitud*close**nline*    tortuga.right*open*90*close**nline*    tortuga.forward*open*longitud*close**nline*    tortuga.right*open*90*close**nline*    tortuga.forward*open*longitud*close**nline*    tortuga.right*open*90*close**nline**nline*from turtle import *  # usa la librería turtle*nline*espacio = Screen*open**close*            # crea el espacio para la tortuga*nline*malik = Turtle*open**close*      # crea una tortuga llamada malik*nline*cuadrado*open*malik*close*       # dibuja un cuadrado con malik','1','*doubleq*Important lines tour*doubleq*; 1-10: sqvar-line1-10; 2: sqvar-line2; 3: sqvar-line3; 4: sqvar-line4; 5-10: sqvar-line5-10; 12-14: sqvar-line12-14; 15: sqvar-line15;*atype*')"/>
 
 </div>
 <br/>
 <div id="Function_Add_Var_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="Function_Add_Var_code" class="active_code" prefixcode="undefined" lang="python">
-def square(turtle):
-    size = 50
-    turtle.forward(size)
-    turtle.right(90)
-    turtle.forward(size)
-    turtle.right(90)
-    turtle.forward(size)
-    turtle.right(90)
-    turtle.forward(size)
-    turtle.right(90)
+def cuadrado(tortuga):
+    longitud = 50
+    tortuga.forward(longitud)
+    tortuga.right(90)
+    tortuga.forward(longitud)
+    tortuga.right(90)
+    tortuga.forward(longitud)
+    tortuga.right(90)
+    tortuga.forward(longitud)
+    tortuga.right(90)
 
-from turtle import *  # use the turtle library
-space = Screen()      # create a turtle screen
-malik = Turtle()      # create a turtle named malik
-square(malik)         # draw a square with malik
+from turtle import *  # usa la librería turtle
+espacio = Screen()            # crea el espacio para la tortuga
+malik = Turtle()      # crea una tortuga llamada malik
+cuadrado(malik)       # dibuja un cuadrado con malik
 </textarea>
 </div>
 
@@ -516,7 +516,7 @@ else{
 
 
             <div id="6_4_1_Function_Var_Q1" class="alert alert-warning">
-            <p>csp-6-4-1: What is the side length for a square drawn by the following procedure?</p>
+            <p>csp-6-4-1: ¿Cuál es la longitud del lado en el cuadrado que se dibuja con el siguiente procedimiento?</p>
 <blockquote>
 <div><div class="highlight-java"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -527,16 +527,16 @@ else{
  7
  8
  9
-10</pre></div></td><td class="code"><div class="highlight"><pre><span class="n">def</span> <span class="nf">square</span><span class="o">(</span><span class="n">turtle</span><span class="o">):</span>
-    <span class="n">size</span> <span class="o">=</span> <span class="mi">200</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">size</span><span class="o">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">size</span><span class="o">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">size</span><span class="o">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">size</span><span class="o">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
+10</pre></div></td><td class="code"><div class="highlight"><pre><span class="n">def</span> <span class="nf">cuadrado</span><span class="o">(</span><span class="n">tortuga</span><span class="o">):</span>
+    <span class="n">longitud</span> <span class="o">=</span> <span class="mi">200</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">longitud</span><span class="o">)</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">longitud</span><span class="o">)</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">longitud</span><span class="o">)</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">longitud</span><span class="o">)</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
 </pre></div>
 </td></tr></table></div>
 </div></blockquote>
@@ -557,14 +557,14 @@ else{
             <script>
             $(document).ready(function(){checkRadio('6_4_1_Function_Var_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('6_4_1_Function_Var_Q1','c',['How much will it go forward?', 'What value is size set to?', 'Size is set to 200 in line 2 so this will draw a square that has a side length of 200.', 'It turns 90 degrees.  It doesn\u0027t go forward 90.'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('6_4_1_Function_Var_Q1','c',['¿Qué distancia avanzará?', '¿Qué valor se le ha dado a longitud?', 'En la línea 2 se ha fijado en 200 el valor de longitud, así que dibujará un cuadrado de 200 unidades de lado.', 'La tortuga gira 90 grados. No avanza 90 grados.'])">Check Me</button>
             <button class='btn btn-default' id="6_4_1_Function_Var_Q1_bcomp" disabled name="compare" onclick="compareAnswers('6_4_1_Function_Var_Q1');">Compare Me</button>
             </form><br />
             <div id="6_4_1_Function_Var_Q1_feedback">
             </div>
             </div>
-            <p>Now the program is easier to change since we only have one line to change <code class="docutils literal"><span class="pre">size</span> <span class="pre">=</span> <span class="pre">50</span></code> to draw another size square.  But, we still have to change the program in order to draw a different size square.  Is there a better way?</p>
-<p>We can add an additional input to the function that specifies the size of the square.  Just separate the names for the inputs with a comma: <code class="docutils literal"><span class="pre">(turtle,size)</span></code> as shown below and be sure to specify the actual size when you call the procedure <code class="docutils literal"><span class="pre">square(malik,</span> <span class="pre">100)</span></code> or <code class="docutils literal"><span class="pre">square(malik,</span> <span class="pre">50)</span></code>.</p>
+            <p>Ahora el programa es más fácil de modificar porque solamente necesitamos cambiar una línea, <code class="docutils literal"><span class="pre">longitud</span> <span class="pre">=</span> <span class="pre">50</span></code> para que se dibuje un cuadrado de distinto tamaño. Pero, sigue siendo necesario modificar el programa para que el tamaño del lado sea distinto. ¿Hay una manera mejor de hacerlo?</p>
+<p>Podemos agregar una entrada adicional a la función para especificar el tamaño del cuadrado. Separaremos los nombres de las entradas con una coma: <code class="docutils literal"><span class="pre">(tortuga,longitud)</span></code> como se muestra a continuación, y nos aseguraremos de indicar el tamaño cuando hagamos la llamada al procedimiento <code class="docutils literal"><span class="pre">cuadrado(malik,</span> <span class="pre">100)</span></code> o <code class="docutils literal"><span class="pre">cuadrado(malik,</span> <span class="pre">50)</span></code>.</p>
 
 <div id="cont"></div>
 <div id="Function_Call2" lang="python" time="" class="ac_section alert alert-warning" >
@@ -575,29 +575,29 @@ else{
 <button class="ac_opt btn btn-default" style="display: inline-block" id="Function_Call2_loadb" onclick="requestCode('Function_Call2');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Function_Call2','def square*open*turtle,size*close*:*nline*    turtle.forward*open*size*close**nline*    turtle.right*open*90*close**nline*    turtle.forward*open*size*close**nline*    turtle.right*open*90*close**nline*    turtle.forward*open*size*close**nline*    turtle.right*open*90*close**nline*    turtle.forward*open*size*close**nline*    turtle.right*open*90*close**nline**nline*from turtle import *  # use the turtle library*nline*space = Screen*open**close*      # create a turtle screen *open*space*close**nline*malik = Turtle*open**close*      # create a turtle named malik*nline*square*open*malik, 100*close*    # draw a square of size 100*nline*square*open*malik, 75*close*     # draw a square of size 75*nline*square*open*malik, 50*close*     # draw a square of size 50*nline*square*open*malik, 25*close*     # draw a square of size 25','1','*doubleq*Important lines tour*doubleq*; 1-9: dsq3-line1-9; 2: dsq3-line2; 11-13: dsq3-line11-13; 14: dsq3-line14; 15: dsq3-line15; 16: dsq3-line16; 17: dsq3-line17;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Function_Call2','def cuadrado*open*tortuga,longitud*close*:*nline*    tortuga.forward*open*longitud*close**nline*    tortuga.right*open*90*close**nline*    tortuga.forward*open*longitud*close**nline*    tortuga.right*open*90*close**nline*    tortuga.forward*open*longitud*close**nline*    tortuga.right*open*90*close**nline*    tortuga.forward*open*longitud*close**nline*    tortuga.right*open*90*close**nline**nline*from turtle import *  # usa la librería turtle*nline*espacio = Screen*open**close*            # crea un espacio para la tortuga*nline*malik = Turtle*open**close*      # crea la tortuga malik*nline*cuadrado*open*malik, 100*close*       # dibuja un cuadrado de lado 100*nline*cuadrado*open*malik, 75*close*           # dibuja un cuadrado de lado 75*nline*cuadrado*open*malik, 50*close*           # dibuja un cuadrado de lado 50*nline*cuadrado*open*malik, 25*close*           # dibuja un cuadrado de lado 25','1','*doubleq*Important lines tour*doubleq*; 1-9: dsq3-line1-9; 2: dsq3-line2; 11-13: dsq3-line11-13; 14: dsq3-line14; 15: dsq3-line15; 16: dsq3-line16; 17: dsq3-line17;*atype*')"/>
 
 </div>
 <br/>
 <div id="Function_Call2_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="Function_Call2_code" class="active_code" prefixcode="undefined" lang="python">
-def square(turtle,size):
-    turtle.forward(size)
-    turtle.right(90)
-    turtle.forward(size)
-    turtle.right(90)
-    turtle.forward(size)
-    turtle.right(90)
-    turtle.forward(size)
-    turtle.right(90)
+def cuadrado(tortuga,longitud):
+    tortuga.forward(longitud)
+    tortuga.right(90)
+    tortuga.forward(longitud)
+    tortuga.right(90)
+    tortuga.forward(longitud)
+    tortuga.right(90)
+    tortuga.forward(longitud)
+    tortuga.right(90)
 
-from turtle import *  # use the turtle library
-space = Screen()      # create a turtle screen (space)
-malik = Turtle()      # create a turtle named malik
-square(malik, 100)    # draw a square of size 100
-square(malik, 75)     # draw a square of size 75
-square(malik, 50)     # draw a square of size 50
-square(malik, 25)     # draw a square of size 25
+from turtle import *  # usa la librería turtle
+espacio = Screen()            # crea un espacio para la tortuga
+malik = Turtle()      # crea la tortuga malik
+cuadrado(malik, 100)       # dibuja un cuadrado de lado 100
+cuadrado(malik, 75)           # dibuja un cuadrado de lado 75
+cuadrado(malik, 50)           # dibuja un cuadrado de lado 50
+cuadrado(malik, 25)           # dibuja un cuadrado de lado 25
 </textarea>
 </div>
 
@@ -665,7 +665,7 @@ else{
 
 
             <div id="6_4_2_Name_The_Shape_Q1" class="alert alert-warning">
-            <p>csp-6-4-2: What shape would the following code draw?</p>
+            <p>csp-6-4-2: ¿Qué forma geométrica dibujará el siguiente código?</p>
 <div class="highlight-java"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -679,46 +679,46 @@ else{
 11
 12
 13
-14</pre></div></td><td class="code"><div class="highlight"><pre>def mystery(turtle,size):
-    turtle.forward(size)
-    turtle.right(90)
-    turtle.forward(size / 2)
-    turtle.right(90)
-    turtle.forward(size)
-    turtle.right(90)
-    turtle.forward(size / 2)
-    turtle.right(90)
+14</pre></div></td><td class="code"><div class="highlight"><pre>def misterio(tortuga,longitud):
+    tortuga.forward(longitud)
+    tortuga.right(90)
+    tortuga.forward(longitud / 2)
+    tortuga.right(90)
+    tortuga.forward(longitud)
+    tortuga.right(90)
+    tortuga.forward(longitud / 2)
+    tortuga.right(90)
 
-from turtle import *       # use the turtle library
-space = Screen()           # create a turtle screen (space)
-malik = Turtle()           # create a turtle named malik
-mystery(malik, 100)        # draw something with size = 100
+from turtle import *       # use la librería turtle
+espacio = Screen()         # crea el espacio par la tortuga
+malik = Turtle()           # crea la tortuga malik
+mystery(malik, 100)        # dibuja algo de longitud = 100
 </pre></div>
 </td></tr></table></div>
 <form name="6_4_2_Name_The_Shape_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="6_4_2_Name_The_Shape_Q1_opt_a" />
-            <label for= "6_4_2_Name_The_Shape_Q1_opt_a">  a) square</label><br />
+            <label for= "6_4_2_Name_The_Shape_Q1_opt_a">  a) cuadrado</label><br />
             
             <input type="radio" name="group1" value="b" id="6_4_2_Name_The_Shape_Q1_opt_b" />
-            <label for= "6_4_2_Name_The_Shape_Q1_opt_b">  b) rectangle</label><br />
+            <label for= "6_4_2_Name_The_Shape_Q1_opt_b">  b) rectángulo</label><br />
             
             <input type="radio" name="group1" value="c" id="6_4_2_Name_The_Shape_Q1_opt_c" />
-            <label for= "6_4_2_Name_The_Shape_Q1_opt_c">  c) triangle</label><br />
+            <label for= "6_4_2_Name_The_Shape_Q1_opt_c">  c) triángulo</label><br />
             
 
             <script>
             $(document).ready(function(){checkRadio('6_4_2_Name_The_Shape_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('6_4_2_Name_The_Shape_Q1','b',['Check the 2nd and 4th forwards.  How much do they move forward by?', 'This will draw a rectangle with two sides with the specified size and two sides half that size.  Copy this code into the area above and run it.', 'A triangle has 3 sides.'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('6_4_2_Name_The_Shape_Q1','b',['Observa el segundo y cuarto forward. ¿Cuánto se va a desplazar hacia delante?', 'Dibujará un rectángulo que con dos lados del tamaño especificado y los otros dos con la mitad de ese valor.  Copia el código en la parte superior y ejecútalo.', 'Un triángulo tiene tres lados.'])">Check Me</button>
             <button class='btn btn-default' id="6_4_2_Name_The_Shape_Q1_bcomp" disabled name="compare" onclick="compareAnswers('6_4_2_Name_The_Shape_Q1');">Compare Me</button>
             </form><br />
             <div id="6_4_2_Name_The_Shape_Q1_feedback">
             </div>
             </div>
-            <span class="target" id="index-0"></span><span class="target" id="index-1"></span><span class="target" id="index-2"></span><p id="index-3">The inputs that are specified in a function or procedure definition are also called <strong>parameters</strong> or <strong>formal parameters</strong>.  So <code class="docutils literal"><span class="pre">turtle</span></code> and <code class="docutils literal"><span class="pre">size</span></code> are both parameters (formal parameters) in the <code class="docutils literal"><span class="pre">square</span></code> procedure.  Notice that when we call <code class="docutils literal"><span class="pre">square</span></code> we have to specify the actual values for the inputs.  The actual values passed into the function as inputs are called the <strong>arguments</strong> or <strong>actual parameters</strong>. In the call <code class="docutils literal"><span class="pre">square(malik,</span> <span class="pre">50)</span></code> both <code class="docutils literal"><span class="pre">malik</span></code> and <code class="docutils literal"><span class="pre">50</span></code> are arguments (actual parameters) to the <code class="docutils literal"><span class="pre">square</span></code> procedure.</p>
+            <span class="target" id="index-0"></span><span class="target" id="index-1"></span><span class="target" id="index-2"></span><p id="index-3">Las entradas especificadas en la definición de una función o procedimiento se llaman también <strong>parámetros</strong> o <strong>parámetros formales</strong>. Así pues <code class="docutils literal"><span class="pre">tortuga</span></code> y <code class="docutils literal"><span class="pre">longitud</span></code> son parámetros (o parámetros formales) del procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code>. Observa que cuando llamamos al procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code> tenemos que especificar los valores reales para las entradas. A estos valores reales que se pasan como entrada a la función se les llama <strong>argumentos</strong> o <strong>parámetros reales</strong>. En la llamada a <code class="docutils literal"><span class="pre">cuadrado(malik,</span> <span class="pre">50)</span></code> ambos <code class="docutils literal"><span class="pre">malik</span></code> y <code class="docutils literal"><span class="pre">50</span></code> son argumentos (parámetros reales) del procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code>.</p>
 
             <div id="6_4_3_Name_Args_Q1" class="alert alert-warning">
-            <p>csp-6-4-3: In the following code what are the arguments (actual parameters)?</p>
+            <p>csp-6-4-3: Cuáles son los argumentos (parámetros reales) en este código?</p>
 <div class="highlight-java"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -732,78 +732,79 @@ mystery(malik, 100)        # draw something with size = 100
 11
 12
 13
-14</pre></div></td><td class="code"><div class="highlight"><pre>def square(turtle,size):
-    turtle.forward(size)
-    turtle.right(90)
-    turtle.forward(size)
-    turtle.right(90)
-    turtle.forward(size)
-    turtle.right(90)
-    turtle.forward(size)
-    turtle.right(90)
+14</pre></div></td><td class="code"><div class="highlight"><pre>def cuadrado(tortuga,longitud):
+    tortuga.forward(longitud)
+    tortuga.right(90)
+    tortuga.forward(longitud)
+    tortuga.right(90)
+    tortuga.forward(longitud)
+    tortuga.right(90)
+    tortuga.forward(longitud)
+    tortuga.right(90)
 
-from turtle import *       # use the turtle library
-space = Screen()           # create a turtle screen (space)
-imani = Turtle()           # create a turtle named imani
-square(imani, 25)      # draw a square with size 25
+from turtle import *       # usa la librería turtle
+espacio = Screen()         # crea el espacio para la tortuga
+imani = Turtle()           # crea la tortuga imani
+cuadrado(imani, 25)   # dibuja un cuadrado de lado 25
 </pre></div>
 </td></tr></table></div>
 <form name="6_4_3_Name_Args_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="6_4_3_Name_Args_Q1_opt_a" />
-            <label for= "6_4_3_Name_Args_Q1_opt_a">  a) turtle and size</label><br />
+            <label for= "6_4_3_Name_Args_Q1_opt_a">  a) tortuga y longitud</label><br />
             
             <input type="radio" name="group1" value="b" id="6_4_3_Name_Args_Q1_opt_b" />
-            <label for= "6_4_3_Name_Args_Q1_opt_b">  b) malik and 25</label><br />
+            <label for= "6_4_3_Name_Args_Q1_opt_b">  b) malik y 25</label><br />
             
             <input type="radio" name="group1" value="c" id="6_4_3_Name_Args_Q1_opt_c" />
-            <label for= "6_4_3_Name_Args_Q1_opt_c">  c) imani and 25</label><br />
+            <label for= "6_4_3_Name_Args_Q1_opt_c">  c) imani y 25</label><br />
             
 
             <script>
             $(document).ready(function(){checkRadio('6_4_3_Name_Args_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('6_4_3_Name_Args_Q1','c',['These are the names of the parameters (formal parameters).', 'Look again at the code above.  Is that the name of this turtle?', 'The turtle is named imani and the size is 25 in the code: square(imani, 25).'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('6_4_3_Name_Args_Q1','c',['Esos son los nombres de los parámetros (parámetros formales).', 'Mira de nuevo el código anterior. ¿Es ese el lombre de la tortuga?', 'La tortuga se llama imani y su longitud es 25 en el código: cuadrado(imani, 25).'])">Check Me</button>
             <button class='btn btn-default' id="6_4_3_Name_Args_Q1_bcomp" disabled name="compare" onclick="compareAnswers('6_4_3_Name_Args_Q1');">Compare Me</button>
             </form><br />
             <div id="6_4_3_Name_Args_Q1_feedback">
             </div>
             </div>
             
-        <div class='parsons alert alert-warning' id="parsons-189">
-        <div class="parsons-text">csp-6-4-4: The following code assumes that a procedure square has been defined that takes a size.  The code should create a turtle and then use it to draw a square, move forward, and draw a second square as shown at left, <img src="../_static/SquareForwardSquare.png" width="150" align="left" hspace="10" vspace="5"/> but the lines are mixed up.  Drag the lines into the correct order on the right.<br /><br /></div>
+        <div class='parsons alert alert-warning' id="parsons-190">
+        <div class="parsons-text">csp-6-4-4: Para el siguiente código se asume que se ha definido un procedimiento llamado cuadrado que toma como valor de entrada la longitud del lado. El código debe crear una tortuga y utilizarla para dibujar un cuadrado, moverse a cotninuación hacia delante, y dibujar un segundo cuadrado como el que se muestra a la izquierda, <img src="../_static/SquareForwardSquare.png" width="150" align="left" hspace="10" vspace="5"/> pero las líneas de código están desordenadas. Arrástralas a la zona de la derecha colocándolas en el orden correcto.
+<br /><br /></div>
         <div style="clear:left;"></div>
-        <div id="parsons-orig-189" style="display:none;">from turtle import *
-space = Screen()\nimani = Turtle()
-square(imani, 75)
+        <div id="parsons-orig-190" style="display:none;">from turtle import *
+espacio = Screen()\nimani = Turtle()
+cuadrado(imani, 75)
 imani.forward(100)
-square(imani, 50)</div>
+cuadrado(imani, 50)</div>
         <div class="sortable-code-container">
-        <div id="parsons-sortableTrash-189" class="sortable-code"></div>
-        <div id="parsons-sortableCode-189" class="sortable-code"></div>
+        <div id="parsons-sortableTrash-190" class="sortable-code"></div>
+        <div id="parsons-sortableCode-190" class="sortable-code"></div>
         <div style="clear:left;"></div>
         </div>
         <div class="parsons-controls">
-        <input type="button" class='btn btn-success' id="checkMe189" value="Check Me"/>
-        <input type="button" class='btn btn-default' id="reset189" value="Reset"/>
-        <div id="parsons-message-189"></div>
+        <input type="button" class='btn btn-success' id="checkMe190" value="Check Me"/>
+        <input type="button" class='btn btn-default' id="reset190" value="Reset"/>
+        <div id="parsons-message-190"></div>
         </div>
         </div>
 
     <script>
         $pjQ(document).ready(function(){
 
-            $("#parsons-189").not(".sortable-code").not(".parsons-controls").on("click", function(){
+            $("#parsons-190").not(".sortable-code").not(".parsons-controls").on("click", function(){
                  $('html, body').animate({
-                    scrollTop: ($("#parsons-189").offset().top - 50)
+                    scrollTop: ($("#parsons-190").offset().top - 50)
                 }, 700);
             }).find(".sortable-code, .parsons-controls").click(function(e) {
                 return false;
                 });
-            var msgBox = $("#parsons-message-189");
+            var msgBox = $("#parsons-message-190");
             msgBox.hide();
         var displayErrors = function (fb) {
             if(fb.errors.length > 0) {
-                    var hash = pp_189.getHash("#ul-parsons-sortableCode-189");
+                    var hash = pp_190.getHash("#ul-parsons-sortableCode-190");
                     msgBox.fadeIn(500);
                     msgBox.attr('class','alert alert-danger');
                     msgBox.html(fb.errors[0]);
@@ -820,8 +821,8 @@ square(imani, 50)</div>
 
         $(window).load(function() {
             // set min width and height
-            var sortableul = $("#ul-parsons-sortableCode-189");
-            var trashul = $("#ul-parsons-sortableTrash-189");
+            var sortableul = $("#ul-parsons-sortableCode-190");
+            var trashul = $("#ul-parsons-sortableTrash-190");
             var sortableHeight = sortableul.height();
             var sortableWidth = sortableul.width();
             var trashWidth = trashul.width();
@@ -836,35 +837,35 @@ square(imani, 50)</div>
         });
  
 
-        var pp_189 = new ParsonsWidget({
-                'sortableId': 'parsons-sortableCode-189',
-        'trashId': 'parsons-sortableTrash-189',
+        var pp_190 = new ParsonsWidget({
+                'sortableId': 'parsons-sortableCode-190',
+        'trashId': 'parsons-sortableTrash-190',
                 'max_wrong_lines': 1,
                 'solution_label': 'Drop blocks here',
                 'feedback_cb' : displayErrors
         });
-        pp_189.init($pjQ("#parsons-orig-189").text());
-    pp_189.shuffleLines();
+        pp_190.init($pjQ("#parsons-orig-190").text());
+    pp_190.shuffleLines();
             
         if(localStorage.getItem('6_4_4_Draw_Squares') && localStorage.getItem('6_4_4_Draw_Squares-trash')) {
             try {
                 var solution = localStorage.getItem('6_4_4_Draw_Squares');
                 var trash = localStorage.getItem('6_4_4_Draw_Squares-trash');
-                pp_189.createHTMLFromHashes(solution,trash);
-                pp_189.getFeedback();
+                pp_190.createHTMLFromHashes(solution,trash);
+                pp_190.getFeedback();
             } catch(err) {
                 var text = "An error occured restoring old 6_4_4_Draw_Squares state.  Error: ";
                 console.log(text + err.message);
             }
 
         }
-            $pjQ("#reset189").click(function(event){
+            $pjQ("#reset190").click(function(event){
               event.preventDefault();
-              pp_189.shuffleLines();
+              pp_190.shuffleLines();
             
             // set min width and height
-            var sortableul = $("#ul-parsons-sortableCode-189");
-            var trashul = $("#ul-parsons-sortableTrash-189");
+            var sortableul = $("#ul-parsons-sortableCode-190");
+            var trashul = $("#ul-parsons-sortableTrash-190");
             var sortableHeight = sortableul.height();
             var sortableWidth = sortableul.width();
             var trashWidth = trashul.width();
@@ -878,14 +879,14 @@ square(imani, 50)</div>
               msgBox.hide();
             });
             
-            $pjQ("#checkMe189").click(function(event){
+            $pjQ("#checkMe190").click(function(event){
               event.preventDefault();
-              var hash = pp_189.getHash("#ul-parsons-sortableCode-189");
+              var hash = pp_190.getHash("#ul-parsons-sortableCode-190");
               localStorage.setItem('6_4_4_Draw_Squares',hash);
-              hash = pp_189.getHash("#ul-parsons-sortableTrash-189");
+              hash = pp_190.getHash("#ul-parsons-sortableTrash-190");
               localStorage.setItem('6_4_4_Draw_Squares-trash',hash);
             
-            pp_189.getFeedback();
+            pp_190.getFeedback();
             msgBox.fadeIn(100);
             
             });
@@ -900,7 +901,7 @@ square(imani, 50)</div>
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Naming Sets of Steps' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Nombrar conjuntos de pasos' data-toggle="tooltip">
     <a href="nameSteps.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>

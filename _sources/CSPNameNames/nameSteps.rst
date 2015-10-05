@@ -37,7 +37,7 @@ Nombrar conjuntos de pasos
       unaTortuga.forward(100)
       unaTortuga.right(90)
 
-Si estás pensando por qué parece que no ocurre nada cuando pulsas el botón *Run*, observa que lo que hace el programa es definir el procedimiento ``cuadrado``, que recoge com entrada una tortuga definida como ``unaTortuga``. Si queremos que el programa ejecute realmente algo más tendremos que crear una tortuga y **llamar** al procedimiento como lo hacemos en el siguiente ejemplo.
+Si estás pensando por qué parece que no ocurre nada cuando pulsas el botón *Run*, observa que lo que hace el programa es definir el procedimiento ``cuadrado``, que recoge como entrada una tortuga definida como ``unaTortuga``. Si queremos que el programa ejecute algo más tendremos que crear una tortuga y **llamar** al procedimiento como lo hacemos en el siguiente ejemplo.
 
 ..	index::
 	single: def
@@ -60,17 +60,17 @@ Si estás pensando por qué parece que no ocurre nada cuando pulsas el botón *Run*
 
   from turtle import * 	# usa la libreria turtle
   espacio = Screen()     	# crea el espacio para la tortuga
-  Mario = unaTortuga()    	# crea la tortuga Mario
+  Mario = Turtle()    	# crea la tortuga Mario
   cuadrado(Mario)       	# dibuja un cuadrado con Mario
   
 ..	index::
 	single: parameter
 	pair: programming; parameter    
 
-En el ejemplo anterior *DEFinimos* la palabra ``cuadrado`` para representar las instrucciones de Python con las que dibujaremos un cuadrado utilizando una tortuga. El procedimiento ``cuadrado`` toma ``unaTortuga`` como dato de entrada, y con ella dibujará el cuadrado. Observa que la secuencia de instrucciones incluidas en el procedimiento ``cuadrado`` está indentada. Esto es que las líneas de instrucciones no comienzan en la primera columna, debajo de la palabra ``def``, sino unas posiciones más a la derecha. Python utiliza la indentación para mostrar qué instrucciones forman parte del procedimiento. El hecho de que la línea ``from turtle import *`` no esté indentada significa que esa instrucción y las siguientes ya no forman parte del procedimiento ``cuadrado``.
+En el ejemplo anterior *DEFinimos* la palabra ``cuadrado`` para enumerar las instrucciones de Python con las que dibujaremos un cuadrado utilizando una tortuga. El procedimiento ``cuadrado`` toma ``unaTortuga`` como dato de entrada, y con ella dibujará el cuadrado. Observa que la secuencia de instrucciones incluidas en el procedimiento ``cuadrado`` está indentada. Esto es que las líneas de instrucciones no comienzan en la primera columna, debajo de la palabra ``def``, sino unas posiciones más a la derecha. Python utiliza la indentación para indicar qué instrucciones forman parte del procedimiento. El hecho de que la línea ``from turtle import *`` no esté indentada significa que esa instrucción y las siguientes ya no forman parte del procedimiento ``cuadrado``.
 
 .. Note::
-   Observa que hemos definido el procedimiento ``def cuadrado(unaTortuga):`` antes de intentar utilizarlo con ``cuadrado(Mario)``. En Python es necesario que suceda en ese orden, pero no lo es en otros lenguajes de programación.
+   Observa que hemos definido el procedimiento ``def cuadrado(unaTortuga):`` antes de intentar utilizarlo con ``cuadrado(Mario)``. En Python es necesario que suceda en ese orden, pero no hace falta en otros lenguajes de programación.
 
 .. mchoicemf:: 6_3_1_Functions_Q2
    :answer_a: Es un procedimiento.

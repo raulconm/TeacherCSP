@@ -412,7 +412,7 @@ else{
 
 </div>
 
-<p>Si estás pensando por qué parece que no ocurre nada cuando pulsas el botón <em>Run</em>, observa que lo que hace el programa es definir el procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code>, que recoge com entrada una tortuga definida como <code class="docutils literal"><span class="pre">unaTortuga</span></code>. Si queremos que el programa ejecute realmente algo más tendremos que crear una tortuga y <strong>llamar</strong> al procedimiento como lo hacemos en el siguiente ejemplo.</p>
+<p>Si estás pensando por qué parece que no ocurre nada cuando pulsas el botón <em>Run</em>, observa que lo que hace el programa es definir el procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code>, que recoge como entrada una tortuga definida como <code class="docutils literal"><span class="pre">unaTortuga</span></code>. Si queremos que el programa ejecute algo más tendremos que crear una tortuga y <strong>llamar</strong> al procedimiento como lo hacemos en el siguiente ejemplo.</p>
 
 <div id="cont"></div>
 <div id="First_Function_Call" lang="python" time="" class="ac_section alert alert-warning" >
@@ -423,7 +423,7 @@ else{
 <button class="ac_opt btn btn-default" style="display: inline-block" id="First_Function_Call_loadb" onclick="requestCode('First_Function_Call');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('First_Function_Call','def cuadrado*open*unaTortuga*close*:*nline*    unaTortuga.forward*open*100*close**nline*    unaTortuga.right*open*90*close**nline*    unaTortuga.forward*open*100*close**nline*    unaTortuga.right*open*90*close**nline*    unaTortuga.forward*open*100*close**nline*    unaTortuga.right*open*90*close**nline*    unaTortuga.forward*open*100*close**nline*    unaTortuga.right*open*90*close**nline**nline*from turtle import *  # usa la libreria turtle*nline*espacio = Screen*open**close*            # crea el espacio para la tortuga*nline*Mario = unaTortuga*open**close*          # crea la tortuga Mario*nline*cuadrado*open*Mario*close*               # dibuja un cuadrado con Mario','1','*doubleq*Important lines tour*doubleq*; 1-9: dsq2-line1-9; 11-13: dsq2-line11-13; 14: dsq2-line14;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('First_Function_Call','def cuadrado*open*unaTortuga*close*:*nline*    unaTortuga.forward*open*100*close**nline*    unaTortuga.right*open*90*close**nline*    unaTortuga.forward*open*100*close**nline*    unaTortuga.right*open*90*close**nline*    unaTortuga.forward*open*100*close**nline*    unaTortuga.right*open*90*close**nline*    unaTortuga.forward*open*100*close**nline*    unaTortuga.right*open*90*close**nline**nline*from turtle import *  # usa la libreria turtle*nline*espacio = Screen*open**close*            # crea el espacio para la tortuga*nline*Mario = Turtle*open**close*      # crea la tortuga Mario*nline*cuadrado*open*Mario*close*               # dibuja un cuadrado con Mario','1','*doubleq*Important lines tour*doubleq*; 1-9: dsq2-line1-9; 11-13: dsq2-line11-13; 14: dsq2-line14;*atype*')"/>
 
 </div>
 <br/>
@@ -441,7 +441,7 @@ def cuadrado(unaTortuga):
 
 from turtle import *  # usa la libreria turtle
 espacio = Screen()            # crea el espacio para la tortuga
-Mario = unaTortuga()          # crea la tortuga Mario
+Mario = Turtle()      # crea la tortuga Mario
 cuadrado(Mario)               # dibuja un cuadrado con Mario
 </textarea>
 </div>
@@ -508,10 +508,10 @@ else{
 
 </div>
 
-<p id="index-1">En el ejemplo anterior <em>DEFinimos</em> la palabra <code class="docutils literal"><span class="pre">cuadrado</span></code> para representar las instrucciones de Python con las que dibujaremos un cuadrado utilizando una tortuga. El procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code> toma <code class="docutils literal"><span class="pre">unaTortuga</span></code> como dato de entrada, y con ella dibujará el cuadrado. Observa que la secuencia de instrucciones incluidas en el procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code> está indentada. Esto es que las líneas de instrucciones no comienzan en la primera columna, debajo de la palabra <code class="docutils literal"><span class="pre">def</span></code>, sino unas posiciones más a la derecha. Python utiliza la indentación para mostrar qué instrucciones forman parte del procedimiento. El hecho de que la línea <code class="docutils literal"><span class="pre">from</span> <span class="pre">turtle</span> <span class="pre">import</span> <span class="pre">*</span></code> no esté indentada significa que esa instrucción y las siguientes ya no forman parte del procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code>.</p>
+<p id="index-1">En el ejemplo anterior <em>DEFinimos</em> la palabra <code class="docutils literal"><span class="pre">cuadrado</span></code> para enumerar las instrucciones de Python con las que dibujaremos un cuadrado utilizando una tortuga. El procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code> toma <code class="docutils literal"><span class="pre">unaTortuga</span></code> como dato de entrada, y con ella dibujará el cuadrado. Observa que la secuencia de instrucciones incluidas en el procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code> está indentada. Esto es que las líneas de instrucciones no comienzan en la primera columna, debajo de la palabra <code class="docutils literal"><span class="pre">def</span></code>, sino unas posiciones más a la derecha. Python utiliza la indentación para indicar qué instrucciones forman parte del procedimiento. El hecho de que la línea <code class="docutils literal"><span class="pre">from</span> <span class="pre">turtle</span> <span class="pre">import</span> <span class="pre">*</span></code> no esté indentada significa que esa instrucción y las siguientes ya no forman parte del procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Observa que hemos definido el procedimiento <code class="docutils literal"><span class="pre">def</span> <span class="pre">cuadrado(unaTortuga):</span></code> antes de intentar utilizarlo con <code class="docutils literal"><span class="pre">cuadrado(Mario)</span></code>. En Python es necesario que suceda en ese orden, pero no lo es en otros lenguajes de programación.</p>
+<p class="last">Observa que hemos definido el procedimiento <code class="docutils literal"><span class="pre">def</span> <span class="pre">cuadrado(unaTortuga):</span></code> antes de intentar utilizarlo con <code class="docutils literal"><span class="pre">cuadrado(Mario)</span></code>. En Python es necesario que suceda en ese orden, pero no hace falta en otros lenguajes de programación.</p>
 </div>
 
             <div id="6_3_1_Functions_Q2" class="alert alert-warning">
