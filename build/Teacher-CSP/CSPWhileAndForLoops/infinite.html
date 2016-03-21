@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Loops - While and For &mdash; Runestone Interactive Overview</title>
+    <title>Bucles - While y For &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -87,7 +87,7 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
-    <link rel="next" title="Loops that Count" href="whileCount.html" />
+    <link rel="next" title="Bucles para contar" href="whileCount.html" />
     <link rel="prev" title="Chapter 7 - Concept Summary" href="../CSPRepeatNumbers/ch7_summary.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -274,8 +274,8 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Loops - While and For</a></li>
-<li><a class="reference internal" href="#infinite-loops">Infinite Loops</a></li>
+<li><a class="reference internal" href="#">Bucles - While y For</a></li>
+<li><a class="reference internal" href="#bucles-infinitos">Bucles infinitos</a></li>
 </ul>
 </ul>
 </li>
@@ -289,7 +289,7 @@
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Loops that Count' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - Bucles para contar' data-toggle="tooltip" >
     <a href="whileCount.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -320,39 +320,39 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="loops-while-and-for">
-<h1>Loops - While and For<a class="headerlink" href="#loops-while-and-for" title="Permalink to this headline">¶</a></h1>
-<p><em>Learning Objectives:</em></p>
+  <div class="section" id="bucles-while-y-for">
+<h1>Bucles - While y For<a class="headerlink" href="#bucles-while-y-for" title="Permalink to this headline">¶</a></h1>
+<p><em>Objetivos de aprendizaje:</em></p>
 <ul class="simple">
-<li>Introduce the concept of an <em>infinite loop</em></li>
-<li>Use a <code class="docutils literal"><span class="pre">while</span></code> loop to repeat code.</li>
-<li>Compare and contrast <code class="docutils literal"><span class="pre">while</span></code> and <code class="docutils literal"><span class="pre">for</span></code> loops</li>
+<li>Introducir el concepto de <em>bucle infinito</em></li>
+<li>Utilizar un bucle <code class="docutils literal"><span class="pre">while</span></code> para repetir código</li>
+<li>Comparar y diferenciar un bucle <code class="docutils literal"><span class="pre">while</span></code> y un bucle  <code class="docutils literal"><span class="pre">for</span></code></li>
 </ul>
 </div>
-<div class="section" id="infinite-loops">
-<h1>Infinite Loops<a class="headerlink" href="#infinite-loops" title="Permalink to this headline">¶</a></h1>
-<p>Getting a computer to repeat is simple.  Getting it to <em>stop</em> can be tricky.  A simple way of getting a computer to repeat is to use a <code class="docutils literal"><span class="pre">while</span></code> loop.  A <code class="docutils literal"><span class="pre">while</span></code> loop includes a logical expression, and is followed by a block.  <strong>AS LONG AS THE EXPRESSION IS TRUE</strong>, the block of statements gets executed.</p>
-<p id="index-0">So, here&#8217;s a program that loops forever.</p>
+<div class="section" id="bucles-infinitos">
+<h1>Bucles infinitos<a class="headerlink" href="#bucles-infinitos" title="Permalink to this headline">¶</a></h1>
+<p>Hacer que un ordenador repita pasos es sencillo. Decirle que pare es un poco más complicado. Una forma simple de decirle que repita pasos es usando un bucle <code class="docutils literal"><span class="pre">while</span></code>. Un bucle <code class="docutils literal"><span class="pre">while</span></code> consiste en una expresión lógica seguida de un bloque de instrucciones. Este bloque de instrucciones se ejecutarán repetidamente <strong>MIENTRAS LA EXPRESIÓN LÓGICA SEA CIERTA</strong>.</p>
+<p id="index-0">Entonces, veamos un programa que se ejecuta para siempre.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">while</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Looping&quot;</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Forever&quot;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Bucle&quot;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;Infinito&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Since <code class="docutils literal"><span class="pre">1</span></code> will always be equal to <code class="docutils literal"><span class="pre">1</span></code>, the two <code class="docutils literal"><span class="pre">print</span></code> statements will just be repeated over and over and over again.  We call that an <strong>infinite loop</strong>, which means a loop that continues forever or until it is forced to stop. We ran this in a form of Python where he could stop the computer easily:</p>
+<p>Como <code class="docutils literal"><span class="pre">1</span></code> siempre será igual a <code class="docutils literal"><span class="pre">1</span></code> las dos instrucciones <code class="docutils literal"><span class="pre">print</span></code> se ejecutarán hasta el infinito. A esto le llamamos <strong>bucle infinito</strong>, que significa que el bucle se ejecutará sin fin, o hasta que lo interrumpamos. Ejecuta esto en un ordenador que puedas apagar sin problemas:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">while</span> <span class="mi">1</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
-<span class="go">        print (&quot;Looping&quot;)</span>
-<span class="go">        print (&quot;Forever&quot;)</span>
-<span class="go">Looping</span>
-<span class="go">Forever</span>
-<span class="go">Looping</span>
-<span class="go">Forever</span>
-<span class="go">Looping</span>
-<span class="go">Forever</span>
-<span class="go">Looping</span>
-<span class="go">Forever</span>
+<span class="go">        print (&quot;Bucle&quot;)</span>
+<span class="go">        print (&quot;Infinito&quot;)</span>
+<span class="go">Bucle</span>
+<span class="go">Infinito</span>
+<span class="go">Bucle</span>
+<span class="go">Infinito</span>
+<span class="go">Bucle</span>
+<span class="go">Infinito</span>
+<span class="go">Bucle</span>
+<span class="go">Infinito</span>
 </pre></div>
 </div>
-<p>(We stopped the computer around this point.)</p>
+<p>(Cuando llegues a este punto apaga el ordenador...)</p>
 </div>
 
 
@@ -365,12 +365,12 @@
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="../CSPRepeatNumbers/ch7_summary.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Loops that Count' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - Bucles para contar' data-toggle="tooltip" >
     <a href="whileCount.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="whileCount.html" >Next Section - Loops that Count</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="whileCount.html" >Next Section - Bucles para contar</a>
 
 <script type="text/javascript">
 

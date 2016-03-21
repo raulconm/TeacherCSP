@@ -18,19 +18,19 @@
 .. highlight:: java
    :linenothreshold: 4
 
-Renaming Python's Functions
-=============================
+Renombrar las funciones de Python
+=================================
 
-The functions ``abs`` and ``int`` are *names*.  They are *variables* whose values are a set of statements that achieve a goal.  Later on, we'll know enough code to write ``abs`` and ``int`` ourselves.  The important point right now is that ``abs`` and ``int`` are *names* for functions.  You can create several names that have the same value.  You can think of this like how a person can have both a name and a nickname.  In the program below we demonstrate that you can even create new names for Python functions.
+Las funciones ``abs`` e ``int`` son *nombres*. Son los nombres de unas *variables* cuyos valores son el conjunto de instrucciones que sirven para un objetivo concreto. Más adelante sabremos lo suficiente sobre programación como para crear nuestras propias funciones ``abs`` e ``int``. Lo importante ahora es comprender que ``abs`` e ``int`` son los *nombres* con los que nos referimos a estas dos funciones. Puedes crear varios nombres diferentes que tengan el mismo valor. Como cuando una persona tiene un nombre y también un apodo. En el siguiente programa veremos que puedes incluso crear nombres nuevos para las funciones de Python. 
 
 .. activecode:: Rename_Internal
   :tour_1: "Line-by-line tour"; 1: funName-line1; 2: funName-line2; 3: funName-line3; 4: funName-line4; 5: funName-line5; 6: funName-line6;
 
-  absolute = abs
-  print("Absolute value of -5:")
-  print(absolute(-5))
+  absoluto = abs
+  print("Valor absoluto de -5:")
+  print(absoluto(-5))
   noDecimal = int
-  print("Integer part of of 34.2")
+  print("Parte entera de 34.2")
   print(noDecimal(34.2))
 
 .. mchoicemf:: 6_8_1_Rename_Internal_Q1
@@ -39,11 +39,11 @@ The functions ``abs`` and ``int`` are *names*.  They are *variables* whose value
    :answer_c: 16.789
    :answer_d: 16
    :correct: d
-   :feedback_a: No, absolute will change the negative
-   :feedback_b: No, the original number will change
-   :feedback_c: No, noDecimal will remove the decimal part
-   :feedback_d: Yes! Absolute will make it positive, and noDecimal will throw away the values after the decimal point leaving just the 16.
+   :feedback_a: No, absoluto cambiará el negativo
+   :feedback_b: No, se cambiará el número original
+   :feedback_c: No, noDecimal quitará a parte decimal
+   :feedback_d: ¡Sí! absoluto lo hará positivo, y noDecimal descartará los valores después de la coma dejando solamente el 16.
    
-   If you add one more line to the above program, `print(noDecimal(absolute(-16.789)))`, what prints?
+   Si añades una línea más al programa anterior, `print(noDecimal(absoluto(-16.789)))`, qué imprimirá?
    
 

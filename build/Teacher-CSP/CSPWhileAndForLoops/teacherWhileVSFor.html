@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Teacher Note: for loops are more natural &mdash; Runestone Interactive Overview</title>
+    <title>Nota para el profesor: los bucles for son más naturales &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -88,7 +88,7 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
     <link rel="next" title="Chapter 8 - Concept Summary" href="ch8_summary.html" />
-    <link rel="prev" title="Looping When We Don’t Know When We’ll Stop" href="while.html" />
+    <link rel="prev" title="No sabemos cuándo terminará el bucle" href="while.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -274,7 +274,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#"> Teacher Note: for loops are more natural</a></li>
+<li><a class="reference internal" href="#"> Nota para el profesor: los bucles for son más naturales</a></li>
 </ul>
 </ul>
 </li>
@@ -282,7 +282,7 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Looping When We Don&#8217;t Know When We&#8217;ll Stop" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - No sabemos cuándo terminará el bucle" data-toggle="tooltip">
     <a href="while.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
@@ -319,23 +319,23 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="bigteachernote-teacher-note-for-loops-are-more-natural">
-<h1><a class="reference internal" href="../_images/apple10.jpg"><img alt="teacher note" class="align-top" src="../_images/apple10.jpg" style="width: 50px;" /></a> Teacher Note: for loops are more natural<a class="headerlink" href="#bigteachernote-teacher-note-for-loops-are-more-natural" title="Permalink to this headline">¶</a></h1>
-<p>Several researchers have studied how people &#8220;naturally&#8221; describe programs.  In one study, students as young as middle school are shown videos of someone playing a game like &#8220;Pokemon&#8221; then asked:</p>
+  <div class="section" id="bigteachernote-nota-para-el-profesor-los-bucles-for-son-mas-naturales">
+<h1><a class="reference internal" href="../_images/apple10.jpg"><img alt="teacher note" class="align-top" src="../_images/apple10.jpg" style="width: 50px;" /></a> Nota para el profesor: los bucles for son más naturales<a class="headerlink" href="#bigteachernote-nota-para-el-profesor-los-bucles-for-son-mas-naturales" title="Permalink to this headline">¶</a></h1>
+<p>Algunos investigadores han estudiado la forma en que la gente describe los programas con un estilo &#8220;natural&#8221;. En uno de esos estudios, se le mostraban a estudiantes de primaria vídeos de alguien jugando a un juego del estilo de &#8220;Pokemon&#8221;, y se le preguntaba:</p>
 <blockquote>
-<div>&#8220;Imagine that you are going to program a computer to make this video game.  What do you think you would say to the computer?&#8221;</div></blockquote>
-<p>Participants rarely specify iteration like in a <code class="docutils literal"><span class="pre">while</span></code> loop.  They often say things like &#8220;For all the folders, I would...&#8221; or &#8220;For each of the characters, do this...&#8221;  Doing something &#8220;for all&#8221; is pretty common.  As we have seen, we can use <code class="docutils literal"><span class="pre">for</span></code> loops just like that, e.g., <em>for each item in a list</em>.  In general, <code class="docutils literal"><span class="pre">for</span></code> loops are closer to how people naturally talk about looping.</p>
-<p>But computer science students often make an economic argument to themselves.</p>
+<div>&#8220;Imagínate que vas a programar un ordenador para que haga este vídeojuego. ¿Qué crees que le dirías al ordenador para que lo hiciera?&#8221;.</div></blockquote>
+<p>Rara vez los participantes describían iteraciones como las de un bucle <code class="docutils literal"><span class="pre">while</span></code>. Normalmente decía cosas como &#8220;Para todas las carpetas, yo haría...&#8221; o &#8220;Para cada uno de los personajes, haz...&#8221; Es muy común que se utilice la expresión hacer algo &#8220;para todo&#8221;. Como hemos visto, podemos utilizar bucles <code class="docutils literal"><span class="pre">for</span></code> para casos como esos. Por ejemplo, <em>para cada uno de los elementos de una lista</em>. En general, los bucles <code class="docutils literal"><span class="pre">for</span></code> son mucho más parecidos al modo en que las personas hablamos en lenguaje natural sobre los bucles.</p>
+<p>Pero es frecuente que los estudiantes de programación lleguen a una conclusión más práctica:</p>
 <blockquote>
-<div>&#8220;A <code class="docutils literal"><span class="pre">while</span></code> loop can do everything that a <code class="docutils literal"><span class="pre">for</span></code> loop can, and is more flexible.  I&#8217;ll just learn that.&#8221;</div></blockquote>
-<p>Mark Guzdial, one of the authors of this book, used to teach a 2nd year undergraduate course on <em>Object-oriented Design</em>.  He wanted to know how much programming they knew before we got started.  One year, he gave them the challenge of writing the program to print the times table, just as you just saw ealier.  With a <code class="docutils literal"><span class="pre">for</span></code> loop, it&#8217;s three lines of code.  Out of 75 students, only 15 used a <code class="docutils literal"><span class="pre">for</span></code> loop.  <em>Every</em> other student used a <code class="docutils literal"><span class="pre">while</span></code> loop.  Using a <code class="docutils literal"><span class="pre">while</span></code> loop is more lines of code, and more opportunities for error. (And many of the students did make errors.)  But they were more <em>comfortable</em> with the <code class="docutils literal"><span class="pre">while</span></code> loop, because that&#8217;s what they had used the most.</p>
-<p>Start out using the <code class="docutils literal"><span class="pre">for</span></code> loop in your classes as we have done in the prior chapter.  It will be easier and more natural for students.</p>
+<div>&#8220;Un bucle <code class="docutils literal"><span class="pre">while</span></code> puede hacer todo lo que hace un bucle <code class="docutils literal"><span class="pre">for</span></code>, y además es más flexible. Lo aprenderé&#8221;.</div></blockquote>
+<p>Mark Guzdial, uno de los autores de este libro, lo utilizaba para enseñar <em>Diseño Orientado a Objetos</em>  en segundo curso. Quería saber cuál era el nivel de los alumnos sobre programación antes de empezar el curso. Un año, les propuso el reto de escribir las tablas de multiplicar, tal como hemos visto hace poco en el libro. Utilizando un bucle <code class="docutils literal"><span class="pre">for</span></code> son tres líneas de código. De setenta y cinco estudiantes, solamente quince utilizaron un bucke <code class="docutils literal"><span class="pre">for</span></code>. <em>Todos</em> los demás usaron un bucle <code class="docutils literal"><span class="pre">while</span></code>. Con <code class="docutils literal"><span class="pre">while</span></code> son necesarias más líneas de código, y es más fácil cometer un error (muchos lo cometieron). Pero los estudiantes se sentían más <em>cómodos</em> con el bucle <code class="docutils literal"><span class="pre">while</span></code>, porque es el tipo de bucle que más habían empleado hasta entonces.</p>
+<p>Comienza por utilizar en tus clases el bucle <code class="docutils literal"><span class="pre">for</span></code>, como hemos hecho en el capítulo anterior. Será más fácil y más natural para tus alumnos.</p>
 </div>
 
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Looping When We Don&#8217;t Know When We&#8217;ll Stop' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - No sabemos cuándo terminará el bucle' data-toggle="tooltip">
     <a href="while.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>

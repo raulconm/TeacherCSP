@@ -15,31 +15,31 @@
 	:start: 1
 	:prefix: csp-10-1-
 
-Using Repetition with Turtles
-===============================
+Utilizar repeticiones con tortugas
+==================================
 
-*Learning Objectives:*
+*Objetivos de aprendizaje:*
 
-- Use a ``for`` loop to repeat steps with turtles.
-- Generalize how to draw a polygon.
+- Usar un bucle ``for`` para repetir pasos con tortugas.
+- Utilizarlo para dibujar un polígono.
 
 ..	index::
-	pair: statements; for
+	pair: instrucciones; for
 
-We already made turtles draw squares.  We told our turtle to go forward and turn right four times, but we don't *explicitly* say "four times."  We can tell the computer to do something explicitly for a certain number of times by using a ``for`` loop.
+Ya hemos utilizado antes tortugas para dibujar cuadrados. Le indicábamos a la tortuga que avanzara y girara a la derecha cuatro veces, pero no utilizábamos *explícitamente* el concepto *cuatro veces*. Podemos pedirle al ordenador de forma explícita que haga algo un número determinado de veces utilizando un bucle ``for``. 
 
 
 .. activecode:: Turtle_For
     :tour_1: "Lines of code"; 1: tR1-line1; 2: tR1-line2; 3: tR1-line3; 4: tR1-line4; 5: tR1-line5; 6: tR1-line6; 7: tR1-line7;
     :nocodelens:
 	
-    from turtle import *	# use the turtle library
-    space = Screen()   		# create a turtle space
-    alisha = Turtle()  		# create a turtle named alisha
-    alisha.setheading(90)  	# point due north
-    for sides in [1,2,3,4]:	# repeat the indented lines 4 times
-    	alisha.forward(100)        	# move forward by 100 units
-      	alisha.right(90)           	# turn by 90 degrees
+    from turtle import *	# usar la librería turtle
+    space = Screen()   	# crear el espacio para la tortuga
+    alicia = Turtle()  	# crear la tortuga alicia
+    alicia.setheading(90)  	# apuntar al norte
+    for lados in [1,2,3,4]:	# repetir 4 veces lo siguiente
+    	   alicia.forward(100)      # avanzar 100 unidades
+    	   alicia.right(90)         # girar 90 grados
 
 .. mchoicemf:: 10_1_1_Turtle_For_Q1
    :answer_a: [0,1,2,3]
@@ -47,23 +47,24 @@ We already made turtles draw squares.  We told our turtle to go forward and turn
    :answer_c: [2,3,4,5]
    :answer_d: [1,2,3,4,5]
    :correct: b
-   :feedback_a: This still has four sides -- they are just numbered differently.
-   :feedback_b: This would only draw 3 side since there are only 3 items in the list.
-   :feedback_c: This still has four sides -- they are just numbered differently.
-   :feedback_d: This <i>will</i> draw a square. The turtle will just go on to trace the first side twice.
+   :feedback_a: Este cuadrado tendrá cuatro lados, aunque estén numerados de otra forma.
+   :feedback_b: Esto sólo dibujará tres lados, porque la lista sólo tiene tres elementos.
+   :feedback_c: Este cuadrado tendrá cuatro lados, aunque estén numerados de otra forma.
+   :feedback_d: Esta opción <i>sí</i> dibujará un cuadrado. La tortuga pasará dos veces por el primer lado.
 
-   The numbers in the list ``[1,2,3,4]`` are not important.  It's the fact that there are *four* items in the list that is important.  Only one of these choices does *not* make a square.  Which one?  (It's not cheating to actually try each of them and run the program each time!)
+   Lo más importante en la lista ``[1,2,3,4]`` no son los números. Es el hecho de que la lista contiene *cuatro* elementos. Solamente una de estas opciones *no* va a construir un cuadrado. ¿Sabes cuál es? (No es trampa probar a ejecutar el programa usando cada una de ellas, para ver cuál es el resultado). 
    
 .. parsonsprob:: 10_1_2_Rectangle
 
-   The following program uses a turtle to draw a rectangle as shown to the left, <img src="../_static/TurtleRect.png" width="150" align="left" hspace="10" vspace="5" /> but the lines are mixed up.  The program should do all necessary set-up and create the turtle.  After that, iterate (loop) 2 times, and each time through the loop the turtle should go forward 175 pixels, turn right 90 degrees, go forward 150 pixels, and turn right 90 degrees.  After the loop, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p>  
+   El siguiente programa utiliza una tortuga para dibujar un rectángulo como el que ves a la izquierda, , <img src="../_static/TurtleRect.png" width="150" align="left" hspace="10" vspace="5" /> pero las líneas de código están desordenadas. El programa primero debe crear  el entorno necesario y crear la tortuga. Después, debe pasar dos veces por el bucle, y cada una de las veces la tortuga debe avanzar 175 pixels, girar 90 grados a la derecha, avanzar 150 pixels, y girar 90 grados a la derecha. Una vez terminado el bucle, establecer que la ventana se cierre cuando el usuario haga clic sobre ella.<br /><br /><p>Arrastra los bloques de la parte izquierda y colócalos en orden y con la indentación adecuada en la parte derecha. Haz clic en <i>Check Me</i> para ver si lo has hecho correctamente. El ejercicio te indicará si alguna línea no está en su sitio, o si la indentación es incorrecta.</p>
+   
    -----
    from turtle import *      
    =====   
-   space = Screen()
+   espacio = Screen()
    carlos = Turtle()
    =====
-   # repeat 2 times
+   # repite 2 veces
    for i in [1,2]:  
    =====   
        carlos.forward(175)
@@ -73,24 +74,24 @@ We already made turtles draw squares.  We told our turtle to go forward and turn
        carlos.forward(150)
        carlos.right(90)
    
-Since it doesn't matter what's in the list, just as long as there are *four* items, there is a special way of writing that loop.  We use a ``range`` function. 
+Cuando no importa realmente qué hay en la lista, sino que tenga por ejemplo *cuatro* elementos, hay una forma especial de escribir el bucle. Se trata de utilizar la función ``range``.
 
 .. activecode:: Turtle_For_Range
   :tour_1: "Line-by-line tour"; 1: tR2-line1; 2: tR2-line2; 3: tR2-line3; 4: tR2-line4; 7: tR2-line7; 8: tR2-line8; 9: tR2-line9;
   :nocodelens:
  
-  from turtle import *		# use the turtle library
-  space = Screen()   		# create a turtle space
-  marcus = Turtle()  		# create a turtle named marcus
-  marcus.setheading(90)		# point due north
+  from turtle import *	# usar a libreria turtle
+  espacio = Screen()   	# crear el espacio
+  marco = Turtle()  		# crear la tortuga
+  marco.setheading(90)	# apuntar al norte
   
-  # Now make a square
-  for sides in range(4):	# repeat the indented lines 4 times
-      marcus.forward(100)      		# move forward by 100 units
-      marcus.right(90)          		# turn by 90 degrees
+  # Dibuja el cuadrado
+  for lados in range(4):	# repetir lo siguiente 4 veces
+      marco.forward(100)   # avanzar 100 unidades
+      marco.right(90)      # girar 90 grados
 
 
-The ``range`` function returns a value so that the *for* loop executes that many times.  This makes the turtle go forward and turn right 90 degrees *four* times.
+La función ``range`` devuelve un valor para indicarle al bucle *for* cuantas iteraciones debe hacer. En este caso hace que la tortuga avance y gire a la derecha *cuatro* veces.
 
 .. |turtlegeometry| image:: Figures/turtle-geometry.jpg
     :width: 200px

@@ -18,57 +18,59 @@
 .. highlight:: java
    :linenothreshold: 4
 
-Repeating with Numbers
-=======================
+Repeticiones con números
+========================
 
 ..	index::
-	single: list
+	single: lista
 
 ..	index::
-	single: for loop
-	pair: loop; for
-	pair: loop; body
-	pair: loop; indention
+	single: bucle for
+	pair: bucle; for
+	pair: bucle; cuerpo
+	pair: bucle; indentación
 	
-We are going to use a ``for`` loop.  A ``for`` loop is one type of loop or way to repeat a statement or set of statements in a program.  A ``for`` loop will use a variable and make the variable take on each of the values in a **list** of numbers one at a time.  Notice that line 3 in the program below ends with a ``:`` and that line 4 is **indented** so that it starts under the ``n`` in ``number``.  **Indented** means that text on the line has spaces at the beginning of the line so that the text doesn't start right at the left boundary. Both the ``:`` and the indention are required in a loop.  Line 3 is the start of the ``for`` loop and line 4 is the **body** of the loop.  The **body** of the loop is repeated for each value in the list ``thingsToAdd``.   
 
-What is the sum of all the numbers between 1 and 10?  Run the program below to calculate the answer.
+Vamos a utilizar un bucle ``for``. El bucle ``for`` es un tipo de bucle, o una forma de repetir una instrucción o conjunto de instrucciones en un programa. Un bucle ``for`` utiliza una variable, y hace que dicha variable vaya tomando cada vez uno de los números de una **lista**. Fíjate que la línea 3 del programa siguiente termina con un ``:``, y que la línea 4 está **indentada**, que significa que comienza debajo de la letra ``n`` de ``número``. **Indentado** significa que la línea comienza con espacios, de modo que el texto no empieza justo al principio de la línea. En un bucle son necesarios tanto el signo ``:`` como la indentación. La instrucción de la línea 3 determina el comienzo del bucle ``for``, y la línea 4 es el **cuerpo** del bucle. El **cuerpo** se repite para cada uno de los valores de la lista ``cosasQueAñadir``.
+  
+
+¿Cuánto vale la suma de todos los números del 1 al 10? Eecuta el programa siguiente para conocer la respuesta.
 
 .. activecode:: Numbers_Repeat1
     :tour_1: "Line by line tour"; 1: for1_line1; 2: for1_line2; 3: for1_line3; 4: for1_line4; 5: for1_line5;
     :tour_2: "High level tour"; 1-2: for1_line1-2; 3-4: for1_line3-4; 5: for1_s_line5;
 	
-    sum = 0  # Start out with nothing
-    thingsToAdd = [1,2,3,4,5,6,7,8,9,10]
-    for number in thingsToAdd:
-    	sum = sum + number
-    print(sum)
+    suma = 0  # Inicialmente el valor es 0
+    cosasQueAñadir = [1,2,3,4,5,6,7,8,9,10]
+    for numero in cosasQueAñadir:
+    	suma = suma + numero
+    print(suma)
     
 .. mchoicemf:: 7_2_1_Numbers_Repeat1_Q1
-   :answer_a: It prints the same thing it did before.
-   :answer_b: It prints the value of sum 10 times and sum is different each time it is printed.
-   :answer_c: It prints the same sum 10 times.
-   :answer_d: You get an error.
+   :answer_a: Imprime lo mismo que antes.
+   :answer_b: Imprime el valor de la suma diez veces y la suma es distinta cada vez que se imprime.
+   :answer_c: Imprime el mismo número diez veces.
+   :answer_d: Nos da un error.
    :correct: b
-   :feedback_a: Did you actually try it?
-   :feedback_b: Both lines 4 and 5 are now in the body of the loop and are executed each time through the loop. 
-   :feedback_c: Sum should be changing.  
-   :feedback_d: You can have more than one line in the body of a loop.
+   :feedback_a: ¿De verdad lo has probado?
+   :feedback_b: Ahora las líneas 4 y 5 están en el cuerpo del bucle, y se ejecutan con cada vuelta del bucle. 
+   :feedback_c: La suma debería ir cambiando.  
+   :feedback_d: El cuerpo del bucle puede contener más de una línea.
 
-   What is printed if you change the program above so that line 5 is also indented the same amount as line 4?
+   ¿Qué imprimirá el programa si haces que la línea 5 esté indentada de la misma forma que la 4?
    
 .. mchoicemf:: 7_2_2_Numbers_Repeat1_Q2
-   :answer_a: It prints the same thing it did before.
-   :answer_b: It prints the value of sum 10 times and sum is different each time it is printed.
-   :answer_c: It prints the same sum 10 times.
-   :answer_d: You get an error.
+   :answer_a: Imprime lo mismo que antes.
+   :answer_b: Imprime diez veces el valor de la suma y la suma es distinta cada vez.
+   :answer_c: Imprime diez veces la misma suma.
+   :answer_d: El programa muestra un error.
    :correct: d
-   :feedback_a: Did you actually try it?
-   :feedback_b: Both lines 4 and 5 are not in the loop anymore.
-   :feedback_c: Is the print repeated now? 
-   :feedback_d: You have to have at least one statement in the body of a loop.
+   :feedback_a: ¿De verdad lo has probado?
+   :feedback_b: Ni la línea 4 ni la 5 están ya dentro del bucle.
+   :feedback_c: ¿Se repite ahora el bucle? 
+   :feedback_d: Debes incluir al menos una instrucción dentro del cuerpo del bucle.
 
-   What is printed if you change the program above so that lines 4 and 5 are not indented?
+   ¿Qué va a imprimir el programa si lo modificas para que no estén indentadas ni la línea 4 ni la 5?
    
 
 

@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Looping When We Don’t Know When We’ll Stop &mdash; Runestone Interactive Overview</title>
+    <title>No sabemos cuándo terminará el bucle &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -88,7 +88,7 @@
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
     <link rel="next" title="Teacher Note: for loops are more natural" href="teacherWhileVSFor.html" />
-    <link rel="prev" title="Loops that Count" href="whileCount.html" />
+    <link rel="prev" title="Bucles para contar" href="whileCount.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -274,7 +274,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Looping When We Don&#8217;t Know When We&#8217;ll Stop</a></li>
+<li><a class="reference internal" href="#">No sabemos cuándo terminará el bucle</a></li>
 </ul>
 </ul>
 </li>
@@ -282,7 +282,7 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Loops that Count" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Bucles para contar" data-toggle="tooltip">
     <a href="whileCount.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
@@ -319,18 +319,18 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="looping-when-we-don-t-know-when-we-ll-stop">
-<h1>Looping When We Don&#8217;t Know When We&#8217;ll Stop<a class="headerlink" href="#looping-when-we-don-t-know-when-we-ll-stop" title="Permalink to this headline">¶</a></h1>
-<p>Now, how do we get the computer to do something only so many times, or until something happens that we want to happen?  We have to construct programs so that all the parts together make the logical expression true <em>until</em> we want it to be false.</p>
-<p>Let&#8217;s say that we want to find the square root of a number.  For some square roots, you&#8217;re never going to be exact.  Let&#8217;s say that we want to find a square root that, when multiplied by itself, is within <cite>0.01</cite> of the square we want.  How do we do it?  There&#8217;s a really old process that we can apply here.</p>
+  <div class="section" id="no-sabemos-cuando-terminara-el-bucle">
+<h1>No sabemos cuándo terminará el bucle<a class="headerlink" href="#no-sabemos-cuando-terminara-el-bucle" title="Permalink to this headline">¶</a></h1>
+<p>¿Cómo podemos decirle al ordenador que haga algo solamente hasta que ocurra algo que queremos que suceda? Tenemos que construir los programas de forma que todas las partes juntas hagan que una expresión sea cierta <em>hasta</em> que queramos que sea falsa.</p>
+<p>Imaginemos que queremos encontrar la raiz cuadrada de un número. En algunos casos, el resultado no va a ser exacto. Digamos que vamos a buscar un número que, al multiplicarlo por sí mismo, está a menos de <a href="#id1"><span class="problematic" id="id2">`</span></a>0.01`del número cuya raiz cuadrada buscamos. ¿Cómo vamos a hacer esto? Podemos aplicar un método clásico para hacerlo.</p>
 <ol class="arabic simple">
-<li>Start by guessing <cite>2</cite>.</li>
-<li>Compute the guess squared.</li>
-<li>Is the guess squared close to the target number?  If it&#8217;s within <cite>0.01</cite>, we&#8217;re done.  We&#8217;ll take the absolute value of the difference, in case we overshoot. (In Python, <code class="docutils literal"><span class="pre">abs</span></code> is the absolute value function.)</li>
-<li>If it&#8217;s not close enough, we divide the target number by our guess, then average that value with our guess.</li>
-<li>That&#8217;s our new guess.  Square it, and go back to Step #3.</li>
+<li>Comencemos tomando el número <cite>2</cite>.</li>
+<li>Elevémosolo al cuadrado.</li>
+<li>¿El resultado está cerca del número buscado? Si está a menos de <cite>0.01`</cite>, hemos terminado. Si nos hemos pasado tomaremos el valor absoluto de la diferencia. La función Python para obtener el valor absoluto es <code class="docutils literal"><span class="pre">abs</span></code>.</li>
+<li>Si no estamos lo suficientemente cerca del número buscado, dividimos el número buscado entre nuestro número, y hacemos la media con nuestro número.</li>
+<li>El resultado es nuestro nuevo número. Lo elevamos al cuadrado y volvemos al paso #3.</li>
 </ol>
-<p>Here&#8217;s a program that does exactly that.  Try different <cite>target</cite> values, and see how good it is at computing square roots.</p>
+<p>A continuación se muestra el programa para seguir exactamente estos pasos. Pruébalo con diferentes números, y comprueba si este método para hallar la raiz cuadrada de un número es suficientemente preciso.</p>
 
 <div id="cont"></div>
 <div id="Square_Root" lang="python" time="" class="ac_section alert alert-warning" >
@@ -341,21 +341,21 @@
 <button class="ac_opt btn btn-default" style="display: inline-block" id="Square_Root_loadb" onclick="requestCode('Square_Root');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Square_Root','target = 6*nline*guess = 2*nline*guessSquared = guess * guess*nline*while abs*open*target-guessSquared*close* > 0.01:*nline*    closer = target / guess*nline*    guess = *open*guess + closer*close* / 2.0*nline*    guessSquared = guess * guess*nline*print*open**doubleq*Square root of*doubleq*, target,*doubleq*is*doubleq*, guess*close*','1','*doubleq*Line by line tour*doubleq*; 1: sqR_line1; 2: sqR_line2; 3: sqR_line3; 4: sqR_line4; 5: sqR_line5; 6: sqR_line6; 7: sqR_line7; 8: sqR_line8;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Square_Root','buscado = 6*nline*estimado = 2*nline*estimadoAlCuadrado = estimado * estimado*nline*while abs*open*buscado-estimadoAlCuadrado*close* > 0.01:*nline*    acercar = buscado / estimado*nline*    estimado = *open*estimado + acercar*close* / 2.0*nline*    estimadoAlCuadrado = estimado * estimado*nline*print*open**doubleq*La raiz cuadrada de *doubleq*, buscado,*doubleq* es *doubleq*, estimado*close*','1','*doubleq*Line by line tour*doubleq*; 1: sqR_line1; 2: sqR_line2; 3: sqR_line3; 4: sqR_line4; 5: sqR_line5; 6: sqR_line6; 7: sqR_line7; 8: sqR_line8;*atype*')"/>
 <button class='btn btn-default' id="Square_Root_vizb" onclick="injectCodelens(this,'Square_Root');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="Square_Root_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="Square_Root_code" class="active_code" prefixcode="undefined" lang="python">
-target = 6
-guess = 2
-guessSquared = guess * guess
-while abs(target-guessSquared) > 0.01:
-    closer = target / guess
-    guess = (guess + closer) / 2.0
-    guessSquared = guess * guess
-print("Square root of", target,"is", guess)
+buscado = 6
+estimado = 2
+estimadoAlCuadrado = estimado * estimado
+while abs(buscado-estimadoAlCuadrado) > 0.01:
+    acercar = buscado / estimado
+    estimado = (estimado + acercar) / 2.0
+    estimadoAlCuadrado = estimado * estimado
+print("La raiz cuadrada de ", buscado," es ", estimado)
 </textarea>
 </div>
 
@@ -423,27 +423,27 @@ else{
 
 
             <div id="8_3_1_Square_Root_Q1" class="alert alert-warning">
-            csp-8-3-1:  What would happen if we didn&#8217;t compute <code class="docutils literal"><span class="pre">guessSquared</span></code> before the <code class="docutils literal"><span class="pre">while</span></code> loop?<form name="8_3_1_Square_Root_Q1_form" method="get" action="" onsubmit="return false;">
+            csp-8-3-1:  ¿Qué pasa si no calculamos <code class="docutils literal"><span class="pre">estimadoAlCuadrado</span></code> antes del bucle <code class="docutils literal"><span class="pre">while</span></code>?<form name="8_3_1_Square_Root_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="8_3_1_Square_Root_Q1_opt_a" />
-            <label for= "8_3_1_Square_Root_Q1_opt_a">  a) No error, since we compute it inside the loop.</label><br />
+            <label for= "8_3_1_Square_Root_Q1_opt_a">  a) No hay error, ya que lo calculamos dentro del bucle.</label><br />
             
             <input type="radio" name="group1" value="b" id="8_3_1_Square_Root_Q1_opt_b" />
-            <label for= "8_3_1_Square_Root_Q1_opt_b">  b) We would get an error.</label><br />
+            <label for= "8_3_1_Square_Root_Q1_opt_b">  b) Nos daría un error.</label><br />
             
             <input type="radio" name="group1" value="c" id="8_3_1_Square_Root_Q1_opt_c" />
-            <label for= "8_3_1_Square_Root_Q1_opt_c">  c) We need the one before the while loop, but not the one afterward.</label><br />
+            <label for= "8_3_1_Square_Root_Q1_opt_c">  c) Necesitamos calcularlo antes de comenzar el bucle, pero no necesitamos calcularlo de nuevo dentro.</label><br />
             
 
             <script>
             $(document).ready(function(){checkRadio('8_3_1_Square_Root_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('8_3_1_Square_Root_Q1','b',['We have to compute it before, or abs(target\u002DguessSquared) \u003E 0.01 would be an error.', 'A variable has to be declared (created) before it is used.', 'We need both.  The one before sets up the test.  The one inside the loop lets us update guessSquared.'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('8_3_1_Square_Root_Q1','b',['Tenemos que calcularlo antes, si no abs(buscado\u002DestimadoAlCuadrado) \u003E 0.01 nos dará un error.', 'Es obligatorio declarar (crear) una variable antes de utilizarla.', 'Ambos son necesarios. El primero permite hacer la comprobación. El que está dentro del bucle sirve para actualizar estimadoAlCuadrado.'])">Check Me</button>
             <button class='btn btn-default' id="8_3_1_Square_Root_Q1_bcomp" disabled name="compare" onclick="compareAnswers('8_3_1_Square_Root_Q1');">Compare Me</button>
             </form><br />
             <div id="8_3_1_Square_Root_Q1_feedback">
             </div>
             </div>
-            <p>Let&#8217;s say that you wanted to figure out the square root of 6.  How many times would the body of the <code class="docutils literal"><span class="pre">while</span></code> loop be executed?  We could figure it out by tracing the program.</p>
+            <p>Supongamos que queremos calcular la raiz cuadrada de 6. ¿Cuántas veces se ejecutará el cuerpo del bucle <code class="docutils literal"><span class="pre">while</span></code>? Podemos averiguarlo trazando el programa.</p>
 <div id="trace-squareroot" class="video_popup" >
 <video controls preload="none"  poster="../_static/squareRootTrace.png">
     <source src="http://ice-web.cc.gatech.edu/ce21/1/static/video/square-root-trace.mov" type="video/mp4"></source>
@@ -469,36 +469,36 @@ else{
 </script>
 
             <div id="8_3_2_Count_Loops_Q1" class="alert alert-warning">
-            csp-8-3-2:  How many times do we execute the body of the loop when <code class="docutils literal"><span class="pre">target</span> <span class="pre">=</span> <span class="pre">6</span></code> (in the video)?<form name="8_3_2_Count_Loops_Q1_form" method="get" action="" onsubmit="return false;">
+            csp-8-3-2:  ¿Cuántas veces se ejecutará el cuerpo del bucle cuando <code class="docutils literal"><span class="pre">buscado</span> <span class="pre">=</span> <span class="pre">6</span></code>? (en el vídeo)<form name="8_3_2_Count_Loops_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="8_3_2_Count_Loops_Q1_opt_a" />
-            <label for= "8_3_2_Count_Loops_Q1_opt_a">  a) Just once.</label><br />
+            <label for= "8_3_2_Count_Loops_Q1_opt_a">  a) Solamente una.</label><br />
             
             <input type="radio" name="group1" value="b" id="8_3_2_Count_Loops_Q1_opt_b" />
-            <label for= "8_3_2_Count_Loops_Q1_opt_b">  b) Twice.</label><br />
+            <label for= "8_3_2_Count_Loops_Q1_opt_b">  b) Dos veces.</label><br />
             
             <input type="radio" name="group1" value="c" id="8_3_2_Count_Loops_Q1_opt_c" />
-            <label for= "8_3_2_Count_Loops_Q1_opt_c">  c) Three times.</label><br />
+            <label for= "8_3_2_Count_Loops_Q1_opt_c">  c) Tres veces.</label><br />
             
             <input type="radio" name="group1" value="d" id="8_3_2_Count_Loops_Q1_opt_d" />
-            <label for= "8_3_2_Count_Loops_Q1_opt_d">  d) Four times</label><br />
+            <label for= "8_3_2_Count_Loops_Q1_opt_d">  d) Cuatro veces.</label><br />
             
 
             <script>
             $(document).ready(function(){checkRadio('8_3_2_Count_Loops_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('8_3_2_Count_Loops_Q1','c',['The first time through the loop, guess is 2, and 2 * 2 is 4, which isn\u0027t 6.', 'The second time through the loop, guess is 2.5 (average of 3 and 2). But, 2.5 * 2.5 is still more than 0.01 away from 6.', 'The third time through the loop, guess is 2.45 which is a pretty good square root value for 6.', 'We don\u0027t get to a fourth time.  Guess is 2, then 2.5, then 2.45, and then we stop.'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('8_3_2_Count_Loops_Q1','c',['En la primera ejecución del bucle el número estimado será 2, y 2 * 2 es 4, que no es igual a 6.', 'En la segunda ejecución del bucle el estimado es 2.5 (la media de 3 y de 2). Pero 2.5 * 2.5 no está aún a menos de 0.01 de 6.', 'En la tercera ejecución del bucle el estimado es 2.45, que es un resultado suficientemente bueno para la raiz cuadrada de 6.', 'No habrá una cuarta vez. Estimado será 2, luego 2.5, y finalmente 2.45, y entonces el programa parará.'])">Check Me</button>
             <button class='btn btn-default' id="8_3_2_Count_Loops_Q1_bcomp" disabled name="compare" onclick="compareAnswers('8_3_2_Count_Loops_Q1');">Compare Me</button>
             </form><br />
             <div id="8_3_2_Count_Loops_Q1_feedback">
             </div>
             </div>
-            <p>How about the square root of 25?  How about 2,356?  It&#8217;s difficult to know ahead of time how many times the loop will execute.  That&#8217;s where the <code class="docutils literal"><span class="pre">while</span></code> loop really shines, when you can specify an end condition (or rather, a <em>continue</em> condition).</p>
+            <p>Y si buscamos la raiz de 25? ¿Y de 2356? Es complicado saber de antemano cuántas veces se va a ejecutar el bucle. Es en estos casos en los que necesitamos el bucle <code class="docutils literal"><span class="pre">while</span></code>, cuando podemos especificar cuál es la condición para que termine ( o para que <em>continúe</em>).</p>
 </div>
 
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Loops that Count' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Bucles para contar' data-toggle="tooltip">
     <a href="whileCount.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>

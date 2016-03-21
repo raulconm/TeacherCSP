@@ -19,45 +19,45 @@
    :linenothreshold: 4
 
 
-Looping When We Don't Know When We'll Stop
-============================================
+No sabemos cuándo terminará el bucle 
+====================================
 
-Now, how do we get the computer to do something only so many times, or until something happens that we want to happen?  We have to construct programs so that all the parts together make the logical expression true *until* we want it to be false.
+¿Cómo podemos decirle al ordenador que haga algo solamente hasta que ocurra algo que queremos que suceda? Tenemos que construir los programas de forma que todas las partes juntas hagan que una expresión sea cierta *hasta* que queramos que sea falsa. 
 
-Let's say that we want to find the square root of a number.  For some square roots, you're never going to be exact.  Let's say that we want to find a square root that, when multiplied by itself, is within `0.01` of the square we want.  How do we do it?  There's a really old process that we can apply here.
+Imaginemos que queremos encontrar la raiz cuadrada de un número. En algunos casos, el resultado no va a ser exacto. Digamos que vamos a buscar un número que, al multiplicarlo por sí mismo, está a menos de `0.01`del número cuya raiz cuadrada buscamos. ¿Cómo vamos a hacer esto? Podemos aplicar un método clásico para hacerlo. 
 
-1. Start by guessing `2`.
-2. Compute the guess squared.
-3. Is the guess squared close to the target number?  If it's within `0.01`, we're done.  We'll take the absolute value of the difference, in case we overshoot. (In Python, ``abs`` is the absolute value function.)
-4. If it's not close enough, we divide the target number by our guess, then average that value with our guess.
-5. That's our new guess.  Square it, and go back to Step #3.
+1. Comencemos tomando el número `2`.
+2. Elevémosolo al cuadrado.
+3. ¿El resultado está cerca del número buscado? Si está a menos de `0.01``, hemos terminado. Si nos hemos pasado tomaremos el valor absoluto de la diferencia. La función Python para obtener el valor absoluto es ``abs``.
+4. Si no estamos lo suficientemente cerca del número buscado, dividimos el número buscado entre nuestro número, y hacemos la media con nuestro número.
+5. El resultado es nuestro nuevo número. Lo elevamos al cuadrado y volvemos al paso #3.
 
-Here's a program that does exactly that.  Try different `target` values, and see how good it is at computing square roots.
+A continuación se muestra el programa para seguir exactamente estos pasos. Pruébalo con diferentes números, y comprueba si este método para hallar la raiz cuadrada de un número es suficientemente preciso.
 
 .. activecode:: Square_Root
   :tour_1: "Line by line tour"; 1: sqR_line1; 2: sqR_line2; 3: sqR_line3; 4: sqR_line4; 5: sqR_line5; 6: sqR_line6; 7: sqR_line7; 8: sqR_line8;
 
-  target = 6
-  guess = 2
-  guessSquared = guess * guess
-  while abs(target-guessSquared) > 0.01:
-      closer = target / guess
-      guess = (guess + closer) / 2.0
-      guessSquared = guess * guess
-  print("Square root of", target,"is", guess)
+  buscado = 6
+  estimado = 2
+  estimadoAlCuadrado = estimado * estimado
+  while abs(buscado-estimadoAlCuadrado) > 0.01:
+      acercar = buscado / estimado
+      estimado = (estimado + acercar) / 2.0
+      estimadoAlCuadrado = estimado * estimado
+  print("La raiz cuadrada de ", buscado," es ", estimado)
 
 .. mchoicemf:: 8_3_1_Square_Root_Q1
-  :answer_a: No error, since we compute it inside the loop.
-  :answer_b: We would get an error.
-  :answer_c: We need the one before the while loop, but not the one afterward.
+  :answer_a: No hay error, ya que lo calculamos dentro del bucle.
+  :answer_b: Nos daría un error.
+  :answer_c: Necesitamos calcularlo antes de comenzar el bucle, pero no necesitamos calcularlo de nuevo dentro.
   :correct: b
-  :feedback_a: We have to compute it before, or abs(target-guessSquared) > 0.01 would be an error.
-  :feedback_b: A variable has to be declared (created) before it is used.
-  :feedback_c: We need both.  The one before sets up the test.  The one inside the loop lets us update guessSquared.
+  :feedback_a: Tenemos que calcularlo antes, si no abs(buscado-estimadoAlCuadrado) > 0.01 nos dará un error.
+  :feedback_b: Es obligatorio declarar (crear) una variable antes de utilizarla.
+  :feedback_c: Ambos son necesarios. El primero permite hacer la comprobación. El que está dentro del bucle sirve para actualizar estimadoAlCuadrado.
 
-   What would happen if we didn't compute ``guessSquared`` before the ``while`` loop?
+   ¿Qué pasa si no calculamos ``estimadoAlCuadrado`` antes del bucle ``while``?
 
-Let's say that you wanted to figure out the square root of 6.  How many times would the body of the ``while`` loop be executed?  We could figure it out by tracing the program.  
+Supongamos que queremos calcular la raiz cuadrada de 6. ¿Cuántas veces se ejecutará el cuerpo del bucle ``while``? Podemos averiguarlo trazando el programa.  
 
 .. video:: trace-squareroot
    :controls:
@@ -67,16 +67,16 @@ Let's say that you wanted to figure out the square root of 6.  How many times wo
    http://ice-web.cc.gatech.edu/ce21/1/static/video/square-root-trace.webm
 
 .. mchoicemf:: 8_3_2_Count_Loops_Q1
-  :answer_a: Just once.
-  :answer_b: Twice.
-  :answer_c: Three times.
-  :answer_d: Four times
+  :answer_a: Solamente una.
+  :answer_b: Dos veces.
+  :answer_c: Tres veces.
+  :answer_d: Cuatro veces.
   :correct: c
-  :feedback_a: The first time through the loop, guess is 2, and 2 * 2 is 4, which isn't 6.
-  :feedback_b: The second time through the loop, guess is 2.5 (average of 3 and 2). But, 2.5 * 2.5 is still more than 0.01 away from 6.
-  :feedback_c: The third time through the loop, guess is 2.45 which is a pretty good square root value for 6.
-  :feedback_d: We don't get to a fourth time.  Guess is 2, then 2.5, then 2.45, and then we stop.
+  :feedback_a: En la primera ejecución del bucle el número estimado será 2, y 2 * 2 es 4, que no es igual a 6.
+  :feedback_b: En la segunda ejecución del bucle el estimado es 2.5 (la media de 3 y de 2). Pero 2.5 * 2.5 no está aún a menos de 0.01 de 6.
+  :feedback_c: En la tercera ejecución del bucle el estimado es 2.45, que es un resultado suficientemente bueno para la raiz cuadrada de 6.
+  :feedback_d: No habrá una cuarta vez. Estimado será 2, luego 2.5, y finalmente 2.45, y entonces el programa parará.
 
-   How many times do we execute the body of the loop when ``target = 6`` (in the video)?
+   ¿Cuántas veces se ejecutará el cuerpo del bucle cuando ``buscado = 6``? (en el vídeo)
 
-How about the square root of 25?  How about 2,356?  It's difficult to know ahead of time how many times the loop will execute.  That's where the ``while`` loop really shines, when you can specify an end condition (or rather, a *continue* condition).
+Y si buscamos la raiz de 25? ¿Y de 2356? Es complicado saber de antemano cuántas veces se va a ejecutar el bucle. Es en estos casos en los que necesitamos el bucle ``while``, cuando podemos especificar cuál es la condición para que termine ( o para que *continúe*).

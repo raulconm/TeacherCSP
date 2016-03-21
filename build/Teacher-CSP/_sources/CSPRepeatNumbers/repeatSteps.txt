@@ -19,7 +19,7 @@
    :linenothreshold: 4
 
 	
-Repeating Steps
+Repetir pasos
 =====================================
 
 ..	index:
@@ -28,12 +28,12 @@ Repeating Steps
 	single: definite loop
 	pair: statements; for
 
-*Learning Objectives:*
+*Objetivos de aprendizaje:*
 
-- Use a ``for`` loop to repeat code.
-- Use ``range`` to create a list of numbers
+- Utilizar un bucle ``for`` para que el código se ejecute varias veces
+- Utilizar ``range`` para crear una lista de números
 
-We often have to repeat steps in a process.  If you are making a cake the recipe might say add an ingredient and then stir it 50 times or until the batter is smooth.  You can probably handle stirring the batter 50 times, but what if you had to stir it 1,000 times?  You might want a machine to do that.
+Es habitual que haya que repetir pasos dentro de un proceso. Si estás preparando un bizcocho es muy posible que la receta indique que se añada un ingrediente y se mezcle cincuenta veces, o hasta que la masa sea uniforme. Puedes mezclar la masa esas cincuenta veces, pero ¿y si tuvieras que mezclarla mil veces? Seguramente necesitarías una máquina que lo hiciera. 
 
 .. figure:: Figures/stirCake.jpg
     :height: 250px
@@ -41,13 +41,13 @@ We often have to repeat steps in a process.  If you are making a cake the recipe
     :alt: a cake mix that must be stirred
     :figclass: align-center
 
-    Figure 1: A cake mix that must be stirred
+    Figura 1: Ingredientes de un bizcocho que hay que mezclar
     
 ..	index::
-	single: loop
-	single: iteration
+	single: bucle
+	single: iteración
 
-A computer never gets tired.  It can do the same thing over-and-over without slipping up.  It can execute a program for as long as it has electricity.  So, there must be a way to tell a computer to do things over-and-over.  Computers know how to repeat steps in a program and the way they do this is often called a **loop** or **iteration**.  Have you ever had an **earworm**?  This is when a song gets stuck in your head and keeps repeating as if the song was set to **loop** (repeat after playing).
+Los ordenadores nunca se cansan. Pueden repetir el mismo paso hasta el infinito sin mostrar signos de fatiga. Pueden ejecutar un programa ssin parar mientras tengan electricidad. Entonces, tiene que existir una manera de decirle al ordenador que haga las cosas una y otra vez. Los ordenadores saben cómo repetir pasos en un programa, y la forma en que lo hacen se llama habitualmente **bucle** o **iteración**. ¿Alguna vez se te ha pegado una canción y la has tenido sonando en la cabeza, repitiéndose todo el rato, como en un **bucle**?
 
 
 

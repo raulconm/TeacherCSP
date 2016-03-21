@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>There’s a Pattern Here! &mdash; Runestone Interactive Overview</title>
+    <title>¡Aquí hay un patrón! &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -87,8 +87,8 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
-    <link rel="next" title="Teacher Note: Print() is Your Friend" href="print.html" />
-    <link rel="prev" title="The Range Function" href="range.html" />
+    <link rel="next" title="Nota para el profesor: Print() es tu amigo" href="print.html" />
+    <link rel="prev" title="La función Range" href="range.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -274,8 +274,8 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">There&#8217;s a Pattern Here!</a></li>
-<li><a class="reference internal" href="#using-the-accumulator-pattern">Using the Accumulator Pattern</a></li>
+<li><a class="reference internal" href="#">¡Aquí hay un patrón!</a></li>
+<li><a class="reference internal" href="#utilizar-el-patron-acumulador">Utilizar el patrón acumulador</a></li>
 </ul>
 </ul>
 </li>
@@ -283,13 +283,13 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - The Range Function" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - La función Range" data-toggle="tooltip">
     <a href="range.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter -  Teacher Note: Print() is Your Friend' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter -  Nota para el profesor: Print() es tu amigo' data-toggle="tooltip" >
     <a href="print.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -320,21 +320,21 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="there-s-a-pattern-here">
-<h1>There&#8217;s a Pattern Here!<a class="headerlink" href="#there-s-a-pattern-here" title="Permalink to this headline">¶</a></h1>
-<p>There&#8217;s a pattern in these programs, a pattern that is common when processing data.  We call this the <strong>Accumulator Pattern</strong>.  In the first program above, we <em>accumulated</em> the values into the variable <code class="docutils literal"><span class="pre">sum</span></code>.  In the last few programs, we <em>accumulated</em> a product into the variable <code class="docutils literal"><span class="pre">product</span></code>.</p>
-<p>Here are the five steps in this pattern.</p>
+  <div class="section" id="aqui-hay-un-patron">
+<h1>¡Aquí hay un patrón!<a class="headerlink" href="#aqui-hay-un-patron" title="Permalink to this headline">¶</a></h1>
+<p>Hay en estos programas un patrón, algo que es común cuando está procesando los datos. Es lo que llamamos el <strong>Patrón Acumulador</strong>. En el primer programa <strong>acumulamos</strong> los valores en la variable <code class="docutils literal"><span class="pre">suma</span></code>. En los programas posteriores <strong>acumulamos</strong> el producto en la variable <code class="docutils literal"><span class="pre">producto</span></code>.</p>
+<p>Veamos los cinco pasos identificados en este patrón.</p>
 <ol class="arabic simple">
-<li>Set the accumulator variable to its initial value.  This is the value we want if there is no data to be processed.</li>
-<li>Get all the data to be processed.</li>
-<li>Step through all the data using a <code class="docutils literal"><span class="pre">for</span></code> loop so that the variable takes on each value in the data.</li>
-<li>Combine each <em>piece</em> of the data into the accumulator.</li>
-<li>Do something with the result.</li>
+<li>Se establece la variable del acumulador a su valor inicial. Es el valor que queremos que tenga cuando no todavía no se ha procesado ningún dato.</li>
+<li>Se genera la lista de datos a procesar.</li>
+<li>Recorremos el conjunto de datos con un bucle <code class="docutils literal"><span class="pre">for</span></code>, procesando todos ellos secuencialmente.</li>
+<li>Incluimos cada dato en el acumulador.</li>
+<li>Hacemos algo con el resultado.</li>
 </ol>
 </div>
-<div class="section" id="using-the-accumulator-pattern">
-<h1>Using the Accumulator Pattern<a class="headerlink" href="#using-the-accumulator-pattern" title="Permalink to this headline">¶</a></h1>
-<p>What is the sum of all the numbers between 0 and 100?  We can answer that easily using our pattern.</p>
+<div class="section" id="utilizar-el-patron-acumulador">
+<h1>Utilizar el patrón acumulador<a class="headerlink" href="#utilizar-el-patron-acumulador" title="Permalink to this headline">¶</a></h1>
+<p>¿Cuánto vale la suma de todos los números del 0 al 100?? Podemos conocer facilmente la respuesta a esta pregunta utilizando un patrón.</p>
 
 <div id="cont"></div>
 <div id="Numbers_Sum" lang="python" time="" class="ac_section alert alert-warning" >
@@ -345,23 +345,23 @@
 <button class="ac_opt btn btn-default" style="display: inline-block" id="Numbers_Sum_loadb" onclick="requestCode('Numbers_Sum');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Numbers_Sum','# STEP 1: INITIALIZE ACCUMULATOR*nline*sum = 0  # Start out with nothing*nline*# STEP 2: GET DATA*nline*numbers = range*open*101*close**nline*# STEP 3: LOOP THROUGH THE DATA*nline*for number in numbers:*nline*    # STEP 4: ACCUMULATE*nline*    sum = sum + number*nline*# STEP 5: PROCESS RESULT*nline*print*open*sum*close*','1','*doubleq*Code tour*doubleq*; 2: accum_line2; 4: accum_line4; 6: accum_line6; 8: accum_line8; 10: accum_line10;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Numbers_Sum','# PASO 1: INICIALIZAR EL ACUMULADOR*nline*suma = 0  # Comenzamos con cero*nline*# PASO 2: TOMA LOS DATOS*nline*numeros = range*open*101*close**nline*# PASO 3: RECORRE EN BUCLE TODOS LOS DATOS*nline*for numero in numeros:*nline*    # PASO 4: ACUMULA*nline*    suma = suma + numero*nline*# PASO 5: PROCESA EL RESULTADO*nline*print*open*suma*close*','1','*doubleq*Code tour*doubleq*; 2: accum_line2; 4: accum_line4; 6: accum_line6; 8: accum_line8; 10: accum_line10;*atype*')"/>
 <button class='btn btn-default' id="Numbers_Sum_vizb" onclick="injectCodelens(this,'Numbers_Sum');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="Numbers_Sum_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="Numbers_Sum_code" class="active_code" prefixcode="undefined" lang="python">
-# STEP 1: INITIALIZE ACCUMULATOR
-sum = 0  # Start out with nothing
-# STEP 2: GET DATA
-numbers = range(101)
-# STEP 3: LOOP THROUGH THE DATA
-for number in numbers:
-    # STEP 4: ACCUMULATE
-    sum = sum + number
-# STEP 5: PROCESS RESULT
-print(sum)
+# PASO 1: INICIALIZAR EL ACUMULADOR
+suma = 0  # Comenzamos con cero
+# PASO 2: TOMA LOS DATOS
+numeros = range(101)
+# PASO 3: RECORRE EN BUCLE TODOS LOS DATOS
+for numero in numeros:
+    # PASO 4: ACUMULA
+    suma = suma + numero
+# PASO 5: PROCESA EL RESULTADO
+print(suma)
 </textarea>
 </div>
 
@@ -429,13 +429,14 @@ else{
 
 
         <div class='parsons alert alert-warning' id="parsons-54">
-        <div class="parsons-text">csp-7-5-1: The following is the correct code for printing the sum of all the odd numbers from 1 to 100 using the accumulator pattern, but it is mixed up. Drag the blocks from the left and put them in the correct order on the right.  <b>Remember that the statements in the body of a loop must be indented!</b>  To indent a block drag it further right. Click the <i>Check Me</i> button to check your solution.</p><br /><br /></div>
+        <div class="parsons-text">csp-7-5-1: A continuación se muestra el código apropiado para imprimir la suma de todos los números impares del 1 al 100 utilizando un patrón acumulador, pero el código está desordenado. Toma los bloques del lado izquierdo y colócalos en orden en la parte derecha. <b>¡Recuerda que dentro del cuerpo de un bucle las instrucciones deben estar indentadas!</b> Para indentar un bloque arrástralo un poco más a la derecha. Haz clic en el botón <i>Check Me</i> para comprobar la ssolución.</p>
+<br /><br /></div>
         <div style="clear:left;"></div>
-        <div id="parsons-orig-54" style="display:none;">sum = 0
-numbers = range(1,100,2)
-for number in numbers:
-    sum = sum + number
-print(sum)</div>
+        <div id="parsons-orig-54" style="display:none;">suma = 0
+numeros = range(1,100,2)
+for numero in numeros:
+    suma = suma + numero
+print(suma)</div>
         <div class="sortable-code-container">
         <div id="parsons-sortableTrash-54" class="sortable-code"></div>
         <div id="parsons-sortableCode-54" class="sortable-code"></div>
@@ -554,7 +555,7 @@ print(sum)</div>
 
     </script>
 
-<p>The <cite>range</cite> function has one more version that we can use here.  By providing <em>three</em> input numbers, we can specify the <em>start</em> value, the <em>ending</em> value (which is one more than the <em>last</em> value), and the <em>step</em> &#8211; how much to skip <em>between</em> numbers.</p>
+<p>Existe una variación más de la función <cite>range</cite>, que vamos a utilizar. Si le proporcionamos a la función <strong>tres</strong> valores como entrada, le estaremos especificando el valor <em>inicial</em>, el valor <em>final</em> (que ya sabemos qu es uno más que el último de la lista) y el valor del <em>intervalo</em> &#8211; esto es, cuántos números hay <em>entre</em> un número y el siguiente de la lista.</p>
 
 <div id="cont"></div>
 <div id="Range_Examples" lang="python" time="" class="ac_section alert alert-warning" >
@@ -638,7 +639,7 @@ else{
 
 </div>
 
-<p>Now let&#8217;s answer a slightly harder question: What is the sum of all the <em>even</em> numbers between 0 and 100?  It&#8217;s easy with our pattern.</p>
+<p>Ahora contestemos a una pregunta un poco más difícil: ¿Cuál es la suma de todos los números <em>pares</em> desde el 0 hasta el 100? Con nuestro patrón la respuesta es fácil.</p>
 
 <div id="cont"></div>
 <div id="Numbers_Sum_Even" lang="python" time="" class="ac_section alert alert-warning" >
@@ -649,23 +650,23 @@ else{
 <button class="ac_opt btn btn-default" style="display: inline-block" id="Numbers_Sum_Even_loadb" onclick="requestCode('Numbers_Sum_Even');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Numbers_Sum_Even','# STEP 1: INITIALIZE ACCUMULATOR*nline*sum = 0  # Start out with nothing*nline*# STEP 2: GET DATA*nline*numbers = range*open*0,101,2*close**nline*# STEP 3: LOOP THROUGH THE DATA*nline*for number in numbers:*nline*    # STEP 4: ACCUMULATE*nline*    sum = sum + number*nline*# STEP 5: PROCESS RESULT*nline*print*open*sum*close*','1','*doubleq*Code tour*doubleq*; 2: accE_line2; 4: accE_line4; 6: accE_line6; 8: accE_line8; 10: accE_line10;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Numbers_Sum_Even','# PASO 1: INICIALIZA EL ACUMULADOR*nline*suma = 0  # Comienza sin datos*nline*# PASO 2: TOMA LA LISTA DE DATOS*nline*numeros = range*open*0,101,2*close**nline*# PASO 3: RECORRE LA LISTA DE DATOS*nline*for numero in numeros:*nline*    # PASO 4: ACUMULA*nline*    suma = suma + numero*nline*# PASO 5: PROCESA EL RESULTADO*nline*print*open*suma*close*','1','*doubleq*Code tour*doubleq*; 2: accE_line2; 4: accE_line4; 6: accE_line6; 8: accE_line8; 10: accE_line10;*atype*')"/>
 <button class='btn btn-default' id="Numbers_Sum_Even_vizb" onclick="injectCodelens(this,'Numbers_Sum_Even');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="Numbers_Sum_Even_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="Numbers_Sum_Even_code" class="active_code" prefixcode="undefined" lang="python">
-# STEP 1: INITIALIZE ACCUMULATOR
-sum = 0  # Start out with nothing
-# STEP 2: GET DATA
-numbers = range(0,101,2)
-# STEP 3: LOOP THROUGH THE DATA
-for number in numbers:
-    # STEP 4: ACCUMULATE
-    sum = sum + number
-# STEP 5: PROCESS RESULT
-print(sum)
+# PASO 1: INICIALIZA EL ACUMULADOR
+suma = 0  # Comienza sin datos
+# PASO 2: TOMA LA LISTA DE DATOS
+numeros = range(0,101,2)
+# PASO 3: RECORRE LA LISTA DE DATOS
+for numero in numeros:
+    # PASO 4: ACUMULA
+    suma = suma + numero
+# PASO 5: PROCESA EL RESULTADO
+print(suma)
 </textarea>
 </div>
 
@@ -733,24 +734,24 @@ else{
 
 
             <div id="7_5_2_Numbers_Even_Q1" class="alert alert-warning">
-            csp-7-5-2: Why do we stop at 101 in the above program?<form name="7_5_2_Numbers_Even_Q1_form" method="get" action="" onsubmit="return false;">
+            csp-7-5-2: ¿Por qué el valor final del programa anterior es 101?<form name="7_5_2_Numbers_Even_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="7_5_2_Numbers_Even_Q1_opt_a" />
-            <label for= "7_5_2_Numbers_Even_Q1_opt_a">  a) Because we started at 0</label><br />
+            <label for= "7_5_2_Numbers_Even_Q1_opt_a">  a) Porque hemos comenzado con el 0</label><br />
             
             <input type="radio" name="group1" value="b" id="7_5_2_Numbers_Even_Q1_opt_b" />
-            <label for= "7_5_2_Numbers_Even_Q1_opt_b">  b) Because we want to include 100</label><br />
+            <label for= "7_5_2_Numbers_Even_Q1_opt_b">  b) Porque queremos incluir el 100</label><br />
             
             <input type="radio" name="group1" value="c" id="7_5_2_Numbers_Even_Q1_opt_c" />
-            <label for= "7_5_2_Numbers_Even_Q1_opt_c">  c) Because the computer only understands 1s and 0s</label><br />
+            <label for= "7_5_2_Numbers_Even_Q1_opt_c">  c) Porque el ordenador sólo entiende unos y ceros</label><br />
             
             <input type="radio" name="group1" value="d" id="7_5_2_Numbers_Even_Q1_opt_d" />
-            <label for= "7_5_2_Numbers_Even_Q1_opt_d">  d) Because we're using a step of 2</label><br />
+            <label for= "7_5_2_Numbers_Even_Q1_opt_d">  d) Porque estamos saltando de dos en dos</label><br />
             
 
             <script>
             $(document).ready(function(){checkRadio('7_5_2_Numbers_Even_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('7_5_2_Numbers_Even_Q1','b',['We would want to include 100.', 'If we stop BEFORE 101, we include 100.', 'Internally, yes, but in Python, all decimal digits are allowed.', 'That doesn\u0027t really matter.'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('7_5_2_Numbers_Even_Q1','b',['Queríamos incluir el 100.', 'Si el valor final es 101, se incluirá e 100.', 'Internamente sí, pero en Python se pueden utilizar todos los números decimales.', 'Eso realmente no es importante.'])">Check Me</button>
             <button class='btn btn-default' id="7_5_2_Numbers_Even_Q1_bcomp" disabled name="compare" onclick="compareAnswers('7_5_2_Numbers_Even_Q1');">Compare Me</button>
             </form><br />
             <div id="7_5_2_Numbers_Even_Q1_feedback">
@@ -758,34 +759,34 @@ else{
             </div>
             
             <div id="7_5_3_Numbers_Even_Q2" class="alert alert-warning">
-            csp-7-5-3: Why do we START with zero?<form name="7_5_3_Numbers_Even_Q2_form" method="get" action="" onsubmit="return false;">
+            csp-7-5-3: ¿Por qué comenzamos por cero?<form name="7_5_3_Numbers_Even_Q2_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="7_5_3_Numbers_Even_Q2_opt_a" />
-            <label for= "7_5_3_Numbers_Even_Q2_opt_a">  a) Because if we started with 1, we would get all odd numbers</label><br />
+            <label for= "7_5_3_Numbers_Even_Q2_opt_a">  a) Porque si empezamos en el 1 obtendremos la lista de números impares</label><br />
             
             <input type="radio" name="group1" value="b" id="7_5_3_Numbers_Even_Q2_opt_b" />
-            <label for= "7_5_3_Numbers_Even_Q2_opt_b">  b) Because all lists start with zero</label><br />
+            <label for= "7_5_3_Numbers_Even_Q2_opt_b">  b) Porque todas las listas comienzan con un 0</label><br />
             
             <input type="radio" name="group1" value="c" id="7_5_3_Numbers_Even_Q2_opt_c" />
-            <label for= "7_5_3_Numbers_Even_Q2_opt_c">  c) Because we end with 101</label><br />
+            <label for= "7_5_3_Numbers_Even_Q2_opt_c">  c) Porque terminamos en 101</label><br />
             
 
             <script>
             $(document).ready(function(){checkRadio('7_5_3_Numbers_Even_Q2');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('7_5_3_Numbers_Even_Q2','a',['This gives us [0,2,4,6...98,100].', 'They don\u0027t have to start at 0.', 'That is true, but is not relevant here.'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('7_5_3_Numbers_Even_Q2','a',['Esto nos devuelve [0,2,4,6...98,100].', 'No tiene que comenzar por 0.', 'Es cierto, pero en este caso no importa.'])">Check Me</button>
             <button class='btn btn-default' id="7_5_3_Numbers_Even_Q2_bcomp" disabled name="compare" onclick="compareAnswers('7_5_3_Numbers_Even_Q2');">Compare Me</button>
             </form><br />
             <div id="7_5_3_Numbers_Even_Q2_feedback">
             </div>
             </div>
-            <p>How do we know what&#8217;s really going on in this program?  How do we know that <em>number</em> is taking on all of the even values from 0 to 100?  One way we can tell is by using a CodeLens on a smaller problem from 0 to 20.  We can step through the program line-by-line, or race to the end by clicking the <em>Last</em> button and then step backwards.</p>
+            <p>¿Cómo sabemos qué hace realmente este programa? ¿Cómo podemos saber que <em>número</em> va tomando todos los valores pares del 0 al 100? Una forma es utilizando CodeLens con un escenario más reducido, de 0 a 20. Podemos recorrer el programa línea por línea, o ir directamente al final haciendo clic en el botón <em>Last</em>, y desde ahí volver hacia atrás.</p>
 
 <div class="alert alert-warning cd_section">
 <div id="Numbers_Sum_Step"></div>
 <p class="cl_caption"><span class="cl_caption_text"> (Numbers_Sum_Step)</span> </p>
 </div>
 <script type="text/javascript">
-var Numbers_Sum_Step_trace = {"code": "# STEP 1: INITIALIZE ACCUMULATOR\nsum = 0  # Start out with nothing\n# STEP 2: GET DATA\nnumbers = range(0,21,2)\n# STEP 3: LOOP THROUGH THE DATA\nfor number in numbers:\n    # STEP 4: ACCUMULATE\n    sum = sum + number\n# STEP 5: PROCESS RESULT\nprint(sum)", "trace": [{"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {}, "heap": {}, "ordered_globals": [], "stdout": "", "line": 2}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"sum": 0}, "heap": {}, "ordered_globals": ["sum"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"numbers": ["REF", 1], "sum": 0}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers"], "stdout": "", "line": 6}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 0, "numbers": ["REF", 1], "sum": 0}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 8}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 0, "numbers": ["REF", 1], "sum": 0}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 6}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 2, "numbers": ["REF", 1], "sum": 0}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 8}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 2, "numbers": ["REF", 1], "sum": 2}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 6}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 4, "numbers": ["REF", 1], "sum": 2}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 8}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 4, "numbers": ["REF", 1], "sum": 6}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 6}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 6, "numbers": ["REF", 1], "sum": 6}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 8}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 6, "numbers": ["REF", 1], "sum": 12}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 6}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 8, "numbers": ["REF", 1], "sum": 12}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 8}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 8, "numbers": ["REF", 1], "sum": 20}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 6}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 10, "numbers": ["REF", 1], "sum": 20}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 8}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 10, "numbers": ["REF", 1], "sum": 30}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 6}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 12, "numbers": ["REF", 1], "sum": 30}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 8}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 12, "numbers": ["REF", 1], "sum": 42}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 6}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 14, "numbers": ["REF", 1], "sum": 42}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 8}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 14, "numbers": ["REF", 1], "sum": 56}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 6}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 16, "numbers": ["REF", 1], "sum": 56}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 8}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 16, "numbers": ["REF", 1], "sum": 72}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 6}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 18, "numbers": ["REF", 1], "sum": 72}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 8}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 18, "numbers": ["REF", 1], "sum": 90}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 6}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 20, "numbers": ["REF", 1], "sum": 90}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 8}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 20, "numbers": ["REF", 1], "sum": 110}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 6}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 20, "numbers": ["REF", 1], "sum": 110}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "", "line": 10}, {"event": "return", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 20, "numbers": ["REF", 1], "sum": 110}, "heap": {"1": ["INSTANCE", "range"]}, "ordered_globals": ["sum", "numbers", "number"], "stdout": "110\n", "line": 10}]};
+var Numbers_Sum_Step_trace = {"trace": [{"stack_to_render": [], "func_name": "<module>", "ordered_globals": [], "line": 2, "heap": {}, "event": "step_line", "globals": {}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma"], "line": 4, "heap": {}, "event": "step_line", "globals": {"suma": 0}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros"], "line": 6, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 0, "numeros": ["REF", 1]}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 8, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 0, "numeros": ["REF", 1], "numero": 0}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 6, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 0, "numeros": ["REF", 1], "numero": 0}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 8, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 0, "numeros": ["REF", 1], "numero": 2}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 6, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 2, "numeros": ["REF", 1], "numero": 2}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 8, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 2, "numeros": ["REF", 1], "numero": 4}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 6, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 6, "numeros": ["REF", 1], "numero": 4}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 8, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 6, "numeros": ["REF", 1], "numero": 6}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 6, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 12, "numeros": ["REF", 1], "numero": 6}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 8, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 12, "numeros": ["REF", 1], "numero": 8}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 6, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 20, "numeros": ["REF", 1], "numero": 8}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 8, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 20, "numeros": ["REF", 1], "numero": 10}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 6, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 30, "numeros": ["REF", 1], "numero": 10}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 8, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 30, "numeros": ["REF", 1], "numero": 12}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 6, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 42, "numeros": ["REF", 1], "numero": 12}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 8, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 42, "numeros": ["REF", 1], "numero": 14}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 6, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 56, "numeros": ["REF", 1], "numero": 14}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 8, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 56, "numeros": ["REF", 1], "numero": 16}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 6, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 72, "numeros": ["REF", 1], "numero": 16}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 8, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 72, "numeros": ["REF", 1], "numero": 18}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 6, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 90, "numeros": ["REF", 1], "numero": 18}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 8, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 90, "numeros": ["REF", 1], "numero": 20}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 6, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 110, "numeros": ["REF", 1], "numero": 20}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 10, "heap": {"1": ["INSTANCE", "range"]}, "event": "step_line", "globals": {"suma": 110, "numeros": ["REF", 1], "numero": 20}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["suma", "numeros", "numero"], "line": 10, "heap": {"1": ["INSTANCE", "range"]}, "event": "return", "globals": {"suma": 110, "numeros": ["REF", 1], "numero": 20}, "stdout": "110\n"}], "code": "# PASO 1: INICIALIZA EL ACUMULADOR\nsuma = 0  # Comenzamos sin valor\n# PASO 2: GENERA LA LISTA DE DATOS\nnumeros = range(0,21,2)\n# PASO 3: RECORRE LA LISTA\nfor numero in numeros:\n    # PASO 4: ACUMULA\n    suma = suma + numero\n# PASO 5: PROCESA EL RESULTADO\nprint(suma)"};
 var Numbers_Sum_Step_vis;
 
 $(document).ready(function() {
@@ -824,66 +825,66 @@ $(window).resize(function() {
 </script>
 
             <div id="7_5_4_Numbers_Add_Odds_Q1" class="alert alert-warning">
-            csp-7-5-4: Change the program above (in ActiveCode 3: Numbers_Sum_Even) to add up all the ODD numbers including up to 99.  You should run it to get 2500. What change did you make to the program?<form name="7_5_4_Numbers_Add_Odds_Q1_form" method="get" action="" onsubmit="return false;">
+            csp-7-5-4: Modifica el programa anterior (in ActiveCode 3: Numbers_Sum_Even) para calcular la suma de todos los números IMPARES incluyendo el 99. La respuesta debería ser 2500. ¿Qué modificación habría que hacer en el programa?<form name="7_5_4_Numbers_Add_Odds_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="7_5_4_Numbers_Add_Odds_Q1_opt_a" />
-            <label for= "7_5_4_Numbers_Add_Odds_Q1_opt_a">  a) Changed the range step from 2 to 3</label><br />
+            <label for= "7_5_4_Numbers_Add_Odds_Q1_opt_a">  a) Cambia en el rango el valor del salto de 2 a 3</label><br />
             
             <input type="radio" name="group1" value="b" id="7_5_4_Numbers_Add_Odds_Q1_opt_b" />
-            <label for= "7_5_4_Numbers_Add_Odds_Q1_opt_b">  b) Changed the range end from 101 to 100</label><br />
+            <label for= "7_5_4_Numbers_Add_Odds_Q1_opt_b">  b) Cambia el valor final del rango de 101 a 100</label><br />
             
             <input type="radio" name="group1" value="c" id="7_5_4_Numbers_Add_Odds_Q1_opt_c" />
-            <label for= "7_5_4_Numbers_Add_Odds_Q1_opt_c">  c) Changed the range end from 101 to 99</label><br />
+            <label for= "7_5_4_Numbers_Add_Odds_Q1_opt_c">  c) Cambia el valor final del rango de 101 a 99</label><br />
             
             <input type="radio" name="group1" value="d" id="7_5_4_Numbers_Add_Odds_Q1_opt_d" />
-            <label for= "7_5_4_Numbers_Add_Odds_Q1_opt_d">  d) Changed the range start from 0 to 1</label><br />
+            <label for= "7_5_4_Numbers_Add_Odds_Q1_opt_d">  d) Cambia el valor incial del rango de 0 a 1</label><br />
             
 
             <script>
             $(document).ready(function(){checkRadio('7_5_4_Numbers_Add_Odds_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('7_5_4_Numbers_Add_Odds_Q1','d',['That would give us [0,3,6,9,12...99].', 'That would give us the even numbers from 0 to 98.', 'That would give us the even numbers from 0 to 98.', 'That would give us [1,3,5,...99].'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('7_5_4_Numbers_Add_Odds_Q1','d',['Esto nos devuelve [0,3,6,9,12...99].', 'Esto nos devuelve los números pares desde el 0 hasta 98.', 'Esto nos devuelve los números pares desde el 0 hasta el 98.', 'Estoo nos devuelve [1,3,5,...99].'])">Check Me</button>
             <button class='btn btn-default' id="7_5_4_Numbers_Add_Odds_Q1_bcomp" disabled name="compare" onclick="compareAnswers('7_5_4_Numbers_Add_Odds_Q1');">Compare Me</button>
             </form><br />
             <div id="7_5_4_Numbers_Add_Odds_Q1_feedback">
             </div>
             </div>
             
-        <div class='parsons alert alert-warning' id="parsons-145">
-        <div class="parsons-text">csp-7-5-5: The following is the correct code for printing the sum of all the even numbers from 50 to 100 using the accumulator pattern, but it is mixed up. Drag the blocks from the left and put them in the correct order on the right.  Don't forget to indent blocks in the body of the loop.  Just drag the block further right to indent.  Click the <i>Check Me</i> button to check your solution.</p><br /><br /></div>
+        <div class='parsons alert alert-warning' id="parsons-147">
+        <div class="parsons-text">csp-7-5-5: El siguiente código es el correcto para imprimir la suma de todos los números pares desde el 50 al 100 utilizando un patrón acumulador, pero las instrucciones están desordenadas. Arrastra los bloques de la izquierda y colócalos en orden en el lado derecho. No te olvides de indentar los bloques dentro del bucle. Para ello arrástralos un poco más hacia la derecha que el resto. Haz clic n el botón <i>Check Me</i> para comprobar la solución.</p><br /><br /></div>
         <div style="clear:left;"></div>
-        <div id="parsons-orig-145" style="display:none;">sum = 0
-numbers = range(50,101,2)
-for number in numbers:
-    sum = sum + number
-print(sum)
-numbers = range(50,100,2) #distractor</div>
+        <div id="parsons-orig-147" style="display:none;">suma = 0
+numeros = range(50,101,2)
+for numero in numeros:
+    suma = suma + numero
+print(suma)
+numeros = range(50,100,2) #para distraer :)</div>
         <div class="sortable-code-container">
-        <div id="parsons-sortableTrash-145" class="sortable-code"></div>
-        <div id="parsons-sortableCode-145" class="sortable-code"></div>
+        <div id="parsons-sortableTrash-147" class="sortable-code"></div>
+        <div id="parsons-sortableCode-147" class="sortable-code"></div>
         <div style="clear:left;"></div>
         </div>
         <div class="parsons-controls">
-        <input type="button" class='btn btn-success' id="checkMe145" value="Check Me"/>
-        <input type="button" class='btn btn-default' id="reset145" value="Reset"/>
-        <div id="parsons-message-145"></div>
+        <input type="button" class='btn btn-success' id="checkMe147" value="Check Me"/>
+        <input type="button" class='btn btn-default' id="reset147" value="Reset"/>
+        <div id="parsons-message-147"></div>
         </div>
         </div>
 
     <script>
         $pjQ(document).ready(function(){
 
-            $("#parsons-145").not(".sortable-code").not(".parsons-controls").on("click", function(){
+            $("#parsons-147").not(".sortable-code").not(".parsons-controls").on("click", function(){
                  $('html, body').animate({
-                    scrollTop: ($("#parsons-145").offset().top - 50)
+                    scrollTop: ($("#parsons-147").offset().top - 50)
                 }, 700);
             }).find(".sortable-code, .parsons-controls").click(function(e) {
                 return false;
                 });
-            var msgBox = $("#parsons-message-145");
+            var msgBox = $("#parsons-message-147");
             msgBox.hide();
         var displayErrors = function (fb) {
             if(fb.errors.length > 0) {
-                    var hash = pp_145.getHash("#ul-parsons-sortableCode-145");
+                    var hash = pp_147.getHash("#ul-parsons-sortableCode-147");
                     msgBox.fadeIn(500);
                     msgBox.attr('class','alert alert-danger');
                     msgBox.html(fb.errors[0]);
@@ -900,8 +901,8 @@ numbers = range(50,100,2) #distractor</div>
 
         $(window).load(function() {
             // set min width and height
-            var sortableul = $("#ul-parsons-sortableCode-145");
-            var trashul = $("#ul-parsons-sortableTrash-145");
+            var sortableul = $("#ul-parsons-sortableCode-147");
+            var trashul = $("#ul-parsons-sortableTrash-147");
             var sortableHeight = sortableul.height();
             var sortableWidth = sortableul.width();
             var trashWidth = trashul.width();
@@ -916,35 +917,35 @@ numbers = range(50,100,2) #distractor</div>
         });
  
 
-        var pp_145 = new ParsonsWidget({
-                'sortableId': 'parsons-sortableCode-145',
-        'trashId': 'parsons-sortableTrash-145',
+        var pp_147 = new ParsonsWidget({
+                'sortableId': 'parsons-sortableCode-147',
+        'trashId': 'parsons-sortableTrash-147',
                 'max_wrong_lines': 1,
                 'solution_label': 'Drop blocks here',
                 'feedback_cb' : displayErrors
         });
-        pp_145.init($pjQ("#parsons-orig-145").text());
-    pp_145.shuffleLines();
+        pp_147.init($pjQ("#parsons-orig-147").text());
+    pp_147.shuffleLines();
             
         if(localStorage.getItem('7_5_5_Sum_From_50') && localStorage.getItem('7_5_5_Sum_From_50-trash')) {
             try {
                 var solution = localStorage.getItem('7_5_5_Sum_From_50');
                 var trash = localStorage.getItem('7_5_5_Sum_From_50-trash');
-                pp_145.createHTMLFromHashes(solution,trash);
-                pp_145.getFeedback();
+                pp_147.createHTMLFromHashes(solution,trash);
+                pp_147.getFeedback();
             } catch(err) {
                 var text = "An error occured restoring old 7_5_5_Sum_From_50 state.  Error: ";
                 console.log(text + err.message);
             }
 
         }
-            $pjQ("#reset145").click(function(event){
+            $pjQ("#reset147").click(function(event){
               event.preventDefault();
-              pp_145.shuffleLines();
+              pp_147.shuffleLines();
             
             // set min width and height
-            var sortableul = $("#ul-parsons-sortableCode-145");
-            var trashul = $("#ul-parsons-sortableTrash-145");
+            var sortableul = $("#ul-parsons-sortableCode-147");
+            var trashul = $("#ul-parsons-sortableTrash-147");
             var sortableHeight = sortableul.height();
             var sortableWidth = sortableul.width();
             var trashWidth = trashul.width();
@@ -958,14 +959,14 @@ numbers = range(50,100,2) #distractor</div>
               msgBox.hide();
             });
             
-            $pjQ("#checkMe145").click(function(event){
+            $pjQ("#checkMe147").click(function(event){
               event.preventDefault();
-              var hash = pp_145.getHash("#ul-parsons-sortableCode-145");
+              var hash = pp_147.getHash("#ul-parsons-sortableCode-147");
               localStorage.setItem('7_5_5_Sum_From_50',hash);
-              hash = pp_145.getHash("#ul-parsons-sortableTrash-145");
+              hash = pp_147.getHash("#ul-parsons-sortableTrash-147");
               localStorage.setItem('7_5_5_Sum_From_50-trash',hash);
             
-            pp_145.getFeedback();
+            pp_147.getFeedback();
             msgBox.fadeIn(100);
             
             });
@@ -980,19 +981,19 @@ numbers = range(50,100,2) #distractor</div>
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - The Range Function' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - La función Range' data-toggle="tooltip">
     <a href="range.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="range.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section -  Teacher Note: Print() is Your Friend' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section -  Nota para el profesor: Print() es tu amigo' data-toggle="tooltip" >
     <a href="print.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="print.html" >Next Section -  Teacher Note: Print() is Your Friend</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="print.html" >Next Section -  Nota para el profesor: Print() es tu amigo</a>
 
 <script type="text/javascript">
 

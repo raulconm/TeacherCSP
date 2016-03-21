@@ -18,27 +18,27 @@
 .. highlight:: java
    :linenothreshold: 4
 
-Loops that Count
-================
+Bucles para contar
+==================
 
-It's much easier to have the computer repeat something for a specific number of times.  For example, we could have a computer count from 1 to 10 pretty easily.  We will use a ``counter`` variable that we will **increment** inside the loop.  **Increment** means increase the value by one.
+Es muy fácil hacer que un ordenador repita algo un número definido de veces. Por ejemplo, podemos pedirle a un ordendor que cuente de 1 a 10 muy facilmente. Utilizaremos una variable ``contador`` que se irá **incrementando** dentro del bucle. **Incrementar** se refiere a que su valor irá aumentando de uno en uno.
 
 .. codelens:: While_Counter
    :showoutput: 
 
-   counter = 1
-   while counter <= 10:
-       print(counter)
-       counter = counter + 1
+   contador = 1
+   while contador <= 10:
+       print(contador)
+       contador = contador + 1
 
 .. mchoicemf:: 8_2_1_While_Counter_Q1
-		  :answer_a: It increments the variable counter. 
-		  :answer_b: Since counter is in the test for the while loop, it has to change or it would be an infinite loop. 
+		  :answer_a: Porque incrementa la variable contador. 
+		  :answer_b: Como la variable contador se usa en la comprobación del bucle while, si no fuera cambiando el bucle sería infinito. 
 		  :correct: b
-		  :feedback_a: Why is it in the loop?
-		  :feedback_b: It must change inside the loop for the loop to stop
+		  :feedback_a: Pero, ¿por qué está en el bucle?
+		  :feedback_b: Debe cambiar dentro del bucle para que el bucle pare
 
-	   	  Why is it important to have ``counter = counter + 1`` inside the loop?
+	   	  ¿Por qué es importante tener la instrucción  ``contador = contador + 1`` dentro del bucle?
 
 
 .. mchoicemf:: 8_2_2_While_Counter_Q2
@@ -46,66 +46,66 @@ It's much easier to have the computer repeat something for a specific number of 
 	  :answer_b: 10
 	  :answer_c: 11
 	  :correct: c
-	  :feedback_a: Counter gets incremented from 1.
-	  :feedback_b: The last value to be printed is 10.
-	  :feedback_c: Counter gets incremented to 11 after printing, and then the while loop tests counter, finds counter > 10 and stops.
+	  :feedback_a: Contador se incrementa en 1.
+	  :feedback_b: El último valor a imprimir es 10.
+	  :feedback_c: Contador se incrementa a 11 después de imprimirse, después el while compara el valor, y como contador > 10 se para.
 
-   	  When this program is done, what is the value of counter?
+   	  ¿Cuál es el valor del contador cuando termina el programa?
    	
 .. parsonsprob:: 8_2_3_While_Countdown
 
-   The following is the correct code for printing a countdown from 10 to 0, but it is mixed up. Drag the blocks from the left and put them in the correct order on the right.  Don't forget to indent blocks in the body of the loop.  Just drag the block to the further right to indent.  Click the <i>Check Me</i> button to check your solution.</p>
+   </p>A continuación se muestra el programa apropiado para imprimir una cuenta atrás de 10 a 0, pero está desordenado. Arrastra los bloques de la izquierda y colócalos en orden en la parte derecha. No te olvides de indentar los bloques en el cuerpo del bucle. Para hacerlos simplemente arrastra los bloques un poco más a la derecha. Haz clic en el botón <i>Check Me</i> para comprobar si la solución es correcta.</p> 
    -----
-   counter = 10
-   while counter >= 0:
-       print(counter)
-       counter = counter - 1 
+   contador = 10
+   while contador >= 0:
+       print(contador)
+       contador = contador - 1 
 
 .. index::
-	pair: statements; for
+	pair: instrucciones; for
 	single: definite loop
 	
 .. parsonsprob:: 8_2_4_While_Count_Even
 
-   The following is the correct code for printing the even numbers from 0 to 10, but also some extra code that you won't need. Drag the needed blocks from the left and put them in the correct order on the right.  Don't forget to indent blocks in the body of the loop.  Just drag the block to the further right to indent.  Click the <i>Check Me</i> button to check your solution.</p>
+   Este ejercicio muestra el código adecuado para imprimir los números pares del 0 al 10, pero contiene algunas instrucciones adicionales que no son necesarias. Arrastra los bloques necesarios desde la parte izquierda y colócalos a la derecha en el orden adecuado. No te olvides de indentar los bloques en el cuerpo del mensaje. Simplemente tienes que arrastrar los bloques un poco más a la derecha para indentarlos. Haz clic en el botón <i>Check Me</i> para comprobar tu solución.</p> 
    -----
-   counter = 0
+   contador = 0
    =====
-   while counter <= 10:
+   while contador <= 10:
    =====
-       print(counter)
+       print(contador)
    =====
-       counter = counter + 2
+       contador = contador + 2
    =====
-       counter = counter + 1 #distractor
+       contador = contador + 1 #para distraer
     
 
 .. index::
 	pair: statements; for
 	single: definite loop
 
-Because we count in a loop so often, there is a special loop just for *definite loops* (loops that repeat a known number of times).  That's a ``for`` loop which we saw last chapter.  The ``for`` loop has a counter variable that takes on values within a ``range``.  A ``for`` loop is much simpler and much easier to use than a ``while`` loop for looping a known number of times.  Here is the counter program rewritten using a ``for`` loop.
+Como es muy frecuente utilizar un bucle para contar, existe un bucle específico para *bucles finitos* (bucles que se repiten un número finito de veces). Se trata del bucle ``for`` que ya vimos en el capítulo anterior. ``El bucle ``for`` contiene una variable contador  que va tomando los valores de un ``rango``. Para construir un bucle que se ejecute un número determinado de veces es más sencillo usar un bucle ``for`` que un bucle ``while``. A continuación puedes ver el mismo programa del contador pero utilizando un bucle ``for``.
 
 .. codelens:: For_Counter
 	:showoutput: 
 
-	for counter in range(1,10):
-	    print(counter)
+	for contador in range(1,10):
+	    print(contador)
 
-Before tracing the above to the end, see if you figure out this question:
+Antes de trazar el programa anterior hasta el final, comprueba si eres capaz de ccontestar a esta pregunta:
 
 .. mchoicemf:: 8_2_5_For_Counter_Q1
 		  :answer_a: 9
 		  :answer_b: 10
 		  :answer_c: 11
 		  :correct: a
-		  :feedback_a: A range goes from a starting point to one *less* than the ending point. If we want to count to 10, range(1,11).
-		  :feedback_b: Try it -- nope, never gets to 10.
-		  :feedback_c: In fact, it doesn't even get to 10! Try it.
+		  :feedback_a: Un rango comprende los valores desde el inicial hasta uno **menos** que el final. Si queremos contar hasta 10 debemos utilizar la instrucción range(1,11).
+		  :feedback_b: Pruébalo. No, nunca llega a 10.
+		  :feedback_c: De hecho, ni siquiera llegará a 10, ¡pruébalo!
 
-	   	  What is the last value to be printed here?
+	   	  ¿Qué valor será el último que se imprima?
 
-The body of any loop, can even include...another loop!  Here is a super-simple program that generates all the times tables from 0 to 10.  The ``str()`` function changes a numeric value into a string.
+Dentro de cualquier bucle podemos incluir... ¡otro bucle! He aquí una programa muy simple que genera todas las tablas de multiplicar del 0 al 10. Utiliza la función ``str(()'' para convertir todos los valores numéricos en cadenas de caracteres. 
 
 .. codelens:: Times_Table
 	:showoutput: 
@@ -115,7 +115,7 @@ The body of any loop, can even include...another loop!  Here is a super-simple p
 	        print(str(x) + " * " + str(y) + " = " + str(x*y))
 		
 
-Here are two different ways to look at this program.  In the first one, we look at the *structure* of the program -- what you can understand by just *looking* at the program.
+A continuación se muestran el programa de dos formas distintas. En primer lugar se observa la *estructura* del programa, es decir, lo que podemos entender simplemente **mirando** el programa.
 
 .. video:: timesTableStructure
 		   :controls:
@@ -125,7 +125,7 @@ Here are two different ways to look at this program.  In the first one, we look 
 		   http://ice-web.cc.gatech.edu/ce21/1/static/video/nestedLoopStructure.webm
 
 
-In this video, we look at the *execution* of the program -- how it actually works when it's being *run* by the computer.
+En el siguiente vídeo se muestra la *ejecución* del programa, es decir, qué es lo que hace realmente cuando el ordenador lo *ejecuta*.
 
 .. video:: timesTableTrace
 		   :controls:

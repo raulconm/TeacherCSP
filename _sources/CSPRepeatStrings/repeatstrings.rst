@@ -23,49 +23,49 @@
 .. highlight:: java
    :linenothreshold: 4
 
-Using Repetition with Strings
-==============================
+Usar repeticiones con cadenas de caracteres
+===========================================
 
-*Learning Objectives:*
+*Objetivos de aprendizaje:*
 
-- Show how the accumulator pattern works for strings.
-- Show how to reverse a string
-- Show how to mirror a string
+- Mostrar cómo funciona el patrón acumulador con cadenas de caracteres  
+- Ver cómo dar la vuelta a una cadena de caracteres
+- Mostrar cómo construir una cadena espejo
 
 ..	index::
-	single: assignment
-	pair: strings; assignment
+	single: asignación
+	pair: cadenas de caracteres; asignación
 
 .. index::
-    single: words
-    single: strings
-	single: for loop
+    single: palabras
+    single: cadenas de caracteres
+	single: bucle for
 
-Python already has built in the ability to play with words, just like how we played with numbers in the last chapter.  A collection of letters, numbers, and other characters like spaces inside of a pair of single or double quotes is called a **string**. A Python ``for`` loop knows how to step through letters, and addition (``+``) appends strings together. What's cool is that the same accumulator pattern works.
+En el capítulo anterior ya vimos cómo podemos jugar con los números usando Python. Ahora vamos a ver que podemos hacer lo mismo con las palabras. Un conjunto de letras, números, u otros caracteres, por ejemplo espacios, encerrados entre comillas simples o dobles, se conoce como **cadena de caracteres**. El bucle ``for`` de Python nos va a permitir recorrer la cadena letra a letra, y el signo ``+`` sirve para unir cadenas. Lo mejor es que también en este caso puede utilizarse el patrón acumulador.   
 
-As a reminder, here are the five steps in the accumulator pattern.
+Hagamos memoria repasando los cinco pasos del patrón acumulador:
 
-1. Set the accumulator variable to its initial value.  This is the value we want if there is no data to be processed.
-2. Get all the data to be processed.
-3. Step through all the data using a ``for`` loop so that the variable takes on each value in the data.
-4. Combine each *piece* of the data into the accumulator.
-5. Do something with the result.
+1. Establecer el acumulador en su valor incial. El valor que debe tener cuando no se ha procesado ningún dato.
+2. Tomar los datos que se van a procesar.
+3. Recorrer los datos utilizando un bucle ``for``, de forma que la variable tome secuencialmente cada uno de los datos.
+4. Combinar cada **dato** en el acumulador.
+5. Hacer algo con el resultado.
 
-Be sure to press the |audiobutton| to get an explanation for how this program works.
+Pulsa el botón |audiobutton| para escuchar cómo funciona este programa. 
 
 .. activecode:: Copy_Words
     :tour_1: "Lines of code"; 2: strR1-line2; 4: strR1-line4; 6: strR1-line6; 8: strR1-line8; 10: strR1-line10;
 
-    # STEP 1: INITIALIZE ACCUMULATOR 
-    newString = ""
-    # STEP 2: GET DATA
-    phrase = "Rubber baby buggy bumpers."
-    # STEP 3: LOOP THROUGH THE DATA
-    for letter in phrase:
-    	# STEP 4: ACCUMULATE
-    	newString = newString + letter
-    # STEP 5: PROCESS RESULT
-    print(newString)
+    # PASO 1: INICIALIZAR EL ACUMULADOR 
+    nuevaCadena = ""
+    # PASO 2: OBTENER LOS DATOS
+    frase = "Pablito clava un clavito."
+    # PASO 3: BUCLE PARA RECORRER LOS DATOS
+    for letra in frase:
+    	# PASO 4: ACUMULAR
+    	nuevaCadena = nuevaCadena + letra
+    # PASO 5: PROCESAR EL RESULTADO
+    print(nuevaCadena)
 
-Run this program.  Enh, not that interesting, eh?  It just copies all the letters from ``phrase`` to ``newString``.
+Ejecuta el programa. No es muy interesante, ¿verdad? Simplemente copia todas las letras de ``frase`` en ``nuevaCadena``.
 

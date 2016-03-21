@@ -19,55 +19,55 @@
    :linenothreshold: 4
    
 	
-Loops - While and For
+Bucles - While y For
 =======================
 
-*Learning Objectives:*
+*Objetivos de aprendizaje:*
 
-- Introduce the concept of an *infinite loop*
-- Use a ``while`` loop to repeat code.
-- Compare and contrast ``while`` and ``for`` loops
+- Introducir el concepto de *bucle infinito*
+- Utilizar un bucle ``while`` para repetir código
+- Comparar y diferenciar un bucle ``while`` y un bucle  ``for``
 
 ..	index:
 	single: while
 	single: variable
-	single: index variable
-	single: infinite loop
-	pair: statements; while
-	pair: statements; for
+	single: variable índice
+	single: bucle infinito
+	pair: instrucciones; while
+	pair: instrucciones; for
 
-Infinite Loops
+Bucles infinitos
 ================
 
-Getting a computer to repeat is simple.  Getting it to *stop* can be tricky.  A simple way of getting a computer to repeat is to use a ``while`` loop.  A ``while`` loop includes a logical expression, and is followed by a block.  **AS LONG AS THE EXPRESSION IS TRUE**, the block of statements gets executed.
+Hacer que un ordenador repita pasos es sencillo. Decirle que pare es un poco más complicado. Una forma simple de decirle que repita pasos es usando un bucle ``while``. Un bucle ``while`` consiste en una expresión lógica seguida de un bloque de instrucciones. Este bloque de instrucciones se ejecutarán repetidamente **MIENTRAS LA EXPRESIÓN LÓGICA SEA CIERTA**.
 
 ..	index::
-	single: infinite loop
-	pair: loop; infinite
+	single: bucle infinito
+	pair: bucle; infinito
 	
-So, here's a program that loops forever. 
+Entonces, veamos un programa que se ejecuta para siempre. 
 
 .. sourcecode:: python
 
   	while 1 == 1:
-  	    print("Looping")
-  	    print("Forever")
+  	    print("Bucle")
+  	    print("Infinito")
 
-Since ``1`` will always be equal to ``1``, the two ``print`` statements will just be repeated over and over and over again.  We call that an **infinite loop**, which means a loop that continues forever or until it is forced to stop. We ran this in a form of Python where he could stop the computer easily:
+Como ``1`` siempre será igual a ``1`` las dos instrucciones ``print`` se ejecutarán hasta el infinito. A esto le llamamos **bucle infinito**, que significa que el bucle se ejecutará sin fin, o hasta que lo interrumpamos. Ejecuta esto en un ordenador que puedas apagar sin problemas: 
 
 .. sourcecode:: python
 
  	>>> while 1==1:
- 	        print ("Looping")
- 	        print ("Forever")
-	Looping
-	Forever
-	Looping
-	Forever
-	Looping
-	Forever
-	Looping
-	Forever
+ 	        print ("Bucle")
+ 	        print ("Infinito")
+	Bucle
+	Infinito
+	Bucle
+	Infinito
+	Bucle
+	Infinito
+	Bucle
+	Infinito
 
-(We stopped the computer around this point.)
+(Cuando llegues a este punto apaga el ordenador...)
 

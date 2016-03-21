@@ -18,11 +18,10 @@
 .. highlight:: java
    :linenothreshold: 4
 
-What is a List?
-=================
+¿Qué es una lista?
+==================
 
-A **list** holds items in order. A **list** in Python is enclosed in ``[`` and ``]`` and can have values separated by commas, like ``[1,2,3,4,5,6,7,8,9,10]``.  You probably use **lists** all the time.  People often 
-make a list before they go shopping or a list of things to do.  A **list** has an order and each list item has a position in the list, like the first item in a list or the last item in a list.
+Una **lista** contiene elementos en orden. Las **listas** en Python están encerradas entre ``[`` y ``]``, y puede contener valores separados por comas, ``[1,2,3,4,5,6,7,8,9,10]``. Seguramente utilices **listas** continuamente. Con frecuencia las personas hacemos listas antes de ir a comprar, o para no olvidar las cosas que tenemos que hacer. Una **lista** tiene un orden, y cada elemento ocupa una posición,de forma que hay un elemento en la primera posición, y otro en la última.   
 
 .. figure:: Figures/lists.jpg
     :height: 250px
@@ -30,49 +29,49 @@ make a list before they go shopping or a list of things to do.  A **list** has a
     :alt: a shopping list
     :figclass: align-center
 
-    Figure 2: A shopping list
+    Figura 2: Lista de la compra
 
-When you ran the code in the last section, did you get 55?  That's the sum of all the numbers from 1 to 10.  Here is the program again.  Run it if you don't remember what it printed before.
+¿Fue 55 el resultado cuando ejecutaste el código de la sección anterior? Ésa es la suma de los números del 1 al 10. Aquí tienes de nuevo el programa. Ejecútalo si no te acuerdas de lo que imprimió antes. 
 
 .. activecode:: Numbers_Repeat2
     :tour_1: "Line by line tour"; 1: for1_line1; 2: for1_line2; 3: for1_line3; 4: for1_line4; 5: for1_line5;
     :tour_2: "High level tour"; 1-2: for1_line1-2; 3-4: for1_line3-4; 5: for1_s_line5;
 	
-    sum = 0  # Start out with nothing
-    thingsToAdd = [1,2,3,4,5,6,7,8,9,10]
-    for number in thingsToAdd:
-    	sum = sum + number
-    print(sum)
+    suma = 0  # Valor inicial
+    cosasQueAnadir = [1,2,3,4,5,6,7,8,9,10]
+    for numero in cosasQueAnadir:
+    	suma = suma + numero
+    print(suma)
 
 .. mchoicemf:: 7_3_1_Numbers_Repeat2_Q1
    :answer_a: 55
    :answer_b: 0
    :answer_c: 3628800
-   :answer_d: Error - number is too big
+   :answer_d: Error - el número es demasiado alto
    :correct: c
-   :feedback_a: That's the sum
-   :feedback_b: That's what you get if you leave the sum as 0.  Multipying everything by 0 gets you 0
-   :feedback_c: That's 1*2*3*4*5*6*7*8*9*10
-   :feedback_d: It should actually work
+   :feedback_a: Esa es la suma
+   :feedback_b: Obtendrás esto si dejas suma como 0. Multiplicar algo por 0 siempre da 0
+   :feedback_c: Eso sería 1*2*3*4*5*6*7*8*9*10
+   :feedback_d: Realmente debería funcionar
 
-   Now, change the program above to get the product instead of the sum (e.g., replace `+` with `*`, and replace the `0` as the initial value of `sum` to `1`).  What do you get now when you run the program?
+   Ahora, modifica el programa para que multiplique en lugar de sumar (remplaza el signo ``+`` por ``*``, y cambia el valor inicial ``0`` de la ``suma``  por ``1``). ¿Qué obtendrás en este caso cuando ejecutes el programa?
 
-|bigteachernote| Teacher Note: Names are Just Words
+|bigteachernote| Nota para el profesor: Los nombres son solamente palabras
 ======================================================
-Once you change the program above in order to use ``*`` instead of ``+``, you will see that it is still using the name (*variable*) ``sum`` to represent the `product` of all the numbers in ``thingsToAdd``.  The program would be *better* if we used the right name for the variable: ``product`` instead of ``sum`` once we switched to multiplication (``*``) from addition (``+``).  However, the program still *works*.  In the end, the names for the variables are there for the benefit of the *humans*, not the computer.  The computer doesn't care if we name the program `xyzzy1776`.  It will *work* with a bad variable name.  It's just not as readable.  **You should write your programs so that people can understand them, not just computers.** 
+Una vez que hayas modificado el programa anterior para que utilice ``*`` en lugar de ``+`` verás que está aún usando el nombre (*variable*) ``suma`` para representar el `producto`de todos los números contenidos en ``cosasQueAnadir``. Será más *correcto* que el programa utilice el nombre adecuado para la variable: ``producto`` en lugar de ``suma``, ya que hemos cambiado suma (``+``) por multiplicación (``*``). Sin embargo el programa *funciona*. En realidad, los nombres de las variables son para mejor comprensión de los *humanos*, no de los *ordenadores*. Al ordenador no le importa si la variable se llama `xyzzy1776`. También *funcionará* con un nombre inapropiado. Simplemente será más difícil de comprender. **Debes acostumbrarte a escribir programas de forma que otras personas puedan entenderlos facilmente, no solamente los ordenadores.**
 
-Using Better Variable Names
------------------------------
+Elegir nombres adecuados para las variables 
+-------------------------------------------
 
-Let's write that program again with a better variable name.  We will use ``product`` instead of ``sum`` for the variable name that holds the result of the calculation.  Step through the code below by clicking on the *Forward* button and note what value the variable ``number`` is set to each time through the loop.  Also note how the variable ``product`` changes during the loop.
+Vamos a escribir de nuevo el programa con un nombre de variable más apropiado. Le daremos a la variable que almacena el resultado del cálculo el nombre ``producto`` en lugar de llamarle ``suma``. Pulsa el botón *Forward* para que el programa avance, y observa qué valor va tomando la variable ``numero`` con cada vuelta del bucle. Fíjate también que la variable ``producto`` va cambiando durante la ejecución del bucle.
 
 .. codelens:: Numbers_Product
 	
-    product = 1  # Start out with nothing
-    numbers = [1,2,3,4,5,6,7,8,9,10]
-    for number in numbers:
-    	product = product * number
-    print(product)
+    producto = 1  # Inicialmente vale 1
+    numeros = [1,2,3,4,5,6,7,8,9,10]
+    for numero in numeros:
+    	producto = producto * numero
+    print(producto)
     
 .. mchoicemf:: 7_3_2_Numbers_Product_Q1
    :answer_a: 1
@@ -81,13 +80,13 @@ Let's write that program again with a better variable name.  We will use ``produ
    :answer_d: 4
    :answer_e: 10
    :correct: c
-   :feedback_a: That's the value the first time through the loop
-   :feedback_b: That's the value the second time through the loop
-   :feedback_c: That's the value the third time through the loop
-   :feedback_d: That's the value the fourth time through the loop
-   :feedback_e: That's the value the last time through the loop
+   :feedback_a: Ese es el valor que tiene al dar la primera vueelta al bucle
+   :feedback_b: Ese es el valor que tiene al dar la segunda vuelta al bucle
+   :feedback_c: Ese es el valor que tiene al dar la tercera vuelta al bucle
+   :feedback_d: Ese es el valor que tiene al dar la cuarta vuelta al bucle
+   :feedback_e: Ese es el valor que tiene al dar la última vuelta al bucle
 
-   What is the value of number the 3rd time through the loop?
+   ¿Qué valor tiene numero al dar la tercera vuelta al bucle?
    
 .. mchoicemf:: 7_3_3_Numbers_Product_Q2
    :answer_a: 6
@@ -95,12 +94,12 @@ Let's write that program again with a better variable name.  We will use ``produ
    :answer_c: 24
    :answer_d: 120
    :correct: c
-   :feedback_a: That's the value after the 3rd time through the loop.
-   :feedback_b: That's the value if we were adding up the values rather than multiplying them.
-   :feedback_c: That's the value after the 4th time through the loop.
-   :feedback_d: That's the value after the 5th time through the loop.
+   :feedback_a: Ese es el valor que tiene al dar la tercera vuelta al bucle
+   :feedback_b: Ese es el valor si estuviéramos sumando los valores en lugar de multiplicándolos
+   :feedback_c: Ese es el valor que tiene al dar la cuarta vuelta al bucle
+   :feedback_d: Ese es el valor que tiene al dar la quinta vuelta al bucle
 
-   What is the value of product after the 4th time through the loop?
+   ¿Cuánto valdrá el producto después de dar la cuarta vuelta al bucle?
 
 
 

@@ -19,40 +19,41 @@
    :linenothreshold: 4
 
 
-|bigteachernote| Teacher Note: Print() is Your Friend
-======================================================
-The goal of this stage of learning about programming is to develop a mental model of how the program works.  Can students look at a program and *predict* what's going to happen?  Can they figure out the values of the variables?  Feel free to insert lots of ``print()`` function calls.  Have students make a prediction about variable values, then insert ``print()`` calls to display the variable values, and run the program to find out whether the prediction is right.  Run this version to see what gets printed.
+|bigteachernote| Nota para el profesor: Print() es tu amigo
+===========================================================
+El objetivo de este capítulo es desarrollar un modelo mental sobre cómo funciona el programa. ¿Podrán los estudiantes observar un programa y *predecir* qué es lo que va a ocurrir al ejecutarlo? ¿Serán capaces de deducir qqué valores tendrán las variables en cada momento? Incluye todos los ``print()`` que cnsideres que pueden ser útiles en las llamadas a las funciones. Deja que los estudiantes hagan predicciones sobre los valores de las variables, y después inserta ``prints()`` para que el programa vaya mostrando los valores de las variables, y ejecuta el programa para ver si su predicción ha sido acertada. Ejecuta esa versión para ver qué se imprime.
 
 .. activecode:: Numbers_Sum_Print
     :tour_1: "Code tour"; 2: accL_line2; 4: accL_line4; 5: accL_line5; 7: accL_line7; 8: accL_line8; 10: accL_line10; 12: accL_line12;
 	
-    # STEP 1: INITIALIZE ACCUMULATOR 
-    sum = 0  # Start out with nothing
-    # STEP 2: GET DATA
-    numbers = range(0,101,2)
-    print("All the numbers:",numbers)
-    # STEP 3: LOOP THROUGH THE DATA
-    for number in numbers:
-    	print("Number:",number)
-    	# STEP 4: ACCUMULATE
-    	sum = sum + number
-    # STEP 5: PROCESS RESULT
-    print(sum)
+    # PASO 1: INICIALIZA EL ACUMULADOR 
+    suma = 0  # Comienza con 0
+    # PASO 2: OBTIENE LOS DATOS
+    numeros = range(0,101,2)
+    print("Todos los números:",numeros)
+    # PASO 3: BUCLE PARA RECORRER LOS DATOS
+    for numero in numeros:
+    	print("Numero:",numero)
+    	# PASO 4: ACUMULA
+    	suma = suma + numero
+    # PASO 5: PROCESA EL RESULTADO
+    print(suma)
     
 .. parsonsprob:: 7_6_1_Print-Sum-Evens
 
-   The following is the correct code for printing the value of number and the sum each time through the loop, but it is mixed up. The code should initialize the accumulator, create the list of numbers, and then loop through the list of numbers.  Each time through the loop it should print the value of number, add the value of number to the accumulator, and then print the current sum.  Drag the blocks from the left and put them in the correct order on the right.  Don't forget to indent blocks in the body of the loop.  Just drag the block further right to indent.  Click the <i>Check Me</i> button to check your solution.</p>
+   El siguiente código es el correcto para imprimir la suma de todos los números pares desde el 0 al 100 utilizando un patrón acumulador, pero las instrucciones están desordenadas. Arrastra los bloques de la izquierda y colócalos en orden en el lado derecho. No te olvides de indentar los bloques dentro del bucle. Para ello arrástralos un poco más hacia la derecha que el resto. Haz clic n el botón <i>Check Me</i> para comprobar la solución.</p>
+
    -----
-   sum = 0  
+   suma = 0  
    =====
-   numbers = range(0,101,2)
+   numeros = range(0,101,2)
    =====
-   for number in numbers:
+   for numero in numeros:
    =====
-       print("Number:",number)
+       print("Número:",numero)
    =====
-       sum = sum + number
+       suma = suma + numero
    =====
-       print(sum)
+       print(suma)
 
 

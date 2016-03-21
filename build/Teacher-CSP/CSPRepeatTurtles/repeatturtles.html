@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Using Repetition with Turtles &mdash; Runestone Interactive Overview</title>
+    <title>Utilizar repeticiones con tortugas &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -274,7 +274,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Using Repetition with Turtles</a></li>
+<li><a class="reference internal" href="#">Utilizar repeticiones con tortugas</a></li>
 </ul>
 </ul>
 </li>
@@ -319,14 +319,14 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="using-repetition-with-turtles">
-<h1>Using Repetition with Turtles<a class="headerlink" href="#using-repetition-with-turtles" title="Permalink to this headline">¶</a></h1>
-<p><em>Learning Objectives:</em></p>
+  <div class="section" id="utilizar-repeticiones-con-tortugas">
+<h1>Utilizar repeticiones con tortugas<a class="headerlink" href="#utilizar-repeticiones-con-tortugas" title="Permalink to this headline">¶</a></h1>
+<p><em>Objetivos de aprendizaje:</em></p>
 <ul class="simple">
-<li>Use a <code class="docutils literal"><span class="pre">for</span></code> loop to repeat steps with turtles.</li>
-<li>Generalize how to draw a polygon.</li>
+<li>Usar un bucle <code class="docutils literal"><span class="pre">for</span></code> para repetir pasos con tortugas.</li>
+<li>Utilizarlo para dibujar un polígono.</li>
 </ul>
-<p id="index-0">We already made turtles draw squares.  We told our turtle to go forward and turn right four times, but we don&#8217;t <em>explicitly</em> say &#8220;four times.&#8221;  We can tell the computer to do something explicitly for a certain number of times by using a <code class="docutils literal"><span class="pre">for</span></code> loop.</p>
+<p id="index-0">Ya hemos utilizado antes tortugas para dibujar cuadrados. Le indicábamos a la tortuga que avanzara y girara a la derecha cuatro veces, pero no utilizábamos <em>explícitamente</em> el concepto <em>cuatro veces</em>. Podemos pedirle al ordenador de forma explícita que haga algo un número determinado de veces utilizando un bucle <code class="docutils literal"><span class="pre">for</span></code>.</p>
 
 <div id="cont"></div>
 <div id="Turtle_For" lang="python" time="" class="ac_section alert alert-warning" >
@@ -337,19 +337,19 @@
 <button class="ac_opt btn btn-default" style="display: inline-block" id="Turtle_For_loadb" onclick="requestCode('Turtle_For');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Turtle_For','from turtle import *        # use the turtle library*nline*space = Screen*open**close*            # create a turtle space*nline*alisha = Turtle*open**close*           # create a turtle named alisha*nline*alisha.setheading*open*90*close*       # point due north*nline*for sides in [1,2,3,4]:     # repeat the indented lines 4 times*nline*    alisha.forward*open*100*close*             # move forward by 100 units*nline*    alisha.right*open*90*close*                # turn by 90 degrees','1','*doubleq*Lines of code*doubleq*; 1: tR1-line1; 2: tR1-line2; 3: tR1-line3; 4: tR1-line4; 5: tR1-line5; 6: tR1-line6; 7: tR1-line7;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Turtle_For','from turtle import *        # usar la librería turtle*nline*space = Screen*open**close*    # crear el espacio para la tortuga*nline*alicia = Turtle*open**close*   # crear la tortuga alicia*nline*alicia.setheading*open*90*close*       # apuntar al norte*nline*for lados in [1,2,3,4]:     # repetir 4 veces lo siguiente*nline*       alicia.forward*open*100*close*      # avanzar 100 unidades*nline*       alicia.right*open*90*close*         # girar 90 grados','1','*doubleq*Lines of code*doubleq*; 1: tR1-line1; 2: tR1-line2; 3: tR1-line3; 4: tR1-line4; 5: tR1-line5; 6: tR1-line6; 7: tR1-line7;*atype*')"/>
 
 </div>
 <br/>
 <div id="Turtle_For_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="Turtle_For_code" class="active_code" prefixcode="undefined" lang="python">
-from turtle import *        # use the turtle library
-space = Screen()            # create a turtle space
-alisha = Turtle()           # create a turtle named alisha
-alisha.setheading(90)       # point due north
-for sides in [1,2,3,4]:     # repeat the indented lines 4 times
-    alisha.forward(100)             # move forward by 100 units
-    alisha.right(90)                # turn by 90 degrees
+from turtle import *        # usar la librería turtle
+space = Screen()    # crear el espacio para la tortuga
+alicia = Turtle()   # crear la tortuga alicia
+alicia.setheading(90)       # apuntar al norte
+for lados in [1,2,3,4]:     # repetir 4 veces lo siguiente
+       alicia.forward(100)      # avanzar 100 unidades
+       alicia.right(90)         # girar 90 grados
 </textarea>
 </div>
 
@@ -417,7 +417,7 @@ else{
 
 
             <div id="10_1_1_Turtle_For_Q1" class="alert alert-warning">
-            csp-10-1-1: The numbers in the list <code class="docutils literal"><span class="pre">[1,2,3,4]</span></code> are not important.  It&#8217;s the fact that there are <em>four</em> items in the list that is important.  Only one of these choices does <em>not</em> make a square.  Which one?  (It&#8217;s not cheating to actually try each of them and run the program each time!)<form name="10_1_1_Turtle_For_Q1_form" method="get" action="" onsubmit="return false;">
+            csp-10-1-1: Lo más importante en la lista <code class="docutils literal"><span class="pre">[1,2,3,4]</span></code> no son los números. Es el hecho de que la lista contiene <em>cuatro</em> elementos. Solamente una de estas opciones <em>no</em> va a construir un cuadrado. ¿Sabes cuál es? (No es trampa probar a ejecutar el programa usando cada una de ellas, para ver cuál es el resultado).<form name="10_1_1_Turtle_For_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="10_1_1_Turtle_For_Q1_opt_a" />
             <label for= "10_1_1_Turtle_For_Q1_opt_a">  a) [0,1,2,3]</label><br />
             
@@ -434,7 +434,7 @@ else{
             <script>
             $(document).ready(function(){checkRadio('10_1_1_Turtle_For_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('10_1_1_Turtle_For_Q1','b',['This still has four sides \u002D\u002D they are just numbered differently.', 'This would only draw 3 side since there are only 3 items in the list.', 'This still has four sides \u002D\u002D they are just numbered differently.', 'This \u003Ci\u003Ewill\u003C/i\u003E draw a square. The turtle will just go on to trace the first side twice.'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('10_1_1_Turtle_For_Q1','b',['Este cuadrado tendrá cuatro lados, aunque estén numerados de otra forma.', 'Esto sólo dibujará tres lados, porque la lista sólo tiene tres elementos.', 'Este cuadrado tendrá cuatro lados, aunque estén numerados de otra forma.', 'Esta opción \u003Ci\u003Esí\u003C/i\u003E dibujará un cuadrado. La tortuga pasará dos veces por el primer lado.'])">Check Me</button>
             <button class='btn btn-default' id="10_1_1_Turtle_For_Q1_bcomp" disabled name="compare" onclick="compareAnswers('10_1_1_Turtle_For_Q1');">Compare Me</button>
             </form><br />
             <div id="10_1_1_Turtle_For_Q1_feedback">
@@ -442,11 +442,12 @@ else{
             </div>
             
         <div class='parsons alert alert-warning' id="parsons-57">
-        <div class="parsons-text">csp-10-1-2: The following program uses a turtle to draw a rectangle as shown to the left, <img src="../_static/TurtleRect.png" width="150" align="left" hspace="10" vspace="5" /> but the lines are mixed up.  The program should do all necessary set-up and create the turtle.  After that, iterate (loop) 2 times, and each time through the loop the turtle should go forward 175 pixels, turn right 90 degrees, go forward 150 pixels, and turn right 90 degrees.  After the loop, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order with the correct indention.  Click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order or are incorrectly indented.</p><br /><br /></div>
+        <div class="parsons-text">csp-10-1-2: El siguiente programa utiliza una tortuga para dibujar un rectángulo como el que ves a la izquierda, , <img src="../_static/TurtleRect.png" width="150" align="left" hspace="10" vspace="5" /> pero las líneas de código están desordenadas. El programa primero debe crear  el entorno necesario y crear la tortuga. Después, debe pasar dos veces por el bucle, y cada una de las veces la tortuga debe avanzar 175 pixels, girar 90 grados a la derecha, avanzar 150 pixels, y girar 90 grados a la derecha. Una vez terminado el bucle, establecer que la ventana se cierre cuando el usuario haga clic sobre ella.<br /><br /><p>Arrastra los bloques de la parte izquierda y colócalos en orden y con la indentación adecuada en la parte derecha. Haz clic en <i>Check Me</i> para ver si lo has hecho correctamente. El ejercicio te indicará si alguna línea no está en su sitio, o si la indentación es incorrecta.</p>
+<br /><br /></div>
         <div style="clear:left;"></div>
         <div id="parsons-orig-57" style="display:none;">from turtle import *
-space = Screen()\ncarlos = Turtle()
-# repeat 2 times\nfor i in [1,2]:
+espacio = Screen()\ncarlos = Turtle()
+# repite 2 veces\nfor i in [1,2]:
     carlos.forward(175)
     carlos.right(90)
     carlos.forward(150)\ncarlos.right(90)</div>
@@ -568,7 +569,7 @@ space = Screen()\ncarlos = Turtle()
 
     </script>
 
-<p>Since it doesn&#8217;t matter what&#8217;s in the list, just as long as there are <em>four</em> items, there is a special way of writing that loop.  We use a <code class="docutils literal"><span class="pre">range</span></code> function.</p>
+<p>Cuando no importa realmente qué hay en la lista, sino que tenga por ejemplo <em>cuatro</em> elementos, hay una forma especial de escribir el bucle. Se trata de utilizar la función <code class="docutils literal"><span class="pre">range</span></code>.</p>
 
 <div id="cont"></div>
 <div id="Turtle_For_Range" lang="python" time="" class="ac_section alert alert-warning" >
@@ -579,21 +580,21 @@ space = Screen()\ncarlos = Turtle()
 <button class="ac_opt btn btn-default" style="display: inline-block" id="Turtle_For_Range_loadb" onclick="requestCode('Turtle_For_Range');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Turtle_For_Range','from turtle import *          # use the turtle library*nline*space = Screen*open**close*              # create a turtle space*nline*marcus = Turtle*open**close*             # create a turtle named marcus*nline*marcus.setheading*open*90*close*         # point due north*nline**nline*# Now make a square*nline*for sides in range*open*4*close*:        # repeat the indented lines 4 times*nline*    marcus.forward*open*100*close*               # move forward by 100 units*nline*    marcus.right*open*90*close*                          # turn by 90 degrees','1','*doubleq*Line-by-line tour*doubleq*; 1: tR2-line1; 2: tR2-line2; 3: tR2-line3; 4: tR2-line4; 7: tR2-line7; 8: tR2-line8; 9: tR2-line9;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Turtle_For_Range','from turtle import *  # usar a libreria turtle*nline*espacio = Screen*open**close*    # crear el espacio*nline*marco = Turtle*open**close*              # crear la tortuga*nline*marco.setheading*open*90*close*  # apuntar al norte*nline**nline*# Dibuja el cuadrado*nline*for lados in range*open*4*close*:        # repetir lo siguiente 4 veces*nline*    marco.forward*open*100*close*   # avanzar 100 unidades*nline*    marco.right*open*90*close*      # girar 90 grados','1','*doubleq*Line-by-line tour*doubleq*; 1: tR2-line1; 2: tR2-line2; 3: tR2-line3; 4: tR2-line4; 7: tR2-line7; 8: tR2-line8; 9: tR2-line9;*atype*')"/>
 
 </div>
 <br/>
 <div id="Turtle_For_Range_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="Turtle_For_Range_code" class="active_code" prefixcode="undefined" lang="python">
-from turtle import *          # use the turtle library
-space = Screen()              # create a turtle space
-marcus = Turtle()             # create a turtle named marcus
-marcus.setheading(90)         # point due north
+from turtle import *  # usar a libreria turtle
+espacio = Screen()    # crear el espacio
+marco = Turtle()              # crear la tortuga
+marco.setheading(90)  # apuntar al norte
 
-# Now make a square
-for sides in range(4):        # repeat the indented lines 4 times
-    marcus.forward(100)               # move forward by 100 units
-    marcus.right(90)                          # turn by 90 degrees
+# Dibuja el cuadrado
+for lados in range(4):        # repetir lo siguiente 4 veces
+    marco.forward(100)   # avanzar 100 unidades
+    marco.right(90)      # girar 90 grados
 </textarea>
 </div>
 
@@ -659,7 +660,7 @@ else{
 
 </div>
 
-<p>The <code class="docutils literal"><span class="pre">range</span></code> function returns a value so that the <em>for</em> loop executes that many times.  This makes the turtle go forward and turn right 90 degrees <em>four</em> times.</p>
+<p>La función <code class="docutils literal"><span class="pre">range</span></code> devuelve un valor para indicarle al bucle <em>for</em> cuantas iteraciones debe hacer. En este caso hace que la tortuga avance y gire a la derecha <em>cuatro</em> veces.</p>
 </div>
 
 

@@ -19,10 +19,10 @@
    :linenothreshold: 4
 
 
-Using an Image Library
-========================
+Utilizar una librería para imágenes
+===================================
 
-Similarly, in the image processing example, we used ``from image import *``.  That made the functions ``getPixels()`` and ``getRed()`` accessible.  We could also define a new function that returns a new color, or a new procedure that changes the image.  
+En el ejemplo donde  procesábamos una imagen utilizábamos ``from image import *``. Esta instrucción hacía que estuvieran accesibles las funcciones ``getPixels()`` y ``getRed()``. También se podría definir una nueva función que devolviera un color nuevo, o un procedimiento que modificara la imagen.  
 
 .. raw:: html
 
@@ -32,42 +32,41 @@ Similarly, in the image processing example, we used ``from image import *``.  Th
     :tour_1: "Important Lines Tour"; 1,4,7,11,15,18: timg2-line1_4_7_11_15_18; 2: timg2-line2; 5: timg2-line5; 8-9: timg2-line8-9; 12-13: timg2-line12-13; 16: timg2-line16; 19-20: timg2-line19-20;
     :nocodelens:
 
-    # USE THE IMAGE LIBRARY 
+    # UTILIZA LA LIBRERIA DE IMÁGENES 
     from image import *
     
-    # CREATE AN IMAGE FROM A FILE
+    # CREA UNA IMAGEN DESDE UN ARCHIVO
     img = Image("arch.jpg")
 
-    # LOOP THROUGH THE PIXELS
+    # BUCLE QUE RECORRE TODOS LOS PIXELS
     pixels = img.getPixels()
     for p in pixels:
         
-        # MODIFY THE PIXEL COLOR
+        # MODIFICA EL COLOR DEL PIXEL
         r = p.getRed()
         p.setRed(r * 0.5)
             
-        # UPDATE THE IMAGE
+        # ACTUALIZA LA IMAGEN
         img.updatePixel(p)
             
-    # SHOW THE RESULT
+    # MUESTRA EL RESULTADO
     win = ImageWin(img.getWidth(),img.getHeight())
     img.draw(win)
     
-The ``for p in pixels`` on line 9 let's us loop through all of the pixels in the image and change the red value for each pixel.  We'll talk more about looping (repeating steps) in the next chapter.
+La instrucción ``for p in pixels`` de la línea 9 sirve para ir recorriendo todos los pixels de la imagen, y cambiar el valor del rojo para cada pixel. Profundizaremos sobre los bucles (ejecutar pasos repetidamente) en el capítulo siguiente.
 
 .. mchoicemf:: 6_7_1_Image_Functions_Q1
-   :answer_a: It sets the red value in the current pixel to half the red of the original.  
-   :answer_b: It sets the red value in the current pixel to twice the red of the original.
-   :answer_c: It sets the red value in the current pixel to 5 times the red of the original.
-   :answer_d: It sets the red value in the current pixel to 0.5.  
+   :answer_a: Establece el valor del componente rojo del pixel actual a la mitad del valor original.  
+   :answer_b: Establece el valor del componente rojo del pixel actual al doble del valor original.
+   :answer_c: Establece el valor del componente rojo del pixel actual a cinco veces el valor original.
+   :answer_d: Establece el valor del componente rojo del pixel actual a 0,5.  
    :correct: a
-   :feedback_a: Multiplying by 0.5 is the same as dividing by 2.  
-   :feedback_b: This would be true if it was r * 2, instead of r * 0.5
-   :feedback_c: This would be true if it was r * 5, instead of r * 0.5
-   :feedback_d: This would be true if it was 0.5 instead of r * 0.5
+   :feedback_a: Multiplicar por 0,5 es lo mismo que dividir por 2.  
+   :feedback_b: Sería cierto si fuese r * 2, en lugar de r * 0.5
+   :feedback_c: Sería cierto si fuese r * 5, en lugar de r * 0.5
+   :feedback_d: Sería cierto si fuese 0.5 en lugar de r * 0.5
    
-   What does the line ``p.setRed(r * 0.5)`` do?
+   ¿Qué hace la instrucción ``p.setRed(r * 0.5)``?
 
 
-This ability to name functions and procedures, and sets of functions and procedures, and absolutely anything and any set of things in a computer is very powerful.  It allows us to create **abstractions** that make the computer easier to program and use.  More on that in a future chapter.
-
+Esta capacidad para asignar nombres a funciones y a procedimientoss, y a conjuntos de nombres y procedimientos, y a cualquier otra cosa o conjunto de cosas en un ordenador, es muy potente. Permite crear **abstracciones** que facilitan el uso y la programación de los ordenadores. En un capítulo possterior hay más de todo esto.

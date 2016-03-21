@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>What is a List? &mdash; Runestone Interactive Overview</title>
+    <title>¿Qué es una lista? &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -87,8 +87,8 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
-    <link rel="next" title="The Range Function" href="range.html" />
-    <link rel="prev" title="Repeating with Numbers" href="repeatNums.html" />
+    <link rel="next" title="La función Range" href="range.html" />
+    <link rel="prev" title="Repeticiones con números" href="repeatNums.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -274,9 +274,9 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">What is a List?</a></li>
-<li><a class="reference internal" href="#bigteachernote-teacher-note-names-are-just-words"> Teacher Note: Names are Just Words</a><ul>
-<li><a class="reference internal" href="#using-better-variable-names">Using Better Variable Names</a></li>
+<li><a class="reference internal" href="#">¿Qué es una lista?</a></li>
+<li><a class="reference internal" href="#bigteachernote-nota-para-el-profesor-los-nombres-son-solamente-palabras"> Nota para el profesor: Los nombres son solamente palabras</a><ul>
+<li><a class="reference internal" href="#elegir-nombres-adecuados-para-las-variables">Elegir nombres adecuados para las variables</a></li>
 </ul>
 </li>
 </ul>
@@ -286,13 +286,13 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Repeating with Numbers" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Repeticiones con números" data-toggle="tooltip">
     <a href="repeatNums.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - The Range Function' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - La función Range' data-toggle="tooltip" >
     <a href="range.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -323,15 +323,14 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="what-is-a-list">
-<h1>What is a List?<a class="headerlink" href="#what-is-a-list" title="Permalink to this headline">¶</a></h1>
-<p>A <strong>list</strong> holds items in order. A <strong>list</strong> in Python is enclosed in <code class="docutils literal"><span class="pre">[</span></code> and <code class="docutils literal"><span class="pre">]</span></code> and can have values separated by commas, like <code class="docutils literal"><span class="pre">[1,2,3,4,5,6,7,8,9,10]</span></code>.  You probably use <strong>lists</strong> all the time.  People often
-make a list before they go shopping or a list of things to do.  A <strong>list</strong> has an order and each list item has a position in the list, like the first item in a list or the last item in a list.</p>
+  <div class="section" id="que-es-una-lista">
+<h1>¿Qué es una lista?<a class="headerlink" href="#que-es-una-lista" title="Permalink to this headline">¶</a></h1>
+<p>Una <strong>lista</strong> contiene elementos en orden. Las <strong>listas</strong> en Python están encerradas entre <code class="docutils literal"><span class="pre">[</span></code> y <code class="docutils literal"><span class="pre">]</span></code>, y puede contener valores separados por comas, <code class="docutils literal"><span class="pre">[1,2,3,4,5,6,7,8,9,10]</span></code>. Seguramente utilices <strong>listas</strong> continuamente. Con frecuencia las personas hacemos listas antes de ir a comprar, o para no olvidar las cosas que tenemos que hacer. Una <strong>lista</strong> tiene un orden, y cada elemento ocupa una posición,de forma que hay un elemento en la primera posición, y otro en la última.</p>
 <div class="align-center figure" id="id1">
 <a class="reference internal image-reference" href="../_images/lists1.jpg"><img alt="a shopping list" src="../_images/lists1.jpg" style="height: 250px;" /></a>
-<p class="caption"><span class="caption-text">Figure 2: A shopping list</span></p>
+<p class="caption"><span class="caption-text">Figura 2: Lista de la compra</span></p>
 </div>
-<p>When you ran the code in the last section, did you get 55?  That&#8217;s the sum of all the numbers from 1 to 10.  Here is the program again.  Run it if you don&#8217;t remember what it printed before.</p>
+<p>¿Fue 55 el resultado cuando ejecutaste el código de la sección anterior? Ésa es la suma de los números del 1 al 10. Aquí tienes de nuevo el programa. Ejecútalo si no te acuerdas de lo que imprimió antes.</p>
 
 <div id="cont"></div>
 <div id="Numbers_Repeat2" lang="python" time="" class="ac_section alert alert-warning" >
@@ -342,18 +341,18 @@ make a list before they go shopping or a list of things to do.  A <strong>list</
 <button class="ac_opt btn btn-default" style="display: inline-block" id="Numbers_Repeat2_loadb" onclick="requestCode('Numbers_Repeat2');">Load</button>
 
 <span class="ac_sep"></span>
-<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Numbers_Repeat2','sum = 0  # Start out with nothing*nline*thingsToAdd = [1,2,3,4,5,6,7,8,9,10]*nline*for number in thingsToAdd:*nline*    sum = sum + number*nline*print*open*sum*close*','2','*doubleq*High level tour*doubleq*; 1-2: for1_line1-2; 3-4: for1_line3-4; 5: for1_s_line5;*atype**doubleq*Line by line tour*doubleq*; 1: for1_line1; 2: for1_line2; 3: for1_line3; 4: for1_line4; 5: for1_line5;*atype*')"/>
+<input type="button" class='btn btn-default ' id="audiob" name="Play Audio" value="Start Audio Tour" onclick="createAudioTourHTML('Numbers_Repeat2','suma = 0  # Valor inicial*nline*cosasQueAnadir = [1,2,3,4,5,6,7,8,9,10]*nline*for numero in cosasQueAnadir:*nline*    suma = suma + numero*nline*print*open*suma*close*','2','*doubleq*Line by line tour*doubleq*; 1: for1_line1; 2: for1_line2; 3: for1_line3; 4: for1_line4; 5: for1_line5;*atype**doubleq*High level tour*doubleq*; 1-2: for1_line1-2; 3-4: for1_line3-4; 5: for1_s_line5;*atype*')"/>
 <button class='btn btn-default' id="Numbers_Repeat2_vizb" onclick="injectCodelens(this,'Numbers_Repeat2');">Show in Codelens</button>
 
 </div>
 <br/>
 <div id="Numbers_Repeat2_code_div" style="display: block" class="ac_code_div">
 <textarea cols="50" rows="12" id="Numbers_Repeat2_code" class="active_code" prefixcode="undefined" lang="python">
-sum = 0  # Start out with nothing
-thingsToAdd = [1,2,3,4,5,6,7,8,9,10]
-for number in thingsToAdd:
-    sum = sum + number
-print(sum)
+suma = 0  # Valor inicial
+cosasQueAnadir = [1,2,3,4,5,6,7,8,9,10]
+for numero in cosasQueAnadir:
+    suma = suma + numero
+print(suma)
 </textarea>
 </div>
 
@@ -421,7 +420,7 @@ else{
 
 
             <div id="7_3_1_Numbers_Repeat2_Q1" class="alert alert-warning">
-            csp-7-3-1: Now, change the program above to get the product instead of the sum (e.g., replace <cite>+</cite> with <cite>*</cite>, and replace the <cite>0</cite> as the initial value of <cite>sum</cite> to <cite>1</cite>).  What do you get now when you run the program?<form name="7_3_1_Numbers_Repeat2_Q1_form" method="get" action="" onsubmit="return false;">
+            csp-7-3-1: Ahora, modifica el programa para que multiplique en lugar de sumar (remplaza el signo <code class="docutils literal"><span class="pre">+</span></code> por <code class="docutils literal"><span class="pre">*</span></code>, y cambia el valor inicial <code class="docutils literal"><span class="pre">0</span></code> de la <code class="docutils literal"><span class="pre">suma</span></code>  por <code class="docutils literal"><span class="pre">1</span></code>). ¿Qué obtendrás en este caso cuando ejecutes el programa?<form name="7_3_1_Numbers_Repeat2_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="7_3_1_Numbers_Repeat2_Q1_opt_a" />
             <label for= "7_3_1_Numbers_Repeat2_Q1_opt_a">  a) 55</label><br />
             
@@ -432,32 +431,32 @@ else{
             <label for= "7_3_1_Numbers_Repeat2_Q1_opt_c">  c) 3628800</label><br />
             
             <input type="radio" name="group1" value="d" id="7_3_1_Numbers_Repeat2_Q1_opt_d" />
-            <label for= "7_3_1_Numbers_Repeat2_Q1_opt_d">  d) Error - number is too big</label><br />
+            <label for= "7_3_1_Numbers_Repeat2_Q1_opt_d">  d) Error - el número es demasiado alto</label><br />
             
 
             <script>
             $(document).ready(function(){checkRadio('7_3_1_Numbers_Repeat2_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('7_3_1_Numbers_Repeat2_Q1','c',['That\u0027s the sum', 'That\u0027s what you get if you leave the sum as 0.  Multipying everything by 0 gets you 0', 'That\u0027s 1*2*3*4*5*6*7*8*9*10', 'It should actually work'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('7_3_1_Numbers_Repeat2_Q1','c',['Esa es la suma', 'Obtendrás esto si dejas suma como 0. Multiplicar algo por 0 siempre da 0', 'Eso sería 1*2*3*4*5*6*7*8*9*10', 'Realmente debería funcionar'])">Check Me</button>
             <button class='btn btn-default' id="7_3_1_Numbers_Repeat2_Q1_bcomp" disabled name="compare" onclick="compareAnswers('7_3_1_Numbers_Repeat2_Q1');">Compare Me</button>
             </form><br />
             <div id="7_3_1_Numbers_Repeat2_Q1_feedback">
             </div>
             </div>
             </div>
-<div class="section" id="bigteachernote-teacher-note-names-are-just-words">
-<h1><a class="reference internal" href="../_images/apple7.jpg"><img alt="teacher note" class="align-top" src="../_images/apple7.jpg" style="width: 50px;" /></a> Teacher Note: Names are Just Words<a class="headerlink" href="#bigteachernote-teacher-note-names-are-just-words" title="Permalink to this headline">¶</a></h1>
-<p>Once you change the program above in order to use <code class="docutils literal"><span class="pre">*</span></code> instead of <code class="docutils literal"><span class="pre">+</span></code>, you will see that it is still using the name (<em>variable</em>) <code class="docutils literal"><span class="pre">sum</span></code> to represent the <cite>product</cite> of all the numbers in <code class="docutils literal"><span class="pre">thingsToAdd</span></code>.  The program would be <em>better</em> if we used the right name for the variable: <code class="docutils literal"><span class="pre">product</span></code> instead of <code class="docutils literal"><span class="pre">sum</span></code> once we switched to multiplication (<code class="docutils literal"><span class="pre">*</span></code>) from addition (<code class="docutils literal"><span class="pre">+</span></code>).  However, the program still <em>works</em>.  In the end, the names for the variables are there for the benefit of the <em>humans</em>, not the computer.  The computer doesn&#8217;t care if we name the program <cite>xyzzy1776</cite>.  It will <em>work</em> with a bad variable name.  It&#8217;s just not as readable.  <strong>You should write your programs so that people can understand them, not just computers.</strong></p>
-<div class="section" id="using-better-variable-names">
-<h2>Using Better Variable Names<a class="headerlink" href="#using-better-variable-names" title="Permalink to this headline">¶</a></h2>
-<p>Let&#8217;s write that program again with a better variable name.  We will use <code class="docutils literal"><span class="pre">product</span></code> instead of <code class="docutils literal"><span class="pre">sum</span></code> for the variable name that holds the result of the calculation.  Step through the code below by clicking on the <em>Forward</em> button and note what value the variable <code class="docutils literal"><span class="pre">number</span></code> is set to each time through the loop.  Also note how the variable <code class="docutils literal"><span class="pre">product</span></code> changes during the loop.</p>
+<div class="section" id="bigteachernote-nota-para-el-profesor-los-nombres-son-solamente-palabras">
+<h1><a class="reference internal" href="../_images/apple7.jpg"><img alt="teacher note" class="align-top" src="../_images/apple7.jpg" style="width: 50px;" /></a> Nota para el profesor: Los nombres son solamente palabras<a class="headerlink" href="#bigteachernote-nota-para-el-profesor-los-nombres-son-solamente-palabras" title="Permalink to this headline">¶</a></h1>
+<p>Una vez que hayas modificado el programa anterior para que utilice <code class="docutils literal"><span class="pre">*</span></code> en lugar de <code class="docutils literal"><span class="pre">+</span></code> verás que está aún usando el nombre (<em>variable</em>) <code class="docutils literal"><span class="pre">suma</span></code> para representar el <cite>producto`de todos los números contenidos en ``cosasQueAnadir`</cite>. Será más <em>correcto</em> que el programa utilice el nombre adecuado para la variable: <code class="docutils literal"><span class="pre">producto</span></code> en lugar de <code class="docutils literal"><span class="pre">suma</span></code>, ya que hemos cambiado suma (<code class="docutils literal"><span class="pre">+</span></code>) por multiplicación (<code class="docutils literal"><span class="pre">*</span></code>). Sin embargo el programa <em>funciona</em>. En realidad, los nombres de las variables son para mejor comprensión de los <em>humanos</em>, no de los <em>ordenadores</em>. Al ordenador no le importa si la variable se llama <cite>xyzzy1776</cite>. También <em>funcionará</em> con un nombre inapropiado. Simplemente será más difícil de comprender. <strong>Debes acostumbrarte a escribir programas de forma que otras personas puedan entenderlos facilmente, no solamente los ordenadores.</strong></p>
+<div class="section" id="elegir-nombres-adecuados-para-las-variables">
+<h2>Elegir nombres adecuados para las variables<a class="headerlink" href="#elegir-nombres-adecuados-para-las-variables" title="Permalink to this headline">¶</a></h2>
+<p>Vamos a escribir de nuevo el programa con un nombre de variable más apropiado. Le daremos a la variable que almacena el resultado del cálculo el nombre <code class="docutils literal"><span class="pre">producto</span></code> en lugar de llamarle <code class="docutils literal"><span class="pre">suma</span></code>. Pulsa el botón <em>Forward</em> para que el programa avance, y observa qué valor va tomando la variable <code class="docutils literal"><span class="pre">numero</span></code> con cada vuelta del bucle. Fíjate también que la variable <code class="docutils literal"><span class="pre">producto</span></code> va cambiando durante la ejecución del bucle.</p>
 
 <div class="alert alert-warning cd_section">
 <div id="Numbers_Product"></div>
 <p class="cl_caption"><span class="cl_caption_text"> (Numbers_Product)</span> </p>
 </div>
 <script type="text/javascript">
-var Numbers_Product_trace = {"code": "product = 1  # Start out with nothing\nnumbers = [1,2,3,4,5,6,7,8,9,10]\nfor number in numbers:\n    product = product * number\nprint(product)", "trace": [{"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {}, "heap": {}, "ordered_globals": [], "stdout": "", "line": 1}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"product": 1}, "heap": {}, "ordered_globals": ["product"], "stdout": "", "line": 2}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"numbers": ["REF", 1], "product": 1}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 1, "numbers": ["REF", 1], "product": 1}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 1, "numbers": ["REF", 1], "product": 1}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 2, "numbers": ["REF", 1], "product": 1}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 2, "numbers": ["REF", 1], "product": 2}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 3, "numbers": ["REF", 1], "product": 2}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 3, "numbers": ["REF", 1], "product": 6}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 4, "numbers": ["REF", 1], "product": 6}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 4, "numbers": ["REF", 1], "product": 24}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 5, "numbers": ["REF", 1], "product": 24}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 5, "numbers": ["REF", 1], "product": 120}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 6, "numbers": ["REF", 1], "product": 120}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 6, "numbers": ["REF", 1], "product": 720}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 7, "numbers": ["REF", 1], "product": 720}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 7, "numbers": ["REF", 1], "product": 5040}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 8, "numbers": ["REF", 1], "product": 5040}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 8, "numbers": ["REF", 1], "product": 40320}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 9, "numbers": ["REF", 1], "product": 40320}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 9, "numbers": ["REF", 1], "product": 362880}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 10, "numbers": ["REF", 1], "product": 362880}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 4}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 10, "numbers": ["REF", 1], "product": 3628800}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 3}, {"event": "step_line", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 10, "numbers": ["REF", 1], "product": 3628800}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "", "line": 5}, {"event": "return", "stack_to_render": [], "func_name": "<module>", "globals": {"number": 10, "numbers": ["REF", 1], "product": 3628800}, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "ordered_globals": ["product", "numbers", "number"], "stdout": "3628800\n", "line": 5}]};
+var Numbers_Product_trace = {"trace": [{"stack_to_render": [], "func_name": "<module>", "ordered_globals": [], "line": 1, "heap": {}, "event": "step_line", "globals": {}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto"], "line": 2, "heap": {}, "event": "step_line", "globals": {"producto": 1}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros"], "line": 3, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 1, "numeros": ["REF", 1]}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 4, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 1, "numeros": ["REF", 1], "numero": 1}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 3, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 1, "numeros": ["REF", 1], "numero": 1}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 4, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 1, "numeros": ["REF", 1], "numero": 2}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 3, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 2, "numeros": ["REF", 1], "numero": 2}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 4, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 2, "numeros": ["REF", 1], "numero": 3}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 3, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 6, "numeros": ["REF", 1], "numero": 3}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 4, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 6, "numeros": ["REF", 1], "numero": 4}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 3, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 24, "numeros": ["REF", 1], "numero": 4}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 4, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 24, "numeros": ["REF", 1], "numero": 5}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 3, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 120, "numeros": ["REF", 1], "numero": 5}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 4, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 120, "numeros": ["REF", 1], "numero": 6}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 3, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 720, "numeros": ["REF", 1], "numero": 6}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 4, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 720, "numeros": ["REF", 1], "numero": 7}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 3, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 5040, "numeros": ["REF", 1], "numero": 7}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 4, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 5040, "numeros": ["REF", 1], "numero": 8}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 3, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 40320, "numeros": ["REF", 1], "numero": 8}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 4, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 40320, "numeros": ["REF", 1], "numero": 9}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 3, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 362880, "numeros": ["REF", 1], "numero": 9}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 4, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 362880, "numeros": ["REF", 1], "numero": 10}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 3, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 3628800, "numeros": ["REF", 1], "numero": 10}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 5, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "step_line", "globals": {"producto": 3628800, "numeros": ["REF", 1], "numero": 10}, "stdout": ""}, {"stack_to_render": [], "func_name": "<module>", "ordered_globals": ["producto", "numeros", "numero"], "line": 5, "heap": {"1": ["LIST", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}, "event": "return", "globals": {"producto": 3628800, "numeros": ["REF", 1], "numero": 10}, "stdout": "3628800\n"}], "code": "producto = 1  # Inicialmente vale 1\nnumeros = [1,2,3,4,5,6,7,8,9,10]\nfor numero in numeros:\n    producto = producto * numero\nprint(producto)"};
 var Numbers_Product_vis;
 
 $(document).ready(function() {
@@ -496,7 +495,7 @@ $(window).resize(function() {
 </script>
 
             <div id="7_3_2_Numbers_Product_Q1" class="alert alert-warning">
-            csp-7-3-2: What is the value of number the 3rd time through the loop?<form name="7_3_2_Numbers_Product_Q1_form" method="get" action="" onsubmit="return false;">
+            csp-7-3-2: ¿Qué valor tiene numero al dar la tercera vuelta al bucle?<form name="7_3_2_Numbers_Product_Q1_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="7_3_2_Numbers_Product_Q1_opt_a" />
             <label for= "7_3_2_Numbers_Product_Q1_opt_a">  a) 1</label><br />
             
@@ -516,7 +515,7 @@ $(window).resize(function() {
             <script>
             $(document).ready(function(){checkRadio('7_3_2_Numbers_Product_Q1');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('7_3_2_Numbers_Product_Q1','c',['That\u0027s the value the first time through the loop', 'That\u0027s the value the second time through the loop', 'That\u0027s the value the third time through the loop', 'That\u0027s the value the fourth time through the loop', 'That\u0027s the value the last time through the loop'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('7_3_2_Numbers_Product_Q1','c',['Ese es el valor que tiene al dar la primera vueelta al bucle', 'Ese es el valor que tiene al dar la segunda vuelta al bucle', 'Ese es el valor que tiene al dar la tercera vuelta al bucle', 'Ese es el valor que tiene al dar la cuarta vuelta al bucle', 'Ese es el valor que tiene al dar la última vuelta al bucle'])">Check Me</button>
             <button class='btn btn-default' id="7_3_2_Numbers_Product_Q1_bcomp" disabled name="compare" onclick="compareAnswers('7_3_2_Numbers_Product_Q1');">Compare Me</button>
             </form><br />
             <div id="7_3_2_Numbers_Product_Q1_feedback">
@@ -524,7 +523,7 @@ $(window).resize(function() {
             </div>
             
             <div id="7_3_3_Numbers_Product_Q2" class="alert alert-warning">
-            csp-7-3-3: What is the value of product after the 4th time through the loop?<form name="7_3_3_Numbers_Product_Q2_form" method="get" action="" onsubmit="return false;">
+            csp-7-3-3: ¿Cuánto valdrá el producto después de dar la cuarta vuelta al bucle?<form name="7_3_3_Numbers_Product_Q2_form" method="get" action="" onsubmit="return false;">
             <input type="radio" name="group1" value="a" id="7_3_3_Numbers_Product_Q2_opt_a" />
             <label for= "7_3_3_Numbers_Product_Q2_opt_a">  a) 6</label><br />
             
@@ -541,7 +540,7 @@ $(window).resize(function() {
             <script>
             $(document).ready(function(){checkRadio('7_3_3_Numbers_Product_Q2');});
             </script>
-            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('7_3_3_Numbers_Product_Q2','c',['That\u0027s the value after the 3rd time through the loop.', 'That\u0027s the value if we were adding up the values rather than multiplying them.', 'That\u0027s the value after the 4th time through the loop.', 'That\u0027s the value after the 5th time through the loop.'])">Check Me</button>
+            <button class='btn btn-success' name="do answer" onclick="checkMCMFStorage('7_3_3_Numbers_Product_Q2','c',['Ese es el valor que tiene al dar la tercera vuelta al bucle', 'Ese es el valor si estuviéramos sumando los valores en lugar de multiplicándolos', 'Ese es el valor que tiene al dar la cuarta vuelta al bucle', 'Ese es el valor que tiene al dar la quinta vuelta al bucle'])">Check Me</button>
             <button class='btn btn-default' id="7_3_3_Numbers_Product_Q2_bcomp" disabled name="compare" onclick="compareAnswers('7_3_3_Numbers_Product_Q2');">Compare Me</button>
             </form><br />
             <div id="7_3_3_Numbers_Product_Q2_feedback">
@@ -553,19 +552,19 @@ $(window).resize(function() {
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Repeating with Numbers' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Repeticiones con números' data-toggle="tooltip">
     <a href="repeatNums.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="repeatNums.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - The Range Function' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - La función Range' data-toggle="tooltip" >
     <a href="range.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="range.html" >Next Section - The Range Function</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="range.html" >Next Section - La función Range</a>
 
 <script type="text/javascript">
 

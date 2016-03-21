@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Teachers Note: Creating Procedures with Parameters &mdash; Runestone Interactive Overview</title>
+    <title>Nota para el profesor: Crear procedimientos con parámetros &mdash; Runestone Interactive Overview</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -87,8 +87,8 @@
     <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="top" title="Runestone Interactive Overview" href="../index.html" />
-    <link rel="next" title="Naming Sets of Procedures" href="nameSets.html" />
-    <link rel="prev" title="Naming Input" href="namesInput.html" />
+    <link rel="next" title="Nombrar conjuntos de procedimientos" href="nameSets.html" />
+    <link rel="prev" title="Nombrar entradas" href="namesInput.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -274,7 +274,7 @@
           <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#"> Teachers Note: Creating Procedures with Parameters</a></li>
+<li><a class="reference internal" href="#"> Nota para el profesor: Crear procedimientos con parámetros</a></li>
 </ul>
 </ul>
 </li>
@@ -282,13 +282,13 @@
         
         
           
-  <li id="relations-prev" title="Previous Chapter - Naming Input" data-toggle="tooltip">
+  <li id="relations-prev" title="Previous Chapter - Nombrar entradas" data-toggle="tooltip">
     <a href="namesInput.html" >
       <i class='glyphicon glyphicon-backward' style='opacity:0.9;'></i>
     </a>
   </li>
   
-  <li id="relations-next" title='Next Chapter - Naming Sets of Procedures' data-toggle="tooltip" >
+  <li id="relations-next" title='Next Chapter - Nombrar conjuntos de procedimientos' data-toggle="tooltip" >
     <a href="nameSets.html" >
       <i class='glyphicon glyphicon-forward' style='opacity:0.9;'></i>
     </a>
@@ -319,9 +319,9 @@
 
 <div class="container" id="main-content">
   
-  <div class="section" id="bigteachernote-teachers-note-creating-procedures-with-parameters">
-<h1><a class="reference internal" href="../_images/apple2.jpg"><img alt="teacher note" class="align-top" src="../_images/apple2.jpg" style="width: 50px;" /></a> Teachers Note: Creating Procedures with Parameters<a class="headerlink" href="#bigteachernote-teachers-note-creating-procedures-with-parameters" title="Permalink to this headline">¶</a></h1>
-<p>You probably don&#8217;t quite feel comfortable with creating procedures with parameters right now.  That&#8217;s okay.  Our research on how people learn programming says that understanding how <em>names</em> can represent <em>something else</em> takes alot of practice.  People new to programming will probably prefer:</p>
+  <div class="section" id="bigteachernote-nota-para-el-profesor-crear-procedimientos-con-parametros">
+<h1><a class="reference internal" href="../_images/apple2.jpg"><img alt="teacher note" class="align-top" src="../_images/apple2.jpg" style="width: 50px;" /></a> Nota para el profesor: Crear procedimientos con parámetros<a class="headerlink" href="#bigteachernote-nota-para-el-profesor-crear-procedimientos-con-parametros" title="Permalink to this headline">¶</a></h1>
+<p>Seguramente no te encuentres aún muy cómodo creando procedimientos con parámetros. Es normal. Nuestra investigación sobre cómo las personas aprendemos a programar revela que entender cómo los <em>nombres</em> pueden representar <em>otra cosa</em> requiere de mucha práctica. Los que son nuevos en esto de la programación seguramente preferirán esta opción:</p>
 <div class="highlight-java"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -333,7 +333,7 @@
  9
 10
 11</pre></div></td><td class="code"><div class="highlight"><pre>from turtle import *
-space = Screen()
+espacio = Screen()
 malik = Turtle()
 malik.forward(100)
 malik.right(90)
@@ -345,7 +345,7 @@ malik.forward(100)
 malik.right(90)
 </pre></div>
 </td></tr></table></div>
-<p>To creating a <code class="docutils literal"><span class="pre">square</span></code> procedure as shown below</p>
+<p>Para crear un procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code> como el que se muestra a continuación</p>
 <div class="highlight-java"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -354,52 +354,52 @@ malik.right(90)
 6
 7
 8
-9</pre></div></td><td class="code"><div class="highlight"><pre><span class="n">def</span> <span class="nf">square</span><span class="o">(</span><span class="n">turtle</span><span class="o">,</span><span class="n">size</span><span class="o">):</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">size</span><span class="o">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">size</span><span class="o">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">size</span><span class="o">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">size</span><span class="o">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
+9</pre></div></td><td class="code"><div class="highlight"><pre><span class="n">def</span> <span class="nf">cuadrado</span><span class="o">(</span><span class="n">tortuga</span><span class="o">,</span><span class="n">tamaño</span><span class="o">):</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">tamaño</span><span class="o">)</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">tamaño</span><span class="o">)</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">tamaño</span><span class="o">)</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">forward</span><span class="o">(</span><span class="n">tamaño</span><span class="o">)</span>
+    <span class="n">tortuga</span><span class="o">.</span><span class="na">right</span><span class="o">(</span><span class="mi">90</span><span class="o">)</span>
 </pre></div>
 </td></tr></table></div>
-<p>and then calling the <code class="docutils literal"><span class="pre">square</span></code> procedure as shown below</p>
+<p>y llamando entonces al procedimiento <code class="docutils literal"><span class="pre">cuadrado</span></code> de esta manera</p>
 <div class="highlight-java"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4</pre></div></td><td class="code"><div class="highlight"><pre>from turtle import *     # use the turtle library
-space = Screen()             # create a turtle screen (space)
-malik = Turtle()             # create a turtle named malik
-square(malik, 100)           # draw a square with side length 100
+espacio = Screen()           # crea una pantalla(espacio)
+malik = Turtle()     # crea la tortuga Malik
+cuadrado(malik, 100)     # dibuja un cuadrado de lado 100
 </pre></div>
 </td></tr></table></div>
-<p>When people are first learning programming, they prefer seeing actual values like <code class="docutils literal"><span class="pre">forward(100)</span></code> over <code class="docutils literal"><span class="pre">forward(size)</span></code>.  They can probably recognize that having one <code class="docutils literal"><span class="pre">square</span></code> function that can make squares of all kinds of sizes is flexible and thus powerful.  But, they are still trying to understand the baisc turtle commands yet.</p>
-<p id="index-0">Don&#8217;t worry about creating procedures with parameters yet.  That will come later in the chapter on <strong>abstraction</strong>.  <strong>Abstraction</strong> means focusing on just the important details in a context, just like using an abstract figure to identify female restrooms as shown below.</p>
+<p>Cuando las personas se inician en la programación, prefieren ver los valores reales como <code class="docutils literal"><span class="pre">forward(100)</span></code> en lugar de <code class="docutils literal"><span class="pre">forward(tamaño)</span></code>. Probablemente pueden reconocer que disponer de una función <code class="docutils literal"><span class="pre">cuadrado</span></code> que construye cuadrados de cualquier tamaño es flexible y potente. Pero, aún se encuentran en el paso de intentar entender los comandos básicos del manejo de tortugas.</p>
+<p id="index-0">No te preocupes todavía por la creación de procedimientos con parámetros. Ya llegaremos a eso más tarde, en el capítulo sobre <strong>abstracción</strong>. <strong>Abstracción</strong> se refiere a la acción de poner la atención solamente en los detalles importantes de algo, como por ejemplo en la figura abstracta que permite identificar los servicios para mujeres, como se muestra a continuación.</p>
 <div class="align-center figure" id="id1">
-<a class="reference internal image-reference" href="../_images/femaleIcon.jpg"><img alt="abstract representation of a female" src="../_images/femaleIcon.jpg" style="height: 100px;" /></a>
-<p class="caption"><span class="caption-text">Figure 2: Abstract representation of a female</span></p>
+<a class="reference internal image-reference" href="../_images/femaleIcon.jpg"><img alt="representación abstracta de una mujer" src="../_images/femaleIcon.jpg" style="height: 100px;" /></a>
+<p class="caption"><span class="caption-text">Figura 2: Representación abstracta de una mujer</span></p>
 </div>
-<p>Right now, it&#8217;s okay to just be able to read procedures and understand what happens when they are called.  As beginners become more comfortable with basic programming, they will be ready to use the abstraction of using names to represent things like new procedures and functions.</p>
+<p>Por ahora es suficiente con que podamos leer los procedimientos y entender qué sucede cuando los llamamos. A medida que los aprendices se sienten más a gusto con las bases de la programación, pueden encontrase más preparados para utilizar la abstracción, usando nombres para representar cosas a través de nuevos procedimientos y funciones.</p>
 </div>
 
 
   
       
-  <li id="relations-prev" class="navLink" title='Previous Section - Naming Input' data-toggle="tooltip">
+  <li id="relations-prev" class="navLink" title='Previous Section - Nombrar entradas' data-toggle="tooltip">
     <a href="namesInput.html" >
       <i class='prevNav glyphicon glyphicon-chevron-left'></i>
     </a>
   </li>
   <a class="navLinkBg" id="navLinkBgLeft"  href="namesInput.html" ></a>
   
-  <li id="relations-next" class="navLink" title='Next Section - Naming Sets of Procedures' data-toggle="tooltip" >
+  <li id="relations-next" class="navLink" title='Next Section - Nombrar conjuntos de procedimientos' data-toggle="tooltip" >
     <a href="nameSets.html" >
       <i id="relationsNextIcon" class='nextNav glyphicon glyphicon-chevron-right'></i>
     </a>
   </li>
-  <a class="navLinkBg navLink" id="navLinkBgRight" href="nameSets.html" >Next Section - Naming Sets of Procedures</a>
+  <a class="navLinkBg navLink" id="navLinkBgRight" href="nameSets.html" >Next Section - Nombrar conjuntos de procedimientos</a>
 
 <script type="text/javascript">
 

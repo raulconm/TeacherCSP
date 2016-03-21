@@ -19,20 +19,20 @@
    :linenothreshold: 4
 
 	
-|bigteachernote| Teacher Note: for loops are more natural
+|bigteachernote| Nota para el profesor: los bucles for son más naturales
 ================================================================
 
-Several researchers have studied how people "naturally" describe programs.  In one study, students as young as middle school are shown videos of someone playing a game like "Pokemon" then asked:
+Algunos investigadores han estudiado la forma en que la gente describe los programas con un estilo "natural". En uno de esos estudios, se le mostraban a estudiantes de primaria vídeos de alguien jugando a un juego del estilo de "Pokemon", y se le preguntaba:
 
-	"Imagine that you are going to program a computer to make this video game.  What do you think you would say to the computer?"
+	"Imagínate que vas a programar un ordenador para que haga este vídeojuego. ¿Qué crees que le dirías al ordenador para que lo hiciera?".
 
-Participants rarely specify iteration like in a ``while`` loop.  They often say things like "For all the folders, I would..." or "For each of the characters, do this..."  Doing something "for all" is pretty common.  As we have seen, we can use ``for`` loops just like that, e.g., *for each item in a list*.  In general, ``for`` loops are closer to how people naturally talk about looping.
+Rara vez los participantes describían iteraciones como las de un bucle ``while``. Normalmente decía cosas como "Para todas las carpetas, yo haría..." o "Para cada uno de los personajes, haz..." Es muy común que se utilice la expresión hacer algo "para todo". Como hemos visto, podemos utilizar bucles ``for`` para casos como esos. Por ejemplo, *para cada uno de los elementos de una lista*. En general, los bucles ``for`` son mucho más parecidos al modo en que las personas hablamos en lenguaje natural sobre los bucles.
 
-But computer science students often make an economic argument to themselves.
+Pero es frecuente que los estudiantes de programación lleguen a una conclusión más práctica: 
 
-	"A ``while`` loop can do everything that a ``for`` loop can, and is more flexible.  I'll just learn that."
+	"Un bucle ``while`` puede hacer todo lo que hace un bucle ``for``, y además es más flexible. Lo aprenderé".
 
-Mark Guzdial, one of the authors of this book, used to teach a 2nd year undergraduate course on *Object-oriented Design*.  He wanted to know how much programming they knew before we got started.  One year, he gave them the challenge of writing the program to print the times table, just as you just saw ealier.  With a ``for`` loop, it's three lines of code.  Out of 75 students, only 15 used a ``for`` loop.  *Every* other student used a ``while`` loop.  Using a ``while`` loop is more lines of code, and more opportunities for error. (And many of the students did make errors.)  But they were more *comfortable* with the ``while`` loop, because that's what they had used the most.
+Mark Guzdial, uno de los autores de este libro, lo utilizaba para enseñar *Diseño Orientado a Objetos*  en segundo curso. Quería saber cuál era el nivel de los alumnos sobre programación antes de empezar el curso. Un año, les propuso el reto de escribir las tablas de multiplicar, tal como hemos visto hace poco en el libro. Utilizando un bucle ``for`` son tres líneas de código. De setenta y cinco estudiantes, solamente quince utilizaron un bucke ``for``. *Todos* los demás usaron un bucle ``while``. Con ``while`` son necesarias más líneas de código, y es más fácil cometer un error (muchos lo cometieron). Pero los estudiantes se sentían más *cómodos* con el bucle ``while``, porque es el tipo de bucle que más habían empleado hasta entonces. 
 
-Start out using the ``for`` loop in your classes as we have done in the prior chapter.  It will be easier and more natural for students. 
+Comienza por utilizar en tus clases el bucle ``for``, como hemos hecho en el capítulo anterior. Será más fácil y más natural para tus alumnos. 
 

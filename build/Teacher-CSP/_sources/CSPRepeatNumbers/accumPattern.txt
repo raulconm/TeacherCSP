@@ -19,53 +19,55 @@
    :linenothreshold: 4
 
 
-There's a Pattern Here!
+¡Aquí hay un patrón!
 =====================================
 
-There's a pattern in these programs, a pattern that is common when processing data.  We call this the **Accumulator Pattern**.  In the first program above, we *accumulated* the values into the variable ``sum``.  In the last few programs, we *accumulated* a product into the variable ``product``.
+Hay en estos programas un patrón, algo que es común cuando está procesando los datos. Es lo que llamamos el **Patrón Acumulador**. En el primer programa **acumulamos** los valores en la variable ``suma``. En los programas posteriores **acumulamos** el producto en la variable ``producto``.
 
-Here are the five steps in this pattern.
+Veamos los cinco pasos identificados en este patrón.
 
-1. Set the accumulator variable to its initial value.  This is the value we want if there is no data to be processed.
-2. Get all the data to be processed.
-3. Step through all the data using a ``for`` loop so that the variable takes on each value in the data.
-4. Combine each *piece* of the data into the accumulator.
-5. Do something with the result.
+1. Se establece la variable del acumulador a su valor inicial. Es el valor que queremos que tenga cuando no todavía no se ha procesado ningún dato.
+2. Se genera la lista de datos a procesar.
+3. Recorremos el conjunto de datos con un bucle ``for``, procesando todos ellos secuencialmente.
+4. Incluimos cada dato en el acumulador.
+5. Hacemos algo con el resultado.
 
-Using the Accumulator Pattern
+Utilizar el patrón acumulador
 =====================================
 
-What is the sum of all the numbers between 0 and 100?  We can answer that easily using our pattern.
+¿Cuánto vale la suma de todos los números del 0 al 100?? Podemos conocer facilmente la respuesta a esta pregunta utilizando un patrón.
 
 .. activecode:: Numbers_Sum
     :tour_1: "Code tour"; 2: accum_line2; 4: accum_line4; 6: accum_line6; 8: accum_line8; 10: accum_line10;
 	
-    # STEP 1: INITIALIZE ACCUMULATOR 
-    sum = 0  # Start out with nothing
-    # STEP 2: GET DATA
-    numbers = range(101)
-    # STEP 3: LOOP THROUGH THE DATA
-    for number in numbers:
-    	# STEP 4: ACCUMULATE 
-    	sum = sum + number
-    # STEP 5: PROCESS RESULT
-    print(sum)
+    # PASO 1: INICIALIZAR EL ACUMULADOR 
+    suma = 0  # Comenzamos con cero
+    # PASO 2: TOMA LOS DATOS
+    numeros = range(101)
+    # PASO 3: RECORRE EN BUCLE TODOS LOS DATOS
+    for numero in numeros:
+    	# PASO 4: ACUMULA 
+    	suma = suma + numero
+    # PASO 5: PROCESA EL RESULTADO
+    print(suma)
     
 .. parsonsprob:: 7_5_1_Sum_100
 
-   The following is the correct code for printing the sum of all the odd numbers from 1 to 100 using the accumulator pattern, but it is mixed up. Drag the blocks from the left and put them in the correct order on the right.  <b>Remember that the statements in the body of a loop must be indented!</b>  To indent a block drag it further right. Click the <i>Check Me</i> button to check your solution.</p>
-   -----
-   sum = 0  
-   =====
-   numbers = range(1,100,2)
-   =====
-   for number in numbers:
-   =====
-       sum = sum + number
-   =====
-   print(sum)
+   
+   A continuación se muestra el código apropiado para imprimir la suma de todos los números impares del 1 al 100 utilizando un patrón acumulador, pero el código está desordenado. Toma los bloques del lado izquierdo y colócalos en orden en la parte derecha. <b>¡Recuerda que dentro del cuerpo de un bucle las instrucciones deben estar indentadas!</b> Para indentar un bloque arrástralo un poco más a la derecha. Haz clic en el botón <i>Check Me</i> para comprobar la ssolución.</p>
 
-The `range` function has one more version that we can use here.  By providing *three* input numbers, we can specify the *start* value, the *ending* value (which is one more than the *last* value), and the *step* -- how much to skip *between* numbers.
+   -----
+   suma = 0  
+   =====
+   numeros = range(1,100,2)
+   =====
+   for numero in numeros:
+   =====
+       suma = suma + numero
+   =====
+   print(suma)
+
+Existe una variación más de la función `range`, que vamos a utilizar. Si le proporcionamos a la función **tres** valores como entrada, le estaremos especificando el valor *inicial*, el valor *final* (que ya sabemos qu es uno más que el último de la lista) y el valor del *intervalo* -- esto es, cuántos números hay *entre* un número y el siguiente de la lista.   
 
 .. activecode:: Range_Examples
 
@@ -74,89 +76,89 @@ The `range` function has one more version that we can use here.  By providing *t
   print range(0,11,2)
   print range(1,11,3)
 
-Now let's answer a slightly harder question: What is the sum of all the *even* numbers between 0 and 100?  It's easy with our pattern.
+Ahora contestemos a una pregunta un poco más difícil: ¿Cuál es la suma de todos los números *pares* desde el 0 hasta el 100? Con nuestro patrón la respuesta es fácil. 
   
 .. activecode:: Numbers_Sum_Even
     :tour_1: "Code tour"; 2: accE_line2; 4: accE_line4; 6: accE_line6; 8: accE_line8; 10: accE_line10;
 	
-    # STEP 1: INITIALIZE ACCUMULATOR 
-    sum = 0  # Start out with nothing
-    # STEP 2: GET DATA
-    numbers = range(0,101,2)
-    # STEP 3: LOOP THROUGH THE DATA
-    for number in numbers:
-    	# STEP 4: ACCUMULATE 
-    	sum = sum + number
-    # STEP 5: PROCESS RESULT
-    print(sum)
+    # PASO 1: INICIALIZA EL ACUMULADOR 
+    suma = 0  # Comienza sin datos
+    # PASO 2: TOMA LA LISTA DE DATOS
+    numeros = range(0,101,2)
+    # PASO 3: RECORRE LA LISTA DE DATOS
+    for numero in numeros:
+    	# PASO 4: ACUMULA 
+    	suma = suma + numero
+    # PASO 5: PROCESA EL RESULTADO
+    print(suma)
 
 .. mchoicemf:: 7_5_2_Numbers_Even_Q1
-   :answer_a: Because we started at 0
-   :answer_b: Because we want to include 100
-   :answer_c: Because the computer only understands 1s and 0s
-   :answer_d: Because we're using a step of 2
+   :answer_a: Porque hemos comenzado con el 0
+   :answer_b: Porque queremos incluir el 100
+   :answer_c: Porque el ordenador sólo entiende unos y ceros
+   :answer_d: Porque estamos saltando de dos en dos
    :correct: b
-   :feedback_a: We would want to include 100.
-   :feedback_b: If we stop BEFORE 101, we include 100.
-   :feedback_c: Internally, yes, but in Python, all decimal digits are allowed.
-   :feedback_d: That doesn't really matter.
+   :feedback_a: Queríamos incluir el 100.
+   :feedback_b: Si el valor final es 101, se incluirá e 100.
+   :feedback_c: Internamente sí, pero en Python se pueden utilizar todos los números decimales.
+   :feedback_d: Eso realmente no es importante.
 
-   Why do we stop at 101 in the above program?
+   ¿Por qué el valor final del programa anterior es 101?
 
 .. mchoicemf:: 7_5_3_Numbers_Even_Q2
-   :answer_a: Because if we started with 1, we would get all odd numbers
-   :answer_b: Because all lists start with zero
-   :answer_c: Because we end with 101
+   :answer_a: Porque si empezamos en el 1 obtendremos la lista de números impares
+   :answer_b: Porque todas las listas comienzan con un 0
+   :answer_c: Porque terminamos en 101
    :correct: a
-   :feedback_a: This gives us [0,2,4,6...98,100].
-   :feedback_b: They don't have to start at 0.  
-   :feedback_c: That is true, but is not relevant here.
+   :feedback_a: Esto nos devuelve [0,2,4,6...98,100].
+   :feedback_b: No tiene que comenzar por 0.  
+   :feedback_c: Es cierto, pero en este caso no importa.
 
-   Why do we START with zero?
+   ¿Por qué comenzamos por cero?
 
-How do we know what's really going on in this program?  How do we know that *number* is taking on all of the even values from 0 to 100?  One way we can tell is by using a CodeLens on a smaller problem from 0 to 20.  We can step through the program line-by-line, or race to the end by clicking the *Last* button and then step backwards.
+¿Cómo sabemos qué hace realmente este programa? ¿Cómo podemos saber que *número* va tomando todos los valores pares del 0 al 100? Una forma es utilizando CodeLens con un escenario más reducido, de 0 a 20. Podemos recorrer el programa línea por línea, o ir directamente al final haciendo clic en el botón *Last*, y desde ahí volver hacia atrás.
 
 .. codelens:: Numbers_Sum_Step
 	
-    # STEP 1: INITIALIZE ACCUMULATOR 
-    sum = 0  # Start out with nothing
-    # STEP 2: GET DATA
-    numbers = range(0,21,2)
-    # STEP 3: LOOP THROUGH THE DATA
-    for number in numbers:
-    	# STEP 4: ACCUMULATE
-    	sum = sum + number
-    # STEP 5: PROCESS RESULT
-    print(sum)
+    # PASO 1: INICIALIZA EL ACUMULADOR 
+    suma = 0  # Comenzamos sin valor
+    # PASO 2: GENERA LA LISTA DE DATOS
+    numeros = range(0,21,2)
+    # PASO 3: RECORRE LA LISTA
+    for numero in numeros:
+    	# PASO 4: ACUMULA
+    	suma = suma + numero
+    # PASO 5: PROCESA EL RESULTADO
+    print(suma)
 
 .. mchoicemf:: 7_5_4_Numbers_Add_Odds_Q1
-   :answer_a: Changed the range step from 2 to 3
-   :answer_b: Changed the range end from 101 to 100
-   :answer_c: Changed the range end from 101 to 99
-   :answer_d: Changed the range start from 0 to 1
+   :answer_a: Cambia en el rango el valor del salto de 2 a 3
+   :answer_b: Cambia el valor final del rango de 101 a 100
+   :answer_c: Cambia el valor final del rango de 101 a 99
+   :answer_d: Cambia el valor incial del rango de 0 a 1
    :correct: d
-   :feedback_a: That would give us [0,3,6,9,12...99].
-   :feedback_b: That would give us the even numbers from 0 to 98.
-   :feedback_c: That would give us the even numbers from 0 to 98.
-   :feedback_d: That would give us [1,3,5,...99].
+   :feedback_a: Esto nos devuelve [0,3,6,9,12...99].
+   :feedback_b: Esto nos devuelve los números pares desde el 0 hasta 98.
+   :feedback_c: Esto nos devuelve los números pares desde el 0 hasta el 98.
+   :feedback_d: Estoo nos devuelve [1,3,5,...99].
 
-   Change the program above (in ActiveCode 3: Numbers_Sum_Even) to add up all the ODD numbers including up to 99.  You should run it to get 2500. What change did you make to the program?
+   Modifica el programa anterior (in ActiveCode 3: Numbers_Sum_Even) para calcular la suma de todos los números IMPARES incluyendo el 99. La respuesta debería ser 2500. ¿Qué modificación habría que hacer en el programa?
    
 .. parsonsprob:: 7_5_5_Sum_From_50
 
-   The following is the correct code for printing the sum of all the even numbers from 50 to 100 using the accumulator pattern, but it is mixed up. Drag the blocks from the left and put them in the correct order on the right.  Don't forget to indent blocks in the body of the loop.  Just drag the block further right to indent.  Click the <i>Check Me</i> button to check your solution.</p>
+   El siguiente código es el correcto para imprimir la suma de todos los números pares desde el 50 al 100 utilizando un patrón acumulador, pero las instrucciones están desordenadas. Arrastra los bloques de la izquierda y colócalos en orden en el lado derecho. No te olvides de indentar los bloques dentro del bucle. Para ello arrástralos un poco más hacia la derecha que el resto. Haz clic n el botón <i>Check Me</i> para comprobar la solución.</p>
    -----
-   sum = 0  
+   suma = 0  
    =====
-   numbers = range(50,101,2)
+   numeros = range(50,101,2)
    =====
-   for number in numbers:
+   for numero in numeros:
    =====
-       sum = sum + number
+       suma = suma + numero
    =====
-   print(sum)
+   print(suma)
    =====
-   numbers = range(50,100,2) #distractor
+   numeros = range(50,100,2) #para distraer :)
 
 
 

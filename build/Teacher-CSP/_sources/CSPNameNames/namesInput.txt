@@ -27,20 +27,20 @@ Nombrar entradas
   :tour_1: "Important lines tour"; 1-9: sq50-line1-9; 2,4,6,8: sq50-line2468; 11-13: sq50-line11-13; 14: sq50-line14; 
   :nocodelens:
 
-  def cuadrado(turtle):
-      turtle.forward(50)
-      turtle.right(90)
-      turtle.forward(50)
-      turtle.right(90)
-      turtle.forward(50)
-      turtle.right(90)
-      turtle.forward(50)
-      turtle.right(90)
+  def cuadrado(tortuga):
+      tortuga.forward(50)
+      tortuga.right(90)
+      tortuga.forward(50)
+      tortuga.right(90)
+      tortuga.forward(50)
+      tortuga.right(90)
+      tortuga.forward(50)
+      tortuga.right(90)
 
-  from turtle import * 	# usa la librería turtle
-  espacio = Screen()    	# crea un espacio para la tortuga
-  malik = Turtle()    	# crea una tortuga llamada malik
-  cuadrado(malik)          # dibuja un cuadrado con malik
+  from turtle import *	# usa la librería turtle
+  espacio = Screen()		# crea un espacio para la tortuga
+  malik = Turtle()		# crea una tortuga llamada malik
+  cuadrado(malik)		# dibuja un cuadrado con malik
   
 
 Pero, esto implica que tendremos que modificar cuatro veces las instrucciones ``forward``, y podríamos equivocarnos al poner el valor. ¿Hay una manera mejor de hacerlo? ¿Y si creamos la variable ``longitud`` y definimos en ella el valor que queremos que se mueva la tortuga hacia delante?
